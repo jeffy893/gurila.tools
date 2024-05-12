@@ -1,4 +1,6 @@
-# Posterity
+# Gurila.Tools
+
+## Posterity App
 
 - This repo centralizes **resource allocation simulation** and **models of conflict**
 
