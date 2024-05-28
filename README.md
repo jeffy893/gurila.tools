@@ -1,10 +1,41 @@
 # Gurila.Tools
+No one tool is fit for all jobs
+
+* These tools are helpful for tactics within the disciplines of enterprise, marketing, and culture
+
+## Frameworks
+
+### Frameworks help figure out the who, what, where, when, why, How; and, the level of detail to come in at when modeling views to transition from the AS IS to the TO BE
+
+
+### La Distinción
+
+* To set a framework for cultural capital
+
+### Marketing
+
+* To set a framework for marketing
+
+### DoD Framewrok and Data Dictionary
+
+* To pick what view should be used in a military context
+
+### IAF
+
+* To pick what view should be used in an enterprise context
+
+### Zachman
+
+* To pick what view should be used in a general context
+
+
+
 
 ## Posterity App
 
-- This repo centralizes **resource allocation simulation** and **models of conflict**
+- This app begins **resource allocation simulation** and **models of conflict**
 
-## Posterity is an Android App that simulates the Mating Dances of Bison and Cattle<br>
+### Posterity is an Android App that simulates the Mating Dances of Bison and Cattle<br>
 
 - To dance with potency is to dance like Bison
 - To take the path of least resistence is to dance like Cattle
@@ -50,6 +81,101 @@ The graph that appears after the simulation takes place is based on artificial c
      height="700" />
 	 
 	 
+
+## Anomaly Detection
+
+### An [event store](https://www.cortext.io/how-it-works) service is needed to queue the anomalies, asynchronously
+
+
+
+* Anomalies are based on the pattern which the anomaly veers from
+* Forward filling the stakeholders is helpful to think about the So What?
+* Backfill the workflow that could be used to catch the anomaly, again
+* Synchronizing discussion about the anomalies detected has the risk of arising conflict which can lower morale
+
+
+
+
+## Dream Tactics
+
+### This is like flossing the subconscious so that deep cleanings are not required
+
+* The metadata is filled out, last
+* The approach is the intitial glimpse
+* The formation are bullet points laying out the key points of the dream
+* The execution is stream of conscious to ultimately lead to the: So What?
+
+
+## MANGO Diplomacy
+
+### Maeutic and Applicable Negotiations, Guarantees, and Opportunities will arise, and you need to write them down
+
+* PACBULOC
+     - Parties
+     - Assumptions
+     - Conditions
+     - Boundaries
+     - Uncertainties
+     - Liabilities
+     - Objectives
+     - (Opportunity) Costs
+
+
+## Posterity Clarify
+
+### Queueing up the ideas that may be shared helps to set a filter for what ends up getting published
+
+## Lanchester Law Solution
+
+### This can be used with numerical methods in a computer to simulate conflict
+
+## Constitution of MANGO
+
+### These are some critical duties which set limitations on communications and behavior for MANGO Diplomacy
+
+## Phone Deprivation
+
+### This is a solution to a hyperbolic partial differential equation, so as to kick off the mathematics needed to prove the integration of phones into our nervous systems - and implicate Medical Malpractice Precedence - so that idiosyncracy credit may replace the bleed from TRIA
+
+## Celestial Clockwork
+
+### This is a symbolic integration of 3sens capital into the Lanchester Law
+
+## Intention div Negligence
+
+### This reverses the determination of negligence, and indicates that intention should not be determined unless the individual has duties and agreements they are bound by
+
+## Morale Model of War and Love
+
+### This will be integrated with the Lanchester Law as one of the processes that hands off incremental values to the scope/social constant(s)
+
+## Resource Allocation Simulation
+
+### This runs through the simulations available with matlab - and indicates a gantt chart is a useful daily tool... but what cannot fit in the gantt should be focused on...
+
+## Fraud Detection Bayonet
+
+### This is a thought experiment about fraud
+
+## Game: Re-Porter-Potty
+
+### This is a board game that sheds light on potty reporters
+
+## Clusteral Solidarity Hedge
+
+### This models dignity and esteem in the context of micro hegemony
+
+## Gurila Skej
+
+### This is a daily scheduler: PACBULOC may be used in the time-block section for noting the MANGOs
+
+## Year-Gurila-Scheduler
+
+### This is a monthly scheduler
+
+## CapitalScopeSocial
+
+### This is 3sens accounting
 
 
 
