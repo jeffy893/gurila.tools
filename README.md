@@ -123,59 +123,59 @@ The graph that appears after the simulation takes place is based on artificial c
 
 ## Posterity Clarify
 
-### Queueing up the ideas that may be shared helps to set a filter for what ends up getting published
+* Queueing up the ideas that may be shared helps to set a filter for what ends up getting published
 
 ## Lanchester Law Solution
 
-### This can be used with numerical methods in a computer to simulate conflict
+* This can be used with numerical methods in a computer to simulate conflict
 
 ## Constitution of MANGO
 
-### These are some critical duties which set limitations on communications and behavior for MANGO Diplomacy
+* These are some critical duties which set limitations on communications and behavior for MANGO Diplomacy
 
 ## Phone Deprivation
 
-### This is a solution to a hyperbolic partial differential equation, so as to kick off the mathematics needed to prove the integration of phones into our nervous systems - and implicate Medical Malpractice Precedence - so that idiosyncracy credit may replace the bleed from TRIA
+* This is a solution to a hyperbolic partial differential equation, so as to kick off the mathematics needed to prove the integration of phones into our nervous systems - and implicate Medical Malpractice Precedence - so that idiosyncracy credit may replace the bleed from TRIA
 
 ## Celestial Clockwork
 
-### This is a symbolic integration of 3sens capital into the Lanchester Law
+* This is a symbolic integration of 3sens capital into the Lanchester Law
 
 ## Intention div Negligence
 
-### This reverses the determination of negligence, and indicates that intention should not be determined unless the individual has duties and agreements they are bound by
+* This reverses the determination of negligence, and indicates that intention should not be determined unless the individual has duties and agreements they are bound by
 
 ## Morale Model of War and Love
 
-### This will be integrated with the Lanchester Law as one of the processes that hands off incremental values to the scope/social constant(s)
+* This will be integrated with the Lanchester Law as one of the processes that hands off incremental values to the scope/social constant(s)
 
 ## Resource Allocation Simulation
 
-### This runs through the simulations available with matlab - and indicates a gantt chart is a useful daily tool... but what cannot fit in the gantt should be focused on...
+* This runs through the simulations available with matlab - and indicates a gantt chart is a useful daily tool... but what cannot fit in the gantt should be focused on...
 
 ## Fraud Detection Bayonet
 
-### This is a thought experiment about fraud
+* This is a thought experiment about fraud
 
 ## Game: Re-Porter-Potty
 
-### This is a board game that sheds light on potty reporters
+* This is a board game that sheds light on potty reporters
 
 ## Clusteral Solidarity Hedge
 
-### This models dignity and esteem in the context of micro hegemony
+* This models dignity and esteem in the context of micro hegemony
 
 ## Gurila Skej
 
-### This is a daily scheduler: PACBULOC may be used in the time-block section for noting the MANGOs
+* This is a daily scheduler: PACBULOC may be used in the time-block section for noting the MANGOs
 
 ## Year-Gurila-Scheduler
 
-### This is a monthly scheduler
+* This is a monthly scheduler
 
 ## CapitalScopeSocial
 
-### This is 3sens accounting
+* This is 3sens accounting
 
 
 
