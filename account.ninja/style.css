@@ -102,3 +102,13 @@ td input[type="number"] {
     margin-top: 10px;
     font-weight: bold;
 }
+
+/* Add this to your style.css */
+.secondary-btn {
+    background-color: #7f8c8d; /* A different color */
+    margin-left: 10px; /* Some spacing */
+}
+
+.secondary-btn:hover {
+    background-color: #6c7a7d;
+}

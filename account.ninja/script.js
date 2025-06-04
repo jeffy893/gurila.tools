@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amountToDistributeInput = document.getElementById('amountToDistribute');
     const distributeBtn = document.getElementById('distributeBtn');
     const distributionMessage = document.getElementById('distributionMessage');
+    const downloadCsvBtn = document.getElementById('downloadCsvBtn'); // NEW: Get reference to new button
 
     let accounts = JSON.parse(localStorage.getItem('accountsNinjaDB')) || [];
 
@@ -139,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
             daysRemaining
         });
 
-        // Clear input fields
         accountNameInput.value = '';
         goalAmountInput.value = '';
         priorityInput.value = '';
@@ -158,9 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
         distributionMessage.textContent = '';
 
         let totalDistributedThisRound = 0;
-        const maxIterations = 10; // Safety break for redistribution loop
+        const maxIterations = 10;
         let iterations = 0;
-
         let totalMoneyGivenOverall = 0;
 
         while (totalToDistribute > 0.01 && iterations < maxIterations) {
@@ -175,13 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
             eligibleAccounts.forEach(acc => {
                 const priorityValue = acc.priority;
                 const zenValue = acc.zenWeight;
-                // Add small epsilon to daysRemaining to handle 0 days and give it high urgency
                 const urgencyValue = 1 / (acc.daysRemaining + 0.001);
                 acc.calculatedWeight = (zenValue * urgencyValue) / priorityValue;
                 totalCalculatedWeight += acc.calculatedWeight;
             });
 
-            if (totalCalculatedWeight === 0) { // Avoid division by zero if all weights are zero
+            if (totalCalculatedWeight === 0) {
                  distributionMessage.textContent = `Could not determine weights for distribution. $${totalToDistribute.toFixed(2)} remaining.`;
                 break;
             }
@@ -202,8 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (moneyGivenThisPass < 0.01 && totalToDistribute > 0.01) {
-                 // If very little money was given, but there's still money to distribute,
-                 // it might be due to very small remaining needs or rounding. Break to avoid infinite loops.
                  if (!distributionMessage.textContent) {
                     distributionMessage.textContent = `Distributed $${totalMoneyGivenOverall.toFixed(2)}. $${(parseFloat(amountToDistributeInput.value) - totalMoneyGivenOverall).toFixed(2)} could not be fully distributed due to small remaining needs or rounding.`;
                  }
@@ -213,7 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
             totalToDistribute -= moneyGivenThisPass;
 
             if (moneyGivenThisPass === 0 && totalToDistribute > 0.01) {
-                // If no money was given in a pass, but there's still money, it means no account could take it.
                 if (!distributionMessage.textContent) {
                     distributionMessage.textContent = `Distributed $${totalMoneyGivenOverall.toFixed(2)}. Remaining $${totalToDistribute.toFixed(2)} could not be allocated further.`;
                 }
@@ -228,10 +223,70 @@ document.addEventListener('DOMContentLoaded', () => {
              }
         }
 
-        amountToDistributeInput.value = ''; // Clear distribution input
+        amountToDistributeInput.value = '';
         saveAndRender();
     }
 
+    // NEW: Function to escape CSV data
+    function escapeCsvValue(value) {
+        if (value == null) return ''; // Handle null or undefined by returning an empty string
+        const stringValue = String(value);
+        // If the value contains a comma, double quote, or newline, wrap it in double quotes
+        // and escape any existing double quotes by doubling them.
+        if (stringValue.includes(',') || stringValue.includes('"') || stringValue.includes('\n')) {
+            return `"${stringValue.replace(/"/g, '""')}"`;
+        }
+        return stringValue;
+    }
+
+    // NEW: Function to download data as CSV
+    function downloadCSV() {
+        if (accounts.length === 0) {
+            alert('No accounts to download.');
+            return;
+        }
+
+        const headers = [
+            'Account Name',
+            'Goal Amount ($)',
+            'Current Amount ($)',
+            'Remaining to Goal ($)',
+            'Priority',
+            'Zen Weight (1-3)',
+            'Days Remaining'
+        ];
+
+        let csvContent = headers.join(',') + '\n'; // Add header row
+
+        accounts.forEach(account => {
+            const remainingAmount = Math.max(0, account.goalAmount - account.currentAmount).toFixed(2);
+            const row = [
+                escapeCsvValue(account.name),
+                escapeCsvValue(account.goalAmount.toFixed(2)),
+                escapeCsvValue(account.currentAmount.toFixed(2)),
+                escapeCsvValue(remainingAmount),
+                escapeCsvValue(account.priority),
+                escapeCsvValue(account.zenWeight),
+                escapeCsvValue(account.daysRemaining)
+            ];
+            csvContent += row.join(',') + '\n';
+        });
+
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        if (link.download !== undefined) { // Feature detection
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'account_ninja_export.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url); // Clean up
+        } else {
+            alert('CSV download is not supported by your browser.');
+        }
+    }
 
     function saveAndRender() {
         saveAccounts();
@@ -240,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addItemBtn.addEventListener('click', addAccount);
     distributeBtn.addEventListener('click', distributeFunds);
+    downloadCsvBtn.addEventListener('click', downloadCSV); // NEW: Add event listener for CSV download
 
     // Initial render
     renderAccounts();
