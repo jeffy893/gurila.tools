@@ -1,210 +1,246 @@
 # Gurila.Tools
-No one tool is fit for all jobs
 
-* These tools are helpful for tactics within the disciplines of enterprise, marketing, and culture
+> No one tool is fit for all jobs.
+
+These tools are helpful for tactics within the disciplines of **enterprise**, **marketing**, and **culture**.
+
+---
 
 ## Frameworks
 
-### Frameworks help figure out the who, what, where, when, why, How; and, the level of detail to come in at when modeling views to transition from the AS IS to the TO BE
+Frameworks help figure out the **who, what, where, when, why, How**; and, the level of detail to come in at when modeling views to transition from the **AS IS** to the **TO BE**.
 
+* **La Distinción:** To set a framework for cultural capital.
+* **Marketing:** To set a framework for marketing.
+* **DoD Framework and Data Dictionary:** To pick what view should be used in a military context.
+* **IAF (Integrated Architecture Framework):** To pick what view should be used in an enterprise context.
+* **Zachman Framework:** To pick what view should be used in a general context.
 
-### La Distinción
+---
 
-* To set a framework for cultural capital
+## [Account Ninja](./account.ninja/) 🥷
 
-### Marketing
+Account Ninja is a simple, client-side browser application designed to help you manage a list of financial accounts or goals. It allows you to prioritize these accounts, assign them a "3Zen" weight ([how much sense they make](./CapitalScopeSocial.pdf)), and track urgency by days remaining. You can then distribute a lump sum of money across these accounts based on these factors.
 
-* To set a framework for marketing
+### How to Run
 
-### DoD Framewrok and Data Dictionary
+1.  **Download Files:** Make sure you have `index.html`, `style.css`, and `script.js` in the same folder on your computer. (These files would be generated separately as per the previous request).
+2.  **Open in Browser:** Open the `index.html` file directly in your web browser (e.g., Chrome, Firefox, Edge, Safari). No web server or special tools (like Node.js) are required.
 
-* To pick what view should be used in a military context
+### Features
 
-### IAF
+* **Add Accounts:** Add new financial goals or accounts with:
+    * Account Name
+    * Goal Amount ($)
+    * Priority (1 being the highest, lower numbers are higher priority)
+    * 3Zen Weight (a float number between 1 and 3, representing importance or "sense")
+    * Days Remaining (urgency factor)
+* **Display List:** View all your accounts in a table showing:
+    * Account Name
+    * Goal Amount
+    * Current Amount (editable directly in the table)
+    * Remaining Amount to Reach Goal
+    * Priority (editable)
+    * 3Zen Weight (editable)
+    * Days Remaining (editable)
+* **Edit In-Place:** Modify the `Current Amount`, `Priority`, `3Zen Weight`, and `Days Remaining` for any account directly in the table. Changes are saved automatically.
+* **Delete Accounts:** Remove accounts from your list.
+* **Distribute Funds:**
+    * Enter a total amount of money you wish to distribute.
+    * Click "Distribute." The application will allocate this money across your accounts.
+    * The distribution logic considers:
+        1.  **Need:** Only accounts where `Current Amount` < `Goal Amount` are eligible.
+        2.  **Priority:** Lower priority numbers get higher preference.
+        3.  **3Zen Weight:** Higher 3Zen weights get more preference.
+        4.  **Urgency (Days Remaining):** Fewer days remaining (higher urgency) get more preference.
+        *The formula for an account's weight in the distribution is roughly `(3Zen Weight * Urgency) / Priority`.*
+        *Funds are distributed proportionally based on these calculated weights. The process may iterate to distribute any remainder if accounts reach their goal during allocation.*
+* **Data Persistence:** Your account list and current amounts are saved in your browser's **`localStorage`**. This means the data persists between sessions *on the same browser and computer*.
 
-* To pick what view should be used in an enterprise context
+### Calculation Logic for Distribution
 
-### Zachman
+When you click "Distribute":
+1.  The app identifies accounts that still need funding (Goal > Current).
+2.  For each eligible account, a `calculatedWeight` is determined:
+    ```
+    calculatedWeight = (3ZenWeight * (1 / (daysRemaining + 0.001))) / priority
+    ```
+    *(A small epsilon, 0.001, is added to daysRemaining to prevent division by zero and ensure 0 days has the highest urgency).*
+3.  The total amount to distribute is then divided among eligible accounts based on the proportion of their `calculatedWeight` relative to the sum of all `calculatedWeight`s.
+4.  An account will not receive more than its `goalAmount - currentAmount`.
+5.  The distribution process may run in passes to attempt to allocate the full distribution amount if initial allocations fill up some accounts, freeing up funds for others still in need.
 
-* To pick what view should be used in a general context
+### Important Limitations
 
+* **No True SQLite Database:** This app uses `localStorage`, which is built into your web browser.
+    * Data is stored **locally** in your browser. It is not a separate `.sqlite` file that you can easily move or access with other database tools.
+    * If you clear your browser's cache/data, or use a different browser or computer, your Account Ninja data will not be there.
+* **Client-Side Only:** All logic (calculations, data storage) happens within your web browser. There is no backend server.
+* **Manual Priority Management:** You are responsible for setting and managing the `Priority` numbers. The application uses these numbers as provided; it does not automatically re-sequence them if an item is deleted or if numbers are not unique/sequential (though non-unique priorities will simply share the same priority level in calculations).
+* **Error Handling:** Basic validation is in place, but it's a simple app, not a robust commercial product.
 
+Enjoy managing your accounts like a Ninja! 🥷💰
 
+---
 
 ## Posterity App
 
-- This app begins **resource allocation simulation** and **models of conflict**
+This app begins **resource allocation simulation** and **models of conflict**.
 
-### Posterity is an Android App that simulates the Mating Dances of Bison and Cattle<br>
+Posterity is an Android App that simulates the Mating Dances of Bison and Cattle.
+* To dance with **potency** is to dance like Bison.
+* To take the **path of least resistance** is to dance like Cattle.
 
-- To dance with potency is to dance like Bison
-- To take the path of least resistence is to dance like Cattle
+A Markov Chain incrementally "hands off" bounded constants to a Guerrilla Lanchester Law.
 
-### A Markov Chain incrementally "hands off" bounded constants to a Guerrilla Lanchester Law
-<h4>The attrition factors are set in a way such that Bison are distinct from Cattle - differentiated by their Mating Dance</h4><br>
-The Heat Slider is meant to represent the relative likelihood of a dance<br>
-The Pace Slider could be thought of as the relative pace of the dance floor<br>
-<br>
-The graph that appears after the simulation takes place is based on artificial criteria for:<br>
-<h3>Should the optimum size of each side of the dance be 3, 7, or 12?</h3>
+> The attrition factors are set in a way such that Bison are distinct from Cattle - differentiated by their Mating Dance.
 
-- indicated by the Y Axis
-<h3>Will Bison or Cattle win the conflict within 1.5 hours?</h3>
+* The **Heat Slider** is meant to represent the relative likelihood of a dance.
+* The **Pace Slider** could be thought of as the relative pace of the dance floor.
 
-- indicated by the X Axis
-<h3>Will there be a cross-over between Bison and Cattle?</h3>
+The graph that appears after the simulation takes place is based on artificial criteria for:
 
-- ideal for those aiming to experience an event with longevity and balance
-<br>
-
-
-
+* **Should the optimum size of each side of the dance be 3, 7, or 12?**
+    * Indicated by the Y Axis.
+* **Will Bison or Cattle win the conflict within 1.5 hours?**
+    * Indicated by the X Axis.
+* **Will there be a cross-over between Bison and Cattle?**
+    * Ideal for those aiming to experience an event with longevity and balance.
 
 <img src="https://user-images.githubusercontent.com/54923460/150920476-260fc2cd-37d7-43ba-8bdb-11eb921fe180.PNG"
      width="300" 
      height="700" />
-     
 <img src="https://user-images.githubusercontent.com/54923460/150920472-28c8ebf7-0419-416d-8b17-9b8f95e53c4f.PNG"
      width="300" 
      height="700" />
-     
 <img src="https://user-images.githubusercontent.com/54923460/150920477-0e738f5e-8884-4536-8185-3fd7be8e32d0.PNG"
      width="300" 
      height="700" />
-     
 <img src="https://user-images.githubusercontent.com/54923460/150920479-61b5e18b-96dc-430b-9e98-0a4f64050012.PNG"
      width="300" 
      height="700" />
-     
 <img src="https://user-images.githubusercontent.com/54923460/150920482-577c7cf5-7c11-4bfe-ad30-c77db4473e89.PNG"
      width="300" 
      height="700" />
-	 
-	 
+
+---   
 
 ## Anomaly Detection
 
-### An [event store](https://www.cortext.io/how-it-works) service is needed to queue the anomalies, asynchronously
+> An [event store](https://www.cortext.io/how-it-works) service is needed to queue the anomalies, asynchronously.
 
+* **Pattern Deviation:** Anomalies are based on the pattern from which the anomaly veers.
+* **Stakeholder Impact (The "So What?"):** Forward-filling the stakeholders is helpful to think about this.
+* **Workflow Replication:** Backfill the workflow that could be used to catch the anomaly again.
+* **Conflict Risk:** Synchronizing discussion about the anomalies detected carries the risk of conflict, which can lower morale.
 
-
-* Anomalies are based on the pattern which the anomaly veers from
-* Forward filling the stakeholders is helpful to think about the So What?
-* Backfill the workflow that could be used to catch the anomaly, again
-* Synchronizing discussion about the anomalies detected has the risk of arising conflict which can lower morale
-
-
-
+---
 
 ## Dream Tactics
 
-### This is like flossing the subconscious so that deep cleanings are not required
+> This is like flossing the subconscious so that deep cleanings are not required.
 
-* The metadata is filled out, last
-* The approach is the intitial glimpse
-* The formation are bullet points laying out the key points of the dream
-* The execution is stream of conscious to ultimately lead to the: So What?
+* **Metadata:** Filled out last.
+* **Approach:** The initial glimpse.
+* **Formation:** Bullet points laying out the key points of the dream.
+* **Execution:** Stream of consciousness, ultimately leading to the "So What?".
 
+---
 
 ## MANGO Diplomacy
 
-### Maeutic and Applicable Negotiations, Guarantees, and Opportunities will arise, and you need to write them down
+> **M**aeutic and **A**pplicable **N**egotiations, **G**uarantees, and **O**pportunities will arise, and you need to write them down.
 
-* PACBULOC
-     - Parties
-     - Assumptions
-     - Conditions
-     - Boundaries
-     - Uncertainties
-     - Liabilities
-     - Objectives
-     - (Opportunity) Costs
+* **PACBULOC:**
+    * **P**arties
+    * **A**ssumptions
+    * **C**onditions
+    * **B**oundaries
+    * **U**ncertainties
+    * **L**iabilities
+    * **O**bjectives
+    * **(Opportunity) C**osts
 
+---
 
 ## Posterity Clarify
 
-* Queueing up the ideas that may be shared helps to set a filter for what ends up getting published
+Queueing up ideas that may be shared helps to set a filter for what ultimately gets published.
+
+---
 
 ## Lanchester Law Solution
 
-* This can be used with numerical methods in a computer to simulate conflict
+This can be used with numerical methods in a computer to simulate conflict.
+
+---
 
 ## Constitution of MANGO
 
-* These are some critical duties which set limitations on communications and behavior for MANGO Diplomacy
+These are some critical duties which set limitations on communications and behavior for MANGO Diplomacy.
+
+---
 
 ## Phone Deprivation
 
-* This is a solution to a hyperbolic partial differential equation, so as to kick off the mathematics needed to prove the integration of phones into our nervous systems - and implicate Medical Malpractice Precedence - so that idiosyncracy credit may replace the bleed from TRIA
+This is a solution to a hyperbolic partial differential equation, intended to kick off the mathematics needed to prove the integration of phones into our nervous systems. This could implicate Medical Malpractice Precedence, so that idiosyncrasy credit may replace the bleed from TRIA (Terrorism Risk Insurance Act).
+
+---
 
 ## Celestial Clockwork
 
-* This is a symbolic integration of 3sens capital into the Lanchester Law
+This is a symbolic integration of "3sens" capital into the Lanchester Law.
+
+---
 
 ## Intention div Negligence
 
-* This reverses the determination of negligence, and indicates that intention should not be determined unless the individual has duties and agreements they are bound by
+This reverses the determination of negligence and indicates that intention should not be determined unless the individual has duties and agreements they are bound by.
+
+---
 
 ## Morale Model of War and Love
 
-* This will be integrated with the Lanchester Law as one of the processes that hands off incremental values to the scope/social constant(s)
+This will be integrated with the Lanchester Law as one of the processes that hands off incremental values to the scope/social constant(s).
+
+---
 
 ## Resource Allocation Simulation
 
-* This runs through the simulations available with matlab - and indicates a gantt chart is a useful daily tool... but what cannot fit in the gantt should be focused on...
+> This runs through the simulations available with MATLAB and indicates a Gantt chart is a useful daily tool. The focus, however, should be on what *cannot* fit in the Gantt.
+
+---
 
 ## Fraud Detection Bayonet
 
-* This is a thought experiment about fraud
+This is a thought experiment about fraud.
+
+---
 
 ## Game: Re-Porter-Potty
 
-* This is a board game that sheds light on potty reporters
+This is a board game that sheds light on "potty reporters."
+
+---
 
 ## Clusteral Solidarity Hedge
 
-* This models dignity and esteem in the context of micro hegemony
+This models dignity and esteem in the context of micro-hegemony.
+
+---
 
 ## Gurila Skej
 
-* This is a daily scheduler: PACBULOC may be used in the time-block section for noting the MANGOs
+This is a daily scheduler. **PACBULOC** (from MANGO Diplomacy) may be used in the time-block section for noting the MANGOs.
+
+---
 
 ## Year-Gurila-Scheduler
 
-* This is a monthly scheduler
+This is a monthly scheduler.
+
+---
 
 ## CapitalScopeSocial
 
-* This is 3sens accounting
-
-
-
-# Context
-
-## AI summary of Dean Barry's conclusion in: Insurance as Governance
-
-### I am not smart enough to write the following, but am to recognize it... it'll take years for me to understand, if ever - JFR
-
-In modern societies, insurance plays a crucial role in governance due to the emphasis on minimal state intervention and reliance on local risk knowledge. The state, with its territorial, national, and sovereign dimensions, has undergone a process of minimalization, collaborating with private sector institutions. Private corporations exert influence by expanding territorial jurisdiction, managing populations based on consumption preferences, and implementing risk management regimes. The state becomes 'governmentalized' as it partners with these private institutions, shaping and being shaped by them. In this context, individual choice is a tool for governing populations, framed within the discourse of corporate and consumer rights but accompanied by responsibilities in liberal risk regimes. Those deemed irresponsible may face exclusion from participation in the concerned institution.
-
-Liberal risk regimes, based on six key assumptions, advocate for a minimal state, relying on individuals' self-restraint, willingness to share, and self-governance. The emphasis is on a 'free market' providing security and prosperity through market relations, with a focus on knowledge for risk taking and management. In this regime, individuals are expected to be informed, self-sufficient consumers responsible for their own political economy. Inequality is framed as a matter of choice within a liberal risk regime, and the state itself is considered a risk requiring perpetual reform.
-
-The insurance industry exemplifies the fragmentation of the state into liberal risk regimes, filling the void left by the downsizing of the state. While sharing goals with the state, such as pooling risks to provide security and solidarity, the industry also reflects the liberal preference for individual choice and responsibility. It operates within legal frameworks, utilizes surveillance and audit systems, relies on expert decision-making, and establishes its policing apparatus.
-
-The insurance industry and the state are loosely coupled, with the industry inviting state regulation in specific areas. The state, in turn, benefits from the industry by offloading compensation responsibilities, generating employment, tax revenues, and capital investments in government bonds. The state collaborates with the insurance industry at the ideological level, actively promoting individual responsibility for risk as part of its efforts to minimize its role, including an attack on the welfare state.
-
-In the context of a minimal state and liberal risk regimes, the state shifts its role to promoting individual responsibility for risk management. The focus is on moral risk transfers, with the individual responsible for controlling their risk environment through market-based security products, including insurance. Despite insurers desiring hard evidence for risk assessment, inherent knowledge limitations persist, particularly in dealing with natural disasters and medical uncertainties.
-
-Facing scientific and technical knowledge gaps, insurers turn to moral risk, encompassing ethical evaluations in actuarial practices. The concept of moral risk extends beyond the traditional "moral hazard," involving not only the insured but also incentivizing risky behavior by other parties in the insurance relationship. Moral risks arise in the interactive dynamics of the insurance relationship, influencing behavior with potential immoral consequences.
-
-Moral risks are evident on both sides of the insurance relationship, involving insured parties and insurance companies. Factors such as strained cultural relationships, economic stakes, and inadequate policing contribute to moral risks. The business of insurance involves complex negotiations among state legislators, regulators, industry associations, and global/local insurance companies, impacting decisions related to loss ratio security, corporate governance, and market conduct. These complexities challenge the simplistic assumptions of liberal risk regimes, highlighting the intricate interplay between state, insurance industry, and political economies.
-
-Insurance underwriting involves uncertainties and is akin to gambling, with consumers being integral to the product. Unknown risks emerge due to human dynamics within risk pools, and advancements in science and technology may unveil unforeseen liabilities. Financial risk exposure, especially in life insurance, can lead to moral risks and significant consequences for both insurers and policyholders.
-
-Insurers aim for profits by managing loss ratios, but the quest for better investment returns can lead to irresponsible practices. Corporate limited liability rules and compensation schemes cushion insurers from investment risks, potentially encouraging riskier behavior. The business of reinsurance introduces moral risk judgments, and scandals involving deception, known as 'passing the trash,' are not uncommon.
-
-Compulsory insurance on insurance and compensation schemes are mechanisms to address solvency risks, but they may pass on costs to policyholders. The highly competitive insurance industry faces challenges such as overcapacity, entry of major banks, technological changes, and self-insurance trends. Governance mechanisms, including state regulation, industry associations, actuaries, and insurance on insurers' practices, navigate these challenges.
-
-State regulators and insurers collaboratively govern each other in liberal risk regimes. State regulation focuses on public confidence, protecting policyholders, and fostering corporate governance improvement. Insurance industry associations coordinate member activities, shaping practices and influencing legislation, but dominance by a few powerful companies can lead to challenges. Actuaries contribute to corporate governance by establishing quantitative criteria, negotiating political economies, and interpreting data creatively.
-
-In summary, the insurance industry, operating in a competitive environment, grapples with uncertainties, moral risks, and governance challenges. The collaboration and competition between state regulators, industry associations, and insurers shape the landscape of insurance practices, emphasizing the complexity and interdependence of these entities in navigating risks and uncertainties.
+This is "3Zen" accounting.
