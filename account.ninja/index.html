@@ -35,8 +35,10 @@
 
         <div class="distribution-section">
             <h2>Distribute Funds</h2>
-            <input type="number" id="amountToDistribute" placeholder="Amount to Distribute ($)">
-            <button id="distributeBtn">Distribute</button>
+            <input type="number" id="amountToDistribute" placeholder="Amount per Cycle ($)">
+            <label for="distributionCyclesInput" style="margin-left: 10px;">Cycles:</label>
+            <input type="number" id="distributionCyclesInput" value="1" min="1" style="width: 70px;">
+            <button id="distributeBtn" style="margin-left: 10px;">Distribute</button>
             <p id="distributionMessage"></p>
         </div>
 
