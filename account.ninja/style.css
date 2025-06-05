@@ -112,3 +112,72 @@ td input[type="number"] {
 .secondary-btn:hover {
     background-color: #6c7a7d;
 }
+
+/* Add these to your style.css */
+
+/* Styles for drag-and-drop */
+tr.dragging {
+    opacity: 0.5;
+    background: #f0f0f0;
+}
+
+tr.drag-over {
+    border-top: 2px dashed #3498db;
+}
+
+/* Style for the new import/export section */
+.import-export-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e8f6f3; /* A slightly different background */
+    border-radius: 5px;
+    display: flex; /* For side-by-side layout of import/export if desired */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.import-export-section h2 {
+    margin-top: 0; /* Adjust heading margin within this section */
+    width: 100%; /* Make heading span full width if on its own line */
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.import-controls, .export-controls {
+    flex-basis: 48%; /* Adjust basis for spacing */
+}
+
+.import-controls label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.import-controls input[type="file"] {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#importMessage {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.secondary-btn { /* You might already have this from previous CSV download */
+    background-color: #7f8c8d;
+    color: white;
+    margin-left: 0; /* Remove margin-left if it was specific to one button */
+    margin-top: 5px; /* Add some top margin for buttons in this section */
+}
+
+.secondary-btn:hover {
+    background-color: #6c7a7d;
+}
+
+/* Adjusting the input section if priority is less prominent now */
+#priority {
+    /* You might choose to hide it if it's purely auto-set, or leave as is */
+    /* display: none; */
+}
