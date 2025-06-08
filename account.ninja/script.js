@@ -3,46 +3,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const addItemBtn = document.getElementById('addItemBtn');
     const accountNameInput = document.getElementById('accountName');
     const goalAmountInput = document.getElementById('goalAmount');
-    const priorityInput = document.getElementById('priority'); // Still exists, but largely overridden by drag-and-drop
+    const priorityInput = document.getElementById('priority');
     const zenWeightInput = document.getElementById('zenWeight');
     const daysRemainingInput = document.getElementById('daysRemaining');
-    
     const accountsTableBody = document.getElementById('accountsTableBody');
-    
     const amountToDistributeInput = document.getElementById('amountToDistribute');
-    const distributionCyclesInput = document.getElementById('distributionCyclesInput'); // For multi-cycle
+    const distributionCyclesInput = document.getElementById('distributionCyclesInput');
     const distributeBtn = document.getElementById('distributeBtn');
     const distributionMessage = document.getElementById('distributionMessage');
-    
     const downloadCsvBtn = document.getElementById('downloadCsvBtn');
+    const downloadTimelineBtn = document.getElementById('downloadTimelineBtn');
     const csvFileInput = document.getElementById('csvFileInput');
     const importCsvBtn = document.getElementById('importCsvBtn');
     const importMessage = document.getElementById('importMessage');
 
     // --- 2. Global-like variables ---
     let accounts = JSON.parse(localStorage.getItem('accountsNinjaDB')) || [];
-    let draggedItem = null; // For drag-and-drop: the <tr> element
-    let draggedItemAccountId = null; // For drag-and-drop: the ID of the account in the dragged <tr>
+    let draggedItem = null;
+    let draggedItemAccountId = null;
 
-    // --- 3. Core Data Functions ---
+    // --- 3. Core Data & Utility Functions ---
     function saveAccounts() {
         localStorage.setItem('accountsNinjaDB', JSON.stringify(accounts));
     }
 
     function updatePriorities() {
-        // Ensure priorities are sequential (1-based) based on current array order
         accounts.forEach((account, index) => {
             account.priority = index + 1;
         });
     }
 
+    function saveAndRender() {
+        saveAccounts();
+        renderAccounts();
+    }
+
     // --- 4. Rendering Function ---
     function renderAccounts() {
-        accountsTableBody.innerHTML = ''; // Clear existing rows
+        accountsTableBody.innerHTML = '';
         if (accounts.length === 0) {
             const row = accountsTableBody.insertRow();
             const cell = row.insertCell();
-            cell.colSpan = 8; // Adjusted colspan if needed
+            cell.colSpan = 8;
             cell.textContent = 'No accounts yet. Add some!';
             cell.style.textAlign = 'center';
             return;
@@ -50,9 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         accounts.forEach((account) => {
             const row = accountsTableBody.insertRow();
-            row.dataset.accountId = account.id; // For identifying rows during drag-drop
-
-            // Make row draggable
+            row.dataset.accountId = account.id;
             row.draggable = true;
             row.addEventListener('dragstart', handleDragStart);
             row.addEventListener('dragover', handleDragOver);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             row.insertCell().textContent = account.name;
             row.insertCell().textContent = `$${account.goalAmount.toFixed(2)}`;
-
+            
             const currentAmountCell = row.insertCell();
             const currentAmountInput = document.createElement('input');
             currentAmountInput.type = 'number';
@@ -73,19 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const newValue = parseFloat(currentAmountInput.value);
                 if (!isNaN(newValue) && newValue >= 0) {
                     account.currentAmount = newValue;
-                    // No need to call updatePriorities here, just save and re-render
                     saveAndRender(); 
                 } else {
-                    currentAmountInput.value = account.currentAmount.toFixed(2); // revert if invalid
+                    currentAmountInput.value = account.currentAmount.toFixed(2);
                 }
             });
             currentAmountCell.appendChild(currentAmountInput);
 
             row.insertCell().textContent = `$${Math.max(0, account.goalAmount - account.currentAmount).toFixed(2)}`;
-            
-            // Display auto-managed priority
-            const priorityCellDisplay = row.insertCell();
-            priorityCellDisplay.textContent = account.priority;
+            row.insertCell().textContent = account.priority;
 
             const zenCell = row.insertCell();
             const zenValueInput = document.createElement('input');
@@ -127,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             deleteBtn.classList.add('delete-btn');
             deleteBtn.addEventListener('click', () => {
                 accounts = accounts.filter(acc => acc.id !== account.id);
-                updatePriorities(); // Re-calculate priorities after deletion
+                updatePriorities();
                 saveAndRender();
             });
             actionsCell.appendChild(deleteBtn);
@@ -136,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 5. Feature Functions ---
 
-    // Add Account
     function addAccount() {
         const name = accountNameInput.value.trim();
         const goalAmount = parseFloat(goalAmountInput.value);
@@ -153,122 +148,93 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         accounts.push({
-            id: Date.now() + Math.random(), // More robust unique ID
+            id: Date.now() + Math.random(),
             name,
             goalAmount,
             currentAmount: 0,
-            priority: 0, // Placeholder, will be set by updatePriorities
+            priority: 0,
             zenWeight,
             daysRemaining
         });
-        updatePriorities(); // Update all priorities after adding a new account
-
-        // Clear input fields
-        accountNameInput.value = '';
-        goalAmountInput.value = '';
-        priorityInput.value = ''; // This input field is less relevant now
-        zenWeightInput.value = '';
-        daysRemainingInput.value = '';
-
+        updatePriorities();
+        [accountNameInput, goalAmountInput, priorityInput, zenWeightInput, daysRemainingInput].forEach(input => input.value = '');
         saveAndRender();
     }
 
-    // Distribute Funds (Latest version with specific summary message)
+    function runSingleDistributionCycle(accountsToProcess, amountForCycle, isTimelineSimulation = false) {
+        let moneyGivenInThisCycle = 0;
+        const maxIterations = 10;
+        let iterations = 0;
+        let currentAmountToDistribute = amountForCycle;
+
+        while (currentAmountToDistribute > 0.01 && iterations < maxIterations) {
+            iterations++;
+            let moneyGivenThisPass = 0;
+            let eligibleAccounts = accountsToProcess.filter(acc => {
+                const needsFunds = acc.currentAmount < acc.goalAmount;
+                if (isTimelineSimulation) {
+                    return needsFunds && acc.daysRemaining > 0;
+                }
+                return needsFunds;
+            });
+            
+            if (eligibleAccounts.length === 0) break;
+
+            let totalCalculatedWeight = 0;
+            eligibleAccounts.forEach(acc => {
+                acc.calculatedWeight = (acc.zenWeight * (1 / (acc.daysRemaining + 0.001))) / acc.priority;
+                totalCalculatedWeight += acc.calculatedWeight;
+            });
+
+            if (totalCalculatedWeight === 0) break;
+
+            for (const acc of eligibleAccounts) {
+                const needed = acc.goalAmount - acc.currentAmount;
+                if (needed <= 0) continue;
+                const proportionalShare = (acc.calculatedWeight / totalCalculatedWeight) * currentAmountToDistribute;
+                const amountToGive = Math.min(proportionalShare, needed);
+                if (amountToGive > 0.009) {
+                    acc.currentAmount += amountToGive;
+                    moneyGivenThisPass += amountToGive;
+                }
+            }
+            
+            if (moneyGivenThisPass < 0.01) break;
+            currentAmountToDistribute -= moneyGivenThisPass;
+            moneyGivenInThisCycle += moneyGivenThisPass;
+        }
+        return moneyGivenInThisCycle;
+    }
+
     function distributeFunds() {
         const amountPerCycle = parseFloat(amountToDistributeInput.value);
         const numCyclesRequested = parseInt(distributionCyclesInput.value) || 1;
-
-        if (isNaN(amountPerCycle) || amountPerCycle <= 0) {
-            distributionMessage.textContent = 'Please enter a valid amount per cycle.';
-            distributionMessage.style.color = 'red';
-            return;
-        }
-        if (numCyclesRequested < 1) {
-            distributionMessage.textContent = 'Distribution cycles must be 1 or more.';
+        if (isNaN(amountPerCycle) || amountPerCycle <= 0 || numCyclesRequested < 1) {
+            distributionMessage.textContent = 'Please enter a valid Amount per Cycle and at least 1 Cycle.';
             distributionMessage.style.color = 'red';
             return;
         }
 
         distributionMessage.textContent = '';
-        distributionMessage.style.color = 'black';
-        let grandTotalDistributed = 0; 
+        let grandTotalDistributed = 0;
         let cycleReport = [];
         let actualCyclesProcessed = 0;
 
-        for (let currentCycleNumber = 1; currentCycleNumber <= numCyclesRequested; currentCycleNumber++) {
-            actualCyclesProcessed = currentCycleNumber;
-            let totalToDistributeThisCycle = amountPerCycle;
-            let moneyGivenInThisCycle = 0;
-            const maxIterationsPerPass = 10;
-            let iterationsThisPass = 0;
-
-            const anyAccountNeedsFunding = accounts.some(acc => acc.currentAmount < acc.goalAmount);
-            if (!anyAccountNeedsFunding) {
-                cycleReport.push(`Cycle ${currentCycleNumber}: All accounts were already full. No distribution attempted.`);
-                if (currentCycleNumber < numCyclesRequested) {
-                    cycleReport.push(`--- Stopping further cycles as all accounts are funded. ---`);
-                }
-                break;
-            }
-
-            while (totalToDistributeThisCycle > 0.01 && iterationsThisPass < maxIterationsPerPass) {
-                iterationsThisPass++;
-                let moneyGivenThisPass = 0;
-                let eligibleAccountsInLoop = accounts.filter(acc => acc.currentAmount < acc.goalAmount);
-                
-                if (eligibleAccountsInLoop.length === 0) {
-                    break;
-                }
-
-                let totalCalculatedWeight = 0;
-                eligibleAccountsInLoop.forEach(acc => {
-                    const priorityValue = acc.priority;
-                    const zenValue = acc.zenWeight;
-                    const urgencyValue = 1 / (acc.daysRemaining + 0.001);
-                    acc.calculatedWeight = (zenValue * urgencyValue) / priorityValue;
-                    totalCalculatedWeight += acc.calculatedWeight;
-                });
-
-                if (totalCalculatedWeight === 0) {
-                    break;
-                }
-
-                for (const acc of eligibleAccountsInLoop) {
-                    const needed = acc.goalAmount - acc.currentAmount;
-                    if (needed <= 0) continue;
-                    const proportionalShare = (acc.calculatedWeight / totalCalculatedWeight) * totalToDistributeThisCycle;
-                    const amountToGive = Math.min(proportionalShare, needed);
-                    if (amountToGive > 0.009) {
-                        acc.currentAmount += amountToGive;
-                        moneyGivenThisPass += amountToGive;
-                    }
-                }
-                
-                totalToDistributeThisCycle -= moneyGivenThisPass;
-                moneyGivenInThisCycle += moneyGivenThisPass;
-
-                if (moneyGivenThisPass < 0.01 && totalToDistributeThisCycle > 0.01) {
-                    break;
-                }
-                if (moneyGivenThisPass === 0 && totalToDistributeThisCycle > 0.01) {
-                    break;
-                }
-            }
-
+        for (let cycle = 1; cycle <= numCyclesRequested; cycle++) {
+            actualCyclesProcessed = cycle;
+            const moneyGivenInThisCycle = runSingleDistributionCycle(accounts, amountPerCycle, false);
             grandTotalDistributed += moneyGivenInThisCycle;
-            let cycleMessage = `Cycle ${actualCyclesProcessed}: Actually distributed $${moneyGivenInThisCycle.toFixed(2)}.`;
-            if (totalToDistributeThisCycle > 0.01 && moneyGivenInThisCycle < amountPerCycle) {
-                cycleMessage += ` ($${totalToDistributeThisCycle.toFixed(2)} of this cycle's $${amountPerCycle.toFixed(2)} amount remained undistributed).`;
-            }
-            cycleReport.push(cycleMessage);
             
-            if (moneyGivenInThisCycle < 0.01 && currentCycleNumber < numCyclesRequested) {
-                const stillNeedsFundingAfterCycle = accounts.some(acc => acc.currentAmount < acc.goalAmount);
-                if (stillNeedsFundingAfterCycle) {
-                    cycleReport.push(`--- Cycle ${actualCyclesProcessed} distributed very little. Stopping further cycles as limited progress is expected. ---`);
+            let cycleMessage = `Cycle ${cycle}: Actually distributed $${moneyGivenInThisCycle.toFixed(2)}.`;
+            cycleReport.push(cycleMessage);
+
+            if (moneyGivenInThisCycle < amountPerCycle) {
+                const anyAccountNeedsFunding = accounts.some(acc => acc.currentAmount < acc.goalAmount);
+                if (!anyAccountNeedsFunding) {
+                    cycleReport.push(`--- All accounts appear to be full. Stopping further cycles. ---`);
                     break;
-                } else if (!stillNeedsFundingAfterCycle) {
-                    cycleReport.push(`--- All accounts appear to be full after cycle ${actualCyclesProcessed}. Stopping further cycles. ---`);
+                } else if (moneyGivenInThisCycle < 0.01) {
+                    cycleReport.push(`--- Cycle distributed very little. Stopping further cycles. ---`);
                     break;
                 }
             }
@@ -287,37 +253,72 @@ document.addEventListener('DOMContentLoaded', () => {
             `--- Cycle Details ---<br/>` + 
             cycleReport.join('<br/>');
         
-        // amountToDistributeInput.value = '';
         saveAndRender();
     }
 
-    // CSV Download
-    function downloadCSV() {
-        if (accounts.length === 0) {
-            alert('No accounts to download.');
+    // UPDATED: generateTimelineCSV now includes the initial state (Cycle 0)
+    function generateTimelineCSV() {
+        const amountPerCycle = parseFloat(amountToDistributeInput.value);
+        const numCyclesToSimulate = parseInt(distributionCyclesInput.value) || 1;
+        if (isNaN(amountPerCycle) || amountPerCycle <= 0 || numCyclesToSimulate < 1) {
+            alert('Please enter a valid "Amount per Cycle" and "Cycles" to run the simulation.');
             return;
         }
-        const headers = ['Account Name', 'Goal Amount ($)', 'Current Amount ($)', 'Remaining to Goal ($)', 'Priority', 'Zen Weight (1-3)', 'Days Remaining'];
-        let csvContent = headers.join(',') + '\n';
-        accounts.forEach(account => {
-            const remainingAmount = Math.max(0, account.goalAmount - account.currentAmount).toFixed(2);
+
+        const simAccounts = JSON.parse(JSON.stringify(accounts));
+        
+        const headers = ['Cycle', 'Account Name', 'Goal Amount ($)', 'Current Amount ($)', 'Remaining to Goal ($)', 'Priority', 'Zen Weight (1-3)', 'Days Remaining'];
+        const csvRows = [headers];
+
+        // NEW: Add the initial state of accounts as Cycle 0
+        simAccounts.forEach(acc => {
+            const remaining = Math.max(0, acc.goalAmount - acc.currentAmount);
             const row = [
-                escapeCsvValue(account.name),
-                escapeCsvValue(account.goalAmount.toFixed(2)),
-                escapeCsvValue(account.currentAmount.toFixed(2)),
-                escapeCsvValue(remainingAmount),
-                escapeCsvValue(account.priority),
-                escapeCsvValue(account.zenWeight),
-                escapeCsvValue(account.daysRemaining)
+                0, // Cycle 0 represents the initial state before simulation
+                acc.name,
+                acc.goalAmount.toFixed(2),
+                acc.currentAmount.toFixed(2),
+                remaining.toFixed(2),
+                acc.priority,
+                acc.zenWeight,
+                acc.daysRemaining
             ];
-            csvContent += row.join(',') + '\n';
+            csvRows.push(row);
         });
+
+        // Main simulation loop starts from Cycle 1
+        for (let cycle = 1; cycle <= numCyclesToSimulate; cycle++) {
+            runSingleDistributionCycle(simAccounts, amountPerCycle, true);
+
+            simAccounts.forEach(acc => {
+                acc.daysRemaining = Math.max(0, acc.daysRemaining - 30);
+            });
+
+            simAccounts.forEach(acc => {
+                const remaining = Math.max(0, acc.goalAmount - acc.currentAmount);
+                const row = [cycle, acc.name, acc.goalAmount.toFixed(2), acc.currentAmount.toFixed(2), remaining.toFixed(2), acc.priority, acc.zenWeight, acc.daysRemaining];
+                csvRows.push(row);
+            });
+
+            const allFunded = simAccounts.every(acc => acc.currentAmount >= acc.goalAmount);
+            const allOutOfTime = simAccounts.every(acc => acc.daysRemaining <= 0 || acc.currentAmount >= acc.goalAmount);
+            if (allFunded || allOutOfTime) {
+                break;
+            }
+        }
+
+        let csvContent = csvRows.map(row => row.map(escapeCsvValue).join(',')).join('\n');
+        downloadCsvContent(csvContent, 'account_ninja_timeline.csv');
+    }
+
+    // --- 6. Helper & Existing Feature Functions ---
+    function downloadCsvContent(csvContent, fileName) {
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
         const link = document.createElement('a');
         if (link.download !== undefined) {
             const url = URL.createObjectURL(blob);
             link.setAttribute('href', url);
-            link.setAttribute('download', 'account_ninja_export.csv');
+            link.setAttribute('download', fileName);
             link.style.visibility = 'hidden';
             document.body.appendChild(link);
             link.click();
@@ -328,17 +329,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // CSV Import
+    function downloadCSV() {
+        if (accounts.length === 0) {
+            alert('No accounts to download.');
+            return;
+        }
+        let csvContent = accounts.map(account => [
+            escapeCsvValue(account.name),
+            escapeCsvValue(account.goalAmount.toFixed(2)),
+            escapeCsvValue(account.currentAmount.toFixed(2)),
+            escapeCsvValue(Math.max(0, account.goalAmount - account.currentAmount).toFixed(2)),
+            escapeCsvValue(account.priority),
+            escapeCsvValue(account.zenWeight),
+            escapeCsvValue(account.daysRemaining)
+        ]);
+        const headers = ['Account Name', 'Goal Amount ($)', 'Current Amount ($)', 'Remaining to Goal ($)', 'Priority', 'Zen Weight (1-3)', 'Days Remaining'];
+        csvContent.unshift(headers);
+        downloadCsvContent(csvContent.map(row => row.join(',')).join('\n'), 'account_ninja_snapshot.csv');
+    }
+
     function handleImportCSV() {
         const file = csvFileInput.files[0];
         if (!file) {
-            importMessage.textContent = 'Please select a CSV file to import.';
-            importMessage.style.color = 'red';
-            return;
+            importMessage.textContent = 'Please select a CSV file.'; return;
         }
         importMessage.textContent = 'Processing...';
-        importMessage.style.color = 'black';
-
         const reader = new FileReader();
         reader.onload = function(event) {
             const csvData = event.target.result;
@@ -346,173 +361,99 @@ document.addEventListener('DOMContentLoaded', () => {
             let errors = [];
             let importedCount = 0;
             const lines = csvData.split(/\r\n|\n/);
-            const startIndex = lines[0].toLowerCase().includes('account name') ? 1 : 0; // Basic header detection
-
+            const startIndex = lines[0].toLowerCase().includes('account name') ? 1 : 0;
             for (let i = startIndex; i < lines.length; i++) {
                 const line = lines[i].trim();
                 if (!line) continue;
                 const values = parseCsvRowRobust(line);
-
-                // Expected relevant columns: Name, Goal, Current, Zen, Days
-                // Assuming fixed order for simplicity, ignoring extra columns
-                if (values.length < 5) { 
-                    errors.push(`Row ${i + 1}: Not enough columns (found ${values.length}, expected at least 5: Name, Goal, Current, Zen, Days).`);
-                    continue;
+                if (values.length < 5) {
+                    errors.push(`Row ${i + 1}: Not enough columns.`); continue;
                 }
-                
                 try {
-                    // Mapping based on a common export order: Name, Goal, Current, (skip remaining), (skip priority), Zen, Days
-                    // For import, let's be more direct: Name, Goal, Current, Zen, Days
+                    let zenWeight, daysRemaining;
+                    if (values.length >= 7) {
+                        zenWeight = parseFloat(values[5]);
+                        daysRemaining = parseInt(values[6]);
+                    } else if (values.length >= 5) {
+                         zenWeight = parseFloat(values[3]);
+                         daysRemaining = parseInt(values[4]);
+                    } else { throw new Error("Not enough columns for Zen and Days."); }
+
                     const name = values[0];
                     const goalAmount = parseFloat(values[1]);
                     const currentAmount = parseFloat(values[2]);
-                    // CSV might have 7 columns from export: Name, Goal, Current, Remaining, Priority, Zen, Days
-                    // If so, Zen is values[5], Days is values[6]
-                    // If user provides simpler: Name, Goal, Current, Zen, Days, then Zen=values[3], Days=values[4]
-                    let zenWeight, daysRemaining;
-                    if (values.length >= 7) { // Assuming full export format
-                        zenWeight = parseFloat(values[5]);
-                        daysRemaining = parseInt(values[6]);
-                    } else if (values.length >= 5) { // Assuming Name, Goal, Current, Zen, Days
-                         zenWeight = parseFloat(values[3]);
-                         daysRemaining = parseInt(values[4]);
-                    } else {
-                        throw new Error("Not enough columns for Zen and Days.");
-                    }
-
-
                     if (!name) throw new Error("Account name is missing.");
                     if (isNaN(goalAmount) || goalAmount <= 0) throw new Error("Invalid Goal Amount.");
                     if (isNaN(currentAmount) || currentAmount < 0) throw new Error("Invalid Current Amount.");
                     if (isNaN(zenWeight) || zenWeight < 1 || zenWeight > 3) throw new Error("Invalid Zen Weight (must be 1-3).");
                     if (isNaN(daysRemaining) || daysRemaining < 0) throw new Error("Invalid Days Remaining.");
-                    
                     newAccounts.push({
-                        id: Date.now() + i + Math.random(),
-                        name: name,
-                        goalAmount: goalAmount,
-                        currentAmount: currentAmount,
-                        priority: 0, 
-                        zenWeight: zenWeight,
-                        daysRemaining: daysRemaining
+                        id: Date.now() + i + Math.random(), name, goalAmount, currentAmount, priority: 0, zenWeight, daysRemaining
                     });
                     importedCount++;
                 } catch (e) {
-                    errors.push(`Row ${i + 1} ("${values[0] || 'Unknown Name'}"): ${e.message}`);
+                    errors.push(`Row ${i + 1} ("${values[0] || ''}"): ${e.message}`);
                 }
             }
-
             if (newAccounts.length > 0) {
-                accounts = newAccounts;
-                updatePriorities();
-                saveAndRender();
-                importMessage.textContent = `Successfully imported ${importedCount} accounts. Existing accounts overwritten.`;
-                importMessage.style.color = 'green';
+                accounts = newAccounts; updatePriorities(); saveAndRender();
+                importMessage.textContent = `Successfully imported ${importedCount} accounts.`; importMessage.style.color = 'green';
             } else if (errors.length === 0 && importedCount === 0) {
-                importMessage.textContent = 'No valid accounts found in the CSV to import.';
-                importMessage.style.color = 'orange';
+                importMessage.textContent = 'No valid accounts found in CSV.'; importMessage.style.color = 'orange';
             }
-
             if (errors.length > 0) {
-                const existingMsg = importMessage.textContent.startsWith('Successfully') ? importMessage.textContent + '<br/>' : '';
+                const existingMsg = importMessage.textContent.startsWith('Success') ? importMessage.textContent + '<br/>' : '';
                 importMessage.innerHTML = `${existingMsg}<strong>Import Errors:</strong><br/>${errors.slice(0,5).join('<br/>')}`;
                 if (errors.length > 5) importMessage.innerHTML += `<br/>And ${errors.length - 5} more errors...`;
-                importMessage.style.color = newAccounts.length > 0 ? 'orange' : 'red';
-                console.error("CSV Import Errors:", errors);
+                importMessage.style.color = newAccounts.length > 0 ? 'orange' : 'red'; console.error("CSV Errors:", errors);
             }
             csvFileInput.value = '';
         };
-        reader.onerror = function() {
-            importMessage.textContent = 'Failed to read the file.';
-            importMessage.style.color = 'red';
-            csvFileInput.value = '';
-        };
+        reader.onerror = function() { importMessage.textContent = 'Failed to read file.'; importMessage.style.color = 'red'; csvFileInput.value = ''; };
         reader.readAsText(file);
     }
-
-    // Drag and Drop Handlers
+    
     function handleDragStart(e) {
-        draggedItem = e.target; // The <tr> element
+        draggedItem = e.target;
         draggedItemAccountId = draggedItem.dataset.accountId;
         e.dataTransfer.effectAllowed = 'move';
-        e.dataTransfer.setData('text/plain', draggedItemAccountId); // Necessary for Firefox
-        setTimeout(() => {
-            if (draggedItem) draggedItem.classList.add('dragging');
-        }, 0);
+        e.dataTransfer.setData('text/plain', draggedItemAccountId);
+        setTimeout(() => { if (draggedItem) draggedItem.classList.add('dragging'); }, 0);
     }
-
     function handleDragOver(e) {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = 'move';
+        e.preventDefault(); e.dataTransfer.dropEffect = 'move';
         const targetRow = e.target.closest('tr');
         if (targetRow && targetRow !== draggedItem && targetRow.dataset.accountId) {
             document.querySelectorAll('#accountsTableBody tr.drag-over').forEach(row => row.classList.remove('drag-over'));
             targetRow.classList.add('drag-over');
         }
     }
-
-    function handleDragLeave(e) {
-        const targetRow = e.target.closest('tr');
-        if (targetRow) {
-            targetRow.classList.remove('drag-over');
-        }
-    }
-
+    function handleDragLeave(e) { e.target.closest('tr')?.classList.remove('drag-over'); }
     function handleDrop(e) {
         e.preventDefault();
         const targetRow = e.target.closest('tr');
         document.querySelectorAll('#accountsTableBody tr.drag-over').forEach(row => row.classList.remove('drag-over'));
-
-        if (!targetRow || !draggedItem || targetRow === draggedItem || !draggedItemAccountId) {
-            if (draggedItem) draggedItem.classList.remove('dragging'); // Clean up if invalid drop
-            draggedItem = null;
-            draggedItemAccountId = null;
-            return;
-        }
-
-        const targetAccountId = targetRow.dataset.accountId;
+        if (!targetRow || !draggedItem || targetRow === draggedItem || !draggedItemAccountId) { return; }
         const draggedAccountIndex = accounts.findIndex(acc => String(acc.id) === String(draggedItemAccountId));
-        
-        if (draggedAccountIndex === -1) {
-            console.error("Could not find dragged item in accounts array.");
-            if (draggedItem) draggedItem.classList.remove('dragging');
-            draggedItem = null;
-            draggedItemAccountId = null;
-            return;
-        }
-        
+        if (draggedAccountIndex === -1) { return; }
         const [draggedAccountObject] = accounts.splice(draggedAccountIndex, 1);
-        
-        // Find new target index after splice
-        let targetAccountIndex = accounts.findIndex(acc => String(acc.id) === String(targetAccountId));
-
-        if (targetAccountIndex === -1) { // Should not happen if targetRow is valid
-             accounts.push(draggedAccountObject); // Failsafe: add to end
-        } else {
+        let targetAccountIndex = accounts.findIndex(acc => String(acc.id) === String(targetRow.dataset.accountId));
+        if (targetAccountIndex === -1) { accounts.push(draggedAccountObject); } else {
             const rect = targetRow.getBoundingClientRect();
-            const midpoint = rect.top + rect.height / 2;
-            if (e.clientY >= midpoint) { // Dropped on the lower half of the target row, insert after
+            if (e.clientY >= (rect.top + rect.height / 2)) {
                 accounts.splice(targetAccountIndex + 1, 0, draggedAccountObject);
-            } else { // Dropped on the upper half, insert before
+            } else {
                 accounts.splice(targetAccountIndex, 0, draggedAccountObject);
             }
         }
-        
-        updatePriorities();
-        saveAndRender();
-        // Drag end will clean up draggedItem visuals
+        updatePriorities(); saveAndRender();
     }
-
     function handleDragEnd(e) {
-        if (draggedItem) {
-            draggedItem.classList.remove('dragging');
-        }
+        if (draggedItem) { draggedItem.classList.remove('dragging'); }
         document.querySelectorAll('#accountsTableBody tr.drag-over').forEach(row => row.classList.remove('drag-over'));
-        draggedItem = null;
-        draggedItemAccountId = null;
+        draggedItem = null; draggedItemAccountId = null;
     }
 
-    // --- 6. Helper Functions ---
     function escapeCsvValue(value) {
         if (value == null) return '';
         const stringValue = String(value);
@@ -521,44 +462,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return stringValue;
     }
-
     function parseCsvRowRobust(rowStr) {
-        const result = [];
-        let currentField = '';
-        let inQuotes = false;
+        const result = []; let currentField = ''; let inQuotes = false;
         for (let i = 0; i < rowStr.length; i++) {
             const char = rowStr[i];
             if (char === '"') {
-                if (inQuotes && i + 1 < rowStr.length && rowStr[i + 1] === '"') {
-                    currentField += '"';
-                    i++;
-                } else {
-                    inQuotes = !inQuotes;
-                }
-            } else if (char === ',' && !inQuotes) {
-                result.push(currentField.trim());
-                currentField = '';
-            } else {
-                currentField += char;
-            }
+                if (inQuotes && i + 1 < rowStr.length && rowStr[i + 1] === '"') { currentField += '"'; i++; } else { inQuotes = !inQuotes; }
+            } else if (char === ',' && !inQuotes) { result.push(currentField.trim()); currentField = ''; } else { currentField += char; }
         }
         result.push(currentField.trim());
         return result;
     }
 
-    // --- 7. Utility Function ---
-    function saveAndRender() {
-        saveAccounts();
-        renderAccounts();
-    }
-
-    // --- 8. Main Event Listeners ---
+    // --- 7. Main Event Listeners ---
     addItemBtn.addEventListener('click', addAccount);
     distributeBtn.addEventListener('click', distributeFunds);
     downloadCsvBtn.addEventListener('click', downloadCSV);
+    downloadTimelineBtn.addEventListener('click', generateTimelineCSV);
     importCsvBtn.addEventListener('click', handleImportCSV);
 
-    // --- 9. Initial Setup ---
-    updatePriorities(); // Ensure priorities are set correctly on initial load or data refresh
-    renderAccounts(); // Initial render of the accounts table
+    // --- 8. Initial Setup ---
+    updatePriorities();
+    renderAccounts();
 });

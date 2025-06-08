@@ -58,3 +58,7 @@ When you click "Distribute":
 * **Error Handling:** Basic validation is in place, but it's a simple app, not a robust commercial product.
 
 Enjoy managing your accounts like a Ninja! 🥷💰
+
+and check out the [Tableau Interactive Dashboard](./account-ninja-timeline.twb) as a way to watch your timeline.
+
+![Test](interactive-dashboard.png)

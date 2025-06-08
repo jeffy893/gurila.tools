@@ -181,3 +181,77 @@ tr.drag-over {
     /* You might choose to hide it if it's purely auto-set, or leave as is */
     /* display: none; */
 }
+
+/* Add this to your style.css or modify existing styles */
+
+.import-export-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e8f6f3;
+    border-radius: 5px;
+}
+
+.import-export-section h2 {
+    margin-top: 0;
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+/* Flexbox layout for side-by-side controls */
+.data-controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.import-controls, .export-controls {
+    flex-basis: 48%;
+}
+
+.import-controls label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.import-controls input[type="file"] {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.export-controls button {
+    display: block; /* Make buttons stack nicely */
+    width: 100%;
+    margin-bottom: 10px;
+}
+.export-controls button:last-child {
+    margin-bottom: 0;
+}
+
+
+#importMessage {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.secondary-btn {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #6c7a7d;
+}
+
+/* Styles for drag-and-drop */
+tr.dragging {
+    opacity: 0.5;
+    background: #f0f0f0;
+}
+
+tr.drag-over {
+    border-top: 2px dashed #3498db;
+}
