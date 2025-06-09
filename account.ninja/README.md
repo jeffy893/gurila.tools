@@ -98,6 +98,6 @@ By analyzing this CSV in a tool like Microsoft Excel, Google Sheets, or Tableau,
 
 Enjoy managing your accounts like a Ninja! 🥷💰
 
-and check out the [Tableau Interactive Dashboard](./account-ninja-timeline.twb) as a way to watch your timeline.
+and check out the [Tableau Interactive Dashboard](https://public.tableau.com/app/profile/jefferson.richards/viz/account-ninja-timeline/account-ninja-timeline) as a way to watch your timeline.
 
 ![Test](interactive-dashboard.png)
