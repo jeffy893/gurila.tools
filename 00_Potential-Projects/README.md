@@ -124,3 +124,5 @@ Together, these projects represent a new approach to human-computer interaction 
 **Let's build tools that serve human flourishing, not just efficiency.**
 
 *Interested in collaborating? The best partnerships start with a conversation about mutual goals and complementary strengths.*
+
+Find me at [wiki.richards.systems](https://wiki.richards.systems)
