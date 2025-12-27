@@ -1,0 +1,38 @@
+Task_ID,Task_Name,Prompt_ID,Prompt_Text,Expected_Output,AI_Model
+2,Modernize Tableau Integration Framework,P2-1,"Modernize Tableau integration framework to support automated dashboard creation from diverse data sources","Modern Tableau integration architecture",Claude-3.5
+2,Modernize Tableau Integration Framework,P2-2,"Create REST API layer for seamless data exchange between analytics tools and Tableau workbooks","REST API for Tableau data integration",GPT-4
+2,Modernize Tableau Integration Framework,P2-3,"Design template system for generating standardized Tableau dashboards across different data domains","Tableau dashboard template system",Claude-3.5
+3,Build Automated Dashboard Generator,P3-1,"Create automated dashboard generator that produces Tableau workbooks from CSV data with intelligent chart selection","Automated Tableau dashboard generator",GPT-4
+3,Build Automated Dashboard Generator,P3-2,"Implement machine learning for optimal visualization type selection based on data characteristics","ML-based chart type selection system",Claude-3.5
+3,Build Automated Dashboard Generator,P3-3,"Design dashboard layout optimization algorithm for maximum information density and readability","Dashboard layout optimization engine",GPT-4
+4,Implement Multi-Domain Data Connectors,P4-1,"Create data connectors for healthcare, sports, entertainment, finance, and student lifestyle datasets","Multi-domain data connector framework",Claude-3.5
+4,Implement Multi-Domain Data Connectors,P4-2,"Implement ETL pipelines for standardizing diverse data formats into unified analytics schema","ETL pipeline for data standardization",GPT-4
+5,Create Interactive Chart Library,P5-1,"Build interactive chart library supporting chocolate ratings, movie rankings, game sales, and health metrics","Interactive chart library for diverse data",Claude-3.5
+5,Create Interactive Chart Library,P5-2,"Implement responsive chart components that adapt to different screen sizes and interaction modes","Responsive interactive chart components",GPT-4
+7,Implement Lanchester Law Algorithms,P7-1,"Implement Lanchester Law mathematical models for simulating conflict dynamics and attrition rates","Lanchester Law simulation algorithms",GPT-4
+7,Implement Lanchester Law Algorithms,P7-2,"Create differential equation solver for Lanchester square law and linear law scenarios","Differential equation solver for conflict",Claude-3.5
+7,Implement Lanchester Law Algorithms,P7-3,"Design parameter optimization system for calibrating Lanchester models with real-world conflict data","Lanchester model parameter optimization",GPT-4
+8,Build Morale Model Integration,P8-1,"Integrate morale model of war and love with Lanchester Law for realistic conflict simulation","Morale-integrated conflict simulation",Claude-3.5
+8,Build Morale Model Integration,P8-2,"Create psychological factor modeling system that affects combat effectiveness and decision-making","Psychological factor modeling system",GPT-4
+9,Create Resource Allocation Simulator,P9-1,"Build resource allocation simulator using Gantt chart principles for optimizing time and material distribution","Resource allocation with Gantt optimization",Claude-3.5
+9,Create Resource Allocation Simulator,P9-2,"Implement constraint-based optimization for resource allocation under scarcity and competing priorities","Constraint-based resource optimization",GPT-4
+10,Implement Markov Chain Dynamics,P10-1,"Create Markov chain implementation for modeling state transitions in conflict and social dynamics","Markov chain for social dynamics",GPT-4
+10,Implement Markov Chain Dynamics,P10-2,"Design transition probability matrices for different conflict scenarios and social interactions","Conflict scenario transition matrices",Claude-3.5
+12,Design PACBULOC Analysis Engine,P12-1,"Create PACBULOC analysis engine for systematic negotiation planning (Parties, Assumptions, Conditions, Boundaries, Uncertainties, Liabilities, Objectives, Opportunity Costs)","PACBULOC negotiation analysis system",Claude-3.5
+12,Design PACBULOC Analysis Engine,P12-2,"Implement structured negotiation framework with automated stakeholder analysis and risk assessment","Structured negotiation framework",GPT-4
+13,Implement Diplomatic Scenario Generator,P13-1,"Build diplomatic scenario generator for MANGO (Maieutic and Applicable Negotiations, Guarantees, and Opportunities) framework","Diplomatic scenario generation system",GPT-4
+13,Implement Diplomatic Scenario Generator,P13-2,"Create negotiation simulation environment with multiple stakeholder perspectives and outcome modeling","Negotiation simulation with stakeholders",Claude-3.5
+14,Build Agreement Tracking System,P14-1,"Create agreement tracking system for monitoring negotiation outcomes, guarantees, and opportunity costs","Agreement tracking and monitoring system",Claude-3.5
+14,Build Agreement Tracking System,P14-2,"Implement contract lifecycle management with automated compliance monitoring and alert systems","Contract lifecycle management system",GPT-4
+16,Implement Pattern Deviation Detection,P16-1,"Create pattern deviation detection system for identifying anomalies in data streams and behavioral patterns","Pattern deviation detection algorithms",GPT-4
+16,Implement Pattern Deviation Detection,P16-2,"Build machine learning models for detecting unusual patterns in financial, social, and operational data","ML-based anomaly detection system",Claude-3.5
+17,Build Stakeholder Impact Analysis,P17-1,"Create stakeholder impact analysis system for evaluating the 'So What?' of detected anomalies","Stakeholder impact analysis framework",Claude-3.5
+17,Build Stakeholder Impact Analysis,P17-2,"Implement impact scoring algorithm that quantifies anomaly effects on different stakeholder groups","Impact scoring and quantification system",GPT-4
+18,Create Workflow Replication System,P18-1,"Build workflow replication system for backfilling processes that could catch similar anomalies in the future","Workflow replication and automation",GPT-4
+18,Create Workflow Replication System,P18-2,"Design process documentation system that captures anomaly detection workflows for future replication","Process documentation and capture system",Claude-3.5
+20,Upgrade Android Simulation Engine,P20-1,"Upgrade Android simulation engine for Posterity app with improved Bison vs Cattle mating dance dynamics","Enhanced Android simulation engine",Claude-3.5
+20,Upgrade Android Simulation Engine,P20-2,"Implement advanced Markov chain simulation with improved attrition factors and dance dynamics","Advanced Markov chain for mating simulation",GPT-4
+21,Implement Cross-Platform Framework,P21-1,"Create cross-platform framework for deploying Posterity simulation across iOS, Android, and web platforms","Cross-platform simulation framework",GPT-4
+21,Implement Cross-Platform Framework,P21-2,"Design unified API for simulation engine that works consistently across different mobile platforms","Unified simulation API for mobile platforms",Claude-3.5
+22,Create Social Dynamics Visualization,P22-1,"Build social dynamics visualization for displaying Bison vs Cattle conflict outcomes and crossover points","Social dynamics visualization system",Claude-3.5
+22,Create Social Dynamics Visualization,P22-2,"Implement real-time graph updates showing simulation progress and outcome predictions","Real-time simulation visualization",GPT-4

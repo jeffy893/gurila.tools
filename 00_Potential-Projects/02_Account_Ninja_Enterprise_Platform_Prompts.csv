@@ -1,0 +1,38 @@
+Task_ID,Task_Name,Prompt_ID,Prompt_Text,Expected_Output,AI_Model
+2,Design 3Zen Capital Accounting System,P2-1,"Design 3Zen capital accounting system that measures how much financial decisions 'make sense' on a 1-3 scale","3Zen accounting framework with scoring algorithms",Claude-3.5
+2,Design 3Zen Capital Accounting System,P2-2,"Create mathematical model for 3Zen weight calculation incorporating priority, urgency, and rational decision-making","Mathematical 3Zen calculation model",GPT-4
+2,Design 3Zen Capital Accounting System,P2-3,"Design database schema for storing 3Zen capital metrics with historical tracking and trend analysis","Database schema for 3Zen accounting",Claude-3.5
+3,Implement Priority-Based Distribution Algorithm,P3-1,"Create priority-based fund distribution algorithm using formula: (3ZenWeight * Urgency) / Priority","Fund distribution algorithm implementation",GPT-4
+3,Implement Priority-Based Distribution Algorithm,P3-2,"Implement iterative distribution system that handles account goal completion and remainder allocation","Iterative distribution with goal handling",Claude-3.5
+3,Implement Priority-Based Distribution Algorithm,P3-3,"Design optimization algorithm for maximizing overall portfolio goal achievement within time constraints","Portfolio optimization algorithm",GPT-4
+4,Build Multi-Account Management System,P4-1,"Create multi-account management system supporting different account types, goals, and financial instruments","Multi-account management framework",Claude-3.5
+4,Build Multi-Account Management System,P4-2,"Implement account hierarchy system for organizing personal, business, and investment accounts","Account hierarchy and organization system",GPT-4
+4,Build Multi-Account Management System,P4-3,"Design account linking system for tracking relationships between different financial goals","Account relationship tracking system",Claude-3.5
+5,Create Real-time Balance Tracking,P5-1,"Implement real-time balance tracking with automatic updates from bank APIs and manual adjustments","Real-time balance tracking system",GPT-4
+5,Create Real-time Balance Tracking,P5-2,"Create balance change notification system with threshold alerts and trend analysis","Balance monitoring with alerts",Claude-3.5
+7,Implement Monte Carlo Financial Simulation,P7-1,"Create Monte Carlo simulation for financial goal achievement under various market and income scenarios","Monte Carlo financial simulation engine",Claude-3.5
+7,Implement Monte Carlo Financial Simulation,P7-2,"Design probability distributions for income variability, market returns, and expense fluctuations","Financial probability distribution models",GPT-4
+7,Implement Monte Carlo Financial Simulation,P7-3,"Implement confidence interval calculations for goal achievement probability over time","Confidence interval analysis system",Claude-3.5
+8,Build Scenario Planning Engine,P8-1,"Create scenario planning engine for modeling different life events and their financial impacts","Scenario planning with life event modeling",GPT-4
+8,Build Scenario Planning Engine,P8-2,"Implement what-if analysis tools for exploring different contribution strategies and timelines","What-if analysis for financial planning",Claude-3.5
+8,Build Scenario Planning Engine,P8-3,"Design stress testing framework for financial plans under adverse economic conditions","Financial stress testing framework",GPT-4
+9,Create Goal Achievement Predictor,P9-1,"Build machine learning model to predict goal achievement likelihood based on historical patterns","ML goal achievement prediction model",Claude-3.5
+9,Create Goal Achievement Predictor,P9-2,"Implement early warning system for goals at risk of not being achieved within target timeframes","Goal risk early warning system",GPT-4
+11,Design Multi-Tenant Architecture,P11-1,"Design multi-tenant SaaS architecture for enterprise Account Ninja with data isolation and scalability","Multi-tenant SaaS architecture design",Claude-3.5
+11,Design Multi-Tenant Architecture,P11-2,"Create tenant management system with role-based access control and organizational hierarchies","Tenant management with RBAC system",GPT-4
+11,Design Multi-Tenant Architecture,P11-3,"Design data partitioning strategy for efficient multi-tenant data storage and retrieval","Multi-tenant data partitioning strategy",Claude-3.5
+12,Implement Bank API Integrations,P12-1,"Create secure bank API integration framework supporting Open Banking standards and major financial institutions","Bank API integration with Open Banking",GPT-4
+12,Implement Bank API Integrations,P12-2,"Implement OAuth 2.0 and API security protocols for safe financial data access and transmission","Financial API security implementation",Claude-3.5
+12,Implement Bank API Integrations,P12-3,"Design transaction categorization system using machine learning for automatic expense classification","ML-based transaction categorization",GPT-4
+13,Build Enterprise Security Framework,P13-1,"Create enterprise-grade security framework with encryption, audit trails, and compliance monitoring","Enterprise security framework",Claude-3.5
+13,Build Enterprise Security Framework,P13-2,"Implement SOC 2 Type II compliance controls for financial data protection and privacy","SOC 2 compliance implementation",GPT-4
+15,Create Tableau Integration Layer,P15-1,"Build Tableau integration layer for connecting Account Ninja data with business intelligence dashboards","Tableau integration with BI connectivity",Claude-3.5
+15,Create Tableau Integration Layer,P15-2,"Create automated dashboard generation system that creates Tableau workbooks from Account Ninja data","Automated Tableau dashboard generation",GPT-4
+16,Implement Interactive Visualizations,P16-1,"Create interactive financial visualizations showing goal progress, distribution effects, and timeline projections","Interactive financial visualization suite",GPT-4
+16,Implement Interactive Visualizations,P16-2,"Design responsive charts and graphs that adapt to different screen sizes and user preferences","Responsive financial chart library",Claude-3.5
+17,Build Executive Reporting Suite,P17-1,"Create executive reporting suite with KPI dashboards, trend analysis, and financial health metrics","Executive financial reporting system",Claude-3.5
+17,Build Executive Reporting Suite,P17-2,"Implement automated report generation with scheduled delivery and customizable report templates","Automated executive report generation",GPT-4
+19,Develop Progressive Web App,P19-1,"Create progressive web app for Account Ninja with offline functionality and mobile-optimized interface","PWA with offline financial management",GPT-4
+19,Develop Progressive Web App,P19-2,"Implement service worker for offline data synchronization and background financial calculations","Service worker for offline sync",Claude-3.5
+20,Create Mobile Native Apps,P20-1,"Develop native mobile applications for iOS and Android with full Account Ninja functionality","Native mobile app development",Claude-3.5
+20,Create Mobile Native Apps,P20-2,"Implement mobile-specific features like biometric authentication and push notifications for financial alerts","Mobile-specific financial app features",GPT-4

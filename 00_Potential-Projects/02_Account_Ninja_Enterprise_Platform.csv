@@ -1,0 +1,22 @@
+Task Name,Duration,Start Date,Finish Date,Predecessors,Resource Names,Work,Cost,Priority
+Account Ninja Enterprise Platform,70 days,2025-02-03,2025-05-23,,FinTech Team,560 hours,$56000,950
+  Phase 1: Core Financial Engine,20 days,2025-02-03,2025-02-28,,Backend Team,160 hours,$16000,1000
+    Design 3Zen Capital Accounting System,5 days,2025-02-03,2025-02-07,,Financial Architect,40 hours,$4000,1000
+    Implement Priority-Based Distribution Algorithm,7 days,2025-02-10,2025-02-20,2,Algorithm Developer,56 hours,$5600,1000
+    Build Multi-Account Management System,5 days,2025-02-21,2025-02-27,3,Backend Developer,40 hours,$4000,1000
+    Create Real-time Balance Tracking,3 days,2025-02-28,2025-03-04,4,Data Engineer,24 hours,$2400,1000
+  Phase 2: Timeline Simulation & Forecasting,18 days,2025-03-03,2025-03-26,5,Analytics Team,144 hours,$14400,950
+    Implement Monte Carlo Financial Simulation,7 days,2025-03-03,2025-03-11,,Quantitative Analyst,56 hours,$5600,900
+    Build Scenario Planning Engine,6 days,2025-03-12,2025-03-19,7,Scenario Engineer,48 hours,$4800,900
+    Create Goal Achievement Predictor,5 days,2025-03-20,2025-03-26,8,Predictive Modeler,40 hours,$4000,900
+  Phase 3: Enterprise Integration,15 days,2025-03-31,2025-04-18,9,Integration Team,120 hours,$12000,850
+    Design Multi-Tenant Architecture,5 days,2025-03-31,2025-04-04,,System Architect,40 hours,$4000,800
+    Implement Bank API Integrations,7 days,2025-04-07,2025-04-15,11,API Developer,56 hours,$5600,800
+    Build Enterprise Security Framework,3 days,2025-04-16,2025-04-18,12,Security Engineer,24 hours,$2400,800
+  Phase 4: Advanced Analytics Dashboard,10 days,2025-04-21,2025-05-02,13,Analytics UI Team,80 hours,$8000,800
+    Create Tableau Integration Layer,4 days,2025-04-21,2025-04-24,,BI Developer,32 hours,$3200,750
+    Implement Interactive Visualizations,4 days,2025-04-28,2025-05-01,15,Visualization Engineer,32 hours,$3200,750
+    Build Executive Reporting Suite,2 days,2025-05-02,2025-05-05,16,Report Developer,16 hours,$1600,750
+  Phase 5: Mobile & Web Platform,7 days,2025-05-05,2025-05-13,17,Frontend Team,56 hours,$5600,700
+    Develop Progressive Web App,4 days,2025-05-05,2025-05-08,,Frontend Developer,32 hours,$3200,650
+    Create Mobile Native Apps,3 days,2025-05-12,2025-05-14,19,Mobile Developer,24 hours,$2400,650
