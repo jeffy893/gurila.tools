@@ -1,0 +1,121 @@
+SKU,Brand,Product_Name,Category,ABV,Package_Size,Pack_Size,Price_Per_Unit,Launch_Date
+BEER-1000,Budweiser,Budweiser Original,Beer,4.80,22oz Bottle,12,0.97,2023-06-22
+BEER-1001,Budweiser,Budweiser Light,Beer,3.80,12oz Can,6,1.24,2023-05-21
+BEER-1002,Budweiser,Budweiser Select,Beer,4.30,16oz Can,12,0.92,2023-08-30
+BEER-1003,Budweiser,Budweiser Zero,Beer,0.00,16oz Can,1,0.86,2023-08-08
+BEER-1004,Coors,Coors Original,Beer,5.80,16oz Can,6,1.16,2023-05-06
+BEER-1005,Coors,Coors Light,Beer,3.40,12oz Can,12,1.17,2023-02-27
+BEER-1006,Coors,Coors Banquet,Beer,5.00,12oz Bottle,6,0.99,2023-05-28
+BEER-1007,Coors,Coors Pure,Beer,5.20,12oz Can,6,1.04,2023-11-13
+BEER-1008,Miller,Miller High Life,Beer,4.80,12oz Bottle,12,1.11,2023-12-27
+BEER-1009,Miller,Miller Lite,Beer,3.40,12oz Bottle,12,0.87,2023-01-01
+BEER-1010,Miller,Miller Genuine Draft,Beer,4.30,12oz Bottle,6,1.23,2023-12-14
+BEER-1011,Miller,Miller 64,Beer,3.30,22oz Bottle,24,1.20,2023-07-09
+BEER-1012,Corona,Corona Extra,Beer,5.50,12oz Can,1,0.95,2023-07-10
+BEER-1013,Corona,Corona Light,Beer,3.90,12oz Bottle,6,0.86,2023-11-08
+BEER-1014,Corona,Corona Premier,Beer,5.00,12oz Can,24,1.22,2023-04-27
+BEER-1015,Corona,Corona Familiar,Beer,4.60,12oz Bottle,12,1.05,2023-05-14
+BEER-1016,Heineken,Heineken Original,Beer,5.00,12oz Bottle,6,1.07,2023-02-27
+BEER-1017,Heineken,Heineken Light,Beer,4.20,16oz Can,24,1.12,2023-02-13
+BEER-1018,Heineken,Heineken 0.0,Beer,0.00,16oz Can,12,1.10,2023-06-22
+BEER-1019,Heineken,Heineken Silver,Beer,5.70,12oz Can,6,1.23,2023-06-09
+BEER-1020,Stella Artois,Stella Artois Original,Beer,4.30,12oz Can,12,1.23,2023-06-22
+BEER-1021,Stella Artois,Stella Artois Solstice Lager,Beer,4.60,16oz Can,12,1.20,2023-11-13
+BEER-1022,Stella Artois,Stella Artois Cidre,Beer,4.60,12oz Bottle,6,1.10,2023-10-30
+BEER-1023,Stella Artois,Stella Artois Unfiltered,Beer,5.50,12oz Can,24,1.17,2023-05-29
+BEER-1024,Blue Moon,Blue Moon Belgian White,Beer,5.40,12oz Can,1,1.12,2023-03-21
+BEER-1025,Blue Moon,Blue Moon Light Sky,Beer,4.00,16oz Can,12,1.08,2023-08-01
+BEER-1026,Blue Moon,Blue Moon Mango Wheat,Beer,5.40,12oz Can,12,0.90,2023-07-22
+BEER-1027,Blue Moon,Blue Moon Seasonal,Beer,4.40,16oz Can,12,1.17,2023-09-09
+BEER-1028,Sam Adams,Sam Adams Boston Lager,Beer,4.70,12oz Can,12,1.18,2023-08-17
+BEER-1029,Sam Adams,Sam Adams Light,Beer,3.50,16oz Can,12,1.10,2023-06-13
+BEER-1030,Sam Adams,Sam Adams Seasonal,Beer,5.60,12oz Bottle,6,1.18,2023-08-15
+BEER-1031,Sam Adams,Sam Adams IPA,Beer,6.90,16oz Can,12,1.11,2023-05-27
+BEER-1032,Guinness,Guinness Draught,Beer,5.40,12oz Bottle,12,0.93,2023-01-20
+BEER-1033,Guinness,Guinness Extra Stout,Beer,6.40,12oz Can,6,0.96,2023-02-16
+BEER-1034,Guinness,Guinness Blonde,Beer,4.30,12oz Bottle,12,0.94,2023-08-21
+BEER-1035,Guinness,Guinness 0.0,Beer,0.00,12oz Bottle,24,1.00,2023-11-01
+BEER-1036,Modelo,Modelo Especial,Beer,4.60,12oz Bottle,12,0.87,2023-01-14
+BEER-1037,Modelo,Modelo Negra,Beer,4.60,12oz Can,6,1.10,2023-05-23
+BEER-1038,Modelo,Modelo Chelada,Beer,4.50,22oz Bottle,24,0.98,2023-01-01
+BEER-1039,Modelo,Modelo Light,Beer,3.80,16oz Can,24,1.11,2023-02-23
+BEER-1040,Dos Equis,Dos Equis Lager,Beer,4.50,16oz Can,12,1.00,2023-09-16
+BEER-1041,Dos Equis,Dos Equis Amber,Beer,5.50,16oz Can,12,1.12,2023-05-24
+BEER-1042,Dos Equis,Dos Equis Lime & Salt,Beer,4.40,12oz Can,12,0.99,2023-01-12
+BEER-1043,Dos Equis,Dos Equis Special Lager,Beer,5.50,16oz Can,1,0.95,2023-11-26
+BEER-1044,Yuengling,Yuengling Traditional Lager,Beer,5.00,12oz Bottle,6,1.05,2023-08-12
+BEER-1045,Yuengling,Yuengling Light,Beer,3.30,12oz Can,24,1.13,2023-09-29
+BEER-1046,Yuengling,Yuengling Black & Tan,Beer,4.70,12oz Bottle,12,0.99,2023-12-24
+BEER-1047,Yuengling,Yuengling Flight,Beer,4.80,22oz Bottle,24,1.22,2023-06-05
+BEER-1048,New Belgium,New Belgium Fat Tire,Beer,4.60,12oz Bottle,12,0.87,2023-01-08
+BEER-1049,New Belgium,New Belgium Voodoo Ranger IPA,Beer,6.10,12oz Can,12,1.02,2023-05-02
+BEER-1050,New Belgium,New Belgium Citradelic,Beer,5.00,12oz Can,6,1.24,2023-12-14
+BEER-1051,New Belgium,New Belgium 1554,Beer,5.70,12oz Can,6,1.07,2023-06-13
+BEER-1052,Sierra Nevada,Sierra Nevada Pale Ale,Beer,5.00,22oz Bottle,6,1.02,2023-03-31
+BEER-1053,Sierra Nevada,Sierra Nevada Torpedo IPA,Beer,6.80,16oz Can,6,1.08,2023-05-16
+BEER-1054,Sierra Nevada,Sierra Nevada Hazy Little Thing,Beer,5.40,12oz Can,12,1.08,2023-07-05
+BEER-1055,Sierra Nevada,Sierra Nevada Celebration,Beer,5.20,12oz Bottle,1,1.14,2023-11-12
+BEER-1056,Lagunitas,Lagunitas IPA,Beer,7.20,12oz Can,6,0.90,2023-06-27
+BEER-1057,Lagunitas,Lagunitas Little Sumpin',Beer,4.30,12oz Bottle,12,0.95,2023-01-28
+BEER-1058,Lagunitas,Lagunitas Censored,Beer,4.20,12oz Bottle,6,1.08,2023-08-08
+BEER-1059,Lagunitas,Lagunitas DayTime IPA,Beer,6.80,12oz Can,12,1.20,2023-12-23
+BEER-1060,Dogfish Head,60 Minute IPA,Beer,6.00,16oz Can,12,1.07,2023-02-10
+BEER-1061,Stone,IPA,Beer,6.90,12oz Can,24,0.95,2023-08-16
+BEER-1062,Founders,All Day IPA,Beer,4.70,12oz Can,6,1.12,2023-07-11
+BEER-1063,Bell's,Two Hearted IPA,Beer,7.00,12oz Bottle,24,1.15,2023-05-25
+BEER-1064,Deschutes,Black Butte Porter,Beer,5.20,16oz Can,12,0.95,2023-07-20
+BEER-1065,Anchor,Steam Beer,Beer,4.90,12oz Bottle,24,1.00,2023-07-31
+BEER-1066,Brooklyn,Lager,Beer,5.20,16oz Can,12,1.06,2023-08-08
+BEER-1067,Goose Island,312 Urban Wheat,Beer,4.20,12oz Can,6,1.05,2023-08-28
+BEER-1068,Shock Top,Belgian White,Beer,5.20,12oz Bottle,6,1.01,2023-02-15
+BEER-1069,Michelob Ultra,Pure Gold,Beer,3.80,12oz Bottle,6,0.97,2023-02-04
+BEER-1070,Pabst,Blue Ribbon,Beer,4.70,12oz Can,24,0.89,2023-09-10
+BEER-1071,Tecate,Original,Beer,4.50,16oz Can,6,0.87,2023-03-23
+BEER-1072,Pacifico,Clara,Beer,4.40,12oz Can,24,1.23,2023-09-13
+BEER-1073,Negra Modelo,Munich Dunkel,Beer,5.40,16oz Can,24,1.19,2023-07-16
+SELT-1074,White Claw,White Claw Black Cherry,Hard Seltzer,4.90,12oz Can,24,1.30,2024-09-21
+SELT-1075,White Claw,White Claw Mango,Hard Seltzer,4.90,16oz Can,12,1.63,2023-07-09
+SELT-1076,White Claw,White Claw Natural Lime,Hard Seltzer,4.80,12oz Can,6,1.47,2024-02-26
+SELT-1077,White Claw,White Claw Raspberry,Hard Seltzer,5.00,16oz Can,6,1.37,2024-03-06
+SELT-1078,White Claw,White Claw Watermelon,Hard Seltzer,4.70,12oz Can,12,1.37,2023-07-04
+SELT-1079,White Claw,White Claw Tangerine,Hard Seltzer,5.00,12oz Can,4,1.15,2023-10-26
+SELT-1080,Truly,Truly Wild Berry,Hard Seltzer,4.70,12oz Can,6,1.15,2024-07-07
+SELT-1081,Truly,Truly Colima Lime,Hard Seltzer,4.90,12oz Can,6,1.43,2023-09-02
+SELT-1082,Truly,Truly Grapefruit,Hard Seltzer,4.80,12oz Can,12,1.40,2023-11-22
+SELT-1083,Truly,Truly Lemon,Hard Seltzer,4.60,12oz Can,24,1.22,2024-02-08
+SELT-1084,Truly,Truly Black Cherry,Hard Seltzer,4.70,16oz Can,12,1.62,2024-02-23
+SELT-1085,Truly,Truly Mango,Hard Seltzer,4.70,12oz Can,12,1.53,2023-12-23
+SELT-1086,Bud Light Seltzer,Bud Light Seltzer Black Cherry,Hard Seltzer,4.90,12oz Can,12,1.16,2024-04-06
+SELT-1087,Bud Light Seltzer,Bud Light Seltzer Strawberry,Hard Seltzer,4.80,12oz Can,4,1.61,2023-08-31
+SELT-1088,Bud Light Seltzer,Bud Light Seltzer Lemon Lime,Hard Seltzer,5.00,12oz Can,6,1.64,2024-02-01
+SELT-1089,Bud Light Seltzer,Bud Light Seltzer Mango,Hard Seltzer,4.90,12oz Can,24,1.65,2024-10-02
+SELT-1090,Bud Light Seltzer,Bud Light Seltzer Pineapple,Hard Seltzer,4.70,12oz Can,12,1.13,2023-10-12
+SELT-1091,Corona Hard Seltzer,Corona Hard Seltzer Tropical Lime,Hard Seltzer,5.00,12oz Can,6,1.51,2023-10-06
+SELT-1092,Corona Hard Seltzer,Corona Hard Seltzer Mango,Hard Seltzer,4.60,12oz Can,12,1.40,2024-11-21
+SELT-1093,Corona Hard Seltzer,Corona Hard Seltzer Cherry,Hard Seltzer,4.70,12oz Can,24,1.49,2024-07-18
+SELT-1094,Corona Hard Seltzer,Corona Hard Seltzer Blackberry Lime,Hard Seltzer,5.00,12oz Can,6,1.63,2024-08-07
+SELT-1095,Vizzy,Vizzy Black Cherry Lime,Hard Seltzer,4.80,12oz Can,6,1.48,2024-11-28
+SELT-1096,Vizzy,Vizzy Strawberry Kiwi,Hard Seltzer,4.60,12oz Can,24,1.56,2024-10-17
+SELT-1097,Vizzy,Vizzy Pineapple Mango,Hard Seltzer,4.60,12oz Can,12,1.58,2024-09-08
+SELT-1098,Vizzy,Vizzy Blueberry Pomegranate,Hard Seltzer,4.60,12oz Can,6,1.56,2023-07-22
+SELT-1099,Bon & Viv,Bon & Viv Grapefruit,Hard Seltzer,4.80,12oz Can,4,1.33,2024-09-29
+SELT-1100,Bon & Viv,Bon & Viv Black Cherry,Hard Seltzer,4.80,12oz Can,4,1.22,2023-09-20
+SELT-1101,Bon & Viv,Bon & Viv Cranberry,Hard Seltzer,4.70,12oz Can,24,1.32,2023-11-21
+SELT-1102,Bon & Viv,Bon & Viv Clementine Hibiscus,Hard Seltzer,4.50,12oz Can,12,1.59,2023-09-22
+SELT-1103,Smirnoff Seltzer,"Smirnoff Seltzer Red, White & Berry",Hard Seltzer,4.80,12oz Can,6,1.18,2023-09-15
+SELT-1104,Smirnoff Seltzer,Smirnoff Seltzer Pink Apple Rose,Hard Seltzer,5.00,16oz Can,24,1.38,2024-09-28
+SELT-1105,Smirnoff Seltzer,Smirnoff Seltzer Orange Mango,Hard Seltzer,4.60,12oz Can,6,1.23,2023-06-30
+SELT-1106,Smirnoff Seltzer,Smirnoff Seltzer Cranberry Lime,Hard Seltzer,4.80,12oz Can,24,1.42,2023-08-19
+SELT-1107,High Noon,High Noon Peach,Hard Seltzer,4.60,16oz Can,12,1.57,2024-09-17
+SELT-1108,High Noon,High Noon Pineapple,Hard Seltzer,4.90,12oz Can,12,1.58,2024-09-20
+SELT-1109,High Noon,High Noon Watermelon,Hard Seltzer,4.80,12oz Can,6,1.23,2024-10-29
+SELT-1110,High Noon,High Noon Black Cherry,Hard Seltzer,5.00,12oz Can,4,1.60,2023-08-02
+SELT-1111,High Noon,High Noon Grapefruit,Hard Seltzer,4.70,12oz Can,12,1.43,2024-06-11
+SELT-1112,Topo Chico,Topo Chico Tangy Lemon Lime,Hard Seltzer,4.60,12oz Can,4,1.29,2023-10-02
+SELT-1113,Topo Chico,Topo Chico Exotic Pineapple,Hard Seltzer,4.70,12oz Can,4,1.49,2023-09-09
+SELT-1114,Topo Chico,Topo Chico Strawberry Guava,Hard Seltzer,5.00,12oz Can,6,1.36,2023-11-30
+SELT-1115,Topo Chico,Topo Chico Tropical Mango,Hard Seltzer,4.50,12oz Can,24,1.31,2024-03-05
+SELT-1116,Michelob Ultra,Michelob Ultra Lime Cactus,Hard Seltzer,4.80,12oz Can,12,1.49,2024-09-09
+SELT-1117,Michelob Ultra,Michelob Ultra Spicy Pineapple,Hard Seltzer,4.70,12oz Can,4,1.24,2023-10-25
+SELT-1118,Michelob Ultra,Michelob Ultra Cucumber Lime,Hard Seltzer,4.80,12oz Can,6,1.28,2024-04-30
+SELT-1119,Michelob Ultra,Michelob Ultra Peach Pear,Hard Seltzer,4.70,12oz Can,4,1.34,2024-03-23

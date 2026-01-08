@@ -1,0 +1,43 @@
+Font 'default' does not have a glyph for '\U0001f4c8' [U+1f4c8], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\U0001f4c8' [U+1f4c8], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\U0001f4c8' [U+1f4c8], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\U0001f4c8' [U+1f4c8], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\U0001f4c8' [U+1f4c8], substituting with a dummy symbol.
+🎨 Generating complete visualization suite...
+================================================================================
+📊 Loading visualization datasets...
+  ✅ Loaded monthly_time_series: 24 records
+  ✅ Loaded pivot_point_analysis: 12 records
+  ✅ Loaded regional_category_analysis: 102 records
+  ✅ Loaded category_performance: 2 records
+  ✅ Loaded brand_performance: 39 records
+  ✅ Loaded daily_time_series: 730 records
+  ✅ Loaded executive_kpis: 2 records
+✅ All datasets loaded successfully
+📈 Creating time series comparison chart...
+✅ Time series comparison chart created
+🎯 Creating pivot point visualization...
+✅ Pivot point visualization created
+🗺️  Creating regional heatmap...
+✅ Regional heatmap created
+📊 Creating executive dashboard...
+✅ Executive dashboard created
+🏷️  Creating brand performance analysis...
+✅ Brand performance analysis created
+🌐 Creating interactive Plotly charts...
+✅ Interactive Plotly charts created
+
+🎉 VISUALIZATION SUITE COMPLETED!
+📁 All charts saved to: charts/
+📊 Charts created:
+   • time_series_comparison.png/pdf
+   • pivot_point_analysis.png/pdf
+   • regional_heatmap.png/pdf
+   • executive_dashboard.png/pdf
+   • brand_performance_analysis.png/pdf
+   • interactive_analysis.html
+
+💡 Usage:
+   • Use PNG files for presentations and reports
+   • Use PDF files for high-quality printing
+   • Open HTML file in browser for interactive analysis

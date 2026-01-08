@@ -1,0 +1,170 @@
+# PySpark Beer-to-Seltzer Analysis Pipeline Configuration
+# =====================================================
+
+# Pipeline Metadata
+pipeline:
+  name: "beer-seltzer-market-analysis"
+  version: "1.0.0"
+  description: "Complete market analysis pipeline for Hard Seltzer market entry decision"
+  author: "Data Analytics Team"
+
+# Environment Configuration
+environment:
+  spark:
+    app_name: "BeerSeltzerAnalysis"
+    master: "local[*]"
+    driver_memory: "4g"
+    driver_max_result_size: "2g"
+    executor_memory: "2g"
+    sql_adaptive_enabled: true
+    sql_adaptive_coalesce_partitions_enabled: true
+    sql_execution_arrow_pyspark_enabled: true
+    log_level: "WARN"
+  
+  python:
+    version: "3.10"
+    environment_variables:
+      JAVA_HOME: "/opt/homebrew/opt/openjdk@17"
+      PYSPARK_PYTHON: "python3.10"
+      PYSPARK_DRIVER_PYTHON: "python3.10"
+
+# Data Configuration
+data:
+  input:
+    base_directory: "synthetic_data"
+    files:
+      products: "products.csv"
+      locations: "locations.csv"
+      sales_transactions: "sales_transactions.csv"
+    
+  output:
+    base_directory: "output"
+    subdirectories:
+      data: "data"
+      charts: "charts"
+      reports: "reports"
+    
+  checkpoints:
+    enabled: true
+    directory: "checkpoints"
+    compression: "snappy"
+
+# Pipeline Stages Configuration
+stages:
+  data_generation:
+    enabled: true
+    force_regenerate: false
+    sample_size_multiplier: 1.0
+    
+  data_ingestion:
+    enabled: true
+    validation_enabled: true
+    quality_checks_enabled: true
+    cache_enabled: true
+    
+  data_cleaning:
+    enabled: true
+    retention_threshold: 0.95  # Minimum 95% data retention
+    duplicate_removal: true
+    outlier_detection: true
+    
+  trend_analysis:
+    enabled: true
+    pivot_detection_threshold: 15.0  # Minimum 15% growth difference
+    statistical_significance: 0.05
+    rolling_window_size: 3
+    
+  executive_reporting:
+    enabled: true
+    roi_scenarios:
+      - name: "conservative"
+        market_share_target: 10.0
+        investment_multiple: 1.5
+      - name: "moderate"
+        market_share_target: 15.0
+        investment_multiple: 2.0
+      - name: "aggressive"
+        market_share_target: 25.0
+        investment_multiple: 3.0
+    
+  visualization:
+    enabled: true
+    formats: ["png", "pdf", "html"]
+    dpi: 300
+    interactive_enabled: true
+    
+  pdf_report:
+    enabled: true
+    template: "executive_template"
+    include_charts: true
+    include_data_tables: true
+    page_size: "A4"
+    orientation: "portrait"
+
+# Business Logic Configuration
+business:
+  categories:
+    primary: "BEER"
+    secondary: "HARD SELTZER"
+  
+  regions:
+    - "NORTHEAST"
+    - "SOUTHEAST" 
+    - "MIDWEST"
+    - "SOUTHWEST"
+    - "WEST"
+  
+  metrics:
+    currency_format: "USD"
+    percentage_precision: 1
+    revenue_precision: 0
+    
+  thresholds:
+    minimum_revenue: 100
+    minimum_units: 1
+    maximum_growth_rate: 1000  # Cap at 1000% to handle outliers
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_enabled: true
+  console_enabled: true
+  log_directory: "logs"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Performance Monitoring
+monitoring:
+  enabled: true
+  metrics:
+    - "execution_time"
+    - "memory_usage"
+    - "record_counts"
+    - "data_quality_scores"
+  
+  alerts:
+    execution_time_threshold: 600  # 10 minutes
+    memory_usage_threshold: 0.8   # 80% of available memory
+    data_quality_threshold: 0.9   # 90% quality score
+
+# Scheduling Configuration
+scheduling:
+  enabled: false  # Set to true for production scheduling
+  cron_expression: "0 2 * * 1"  # Weekly on Monday at 2 AM
+  timezone: "UTC"
+  retry_attempts: 3
+  retry_delay: 300  # 5 minutes
+
+# Error Handling
+error_handling:
+  continue_on_warning: true
+  fail_on_critical_error: true
+  notification_enabled: false
+  notification_email: "analytics-team@company.com"
+
+# Security Configuration
+security:
+  data_encryption: false
+  access_logging: true
+  sensitive_data_masking: false

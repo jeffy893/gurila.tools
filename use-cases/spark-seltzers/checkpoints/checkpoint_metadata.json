@@ -1,0 +1,15 @@
+{
+  "checkpoints": {},
+  "pipeline_runs": [
+    {
+      "run_id": "6aa3f452",
+      "timestamp": "2026-01-08T08:40:11.684998",
+      "status": "failed",
+      "stages_completed": [
+        "data_generation"
+      ],
+      "error_message": "Failed at stage: data_ingestion"
+    }
+  ],
+  "last_successful_run": null
+}

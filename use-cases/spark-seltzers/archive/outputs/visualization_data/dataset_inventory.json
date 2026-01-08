@@ -1,0 +1,248 @@
+{
+  "export_timestamp": "2026-01-08 08:48:51",
+  "total_datasets": 13,
+  "datasets": {
+    "daily_time_series": {
+      "record_count": 730,
+      "columns": [
+        "Date",
+        "Date_String",
+        "Product_Category",
+        "Daily_Revenue",
+        "Daily_Units",
+        "Daily_Transactions",
+        "Avg_Transaction_Value",
+        "Active_Brands",
+        "Active_Regions",
+        "Total_Daily_Revenue",
+        "Market_Share_Revenue",
+        "Market_Share_Units"
+      ],
+      "description": "Daily revenue, units, and market share by category for detailed trend analysis"
+    },
+    "weekly_time_series": {
+      "record_count": 104,
+      "columns": [
+        "Year",
+        "Week_of_Year",
+        "Product_Category",
+        "Weekly_Revenue",
+        "Weekly_Units",
+        "Weekly_Transactions",
+        "Avg_Weekly_Transaction",
+        "Week_Start_Date",
+        "Week_End_Date",
+        "Year_Week",
+        "Total_Weekly_Revenue",
+        "Market_Share_Revenue"
+      ],
+      "description": "Weekly aggregated data with smoothed trends for visualization"
+    },
+    "monthly_time_series": {
+      "record_count": 24,
+      "columns": [
+        "Year",
+        "Month",
+        "Year_Month",
+        "Month_Name",
+        "Product_Category",
+        "Monthly_Revenue",
+        "Monthly_Units",
+        "Monthly_Transactions",
+        "Avg_Monthly_Transaction",
+        "Monthly_Active_Brands",
+        "Monthly_Active_Regions",
+        "Month_Start_Date",
+        "Month_End_Date",
+        "Previous_Month_Revenue",
+        "MoM_Growth_Rate",
+        "YoY_Base_Revenue",
+        "YoY_Growth_Rate",
+        "Total_Monthly_Revenue",
+        "Market_Share_Revenue"
+      ],
+      "description": "Monthly data with growth rates and market share evolution"
+    },
+    "pivot_point_analysis": {
+      "record_count": 12,
+      "columns": [
+        "Year",
+        "Month",
+        "Year_Month",
+        "Month_Name",
+        "Beer_Revenue",
+        "Beer_MoM_Growth",
+        "Beer_YoY_Growth",
+        "Beer_Market_Share",
+        "Seltzer_Revenue",
+        "Seltzer_MoM_Growth",
+        "Seltzer_YoY_Growth",
+        "Seltzer_Market_Share",
+        "Total_Revenue",
+        "Growth_Difference_MoM",
+        "Growth_Difference_YoY",
+        "Market_Share_Difference",
+        "Pivot_Point_MoM",
+        "Pivot_Point_YoY",
+        "Strong_Pivot",
+        "Beer_Growth_Trend",
+        "Seltzer_Growth_Trend",
+        "Growth_Diff_Trend",
+        "Seltzer_Share_Trend"
+      ],
+      "description": "Side-by-side category comparison with pivot point indicators"
+    },
+    "regional_category_analysis": {
+      "record_count": 102,
+      "columns": [
+        "Store_Region",
+        "Store_State",
+        "Product_Category",
+        "Regional_Revenue",
+        "Regional_Units",
+        "Regional_Transactions",
+        "Regional_Brands",
+        "Regional_Stores",
+        "Regional_Cities",
+        "Avg_Regional_Transaction",
+        "Avg_Regional_TDP",
+        "Regional_Total_Revenue",
+        "Category_Penetration",
+        "Revenue_Per_Store",
+        "Units_Per_Store"
+      ],
+      "description": "Regional performance breakdown by category"
+    },
+    "regional_time_series": {
+      "record_count": 120,
+      "columns": [
+        "Store_Region",
+        "Year",
+        "Month",
+        "Year_Month",
+        "Product_Category",
+        "Regional_Monthly_Revenue",
+        "Regional_Monthly_Units",
+        "Regional_Monthly_Transactions",
+        "Previous_Month_Revenue",
+        "Regional_MoM_Growth"
+      ],
+      "description": "Regional monthly trends with growth rates"
+    },
+    "state_analysis": {
+      "record_count": 102,
+      "columns": [
+        "Store_State",
+        "Store_Region",
+        "Product_Category",
+        "State_Revenue",
+        "State_Units",
+        "State_Stores",
+        "State_Cities",
+        "Avg_State_Transaction",
+        "State_Total_Revenue",
+        "State_Category_Share"
+      ],
+      "description": "State-level performance for detailed geographic analysis"
+    },
+    "category_performance": {
+      "record_count": 2,
+      "columns": [
+        "Product_Category",
+        "Total_Category_Revenue",
+        "Total_Category_Units",
+        "Total_Category_Transactions",
+        "Category_Brand_Count",
+        "Category_Geographic_Reach",
+        "Category_Store_Count",
+        "Avg_Category_Transaction",
+        "Avg_Category_ABV",
+        "Avg_Category_Price",
+        "Category_First_Sale",
+        "Category_Last_Sale",
+        "Market_Share_Revenue",
+        "Market_Share_Units",
+        "Market_Share_Transactions",
+        "Revenue_Per_Brand",
+        "Revenue_Per_Store",
+        "Units_Per_Transaction"
+      ],
+      "description": "Overall category metrics and market share analysis"
+    },
+    "brand_performance": {
+      "record_count": 39,
+      "columns": [
+        "Product_Category",
+        "Product_Brand",
+        "Brand_Revenue",
+        "Brand_Units",
+        "Brand_Transactions",
+        "Brand_Geographic_Reach",
+        "Brand_Store_Count",
+        "Avg_Brand_Transaction",
+        "Brand_ABV",
+        "Brand_Price",
+        "Brand_Rank_in_Category",
+        "Brand_Revenue_Share_in_Category"
+      ],
+      "description": "Brand-level performance within categories"
+    },
+    "abv_analysis": {
+      "record_count": 35,
+      "columns": [
+        "Product_Category",
+        "Product_ABV",
+        "ABV_Revenue",
+        "ABV_Units",
+        "ABV_Transactions",
+        "ABV_Brand_Count",
+        "Avg_ABV_Transaction",
+        "ABV_Rank_in_Category",
+        "ABV_Revenue_Share_in_Category"
+      ],
+      "description": "ABV preference analysis by category"
+    },
+    "executive_kpis": {
+      "record_count": 2,
+      "columns": [
+        "Product_Category",
+        "Total_Category_Revenue",
+        "Market_Share_Revenue",
+        "Total_Category_Units",
+        "Market_Share_Units",
+        "Category_Brand_Count",
+        "Category_Geographic_Reach",
+        "Avg_Category_Transaction",
+        "Revenue_Per_Brand",
+        "Revenue_Per_Store"
+      ],
+      "description": "Key performance indicators for executive dashboards"
+    },
+    "monthly_executive_summary": {
+      "record_count": 12,
+      "columns": [
+        "Year_Month",
+        "Month_Name",
+        "Total_Monthly_Revenue",
+        "Total_Monthly_Units",
+        "Total_Monthly_Transactions",
+        "Avg_MoM_Growth",
+        "Max_MoM_Growth",
+        "Min_MoM_Growth"
+      ],
+      "description": "Monthly executive summary metrics"
+    },
+    "regional_executive_summary": {
+      "record_count": 5,
+      "columns": [
+        "Store_Region",
+        "Total_Regional_Revenue",
+        "Total_Regional_Units",
+        "Total_Regional_Stores",
+        "Avg_Category_Penetration",
+        "Max_Category_Penetration"
+      ],
+      "description": "Regional executive summary metrics"
+    }
+  }
+}

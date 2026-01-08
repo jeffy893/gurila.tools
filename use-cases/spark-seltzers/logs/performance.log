@@ -1,0 +1,2 @@
+2026-01-08 08:40:11,684 - {"stage": "data_generation", "duration": 0.00025916099548339844, "success": true, "system_metrics": {"cpu_percent": 0.0, "memory_percent": 69.5, "memory_available_gb": 4.873291015625, "disk_usage_percent": 6.2}}
+2026-01-08 08:40:11,684 - {"stage": "data_ingestion", "duration": 0.00023293495178222656, "success": false, "system_metrics": {"cpu_percent": 0.0, "memory_percent": 69.5, "memory_available_gb": 4.873291015625, "disk_usage_percent": 6.2}, "error": "No module named 'spark_data_ingestion'"}

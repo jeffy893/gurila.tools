@@ -1,0 +1,27 @@
+{
+  "pipeline_execution": {
+    "start_time": "2026-01-08T08:47:02.386462",
+    "end_time": "2026-01-08T08:49:34.062634",
+    "total_duration_seconds": 151.67616891860962,
+    "total_duration_formatted": "151.68 seconds"
+  },
+  "stages": {
+    "completed": [
+      "data_generation",
+      "data_processing",
+      "visualization_export",
+      "chart_generation",
+      "executive_reporting",
+      "pdf_generation"
+    ],
+    "failed": [],
+    "total_stages": 6,
+    "success_rate": 100.0
+  },
+  "outputs": {
+    "charts_directory": "output/charts",
+    "data_directory": "output/data",
+    "reports_directory": "output/reports",
+    "logs_directory": "logs"
+  }
+}

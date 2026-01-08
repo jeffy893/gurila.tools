@@ -1,0 +1,60 @@
+================================================================================
+SYNTHETIC POS DATA GENERATION - QUALITY REPORT
+================================================================================
+Generation Date: 2026-01-08 07:30:10
+Analysis Period: 2023-01-01 to 2023-12-31
+
+DATASET OVERVIEW
+----------------------------------------
+Products Catalog: 120 products
+  - Beer Products: 74
+  - Hard Seltzer Products: 46
+  - Unique Brands: 38
+
+Geographic Coverage: 1,441 locations
+  - Regions: 5
+  - States: 51
+  - Cities: 121
+  - Store Types: Warehouse, Liquor, Convenience, Grocery, Big Box, Gas Station
+
+Sales Transactions: 887,849 transactions
+  - Total Revenue: $11,655,293.34
+  - Total Units: 11,014,768
+  - Average Transaction: $13.13
+  - Date Range: 2023-01-01 to 2023-12-31
+
+BUSINESS INTELLIGENCE INSIGHTS
+----------------------------------------
+Beer Category Peak: 2023-07 ($1,532,341.12)
+Seltzer Final Performance: 2023-12 ($49,121.05)
+Seltzer Growth Rate (annualized): 37.7%
+
+Regional Performance (Total Revenue):
+  Midwest: Beer $3,282,716, Seltzer $38,381 (1.2% seltzer share)
+  Northeast: Beer $2,419,684, Seltzer $72,878 (2.9% seltzer share)
+  Southeast: Beer $3,179,165, Seltzer $61,830 (1.9% seltzer share)
+  Southwest: Beer $786,727, Seltzer $15,090 (1.9% seltzer share)
+  West: Beer $1,720,826, Seltzer $77,998 (4.3% seltzer share)
+
+Final Distribution Analysis:
+  Average Beer TDP: 68.7%
+  Average Seltzer TDP: 8.1%
+
+DATA QUALITY SUMMARY
+----------------------------------------
+✅ Referential integrity maintained across all datasets
+✅ Business logic validation passed
+✅ Realistic pricing and variance patterns applied
+✅ Seasonal and regional patterns implemented
+✅ Product lifecycle and TDP growth modeled
+
+EXPORTED FILES
+----------------------------------------
+  products.csv: 0.0 MB
+  locations.csv: 0.1 MB
+  tdp_distribution.csv: 0.1 MB
+  sales_transactions.csv: 174.1 MB
+
+================================================================================
+Ready for PySpark ETL and Analysis Pipeline!
+================================================================================

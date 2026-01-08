@@ -1,0 +1,12 @@
+SIMPLE DATA QUALITY ASSESSMENT
+========================================
+
+Timestamp: 2026-01-08T09:05:16.907716
+Overall Status: FAILED
+Overall Score: 0.828
+
+Data Completeness: Score 1.000
+Data Validity: Score 0.640
+Referential Integrity: Score 1.000
+Business Rules: Score 0.500
+Statistical Summary: Score 1.000

@@ -1,0 +1,357 @@
+2026-01-08 08:47:02,491 - INFO - Creating SparkSession for data ingestion...
+26/01/08 08:47:03 WARN Utils: Your hostname, Jeffersons-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.92 instead (on interface en1)
+26/01/08 08:47:03 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/01/08 08:47:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-08 08:47:03,732 - INFO - ✅ SparkSession created successfully
+2026-01-08 08:47:03,732 - INFO -    Spark Version: 3.5.3
+2026-01-08 08:47:03,732 - INFO -    Default Parallelism: 10
+2026-01-08 08:47:03,732 - INFO - Defining explicit schemas for CSV files...
+2026-01-08 08:47:03,732 - INFO - ✅ Schemas defined for all datasets:
+2026-01-08 08:47:03,732 - INFO -    products: 9 fields
+2026-01-08 08:47:03,732 - INFO -    locations: 12 fields
+2026-01-08 08:47:03,732 - INFO -    sales_transactions: 26 fields
+2026-01-08 08:47:03,732 - INFO - Reading products.csv with schema validation...
+2026-01-08 08:47:05,268 - INFO - ✅ Successfully read products.csv: 120 rows
+2026-01-08 08:47:05,268 - INFO - Performing data quality checks for products...
+2026-01-08 08:47:05,333 - INFO -   Checking null values...
+2026-01-08 08:47:05,843 - INFO -   Checking duplicates...
+2026-01-08 08:47:06,059 - INFO -   Validating business rules...
+2026-01-08 08:47:06,197 - INFO -   Calculating summary statistics...
+2026-01-08 08:47:06,392 - INFO - ✅ Quality checks completed for products
+2026-01-08 08:47:06,392 - INFO - Exploring products dataset...
+2026-01-08 08:47:07,909 - INFO - Reading locations.csv with schema validation...
+2026-01-08 08:47:07,948 - INFO - ✅ Successfully read locations.csv: 1441 rows
+2026-01-08 08:47:07,948 - INFO - Performing data quality checks for locations...
+2026-01-08 08:47:07,974 - INFO -   Checking null values...
+2026-01-08 08:47:08,379 - INFO -   Checking duplicates...
+2026-01-08 08:47:08,467 - INFO -   Validating business rules...
+2026-01-08 08:47:08,467 - INFO -   Calculating summary statistics...
+2026-01-08 08:47:08,467 - INFO - ✅ Quality checks completed for locations
+2026-01-08 08:47:08,467 - INFO - Exploring locations dataset...
+2026-01-08 08:47:09,568 - INFO - Reading sales_transactions.csv with schema validation...
+2026-01-08 08:47:09,829 - INFO - ✅ Successfully read sales_transactions.csv: 887849 rows
+2026-01-08 08:47:09,829 - INFO - Performing data quality checks for sales_transactions...
+2026-01-08 08:47:09,919 - INFO -   Checking null values...
+2026-01-08 08:47:14,284 - INFO -   Checking duplicates...
+2026-01-08 08:47:14,969 - INFO -   Validating business rules...
+2026-01-08 08:47:15,736 - INFO -   Calculating summary statistics...
+26/01/08 08:47:15 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 405:>                                                      (0 + 10) / 10][Stage 405:============================================>           (8 + 2) / 10]                                                                                2026-01-08 08:47:16,749 - INFO - ✅ Quality checks completed for sales_transactions
+2026-01-08 08:47:16,749 - INFO - Exploring sales_transactions dataset...
+🚀 Starting Complete Data Ingestion Pipeline
+============================================================
+
+============================================================
+📊 DATASET EXPLORATION: PRODUCTS
+============================================================
+
+🔍 SCHEMA INFORMATION:
+   Rows: 120
+   Columns: 9
+
+   Schema Details:
+root
+ |-- SKU: string (nullable = true)
+ |-- Brand: string (nullable = true)
+ |-- Product_Name: string (nullable = true)
+ |-- Category: string (nullable = true)
+ |-- ABV: double (nullable = true)
+ |-- Package_Size: string (nullable = true)
+ |-- Pack_Size: integer (nullable = true)
+ |-- Price_Per_Unit: double (nullable = true)
+ |-- Launch_Date: string (nullable = true)
+
+
+📋 SAMPLE DATA (First 10 rows):
++---------+---------+------------------+--------+---+------------+---------+--------------+-----------+
+|SKU      |Brand    |Product_Name      |Category|ABV|Package_Size|Pack_Size|Price_Per_Unit|Launch_Date|
++---------+---------+------------------+--------+---+------------+---------+--------------+-----------+
+|BEER-1000|Budweiser|Budweiser Original|Beer    |4.8|22oz Bottle |12       |0.97          |2023-06-22 |
+|BEER-1001|Budweiser|Budweiser Light   |Beer    |3.8|12oz Can    |6        |1.24          |2023-05-21 |
+|BEER-1002|Budweiser|Budweiser Select  |Beer    |4.3|16oz Can    |12       |0.92          |2023-08-30 |
+|BEER-1003|Budweiser|Budweiser Zero    |Beer    |0.0|16oz Can    |1        |0.86          |2023-08-08 |
+|BEER-1004|Coors    |Coors Original    |Beer    |5.8|16oz Can    |6        |1.16          |2023-05-06 |
+|BEER-1005|Coors    |Coors Light       |Beer    |3.4|12oz Can    |12       |1.17          |2023-02-27 |
+|BEER-1006|Coors    |Coors Banquet     |Beer    |5.0|12oz Bottle |6        |0.99          |2023-05-28 |
+|BEER-1007|Coors    |Coors Pure        |Beer    |5.2|12oz Can    |6        |1.04          |2023-11-13 |
+|BEER-1008|Miller   |Miller High Life  |Beer    |4.8|12oz Bottle |12       |1.11          |2023-12-27 |
+|BEER-1009|Miller   |Miller Lite       |Beer    |3.4|12oz Bottle |12       |0.87          |2023-01-01 |
++---------+---------+------------------+--------+---+------------+---------+--------------+-----------+
+only showing top 10 rows
+
+
+📈 COLUMN ANALYSIS:
+   SKU: 120 unique values, 0 nulls
+   Brand: 38 unique values, 0 nulls
+   Product_Name: 120 unique values, 0 nulls
+   Category: 2 unique values, 0 nulls
+   ABV: 29 unique values, 0 nulls
+   Package_Size: 4 unique values, 0 nulls
+   Pack_Size: 5 unique values, 0 nulls
+   Price_Per_Unit: 62 unique values, 0 nulls
+   Launch_Date: 107 unique values, 0 nulls
+
+🍺 PRODUCT ANALYSIS:
++------------+-----+
+|    Category|count|
++------------+-----+
+|        Beer|   74|
+|Hard Seltzer|   46|
++------------+-----+
+
+
+   Top 10 Brands by Product Count:
++-------------------+-----+
+|              Brand|count|
++-------------------+-----+
+|         White Claw|    6|
+|              Truly|    6|
+|          High Noon|    5|
+|     Michelob Ultra|    5|
+|  Bud Light Seltzer|    5|
+|      Sierra Nevada|    4|
+|Corona Hard Seltzer|    4|
+|          Lagunitas|    4|
+|          Blue Moon|    4|
+|   Smirnoff Seltzer|    4|
++-------------------+-----+
+only showing top 10 rows
+
+
+============================================================
+📊 DATASET EXPLORATION: LOCATIONS
+============================================================
+
+🔍 SCHEMA INFORMATION:
+   Rows: 1,441
+   Columns: 12
+
+   Schema Details:
+root
+ |-- Retailer_ID: string (nullable = true)
+ |-- Chain_Name: string (nullable = true)
+ |-- Store_Type: string (nullable = true)
+ |-- Region: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- City: string (nullable = true)
+ |-- Warehouse_ID: string (nullable = true)
+ |-- Store_Size: string (nullable = true)
+ |-- Urban_Rural: string (nullable = true)
+ |-- Location_Type: string (nullable = true)
+ |-- Market_Tier: string (nullable = true)
+ |-- Alcohol_License: boolean (nullable = true)
+
+
+📋 SAMPLE DATA (First 10 rows):
++-----------+------------+----------+---------+-----+----------+------------+----------+-----------+-------------+-----------+---------------+
+|Retailer_ID|Chain_Name  |Store_Type|Region   |State|City      |Warehouse_ID|Store_Size|Urban_Rural|Location_Type|Market_Tier|Alcohol_License|
++-----------+------------+----------+---------+-----+----------+------------+----------+-----------+-------------+-----------+---------------+
+|WH-1001    |Distribution|Warehouse |Northeast|VT   |Burlington|WH-1001     |Large     |Industrial |Warehouse    |Tier 3     |false          |
+|WH-1002    |Distribution|Warehouse |Northeast|MA   |Boston    |WH-1002     |Large     |Industrial |Warehouse    |Tier 3     |false          |
+|WH-1003    |Distribution|Warehouse |Northeast|NY   |New York  |WH-1003     |Large     |Industrial |Warehouse    |Tier 2     |true           |
+|WH-1004    |Distribution|Warehouse |Northeast|NY   |Buffalo   |WH-1004     |Large     |Industrial |Warehouse    |Tier 3     |true           |
+|WH-1005    |Distribution|Warehouse |Northeast|PA   |Pittsburgh|WH-1005     |Large     |Industrial |Warehouse    |Tier 3     |true           |
+|WH-1006    |Distribution|Warehouse |Northeast|NY   |Albany    |WH-1006     |Large     |Industrial |Warehouse    |Tier 3     |true           |
+|WH-1007    |Distribution|Warehouse |Northeast|CT   |Hartford  |WH-1007     |Large     |Industrial |Warehouse    |Tier 2     |true           |
+|WH-1008    |Distribution|Warehouse |Northeast|NH   |Manchester|WH-1008     |Large     |Industrial |Warehouse    |Tier 3     |true           |
+|WH-1009    |Distribution|Warehouse |Southeast|AL   |Birmingham|WH-1009     |Large     |Industrial |Warehouse    |Tier 1     |true           |
+|WH-1010    |Distribution|Warehouse |Southeast|SC   |Charleston|WH-1010     |Large     |Industrial |Warehouse    |Tier 3     |true           |
++-----------+------------+----------+---------+-----+----------+------------+----------+-----------+-------------+-----------+---------------+
+only showing top 10 rows
+
+
+📈 COLUMN ANALYSIS:
+   Retailer_ID: 1,441 unique values, 0 nulls
+   Chain_Name: 49 unique values, 0 nulls
+   Store_Type: 6 unique values, 0 nulls
+   Region: 5 unique values, 0 nulls
+   State: 51 unique values, 0 nulls
+   City: 121 unique values, 0 nulls
+   Warehouse_ID: 48 unique values, 0 nulls
+   Store_Size: 4 unique values, 0 nulls
+   Urban_Rural: 4 unique values, 0 nulls
+   Location_Type: 2 unique values, 0 nulls
+   Market_Tier: 3 unique values, 0 nulls
+   Alcohol_License: 2 unique values, 0 nulls
+
+🏪 LOCATION ANALYSIS:
++---------+-----+
+|   Region|count|
++---------+-----+
+|Southeast|  398|
+|  Midwest|  369|
+|Northeast|  301|
+|     West|  276|
+|Southwest|   97|
++---------+-----+
+
++-----------+-----+
+| Store_Type|count|
++-----------+-----+
+|    Grocery|  501|
+|Convenience|  359|
+|     Liquor|  217|
+|    Big Box|  199|
+|Gas Station|  117|
+|  Warehouse|   48|
++-----------+-----+
+
+
+============================================================
+📊 DATASET EXPLORATION: SALES_TRANSACTIONS
+============================================================
+
+🔍 SCHEMA INFORMATION:
+   Rows: 887,849
+   Columns: 26
+
+   Schema Details:
+[Stage 646:===========>                                            (2 + 8) / 10]                                                                                root
+ |-- Transaction_ID: string (nullable = true)
+ |-- Date: date (nullable = true)
+ |-- Retailer_ID: string (nullable = true)
+ |-- SKU: string (nullable = true)
+ |-- Product_Name: string (nullable = true)
+ |-- Brand: string (nullable = true)
+ |-- Category: string (nullable = true)
+ |-- Units_Sold: integer (nullable = true)
+ |-- Unit_Price: double (nullable = true)
+ |-- Total_Revenue: double (nullable = true)
+ |-- Is_Promotion: boolean (nullable = true)
+ |-- Store_Type: string (nullable = true)
+ |-- Region: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- Market_Tier: string (nullable = true)
+ |-- Months_From_Start: double (nullable = true)
+ |-- Beer_Trend_Strength: double (nullable = true)
+ |-- Seltzer_Trend_Strength: double (nullable = true)
+ |-- Market_Phase: string (nullable = true)
+ |-- Seasonality_Factor: double (nullable = true)
+ |-- Consumer_Seltzer_Awareness: double (nullable = true)
+ |-- Revenue_Per_Unit: double (nullable = true)
+ |-- Year_Month: string (nullable = true)
+ |-- Quarter_Year: string (nullable = true)
+ |-- TDP: double (nullable = true)
+ |-- Sales_Velocity: double (nullable = true)
+
+
+📋 SAMPLE DATA (First 10 rows):
++--------------+----------+-----------+---------+-------------------------------+-------------+--------+----------+----------+-------------+------------+-----------+---------+-----+-----------+-----------------+-------------------+----------------------+---------------------+------------------+--------------------------+----------------+----------+------------+-----+--------------+
+|Transaction_ID|Date      |Retailer_ID|SKU      |Product_Name                   |Brand        |Category|Units_Sold|Unit_Price|Total_Revenue|Is_Promotion|Store_Type |Region   |State|Market_Tier|Months_From_Start|Beer_Trend_Strength|Seltzer_Trend_Strength|Market_Phase         |Seasonality_Factor|Consumer_Seltzer_Awareness|Revenue_Per_Unit|Year_Month|Quarter_Year|TDP  |Sales_Velocity|
++--------------+----------+-----------+---------+-------------------------------+-------------+--------+----------+----------+-------------+------------+-----------+---------+-----+-----------+-----------------+-------------------+----------------------+---------------------+------------------+--------------------------+----------------+----------+------------+-----+--------------+
+|TXN-00100000  |2023-01-01|RTL-02001  |BEER-1055|Sierra Nevada Celebration      |Sierra Nevada|Beer    |15        |1.46      |21.92        |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.46            |2023-01-31|2023-03-31  |56.01|0.27          |
+|TXN-00100001  |2023-01-01|RTL-02001  |BEER-1016|Heineken Original              |Heineken     |Beer    |66        |1.36      |89.59        |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.36            |2023-01-31|2023-03-31  |55.98|1.18          |
+|TXN-00100002  |2023-01-01|RTL-02001  |BEER-1046|Yuengling Black & Tan          |Yuengling    |Beer    |16        |1.13      |18.15        |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.13            |2023-01-31|2023-03-31  |55.38|0.29          |
+|TXN-00100003  |2023-01-01|RTL-02003  |BEER-1017|Heineken Light                 |Heineken     |Beer    |24        |1.16      |27.96        |false       |Grocery    |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.16            |2023-01-31|2023-03-31  |99.38|0.24          |
+|TXN-00100004  |2023-01-01|RTL-02003  |BEER-1038|Modelo Chelada                 |Modelo       |Beer    |2         |0.94      |1.88         |false       |Grocery    |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |0.94            |2023-01-31|2023-03-31  |86.01|0.02          |
+|TXN-00100005  |2023-01-01|RTL-02005  |BEER-1019|Heineken Silver                |Heineken     |Beer    |6         |1.72      |10.35        |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.72            |2023-01-31|2023-03-31  |59.06|0.1           |
+|TXN-00100006  |2023-01-01|RTL-02005  |BEER-1057|Lagunitas Little Sumpin'       |Lagunitas    |Beer    |3         |1.03      |3.09         |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.03            |2023-01-31|2023-03-31  |53.96|0.06          |
+|TXN-00100007  |2023-01-01|RTL-02005  |BEER-1049|New Belgium Voodoo Ranger IPA  |New Belgium  |Beer    |7         |1.16      |8.12         |false       |Liquor     |Northeast|ME   |Tier 1     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.16            |2023-01-31|2023-03-31  |51.12|0.14          |
+|TXN-00100008  |2023-01-01|RTL-02006  |BEER-1057|Lagunitas Little Sumpin'       |Lagunitas    |Beer    |1         |1.25      |1.29         |false       |Convenience|Northeast|ME   |Tier 3     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.29            |2023-01-31|2023-03-31  |29.43|0.03          |
+|TXN-00100009  |2023-01-01|RTL-02007  |BEER-1054|Sierra Nevada Hazy Little Thing|Sierra Nevada|Beer    |7         |1.38      |9.95         |false       |Convenience|Northeast|ME   |Tier 2     |0.0              |1.0                |0.05                  |Traditional_Dominance|1.13              |0.05                      |1.42            |2023-01-31|2023-03-31  |24.52|0.29          |
++--------------+----------+-----------+---------+-------------------------------+-------------+--------+----------+----------+-------------+------------+-----------+---------+-----+-----------+-----------------+-------------------+----------------------+---------------------+------------------+--------------------------+----------------+----------+------------+-----+--------------+
+only showing top 10 rows
+
+
+📈 COLUMN ANALYSIS:
+   Transaction_ID: 887,849 unique values, 0 nulls
+   Date: 365 unique values, 0 nulls
+   Retailer_ID: 1,165 unique values, 0 nulls
+   SKU: 120 unique values, 0 nulls
+   Product_Name: 120 unique values, 0 nulls
+   Brand: 38 unique values, 0 nulls
+   Category: 2 unique values, 0 nulls
+   Units_Sold: 307 unique values, 0 nulls
+   Unit_Price: 226 unique values, 0 nulls
+   Total_Revenue: 16,116 unique values, 0 nulls
+   Is_Promotion: 2 unique values, 0 nulls
+   Store_Type: 5 unique values, 0 nulls
+   Region: 5 unique values, 0 nulls
+   State: 51 unique values, 0 nulls
+   Market_Tier: 3 unique values, 0 nulls
+   Months_From_Start: 365 unique values, 0 nulls
+   Beer_Trend_Strength: 28 unique values, 0 nulls
+   Seltzer_Trend_Strength: 37 unique values, 0 nulls
+   Market_Phase: 2 unique values, 0 nulls
+   Seasonality_Factor: 35 unique values, 0 nulls
+   Consumer_Seltzer_Awareness: 19 unique values, 0 nulls
+   Revenue_Per_Unit: 256 unique values, 0 nulls
+   Year_Month: 12 unique values, 0 nulls
+   Quarter_Year: 4 unique values, 0 nulls
+   TDP: 7,565 unique values, 0 nulls
+   Sales_Velocity: 488 unique values, 0 nulls
+
+💰 SALES ANALYSIS:
+
+   Monthly Sales Summary:
++----------+-----------+------------------+-----------------+
+|Year_Month|Total_Units|     Total_Revenue|Transaction_Count|
++----------+-----------+------------------+-----------------+
+|   2023-01|     559858| 574927.6400000004|            70946|
+|   2023-02|     558475| 574844.9199999999|            63029|
+|   2023-03|     696182| 718015.4400000002|            70657|
+|   2023-04|     801274| 829825.0000000023|            69599|
+|   2023-05|    1050599|1119317.2899999965|            78382|
+|   2023-06|    1395257|1488832.7699999888|            83038|
+|   2023-07|    1458377|1560615.9500000253|            86950|
+|   2023-08|    1218365|1308564.6700000053|            80757|
+|   2023-09|     926992| 970682.5900000001|            74068|
+|   2023-10|     684236| 719128.4900000058|            70113|
+|   2023-11|     808909| 867520.4100000045|            68029|
+|   2023-12|     856244| 923018.1700000026|            72281|
++----------+-----------+------------------+-----------------+
+
+
+   Category Performance:
++------------+-----------+--------------------+---------------------+-----------------+
+|    Category|Total_Units|       Total_Revenue|Avg_Transaction_Value|Transaction_Count|
++------------+-----------+--------------------+---------------------+-----------------+
+|        Beer|   10852621|1.1389117940000003E7|   14.196345983892947|           802257|
+|Hard Seltzer|     162147|  266175.40000000026|   3.1098163379755146|            85592|
++------------+-----------+--------------------+---------------------+-----------------+
+
+
+================================================================================
+📋 DATA QUALITY REPORT
+================================================================================
+Report Generated: 2026-01-08 08:47:28
+
+📊 PRODUCTS QUALITY SUMMARY:
+   Total Rows: 120
+   Total Columns: 9
+   ✅ No null values found
+   ✅ No duplicate keys found
+   ✅ All business rules validated
+
+📊 LOCATIONS QUALITY SUMMARY:
+   Total Rows: 1,441
+   Total Columns: 12
+   ✅ No null values found
+   ✅ No duplicate keys found
+   ✅ All business rules validated
+
+📊 SALES_TRANSACTIONS QUALITY SUMMARY:
+   Total Rows: 887,849
+   Total Columns: 26
+   ✅ No null values found
+   ✅ No duplicate keys found
+   ⚠️  Business rule violations:
+      Revenue inconsistencies: 8934
+
+🎯 OVERALL ASSESSMENT:
+   ⚠️  GOOD: Minor issues detected (1 total)
+   🔧 Consider data cleaning before analysis
+
+🎉 Data ingestion pipeline completed successfully!
+📊 All datasets loaded and validated
+🔍 Data exploration completed
+📋 Quality report generated
+
+💡 Next Steps:
+   1. Review quality report above
+   2. Address any data quality issues
+   3. Proceed with ETL transformations
+   4. Run business analysis pipeline
+2026-01-08 08:47:28,250 - INFO - Closing down clientserver connection

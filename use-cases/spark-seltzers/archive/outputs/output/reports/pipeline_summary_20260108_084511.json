@@ -1,0 +1,22 @@
+{
+  "pipeline_execution": {
+    "start_time": "2026-01-08T08:43:45.742446",
+    "end_time": "2026-01-08T08:45:11.979123",
+    "total_duration_seconds": 86.23665571212769,
+    "total_duration_formatted": "86.24 seconds"
+  },
+  "stages": {
+    "completed": [
+      "data_processing"
+    ],
+    "failed": [],
+    "total_stages": 1,
+    "success_rate": 100.0
+  },
+  "outputs": {
+    "charts_directory": "output/charts",
+    "data_directory": "output/data",
+    "reports_directory": "output/reports",
+    "logs_directory": "logs"
+  }
+}

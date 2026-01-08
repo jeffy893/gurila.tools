@@ -1,0 +1,164 @@
+2026-01-08 08:47:28,421 - INFO - Creating SparkSession for data cleaning pipeline...
+26/01/08 08:47:29 WARN Utils: Your hostname, Jeffersons-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.92 instead (on interface en1)
+26/01/08 08:47:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/01/08 08:47:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-08 08:47:29,795 - INFO - ✅ SparkSession created successfully
+2026-01-08 08:47:29,796 - INFO -    Spark Version: 3.5.3
+2026-01-08 08:47:29,796 - INFO -    Default Parallelism: 10
+2026-01-08 08:47:29,796 - INFO - Loading raw data from CSV files...
+2026-01-08 08:47:29,797 - INFO - Defining explicit schemas for CSV files...
+2026-01-08 08:47:29,797 - INFO - ✅ Schemas defined for all datasets:
+2026-01-08 08:47:29,797 - INFO -    products: 9 fields
+2026-01-08 08:47:29,797 - INFO -    locations: 12 fields
+2026-01-08 08:47:29,797 - INFO -    sales_transactions: 26 fields
+2026-01-08 08:47:29,797 - INFO - Reading products.csv with schema validation...
+2026-01-08 08:47:31,314 - INFO - ✅ Successfully read products.csv: 120 rows
+2026-01-08 08:47:31,377 - INFO - ✅ Loaded products: 120 rows
+2026-01-08 08:47:31,377 - INFO - Reading locations.csv with schema validation...
+2026-01-08 08:47:31,445 - INFO - ✅ Successfully read locations.csv: 1441 rows
+2026-01-08 08:47:31,503 - INFO - ✅ Loaded locations: 1,441 rows
+2026-01-08 08:47:31,503 - INFO - Reading sales_transactions.csv with schema validation...
+2026-01-08 08:47:32,279 - INFO - ✅ Successfully read sales_transactions.csv: 887849 rows
+2026-01-08 08:47:32,386 - INFO - ✅ Loaded sales_transactions: 887,849 rows
+2026-01-08 08:47:32,386 - INFO - Cleaning products data...
+2026-01-08 08:47:32,423 - INFO -   Step 1: Handling null values...
+2026-01-08 08:47:32,930 - INFO -   Step 2: Standardizing text fields...
+2026-01-08 08:47:32,943 - INFO -   Step 3: Validating ABV ranges...
+2026-01-08 08:47:33,015 - INFO -   Step 4: Validating price ranges...
+2026-01-08 08:47:33,075 - INFO -   Step 5: Removing duplicates...
+2026-01-08 08:47:33,307 - INFO -   Step 6: Adding derived fields...
+2026-01-08 08:47:33,390 - INFO - ✅ Products cleaning completed: 120 → 120 records
+2026-01-08 08:47:33,390 - INFO - Cleaning locations data...
+2026-01-08 08:47:33,428 - INFO -   Step 1: Handling null values...
+2026-01-08 08:47:33,550 - INFO -   Step 2: Standardizing geographic fields...
+2026-01-08 08:47:33,567 - INFO -   Step 3: Validating regions...
+2026-01-08 08:47:33,628 - INFO -   Step 4: Removing duplicates...
+2026-01-08 08:47:33,786 - INFO -   Step 5: Adding derived fields...
+2026-01-08 08:47:33,886 - INFO - ✅ Locations cleaning completed: 1,441 → 1,441 records
+2026-01-08 08:47:33,886 - INFO - Cleaning sales transactions data...
+2026-01-08 08:47:33,974 - INFO -   Step 1: Handling null values...
+2026-01-08 08:47:34,549 - INFO -   Step 2: Validating business rules...
+2026-01-08 08:47:35,239 - INFO -   Step 3: Removing extreme outliers...
+2026-01-08 08:47:36,588 - INFO -   Step 4: Standardizing categorical fields...
+2026-01-08 08:47:36,603 - INFO -   Step 5: Removing duplicates...
+2026-01-08 08:47:37,977 - INFO -   Step 6: Adding derived fields...
+[Stage 124:===========>                                            (2 + 8) / 10]                                                                                2026-01-08 08:47:38,748 - INFO - ✅ Sales transactions cleaning completed: 887,849 → 876,808 records
+2026-01-08 08:47:38,748 - INFO - Validating referential integrity...
+2026-01-08 08:47:38,748 - INFO -   Checking SKU references...
+[Stage 130:=>              (1 + 9) / 10][Stage 131:>                (0 + 1) / 1]                                                                                [Stage 135:>                                                      (0 + 10) / 10]                                                                                2026-01-08 08:47:40,331 - INFO -   Checking Retailer_ID references...
+2026-01-08 08:47:41,776 - INFO - ✅ Referential integrity validation completed
+2026-01-08 08:47:41,776 - INFO -    Invalid SKUs removed: 0
+2026-01-08 08:47:41,776 - INFO -    Invalid Retailers removed: 0
+2026-01-08 08:47:41,776 - INFO -    Final sales records: 876,808
+2026-01-08 08:47:41,776 - INFO - Creating comprehensive fact table...
+2026-01-08 08:47:41,776 - INFO -   Broadcasting products and locations tables...
+2026-01-08 08:47:41,779 - INFO -   Joining sales with products...
+2026-01-08 08:47:41,795 - INFO -   Joining with locations...
+26/01/08 08:47:41 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 154:>(0 + 10) / 10][Stage 155:>  (0 + 0) / 1][Stage 156:>  (0 + 0) / 1][Stage 154:=>              (1 + 9) / 10][Stage 156:>                (0 + 1) / 1]                                                                                [Stage 162:>                                                     (0 + 10) / 200][Stage 162:==>                                                  (10 + 10) / 200][Stage 162:===>                                                 (15 + 10) / 200][Stage 162:======>                                              (25 + 10) / 200][Stage 162:===========>                                         (42 + 10) / 200][Stage 162:==============>                                      (56 + 10) / 200][Stage 162:==================>                                  (71 + 10) / 200][Stage 162:=======================>                             (89 + 10) / 200][Stage 162:============================>                       (108 + 10) / 200][Stage 162:================================>                   (124 + 10) / 200][Stage 162:=====================================>              (145 + 10) / 200][Stage 162:==========================================>         (165 + 10) / 200][Stage 162:===============================================>    (182 + 10) / 200]                                                                                2026-01-08 08:47:47,334 - INFO - ✅ Fact table created with 876,808 records
+2026-01-08 08:47:47,334 - INFO - Engineering features for trend analysis...
+2026-01-08 08:47:47,334 - INFO -   Defining window specifications...
+2026-01-08 08:47:47,346 - INFO -   Step 1: Sales velocity and TDP metrics...
+2026-01-08 08:47:47,366 - INFO -   Step 2: Time-based features...
+2026-01-08 08:47:47,416 - INFO -   Step 3: Rolling averages and trends...
+2026-01-08 08:47:47,478 - INFO -   Step 4: Market share metrics...
+2026-01-08 08:47:47,549 - INFO -   Step 5: Trend strength indicators...
+2026-01-08 08:47:47,642 - INFO -   Step 6: Performance tiers and flags...
+2026-01-08 08:47:48,615 - INFO - ✅ Feature engineering completed: 87 total features
+2026-01-08 08:47:48,615 - INFO - Creating monthly aggregations...
+2026-01-08 08:47:48,615 - INFO -   Creating monthly category-region aggregations...
+2026-01-08 08:47:48,688 - INFO -   Creating monthly brand aggregations...
+2026-01-08 08:47:48,742 - INFO -   Creating overall monthly summary...
+2026-01-08 08:47:48,792 - INFO - ✅ Monthly aggregations completed
+2026-01-08 08:47:48,792 - INFO - Creating quarterly aggregations...
+2026-01-08 08:47:48,792 - INFO -   Creating quarterly category aggregations...
+2026-01-08 08:47:48,882 - INFO -   Creating quarterly regional aggregations...
+2026-01-08 08:47:48,933 - INFO - ✅ Quarterly aggregations completed
+[Stage 174:=====>                                               (20 + 10) / 200][Stage 174:=========>                                           (35 + 10) / 200][Stage 174:=============>                                       (50 + 10) / 200][Stage 174:================>                                    (64 + 11) / 200][Stage 174:=====================>                               (81 + 10) / 200][Stage 174:==========================>                          (99 + 12) / 200][Stage 174:=============================>                      (112 + 10) / 200][Stage 174:=================================>                  (128 + 10) / 200][Stage 174:====================================>               (142 + 10) / 200][Stage 174:=======================================>            (152 + 10) / 200][Stage 174:==========================================>         (162 + 10) / 200][Stage 174:===============================================>    (182 + 10) / 200][Stage 177:>                                                      (0 + 10) / 12][Stage 177:====>                                                  (1 + 10) / 12][Stage 177:=======================>                                (5 + 7) / 12][Stage 177:==================================================>    (11 + 1) / 12][Stage 181:>                                                      (0 + 10) / 11][Stage 181:==================================================>    (10 + 1) / 11][Stage 186:====================================================>(198 + 2) / 200][Stage 186:====================================================>(199 + 1) / 200]                                                                                🚀 Starting Complete Data Cleaning and Feature Engineering Pipeline
+================================================================================
+
+================================================================================
+📋 DATA CLEANING AND PROCESSING REPORT
+================================================================================
+Report Generated: 2026-01-08 08:47:48
+
+🧹 DATA CLEANING SUMMARY:
+
+📊 PRODUCTS:
+   Initial Records: 120
+   Final Records: 120
+   Records Removed: 0
+   Data Quality: 100.0% retained
+   Cleaning Steps:
+     • Removed 0 records with null core fields
+     • Standardized Brand and Category to uppercase, trimmed whitespace
+     • Removed 0 products with invalid ABV (must be 0-20%)
+     • Removed 0 products with invalid prices (must be $0.01-$10.00)
+     • Removed 0 duplicate SKUs
+     • Added derived fields: Is_Beer, Is_Seltzer, Price_Tier
+
+📊 LOCATIONS:
+   Initial Records: 1,441
+   Final Records: 1,441
+   Records Removed: 0
+   Data Quality: 100.0% retained
+   Cleaning Steps:
+     • Removed 0 records with null core fields
+     • Standardized geographic and store type fields
+     • Removed 0 locations with invalid regions
+     • Removed 0 duplicate Retailer_IDs
+     • Added derived fields: Has_Alcohol_License, Store_Size_Numeric
+
+📊 SALES_TRANSACTIONS:
+   Initial Records: 887,849
+   Final Records: 876,808
+   Records Removed: 11,041
+   Data Quality: 98.8% retained
+   Cleaning Steps:
+     • Removed 0 records with null core fields
+     • Removed 0 records with invalid units sold
+     • Removed 0 records with invalid revenue
+     • Removed 11041 extreme outliers (>99th percentile)
+     • Standardized categorical fields
+     • Removed 0 duplicate Transaction_IDs
+     • Added derived fields: Revenue_Per_Unit_Calculated, Is_Weekend, temporal fields
+
+🔗 REFERENTIAL INTEGRITY:
+   Invalid SKU references removed: 0
+   Invalid Retailer references removed: 0
+   Final valid transactions: 876,808
+
+🔧 FEATURE ENGINEERING:
+   Total Features Created: 87
+   Fact Table Records: 876,808
+   Key Features Added:
+     • Sales velocity and TDP metrics
+     • Time-based features (seasonality, trends)
+     • Rolling averages and growth rates
+     • Market share and competitive metrics
+     • Performance tiers and anomaly flags
+
+📈 AGGREGATION TABLES:
+   monthly_category_region: 120 records
+   monthly_brand: 468 records
+   monthly_summary: 12 records
+   quarterly_category: 8 records
+   quarterly_regional: 20 records
+
+🎯 PIPELINE STATUS: ✅ COMPLETED SUCCESSFULLY
+   Data is ready for trend analysis and anomaly detection
+   All business rules validated and applied
+   Comprehensive feature set available for modeling
+
+🎉 Pipeline completed successfully!
+📊 Data is ready for business analysis
+🔍 Trend detection can now begin
+
+💡 Next Steps:
+   1. Run trend analysis on fact table
+   2. Use monthly/quarterly aggregations for reporting
+   3. Apply anomaly detection algorithms
+   4. Generate business recommendations
+2026-01-08 08:48:11,843 - INFO - Closing down clientserver connection

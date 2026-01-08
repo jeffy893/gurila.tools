@@ -1,0 +1,1442 @@
+Retailer_ID,Chain_Name,Store_Type,Region,State,City,Warehouse_ID,Store_Size,Urban_Rural,Location_Type,Market_Tier,Alcohol_License
+WH-1001,Distribution,Warehouse,Northeast,VT,Burlington,WH-1001,Large,Industrial,Warehouse,Tier 3,False
+WH-1002,Distribution,Warehouse,Northeast,MA,Boston,WH-1002,Large,Industrial,Warehouse,Tier 3,False
+WH-1003,Distribution,Warehouse,Northeast,NY,New York,WH-1003,Large,Industrial,Warehouse,Tier 2,True
+WH-1004,Distribution,Warehouse,Northeast,NY,Buffalo,WH-1004,Large,Industrial,Warehouse,Tier 3,True
+WH-1005,Distribution,Warehouse,Northeast,PA,Pittsburgh,WH-1005,Large,Industrial,Warehouse,Tier 3,True
+WH-1006,Distribution,Warehouse,Northeast,NY,Albany,WH-1006,Large,Industrial,Warehouse,Tier 3,True
+WH-1007,Distribution,Warehouse,Northeast,CT,Hartford,WH-1007,Large,Industrial,Warehouse,Tier 2,True
+WH-1008,Distribution,Warehouse,Northeast,NH,Manchester,WH-1008,Large,Industrial,Warehouse,Tier 3,True
+WH-1009,Distribution,Warehouse,Southeast,AL,Birmingham,WH-1009,Large,Industrial,Warehouse,Tier 1,True
+WH-1010,Distribution,Warehouse,Southeast,SC,Charleston,WH-1010,Large,Industrial,Warehouse,Tier 3,True
+WH-1011,Distribution,Warehouse,Southeast,LA,New Orleans,WH-1011,Large,Industrial,Warehouse,Tier 2,True
+WH-1012,Distribution,Warehouse,Southeast,FL,Miami,WH-1012,Large,Industrial,Warehouse,Tier 3,True
+WH-1013,Distribution,Warehouse,Southeast,KY,Louisville,WH-1013,Large,Industrial,Warehouse,Tier 2,True
+WH-1014,Distribution,Warehouse,Southeast,FL,Tampa,WH-1014,Large,Industrial,Warehouse,Tier 2,True
+WH-1015,Distribution,Warehouse,Southeast,GA,Atlanta,WH-1015,Large,Industrial,Warehouse,Tier 3,True
+WH-1016,Distribution,Warehouse,Southeast,NC,Raleigh,WH-1016,Large,Industrial,Warehouse,Tier 2,True
+WH-1017,Distribution,Warehouse,Southeast,FL,Orlando,WH-1017,Large,Industrial,Warehouse,Tier 3,False
+WH-1018,Distribution,Warehouse,Southeast,TN,Memphis,WH-1018,Large,Industrial,Warehouse,Tier 3,False
+WH-1019,Distribution,Warehouse,Southeast,VA,Virginia Beach,WH-1019,Large,Industrial,Warehouse,Tier 3,False
+WH-1020,Distribution,Warehouse,Southeast,VA,Richmond,WH-1020,Large,Industrial,Warehouse,Tier 1,False
+WH-1021,Distribution,Warehouse,Midwest,OH,Cleveland,WH-1021,Large,Industrial,Warehouse,Tier 3,True
+WH-1022,Distribution,Warehouse,Midwest,WI,Milwaukee,WH-1022,Large,Industrial,Warehouse,Tier 3,True
+WH-1023,Distribution,Warehouse,Midwest,IA,Des Moines,WH-1023,Large,Industrial,Warehouse,Tier 3,True
+WH-1024,Distribution,Warehouse,Midwest,NE,Omaha,WH-1024,Large,Industrial,Warehouse,Tier 1,True
+WH-1025,Distribution,Warehouse,Midwest,KS,Wichita,WH-1025,Large,Industrial,Warehouse,Tier 2,True
+WH-1026,Distribution,Warehouse,Midwest,MO,St. Louis,WH-1026,Large,Industrial,Warehouse,Tier 3,True
+WH-1027,Distribution,Warehouse,Midwest,MI,Grand Rapids,WH-1027,Large,Industrial,Warehouse,Tier 2,True
+WH-1028,Distribution,Warehouse,Midwest,IN,Indianapolis,WH-1028,Large,Industrial,Warehouse,Tier 2,True
+WH-1029,Distribution,Warehouse,Midwest,MO,Kansas City,WH-1029,Large,Industrial,Warehouse,Tier 2,False
+WH-1030,Distribution,Warehouse,Midwest,OH,Columbus,WH-1030,Large,Industrial,Warehouse,Tier 3,True
+WH-1031,Distribution,Warehouse,West,ID,Boise,WH-1031,Large,Industrial,Warehouse,Tier 3,True
+WH-1032,Distribution,Warehouse,West,AK,Anchorage,WH-1032,Large,Industrial,Warehouse,Tier 3,True
+WH-1033,Distribution,Warehouse,West,CA,Los Angeles,WH-1033,Large,Industrial,Warehouse,Tier 2,True
+WH-1034,Distribution,Warehouse,West,WA,Seattle,WH-1034,Large,Industrial,Warehouse,Tier 2,True
+WH-1035,Distribution,Warehouse,West,OR,Portland,WH-1035,Large,Industrial,Warehouse,Tier 3,False
+WH-1036,Distribution,Warehouse,West,NV,Las Vegas,WH-1036,Large,Industrial,Warehouse,Tier 3,True
+WH-1037,Distribution,Warehouse,West,AZ,Phoenix,WH-1037,Large,Industrial,Warehouse,Tier 3,True
+WH-1038,Distribution,Warehouse,West,WA,Spokane,WH-1038,Large,Industrial,Warehouse,Tier 3,True
+WH-1039,Distribution,Warehouse,West,CA,San Francisco,WH-1039,Large,Industrial,Warehouse,Tier 2,True
+WH-1040,Distribution,Warehouse,West,CA,San Diego,WH-1040,Large,Industrial,Warehouse,Tier 3,False
+WH-1041,Distribution,Warehouse,West,HI,Honolulu,WH-1041,Large,Industrial,Warehouse,Tier 2,True
+WH-1042,Distribution,Warehouse,West,UT,Salt Lake City,WH-1042,Large,Industrial,Warehouse,Tier 2,False
+WH-1043,Distribution,Warehouse,Southwest,OK,Oklahoma City,WH-1043,Large,Industrial,Warehouse,Tier 3,False
+WH-1044,Distribution,Warehouse,Southwest,TX,Dallas,WH-1044,Large,Industrial,Warehouse,Tier 1,False
+WH-1045,Distribution,Warehouse,Southwest,TX,El Paso,WH-1045,Large,Industrial,Warehouse,Tier 1,True
+WH-1046,Distribution,Warehouse,Southwest,TX,Plano,WH-1046,Large,Industrial,Warehouse,Tier 2,True
+WH-1047,Distribution,Warehouse,Southwest,TX,Fort Worth,WH-1047,Large,Industrial,Warehouse,Tier 2,True
+WH-1048,Distribution,Warehouse,Southwest,TX,Garland,WH-1048,Large,Industrial,Warehouse,Tier 3,True
+RTL-02001,BevMo!,Liquor,Northeast,ME,Portland,WH-1004,Medium,Urban,Retail,Tier 1,True
+RTL-02002,Casey's,Convenience,Northeast,ME,Portland,WH-1001,Medium,Rural,Retail,Tier 2,False
+RTL-02003,King Soopers,Grocery,Northeast,ME,Portland,WH-1005,Medium,Urban,Retail,Tier 1,True
+RTL-02004,Costco,Big Box,Northeast,ME,Portland,WH-1007,Medium,Urban,Retail,Tier 1,False
+RTL-02005,State Liquor Store,Liquor,Northeast,ME,Portland,WH-1001,Medium,Rural,Retail,Tier 1,True
+RTL-02006,Speedway,Convenience,Northeast,ME,Portland,WH-1006,Small,Suburban,Retail,Tier 3,True
+RTL-02007,Circle K,Convenience,Northeast,ME,Portland,WH-1005,Small,Urban,Retail,Tier 2,True
+RTL-02008,Publix,Grocery,Northeast,ME,Portland,WH-1007,Large,Suburban,Retail,Tier 3,True
+RTL-02009,Safeway,Grocery,Northeast,ME,Portland,WH-1002,Medium,Urban,Retail,Tier 3,True
+RTL-02010,Stop & Shop,Grocery,Northeast,NH,Manchester,WH-1005,Small,Suburban,Retail,Tier 3,True
+RTL-02011,Party City Liquor,Liquor,Northeast,NH,Manchester,WH-1002,Medium,Urban,Retail,Tier 1,True
+RTL-02012,Harris Teeter,Grocery,Northeast,NH,Manchester,WH-1004,Medium,Suburban,Retail,Tier 2,True
+RTL-02013,Sam's Club,Big Box,Northeast,NH,Manchester,WH-1007,Large,Suburban,Retail,Tier 3,False
+RTL-02014,Wawa,Convenience,Northeast,NH,Manchester,WH-1002,Small,Urban,Retail,Tier 2,False
+RTL-02015,Circle K,Convenience,Northeast,NH,Manchester,WH-1003,Medium,Rural,Retail,Tier 3,True
+RTL-02016,7-Eleven,Convenience,Northeast,NH,Manchester,WH-1005,Small,Urban,Retail,Tier 3,True
+RTL-02017,H-E-B,Grocery,Northeast,NH,Manchester,WH-1006,Small,Urban,Retail,Tier 3,True
+RTL-02018,Stop & Shop,Grocery,Northeast,NH,Manchester,WH-1001,Small,Suburban,Retail,Tier 3,True
+RTL-02019,Sam's Club,Big Box,Northeast,NH,Manchester,WH-1008,Small,Urban,Retail,Tier 2,True
+RTL-02020,Chevron,Gas Station,Northeast,NH,Manchester,WH-1007,Large,Urban,Retail,Tier 2,True
+RTL-02021,Publix,Grocery,Northeast,NH,Manchester,WH-1006,Large,Suburban,Retail,Tier 3,True
+RTL-02022,Wawa,Convenience,Northeast,NH,Manchester,WH-1005,Large,Urban,Retail,Tier 2,True
+RTL-02023,Publix,Grocery,Northeast,NH,Manchester,WH-1004,Medium,Urban,Retail,Tier 1,False
+RTL-02024,King Soopers,Grocery,Northeast,NH,Manchester,WH-1006,Small,Suburban,Retail,Tier 3,True
+RTL-02025,H-E-B,Grocery,Northeast,NH,Manchester,WH-1005,Medium,Urban,Retail,Tier 2,True
+RTL-02026,King Soopers,Grocery,Northeast,NH,Manchester,WH-1005,Small,Rural,Retail,Tier 3,True
+RTL-02027,Safeway,Grocery,Northeast,NH,Manchester,WH-1004,Small,Suburban,Retail,Tier 3,True
+RTL-02028,ABC Fine Wine,Liquor,Northeast,NH,Manchester,WH-1007,Medium,Suburban,Retail,Tier 2,True
+RTL-02029,Kroger,Grocery,Northeast,NH,Manchester,WH-1005,Large,Rural,Retail,Tier 3,True
+RTL-02030,Food Lion,Grocery,Northeast,NH,Manchester,WH-1003,Large,Urban,Retail,Tier 3,True
+RTL-02031,Food Lion,Grocery,Northeast,NH,Manchester,WH-1008,Medium,Suburban,Retail,Tier 3,True
+RTL-02032,Harris Teeter,Grocery,Northeast,VT,Burlington,WH-1005,Small,Urban,Retail,Tier 1,True
+RTL-02033,Wegmans,Grocery,Northeast,VT,Burlington,WH-1003,Medium,Suburban,Retail,Tier 2,True
+RTL-02034,BJ's Wholesale,Big Box,Northeast,VT,Burlington,WH-1002,Medium,Suburban,Retail,Tier 3,True
+RTL-02035,Costco,Big Box,Northeast,VT,Burlington,WH-1005,Medium,Suburban,Retail,Tier 1,True
+RTL-02036,Cumberland Farms,Convenience,Northeast,VT,Burlington,WH-1001,Large,Urban,Retail,Tier 1,False
+RTL-02037,Speedway,Convenience,Northeast,VT,Burlington,WH-1008,Medium,Urban,Retail,Tier 2,True
+RTL-02038,Phillips 66,Gas Station,Northeast,VT,Burlington,WH-1003,Medium,Urban,Retail,Tier 2,False
+RTL-02039,Spec's,Liquor,Northeast,VT,Burlington,WH-1001,Medium,Rural,Retail,Tier 2,True
+RTL-02040,Party City Liquor,Liquor,Northeast,VT,Burlington,WH-1001,Medium,Urban,Retail,Tier 1,True
+RTL-02041,Sheetz,Convenience,Northeast,VT,Burlington,WH-1006,Large,Suburban,Retail,Tier 2,True
+RTL-02042,Party City Liquor,Liquor,Northeast,VT,Burlington,WH-1006,Medium,Urban,Retail,Tier 2,True
+RTL-02043,Sam's Club,Big Box,Northeast,VT,Burlington,WH-1008,Medium,Suburban,Retail,Tier 2,False
+RTL-02044,Sam's Club,Big Box,Northeast,VT,Burlington,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02045,Sheetz,Convenience,Northeast,VT,Burlington,WH-1004,Large,Suburban,Retail,Tier 3,True
+RTL-02046,Party City Liquor,Liquor,Northeast,VT,Burlington,WH-1002,Medium,Urban,Retail,Tier 3,True
+RTL-02047,Target,Big Box,Northeast,VT,Burlington,WH-1006,Medium,Rural,Retail,Tier 3,False
+RTL-02048,Safeway,Grocery,Northeast,VT,Burlington,WH-1001,Small,Suburban,Retail,Tier 2,True
+RTL-02049,Sheetz,Convenience,Northeast,VT,Burlington,WH-1008,Medium,Rural,Retail,Tier 2,False
+RTL-02050,Royal Farms,Convenience,Northeast,VT,Burlington,WH-1001,Medium,Suburban,Retail,Tier 3,True
+RTL-02051,BJ's Wholesale,Big Box,Northeast,VT,Burlington,WH-1006,Large,Rural,Retail,Tier 2,False
+RTL-02052,BJ's Wholesale,Big Box,Northeast,VT,Burlington,WH-1005,Small,Urban,Retail,Tier 2,True
+RTL-02053,Total Wine,Liquor,Northeast,VT,Burlington,WH-1007,Medium,Urban,Retail,Tier 2,True
+RTL-02054,Cumberland Farms,Convenience,Northeast,VT,Burlington,WH-1005,Medium,Suburban,Retail,Tier 2,True
+RTL-02055,Harris Teeter,Grocery,Northeast,VT,Burlington,WH-1003,Medium,Suburban,Retail,Tier 3,True
+RTL-02056,BP,Gas Station,Northeast,VT,Burlington,WH-1007,Medium,Suburban,Retail,Tier 3,True
+RTL-02057,Costco,Big Box,Northeast,MA,Boston,WH-1003,Medium,Urban,Retail,Tier 2,True
+RTL-02058,Stop & Shop,Grocery,Northeast,MA,Boston,WH-1004,Medium,Rural,Retail,Tier 2,True
+RTL-02059,Costco,Big Box,Northeast,MA,Boston,WH-1006,Small,Urban,Retail,Tier 1,False
+RTL-02060,7-Eleven,Convenience,Northeast,MA,Boston,WH-1004,Medium,Suburban,Retail,Tier 3,False
+RTL-02061,Fine Wine & Good Spirits,Liquor,Northeast,MA,Boston,WH-1005,Small,Urban,Retail,Tier 2,True
+RTL-02062,Smith's,Grocery,Northeast,MA,Boston,WH-1007,Medium,Suburban,Retail,Tier 2,True
+RTL-02063,Smith's,Grocery,Northeast,MA,Boston,WH-1005,Medium,Urban,Retail,Tier 1,True
+RTL-02064,ABC Fine Wine,Liquor,Northeast,MA,Boston,WH-1002,Small,Suburban,Retail,Tier 1,True
+RTL-02065,QuikTrip,Convenience,Northeast,MA,Boston,WH-1004,Medium,Suburban,Retail,Tier 3,True
+RTL-02066,Binny's,Liquor,Northeast,MA,Boston,WH-1001,Medium,Urban,Retail,Tier 2,True
+RTL-02067,BevMo!,Liquor,Northeast,MA,Boston,WH-1002,Large,Suburban,Retail,Tier 3,True
+RTL-02068,Fine Wine & Good Spirits,Liquor,Northeast,MA,Boston,WH-1004,Large,Rural,Retail,Tier 2,True
+RTL-02069,Walmart,Big Box,Northeast,MA,Boston,WH-1007,Small,Urban,Retail,Tier 3,True
+RTL-02070,Speedway,Convenience,Northeast,MA,Boston,WH-1006,Medium,Suburban,Retail,Tier 2,False
+RTL-02071,Binny's,Liquor,Northeast,MA,Boston,WH-1007,Large,Suburban,Retail,Tier 3,True
+RTL-02072,Valero,Gas Station,Northeast,MA,Boston,WH-1006,Large,Urban,Retail,Tier 3,True
+RTL-02073,Casey's,Convenience,Northeast,MA,Boston,WH-1006,Small,Rural,Retail,Tier 2,True
+RTL-02074,Stop & Shop,Grocery,Northeast,MA,Boston,WH-1001,Small,Urban,Retail,Tier 2,True
+RTL-02075,H-E-B,Grocery,Northeast,MA,Boston,WH-1005,Medium,Rural,Retail,Tier 2,True
+RTL-02076,Binny's,Liquor,Northeast,MA,Boston,WH-1003,Small,Urban,Retail,Tier 1,True
+RTL-02077,Sheetz,Convenience,Northeast,MA,Boston,WH-1005,Medium,Suburban,Retail,Tier 3,True
+RTL-02078,BJ's Wholesale,Big Box,Northeast,MA,Boston,WH-1004,Small,Rural,Retail,Tier 3,True
+RTL-02079,Total Wine,Liquor,Northeast,MA,Boston,WH-1002,Medium,Rural,Retail,Tier 3,True
+RTL-02080,Walmart,Big Box,Northeast,RI,Providence,WH-1002,Small,Urban,Retail,Tier 2,False
+RTL-02081,Cumberland Farms,Convenience,Northeast,RI,Providence,WH-1007,Small,Suburban,Retail,Tier 3,True
+RTL-02082,Target,Big Box,Northeast,RI,Providence,WH-1002,Large,Suburban,Retail,Tier 1,True
+RTL-02083,QuikTrip,Convenience,Northeast,RI,Providence,WH-1002,Medium,Suburban,Retail,Tier 2,True
+RTL-02084,Target,Big Box,Northeast,RI,Providence,WH-1001,Medium,Suburban,Retail,Tier 3,True
+RTL-02085,Casey's,Convenience,Northeast,RI,Providence,WH-1002,Small,Urban,Retail,Tier 1,True
+RTL-02086,Ralphs,Grocery,Northeast,RI,Providence,WH-1008,Small,Suburban,Retail,Tier 3,True
+RTL-02087,Target,Big Box,Northeast,RI,Providence,WH-1005,Large,Suburban,Retail,Tier 2,True
+RTL-02088,Party City Liquor,Liquor,Northeast,RI,Providence,WH-1008,Medium,Rural,Retail,Tier 3,True
+RTL-02089,Wegmans,Grocery,Northeast,RI,Providence,WH-1004,Large,Urban,Retail,Tier 2,True
+RTL-02090,ABC Fine Wine,Liquor,Northeast,RI,Providence,WH-1008,Large,Suburban,Retail,Tier 2,True
+RTL-02091,QuikTrip,Convenience,Northeast,RI,Providence,WH-1002,Medium,Rural,Retail,Tier 2,True
+RTL-02092,Food Lion,Grocery,Northeast,RI,Providence,WH-1001,Small,Suburban,Retail,Tier 3,True
+RTL-02093,H-E-B,Grocery,Northeast,RI,Providence,WH-1003,Large,Rural,Retail,Tier 2,True
+RTL-02094,Harris Teeter,Grocery,Northeast,RI,Providence,WH-1002,Medium,Urban,Retail,Tier 1,True
+RTL-02095,Walmart,Big Box,Northeast,RI,Providence,WH-1001,Large,Suburban,Retail,Tier 3,True
+RTL-02096,Costco,Big Box,Northeast,RI,Providence,WH-1003,Small,Urban,Retail,Tier 1,True
+RTL-02097,Sunoco,Gas Station,Northeast,RI,Providence,WH-1002,Small,Urban,Retail,Tier 3,True
+RTL-02098,Total Wine,Liquor,Northeast,RI,Providence,WH-1005,Large,Suburban,Retail,Tier 3,True
+RTL-02099,Speedway,Convenience,Northeast,RI,Providence,WH-1003,Large,Suburban,Retail,Tier 2,True
+RTL-02100,QuikTrip,Convenience,Northeast,CT,Hartford,WH-1008,Large,Urban,Retail,Tier 2,True
+RTL-02101,Costco,Big Box,Northeast,CT,Hartford,WH-1002,Small,Suburban,Retail,Tier 3,True
+RTL-02102,Stop & Shop,Grocery,Northeast,CT,Hartford,WH-1001,Small,Suburban,Retail,Tier 2,True
+RTL-02103,Mobil,Gas Station,Northeast,CT,Hartford,WH-1007,Small,Rural,Retail,Tier 2,True
+RTL-02104,Phillips 66,Gas Station,Northeast,CT,Hartford,WH-1005,Medium,Rural,Retail,Tier 2,True
+RTL-02105,BevMo!,Liquor,Northeast,CT,Hartford,WH-1003,Large,Urban,Retail,Tier 1,True
+RTL-02106,Wawa,Convenience,Northeast,CT,Hartford,WH-1004,Small,Urban,Retail,Tier 1,False
+RTL-02107,Speedway,Convenience,Northeast,CT,Hartford,WH-1002,Large,Urban,Retail,Tier 2,True
+RTL-02108,Kroger,Grocery,Northeast,CT,Hartford,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02109,Royal Farms,Convenience,Northeast,CT,Hartford,WH-1004,Small,Urban,Retail,Tier 2,True
+RTL-02110,Party City Liquor,Liquor,Northeast,NY,Albany,WH-1007,Small,Urban,Retail,Tier 2,True
+RTL-02111,Phillips 66,Gas Station,Northeast,NY,Yonkers,WH-1004,Small,Urban,Retail,Tier 2,True
+RTL-02112,Fred Meyer,Grocery,Northeast,NY,New York,WH-1008,Large,Rural,Retail,Tier 3,False
+RTL-02113,Total Wine,Liquor,Northeast,NY,New Rochelle,WH-1007,Medium,Suburban,Retail,Tier 3,True
+RTL-02114,QFC,Grocery,Northeast,NY,Yonkers,WH-1008,Small,Urban,Retail,Tier 2,True
+RTL-02115,Harris Teeter,Grocery,Northeast,NY,Mount Vernon,WH-1001,Large,Urban,Retail,Tier 2,True
+RTL-02116,Harris Teeter,Grocery,Northeast,NY,Mount Vernon,WH-1004,Small,Rural,Retail,Tier 2,True
+RTL-02117,ABC Fine Wine,Liquor,Northeast,NY,Rochester,WH-1006,Superstore,Rural,Retail,Tier 3,True
+RTL-02118,Circle K,Convenience,Northeast,NY,New York,WH-1007,Superstore,Urban,Retail,Tier 1,False
+RTL-02119,Sunoco,Gas Station,Northeast,NY,Syracuse,WH-1003,Medium,Urban,Retail,Tier 2,True
+RTL-02120,King Soopers,Grocery,Northeast,NY,New York,WH-1001,Superstore,Suburban,Retail,Tier 3,True
+RTL-02121,Party City Liquor,Liquor,Northeast,NY,New Rochelle,WH-1007,Large,Rural,Retail,Tier 1,True
+RTL-02122,Citgo,Gas Station,Northeast,NY,Albany,WH-1002,Medium,Rural,Retail,Tier 2,True
+RTL-02123,ABC Fine Wine,Liquor,Northeast,NY,Yonkers,WH-1005,Small,Suburban,Retail,Tier 3,True
+RTL-02124,Casey's,Convenience,Northeast,NY,Buffalo,WH-1003,Large,Urban,Retail,Tier 2,True
+RTL-02125,Harris Teeter,Grocery,Northeast,NY,Albany,WH-1001,Large,Urban,Retail,Tier 2,True
+RTL-02126,Harris Teeter,Grocery,Northeast,NY,Syracuse,WH-1003,Small,Suburban,Retail,Tier 3,True
+RTL-02127,Costco,Big Box,Northeast,NY,Syracuse,WH-1008,Medium,Urban,Retail,Tier 1,False
+RTL-02128,QFC,Grocery,Northeast,NY,Rochester,WH-1005,Superstore,Urban,Retail,Tier 1,True
+RTL-02129,Party City Liquor,Liquor,Northeast,NY,Syracuse,WH-1003,Large,Urban,Retail,Tier 2,True
+RTL-02130,7-Eleven,Convenience,Northeast,NY,Yonkers,WH-1008,Large,Suburban,Retail,Tier 2,True
+RTL-02131,ABC Fine Wine,Liquor,Northeast,NY,Mount Vernon,WH-1001,Medium,Urban,Retail,Tier 2,True
+RTL-02132,Chevron,Gas Station,Northeast,NY,New Rochelle,WH-1003,Large,Urban,Retail,Tier 1,True
+RTL-02133,BevMo!,Liquor,Northeast,NY,New York,WH-1003,Large,Urban,Retail,Tier 2,True
+RTL-02134,Spec's,Liquor,Northeast,NY,Yonkers,WH-1007,Small,Suburban,Retail,Tier 3,True
+RTL-02135,Spec's,Liquor,Northeast,NY,Rochester,WH-1007,Small,Urban,Retail,Tier 2,True
+RTL-02136,Harris Teeter,Grocery,Northeast,NY,New York,WH-1008,Small,Suburban,Retail,Tier 3,True
+RTL-02137,Wawa,Convenience,Northeast,NY,Mount Vernon,WH-1006,Small,Urban,Retail,Tier 2,False
+RTL-02138,Target,Big Box,Northeast,NY,New Rochelle,WH-1004,Medium,Rural,Retail,Tier 2,True
+RTL-02139,H-E-B,Grocery,Northeast,NY,Rochester,WH-1008,Large,Rural,Retail,Tier 1,True
+RTL-02140,Fred Meyer,Grocery,Northeast,NY,Yonkers,WH-1001,Medium,Urban,Retail,Tier 1,True
+RTL-02141,Circle K,Convenience,Northeast,NY,Buffalo,WH-1006,Superstore,Rural,Retail,Tier 2,True
+RTL-02142,Wawa,Convenience,Northeast,NY,Rochester,WH-1005,Medium,Urban,Retail,Tier 2,True
+RTL-02143,Fine Wine & Good Spirits,Liquor,Northeast,NY,New Rochelle,WH-1008,Large,Suburban,Retail,Tier 3,True
+RTL-02144,Target,Big Box,Northeast,NY,Syracuse,WH-1004,Medium,Suburban,Retail,Tier 2,True
+RTL-02145,Stop & Shop,Grocery,Northeast,NY,Syracuse,WH-1005,Small,Suburban,Retail,Tier 3,False
+RTL-02146,Binny's,Liquor,Northeast,NY,Yonkers,WH-1003,Small,Rural,Retail,Tier 3,True
+RTL-02147,Fred Meyer,Grocery,Northeast,NY,Syracuse,WH-1005,Large,Rural,Retail,Tier 2,True
+RTL-02148,Exxon,Gas Station,Northeast,NY,New York,WH-1005,Superstore,Suburban,Retail,Tier 2,True
+RTL-02149,Fine Wine & Good Spirits,Liquor,Northeast,NY,Buffalo,WH-1005,Small,Rural,Retail,Tier 2,True
+RTL-02150,Circle K,Convenience,Northeast,NY,New Rochelle,WH-1004,Medium,Rural,Retail,Tier 3,True
+RTL-02151,Kroger,Grocery,Northeast,NY,Syracuse,WH-1005,Small,Suburban,Retail,Tier 2,True
+RTL-02152,RaceTrac,Convenience,Northeast,NY,Albany,WH-1005,Small,Urban,Retail,Tier 1,False
+RTL-02153,Exxon,Gas Station,Northeast,NY,Rochester,WH-1006,Medium,Urban,Retail,Tier 2,False
+RTL-02154,Sheetz,Convenience,Northeast,NY,Rochester,WH-1001,Small,Suburban,Retail,Tier 2,False
+RTL-02155,Giant Eagle,Grocery,Northeast,NY,Syracuse,WH-1005,Medium,Suburban,Retail,Tier 3,True
+RTL-02156,Shell,Gas Station,Northeast,NY,Mount Vernon,WH-1005,Small,Urban,Retail,Tier 2,True
+RTL-02157,Costco,Big Box,Northeast,NY,Syracuse,WH-1001,Large,Suburban,Retail,Tier 3,True
+RTL-02158,Giant Eagle,Grocery,Northeast,NY,Albany,WH-1008,Small,Urban,Retail,Tier 1,True
+RTL-02159,QuikTrip,Convenience,Northeast,NY,Yonkers,WH-1004,Large,Suburban,Retail,Tier 3,True
+RTL-02160,Fred Meyer,Grocery,Northeast,NY,New York,WH-1002,Medium,Rural,Retail,Tier 3,True
+RTL-02161,QFC,Grocery,Northeast,NY,Rochester,WH-1002,Medium,Urban,Retail,Tier 1,True
+RTL-02162,Royal Farms,Convenience,Northeast,NY,Buffalo,WH-1007,Small,Urban,Retail,Tier 1,True
+RTL-02163,Ralphs,Grocery,Northeast,NY,Syracuse,WH-1003,Large,Suburban,Retail,Tier 2,True
+RTL-02164,Cumberland Farms,Convenience,Northeast,NY,Buffalo,WH-1004,Large,Suburban,Retail,Tier 3,True
+RTL-02165,Party City Liquor,Liquor,Northeast,NY,New Rochelle,WH-1003,Medium,Suburban,Retail,Tier 3,True
+RTL-02166,QuikTrip,Convenience,Northeast,NY,Buffalo,WH-1006,Medium,Suburban,Retail,Tier 3,False
+RTL-02167,Royal Farms,Convenience,Northeast,NY,Yonkers,WH-1003,Large,Suburban,Retail,Tier 3,False
+RTL-02168,Cumberland Farms,Convenience,Northeast,NY,Syracuse,WH-1003,Small,Rural,Retail,Tier 1,True
+RTL-02169,Food Lion,Grocery,Northeast,NY,Syracuse,WH-1007,Medium,Urban,Retail,Tier 1,True
+RTL-02170,Giant Eagle,Grocery,Northeast,NY,Buffalo,WH-1003,Small,Rural,Retail,Tier 3,True
+RTL-02171,Exxon,Gas Station,Northeast,NY,Rochester,WH-1002,Medium,Urban,Retail,Tier 2,False
+RTL-02172,Walmart,Big Box,Northeast,NY,New Rochelle,WH-1004,Small,Rural,Retail,Tier 2,False
+RTL-02173,Sam's Club,Big Box,Northeast,NY,Syracuse,WH-1004,Large,Suburban,Retail,Tier 3,True
+RTL-02174,Circle K,Convenience,Northeast,NY,New York,WH-1003,Medium,Suburban,Retail,Tier 3,True
+RTL-02175,Sheetz,Convenience,Northeast,NY,Buffalo,WH-1007,Large,Suburban,Retail,Tier 3,True
+RTL-02176,Publix,Grocery,Northeast,NY,Buffalo,WH-1006,Medium,Urban,Retail,Tier 3,True
+RTL-02177,BJ's Wholesale,Big Box,Northeast,NY,New Rochelle,WH-1001,Small,Suburban,Retail,Tier 3,True
+RTL-02178,Phillips 66,Gas Station,Northeast,NY,Buffalo,WH-1004,Medium,Suburban,Retail,Tier 2,True
+RTL-02179,BJ's Wholesale,Big Box,Northeast,NY,New York,WH-1006,Small,Suburban,Retail,Tier 3,True
+RTL-02180,RaceTrac,Convenience,Northeast,NY,New York,WH-1004,Medium,Urban,Retail,Tier 1,True
+RTL-02181,Walmart,Big Box,Northeast,NY,Rochester,WH-1002,Large,Urban,Retail,Tier 3,True
+RTL-02182,Speedway,Convenience,Northeast,NY,Rochester,WH-1005,Small,Urban,Retail,Tier 2,False
+RTL-02183,Party City Liquor,Liquor,Northeast,NY,Yonkers,WH-1008,Medium,Urban,Retail,Tier 2,True
+RTL-02184,Total Wine,Liquor,Northeast,NY,Syracuse,WH-1004,Medium,Rural,Retail,Tier 2,True
+RTL-02185,Giant Eagle,Grocery,Northeast,NJ,Newark,WH-1004,Medium,Suburban,Retail,Tier 1,True
+RTL-02186,Sam's Club,Big Box,Northeast,NJ,Newark,WH-1005,Large,Suburban,Retail,Tier 2,True
+RTL-02187,Sam's Club,Big Box,Northeast,NJ,Newark,WH-1003,Small,Urban,Retail,Tier 3,False
+RTL-02188,Fry's,Grocery,Northeast,NJ,Newark,WH-1005,Large,Urban,Retail,Tier 3,True
+RTL-02189,Giant Eagle,Grocery,Northeast,NJ,Newark,WH-1005,Large,Urban,Retail,Tier 2,True
+RTL-02190,Royal Farms,Convenience,Northeast,NJ,Newark,WH-1004,Superstore,Rural,Retail,Tier 3,True
+RTL-02191,Safeway,Grocery,Northeast,NJ,Newark,WH-1001,Medium,Rural,Retail,Tier 3,True
+RTL-02192,Costco,Big Box,Northeast,NJ,Newark,WH-1002,Medium,Suburban,Retail,Tier 3,True
+RTL-02193,Smith's,Grocery,Northeast,NJ,Newark,WH-1005,Small,Rural,Retail,Tier 1,True
+RTL-02194,Speedway,Convenience,Northeast,NJ,Newark,WH-1002,Small,Suburban,Retail,Tier 3,True
+RTL-02195,Giant Eagle,Grocery,Northeast,NJ,Newark,WH-1005,Superstore,Urban,Retail,Tier 2,True
+RTL-02196,RaceTrac,Convenience,Northeast,NJ,Newark,WH-1002,Medium,Urban,Retail,Tier 3,True
+RTL-02197,King Soopers,Grocery,Northeast,NJ,Newark,WH-1008,Large,Suburban,Retail,Tier 3,True
+RTL-02198,Harris Teeter,Grocery,Northeast,NJ,Newark,WH-1006,Large,Suburban,Retail,Tier 3,True
+RTL-02199,Mobil,Gas Station,Northeast,NJ,Newark,WH-1008,Medium,Urban,Retail,Tier 2,True
+RTL-02200,Circle K,Convenience,Northeast,NJ,Newark,WH-1008,Small,Rural,Retail,Tier 2,True
+RTL-02201,BJ's Wholesale,Big Box,Northeast,NJ,Newark,WH-1001,Small,Urban,Retail,Tier 2,True
+RTL-02202,Safeway,Grocery,Northeast,NJ,Newark,WH-1005,Large,Rural,Retail,Tier 2,True
+RTL-02203,Target,Big Box,Northeast,NJ,Newark,WH-1002,Large,Urban,Retail,Tier 1,True
+RTL-02204,Total Wine,Liquor,Northeast,NJ,Newark,WH-1008,Small,Suburban,Retail,Tier 3,True
+RTL-02205,Kroger,Grocery,Northeast,NJ,Newark,WH-1004,Medium,Suburban,Retail,Tier 3,True
+RTL-02206,BJ's Wholesale,Big Box,Northeast,NJ,Newark,WH-1001,Medium,Suburban,Retail,Tier 3,False
+RTL-02207,Target,Big Box,Northeast,NJ,Newark,WH-1003,Medium,Suburban,Retail,Tier 2,True
+RTL-02208,Cumberland Farms,Convenience,Northeast,NJ,Newark,WH-1003,Medium,Rural,Retail,Tier 3,False
+RTL-02209,Binny's,Liquor,Northeast,NJ,Newark,WH-1005,Large,Urban,Retail,Tier 1,True
+RTL-02210,Wegmans,Grocery,Northeast,NJ,Newark,WH-1007,Medium,Suburban,Retail,Tier 1,True
+RTL-02211,Party City Liquor,Liquor,Northeast,NJ,Newark,WH-1006,Large,Rural,Retail,Tier 1,True
+RTL-02212,Stop & Shop,Grocery,Northeast,NJ,Newark,WH-1003,Small,Suburban,Retail,Tier 3,True
+RTL-02213,Total Wine,Liquor,Northeast,NJ,Newark,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02214,Sunoco,Gas Station,Northeast,PA,Allentown,WH-1002,Small,Suburban,Retail,Tier 3,False
+RTL-02215,Wawa,Convenience,Northeast,PA,Pittsburgh,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02216,Citgo,Gas Station,Northeast,PA,Philadelphia,WH-1006,Small,Suburban,Retail,Tier 3,True
+RTL-02217,QFC,Grocery,Northeast,PA,Bethlehem,WH-1007,Small,Suburban,Retail,Tier 3,True
+RTL-02218,Food Lion,Grocery,Northeast,PA,Erie,WH-1004,Medium,Suburban,Retail,Tier 3,True
+RTL-02219,Speedway,Convenience,Northeast,PA,Reading,WH-1002,Small,Urban,Retail,Tier 3,True
+RTL-02220,Casey's,Convenience,Northeast,PA,Scranton,WH-1004,Small,Urban,Retail,Tier 3,True
+RTL-02221,Royal Farms,Convenience,Northeast,PA,Philadelphia,WH-1005,Large,Suburban,Retail,Tier 3,False
+RTL-02222,Casey's,Convenience,Northeast,PA,Erie,WH-1002,Large,Rural,Retail,Tier 3,True
+RTL-02223,Cumberland Farms,Convenience,Northeast,PA,Pittsburgh,WH-1003,Medium,Suburban,Retail,Tier 2,True
+RTL-02224,7-Eleven,Convenience,Northeast,PA,Allentown,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02225,Wegmans,Grocery,Northeast,PA,Bethlehem,WH-1003,Medium,Suburban,Retail,Tier 2,True
+RTL-02226,Smith's,Grocery,Northeast,PA,Reading,WH-1005,Small,Urban,Retail,Tier 2,True
+RTL-02227,Stop & Shop,Grocery,Northeast,PA,Reading,WH-1002,Medium,Suburban,Retail,Tier 3,True
+RTL-02228,7-Eleven,Convenience,Northeast,PA,Allentown,WH-1007,Medium,Suburban,Retail,Tier 3,True
+RTL-02229,QuikTrip,Convenience,Northeast,PA,Pittsburgh,WH-1008,Small,Urban,Retail,Tier 3,False
+RTL-02230,Kroger,Grocery,Northeast,PA,Erie,WH-1003,Medium,Urban,Retail,Tier 2,False
+RTL-02231,Stop & Shop,Grocery,Northeast,PA,Erie,WH-1005,Medium,Urban,Retail,Tier 2,True
+RTL-02232,ABC Fine Wine,Liquor,Northeast,PA,Reading,WH-1008,Large,Suburban,Retail,Tier 3,True
+RTL-02233,Royal Farms,Convenience,Northeast,PA,Allentown,WH-1006,Medium,Rural,Retail,Tier 2,False
+RTL-02234,7-Eleven,Convenience,Northeast,PA,Allentown,WH-1002,Medium,Urban,Retail,Tier 2,True
+RTL-02235,Royal Farms,Convenience,Northeast,PA,Erie,WH-1005,Small,Suburban,Retail,Tier 2,True
+RTL-02236,King Soopers,Grocery,Northeast,PA,Scranton,WH-1006,Medium,Suburban,Retail,Tier 3,True
+RTL-02237,Fred Meyer,Grocery,Northeast,PA,Erie,WH-1003,Large,Urban,Retail,Tier 1,False
+RTL-02238,BJ's Wholesale,Big Box,Northeast,PA,Erie,WH-1008,Large,Urban,Retail,Tier 3,True
+RTL-02239,Sheetz,Convenience,Northeast,PA,Scranton,WH-1006,Small,Suburban,Retail,Tier 3,True
+RTL-02240,Fred Meyer,Grocery,Northeast,PA,Scranton,WH-1004,Large,Urban,Retail,Tier 1,True
+RTL-02241,Safeway,Grocery,Northeast,PA,Reading,WH-1002,Medium,Urban,Retail,Tier 1,True
+RTL-02242,Kroger,Grocery,Northeast,PA,Allentown,WH-1003,Medium,Suburban,Retail,Tier 2,True
+RTL-02243,RaceTrac,Convenience,Northeast,PA,Scranton,WH-1003,Large,Suburban,Retail,Tier 3,False
+RTL-02244,Sheetz,Convenience,Northeast,PA,Pittsburgh,WH-1004,Large,Urban,Retail,Tier 2,False
+RTL-02245,ABC Fine Wine,Liquor,Northeast,PA,Scranton,WH-1008,Medium,Suburban,Retail,Tier 2,True
+RTL-02246,Stop & Shop,Grocery,Northeast,PA,Erie,WH-1006,Small,Suburban,Retail,Tier 2,True
+RTL-02247,Safeway,Grocery,Northeast,PA,Allentown,WH-1002,Superstore,Suburban,Retail,Tier 3,True
+RTL-02248,BP,Gas Station,Northeast,PA,Philadelphia,WH-1005,Large,Rural,Retail,Tier 3,True
+RTL-02249,BJ's Wholesale,Big Box,Northeast,PA,Erie,WH-1003,Superstore,Suburban,Retail,Tier 3,False
+RTL-02250,Circle K,Convenience,Northeast,PA,Reading,WH-1002,Medium,Urban,Retail,Tier 2,True
+RTL-02251,Fred Meyer,Grocery,Northeast,PA,Erie,WH-1005,Large,Rural,Retail,Tier 3,True
+RTL-02252,Fry's,Grocery,Northeast,PA,Scranton,WH-1008,Small,Suburban,Retail,Tier 3,True
+RTL-02253,Wawa,Convenience,Northeast,PA,Bethlehem,WH-1003,Medium,Urban,Retail,Tier 3,False
+RTL-02254,Smith's,Grocery,Northeast,PA,Allentown,WH-1002,Small,Suburban,Retail,Tier 3,True
+RTL-02255,Exxon,Gas Station,Northeast,PA,Philadelphia,WH-1003,Small,Suburban,Retail,Tier 3,False
+RTL-02256,Stop & Shop,Grocery,Northeast,PA,Erie,WH-1001,Medium,Rural,Retail,Tier 3,True
+RTL-02257,Fine Wine & Good Spirits,Liquor,Northeast,PA,Erie,WH-1004,Small,Suburban,Retail,Tier 2,True
+RTL-02258,BevMo!,Liquor,Northeast,PA,Bethlehem,WH-1005,Large,Suburban,Retail,Tier 3,True
+RTL-02259,Stop & Shop,Grocery,Northeast,PA,Allentown,WH-1004,Medium,Urban,Retail,Tier 2,True
+RTL-02260,BJ's Wholesale,Big Box,Northeast,PA,Scranton,WH-1007,Medium,Suburban,Retail,Tier 2,True
+RTL-02261,Fry's,Grocery,Northeast,PA,Reading,WH-1002,Medium,Urban,Retail,Tier 2,True
+RTL-02262,Casey's,Convenience,Northeast,PA,Pittsburgh,WH-1002,Medium,Urban,Retail,Tier 3,True
+RTL-02263,H-E-B,Grocery,Northeast,PA,Philadelphia,WH-1003,Small,Suburban,Retail,Tier 2,True
+RTL-02264,BJ's Wholesale,Big Box,Northeast,PA,Pittsburgh,WH-1006,Small,Urban,Retail,Tier 2,True
+RTL-02265,Speedway,Convenience,Northeast,PA,Allentown,WH-1001,Medium,Rural,Retail,Tier 2,True
+RTL-02266,Target,Big Box,Northeast,PA,Reading,WH-1001,Superstore,Suburban,Retail,Tier 1,True
+RTL-02267,Kroger,Grocery,Northeast,PA,Pittsburgh,WH-1004,Small,Urban,Retail,Tier 1,True
+RTL-02268,Valero,Gas Station,Northeast,PA,Reading,WH-1004,Medium,Suburban,Retail,Tier 3,True
+RTL-02269,State Liquor Store,Liquor,Northeast,PA,Philadelphia,WH-1007,Large,Suburban,Retail,Tier 3,True
+RTL-02270,Spec's,Liquor,Northeast,PA,Erie,WH-1001,Medium,Urban,Retail,Tier 1,True
+RTL-02271,Stop & Shop,Grocery,Northeast,PA,Allentown,WH-1001,Small,Urban,Retail,Tier 3,True
+RTL-02272,Wegmans,Grocery,Northeast,PA,Erie,WH-1005,Medium,Suburban,Retail,Tier 3,True
+RTL-02273,Chevron,Gas Station,Northeast,PA,Bethlehem,WH-1003,Medium,Urban,Retail,Tier 2,True
+RTL-02274,Wegmans,Grocery,Northeast,PA,Reading,WH-1006,Large,Urban,Retail,Tier 2,True
+RTL-02275,Sam's Club,Big Box,Northeast,PA,Philadelphia,WH-1007,Large,Urban,Retail,Tier 3,False
+RTL-02276,BP,Gas Station,Northeast,PA,Allentown,WH-1001,Small,Urban,Retail,Tier 2,False
+RTL-02277,Harris Teeter,Grocery,Northeast,PA,Pittsburgh,WH-1007,Small,Rural,Retail,Tier 2,True
+RTL-02278,Binny's,Liquor,Northeast,PA,Allentown,WH-1008,Small,Suburban,Retail,Tier 3,True
+RTL-02279,BP,Gas Station,Northeast,PA,Allentown,WH-1002,Medium,Rural,Retail,Tier 3,True
+RTL-02280,Harris Teeter,Grocery,Northeast,PA,Allentown,WH-1006,Medium,Suburban,Retail,Tier 2,True
+RTL-02281,Chevron,Gas Station,Northeast,PA,Reading,WH-1004,Small,Rural,Retail,Tier 3,True
+RTL-02282,Wawa,Convenience,Northeast,PA,Pittsburgh,WH-1008,Medium,Rural,Retail,Tier 3,True
+RTL-02283,Fry's,Grocery,Northeast,PA,Pittsburgh,WH-1005,Large,Suburban,Retail,Tier 3,True
+RTL-02284,State Liquor Store,Liquor,Northeast,PA,Scranton,WH-1007,Small,Urban,Retail,Tier 2,True
+RTL-02285,Giant Eagle,Grocery,Northeast,PA,Allentown,WH-1001,Large,Urban,Retail,Tier 1,False
+RTL-02286,QFC,Grocery,Northeast,PA,Reading,WH-1007,Small,Rural,Retail,Tier 3,True
+RTL-02287,Sam's Club,Big Box,Northeast,PA,Reading,WH-1006,Medium,Suburban,Retail,Tier 3,True
+RTL-02288,QuikTrip,Convenience,Northeast,PA,Allentown,WH-1007,Medium,Rural,Retail,Tier 2,True
+RTL-02289,Casey's,Convenience,Northeast,PA,Bethlehem,WH-1008,Medium,Urban,Retail,Tier 2,True
+RTL-02290,Wegmans,Grocery,Northeast,PA,Allentown,WH-1001,Small,Urban,Retail,Tier 3,True
+RTL-02291,BevMo!,Liquor,Northeast,PA,Allentown,WH-1001,Medium,Suburban,Retail,Tier 1,True
+RTL-02292,Circle K,Convenience,Northeast,PA,Philadelphia,WH-1008,Large,Suburban,Retail,Tier 3,True
+RTL-02293,King Soopers,Grocery,Northeast,PA,Pittsburgh,WH-1006,Large,Urban,Retail,Tier 2,True
+RTL-02294,Casey's,Convenience,Southeast,DE,City_1,WH-1012,Medium,Urban,Retail,Tier 1,True
+RTL-02295,Food Lion,Grocery,Southeast,DE,City_3,WH-1013,Small,Urban,Retail,Tier 2,True
+RTL-02296,Royal Farms,Convenience,Southeast,DE,City_3,WH-1018,Medium,Suburban,Retail,Tier 2,True
+RTL-02297,Casey's,Convenience,Southeast,DE,City_2,WH-1014,Small,Urban,Retail,Tier 3,True
+RTL-02298,Walmart,Big Box,Southeast,DE,City_4,WH-1011,Small,Suburban,Retail,Tier 2,True
+RTL-02299,Sheetz,Convenience,Southeast,DE,City_2,WH-1010,Medium,Urban,Retail,Tier 2,False
+RTL-02300,Fry's,Grocery,Southeast,DE,City_3,WH-1014,Medium,Suburban,Retail,Tier 1,True
+RTL-02301,Mobil,Gas Station,Southeast,DE,City_4,WH-1011,Medium,Urban,Retail,Tier 3,True
+RTL-02302,Stop & Shop,Grocery,Southeast,DE,City_1,WH-1010,Medium,Urban,Retail,Tier 2,True
+RTL-02303,Fine Wine & Good Spirits,Liquor,Southeast,DE,City_3,WH-1017,Large,Suburban,Retail,Tier 3,True
+RTL-02304,Sam's Club,Big Box,Southeast,DE,City_4,WH-1019,Medium,Rural,Retail,Tier 2,True
+RTL-02305,RaceTrac,Convenience,Southeast,DE,City_1,WH-1018,Medium,Urban,Retail,Tier 2,False
+RTL-02306,Target,Big Box,Southeast,DE,City_3,WH-1019,Small,Suburban,Retail,Tier 2,True
+RTL-02307,Kroger,Grocery,Southeast,DE,City_3,WH-1011,Large,Urban,Retail,Tier 3,True
+RTL-02308,Costco,Big Box,Southeast,DE,City_5,WH-1013,Medium,Suburban,Retail,Tier 2,True
+RTL-02309,Chevron,Gas Station,Southeast,DE,City_2,WH-1012,Small,Rural,Retail,Tier 3,True
+RTL-02310,Valero,Gas Station,Southeast,DE,City_1,WH-1012,Large,Urban,Retail,Tier 2,False
+RTL-02311,Cumberland Farms,Convenience,Southeast,DE,City_4,WH-1016,Medium,Urban,Retail,Tier 2,True
+RTL-02312,King Soopers,Grocery,Southeast,DE,City_4,WH-1015,Small,Rural,Retail,Tier 3,True
+RTL-02313,Giant Eagle,Grocery,Southeast,MD,City_2,WH-1017,Large,Urban,Retail,Tier 2,True
+RTL-02314,Costco,Big Box,Southeast,MD,City_4,WH-1010,Large,Urban,Retail,Tier 2,False
+RTL-02315,7-Eleven,Convenience,Southeast,MD,City_3,WH-1015,Small,Urban,Retail,Tier 2,True
+RTL-02316,Sheetz,Convenience,Southeast,MD,City_5,WH-1018,Large,Suburban,Retail,Tier 2,False
+RTL-02317,Casey's,Convenience,Southeast,MD,City_2,WH-1013,Small,Suburban,Retail,Tier 2,True
+RTL-02318,Food Lion,Grocery,Southeast,MD,City_1,WH-1011,Medium,Rural,Retail,Tier 3,True
+RTL-02319,Marathon,Gas Station,Southeast,MD,City_1,WH-1010,Large,Suburban,Retail,Tier 3,True
+RTL-02320,Giant Eagle,Grocery,Southeast,MD,City_1,WH-1009,Superstore,Urban,Retail,Tier 2,True
+RTL-02321,Costco,Big Box,Southeast,MD,City_1,WH-1015,Large,Suburban,Retail,Tier 3,True
+RTL-02322,Giant Eagle,Grocery,Southeast,MD,City_2,WH-1009,Medium,Urban,Retail,Tier 1,True
+RTL-02323,Cumberland Farms,Convenience,Southeast,MD,City_2,WH-1018,Medium,Suburban,Retail,Tier 3,True
+RTL-02324,QuikTrip,Convenience,Southeast,MD,City_4,WH-1016,Large,Urban,Retail,Tier 3,True
+RTL-02325,Costco,Big Box,Southeast,MD,City_3,WH-1009,Small,Urban,Retail,Tier 3,True
+RTL-02326,Fry's,Grocery,Southeast,MD,City_4,WH-1012,Medium,Urban,Retail,Tier 3,True
+RTL-02327,Party City Liquor,Liquor,Southeast,MD,City_4,WH-1020,Small,Rural,Retail,Tier 2,True
+RTL-02328,Royal Farms,Convenience,Southeast,MD,City_1,WH-1010,Small,Suburban,Retail,Tier 2,True
+RTL-02329,Shell,Gas Station,Southeast,MD,City_2,WH-1012,Large,Urban,Retail,Tier 2,False
+RTL-02330,Costco,Big Box,Southeast,MD,City_2,WH-1019,Large,Rural,Retail,Tier 2,True
+RTL-02331,King Soopers,Grocery,Southeast,MD,City_4,WH-1020,Large,Urban,Retail,Tier 1,True
+RTL-02332,Harris Teeter,Grocery,Southeast,MD,City_2,WH-1018,Medium,Suburban,Retail,Tier 3,True
+RTL-02333,Publix,Grocery,Southeast,MD,City_5,WH-1011,Large,Urban,Retail,Tier 2,True
+RTL-02334,7-Eleven,Convenience,Southeast,MD,City_5,WH-1020,Large,Urban,Retail,Tier 3,True
+RTL-02335,Party City Liquor,Liquor,Southeast,MD,City_3,WH-1017,Large,Suburban,Retail,Tier 3,True
+RTL-02336,Phillips 66,Gas Station,Southeast,MD,City_5,WH-1013,Large,Urban,Retail,Tier 3,True
+RTL-02337,Citgo,Gas Station,Southeast,MD,City_3,WH-1015,Small,Suburban,Retail,Tier 3,True
+RTL-02338,H-E-B,Grocery,Southeast,MD,City_1,WH-1012,Large,Urban,Retail,Tier 3,False
+RTL-02339,Cumberland Farms,Convenience,Southeast,MD,City_4,WH-1014,Medium,Suburban,Retail,Tier 3,False
+RTL-02340,Ralphs,Grocery,Southeast,MD,City_2,WH-1020,Medium,Urban,Retail,Tier 2,True
+RTL-02341,Costco,Big Box,Southeast,MD,City_4,WH-1020,Medium,Urban,Retail,Tier 1,True
+RTL-02342,King Soopers,Grocery,Southeast,MD,City_1,WH-1013,Medium,Rural,Retail,Tier 3,True
+RTL-02343,Circle K,Convenience,Southeast,MD,City_2,WH-1019,Medium,Suburban,Retail,Tier 3,False
+RTL-02344,BJ's Wholesale,Big Box,Southeast,MD,City_4,WH-1019,Large,Urban,Retail,Tier 2,True
+RTL-02345,QFC,Grocery,Southeast,MD,City_2,WH-1010,Medium,Urban,Retail,Tier 1,True
+RTL-02346,QuikTrip,Convenience,Southeast,MD,City_1,WH-1012,Small,Suburban,Retail,Tier 3,False
+RTL-02347,Fry's,Grocery,Southeast,MD,City_3,WH-1012,Large,Urban,Retail,Tier 1,True
+RTL-02348,BJ's Wholesale,Big Box,Southeast,MD,City_3,WH-1017,Medium,Suburban,Retail,Tier 3,True
+RTL-02349,Shell,Gas Station,Southeast,MD,City_1,WH-1011,Small,Rural,Retail,Tier 3,True
+RTL-02350,QuikTrip,Convenience,Southeast,MD,City_3,WH-1019,Medium,Urban,Retail,Tier 1,False
+RTL-02351,Sam's Club,Big Box,Southeast,DC,City_5,WH-1016,Small,Suburban,Retail,Tier 3,False
+RTL-02352,ABC Fine Wine,Liquor,Southeast,DC,City_4,WH-1009,Small,Suburban,Retail,Tier 1,True
+RTL-02353,Phillips 66,Gas Station,Southeast,DC,City_1,WH-1011,Superstore,Suburban,Retail,Tier 3,False
+RTL-02354,Sheetz,Convenience,Southeast,DC,City_5,WH-1015,Medium,Suburban,Retail,Tier 2,True
+RTL-02355,Cumberland Farms,Convenience,Southeast,DC,City_4,WH-1011,Large,Urban,Retail,Tier 2,False
+RTL-02356,Sheetz,Convenience,Southeast,DC,City_1,WH-1017,Small,Suburban,Retail,Tier 2,True
+RTL-02357,Ralphs,Grocery,Southeast,DC,City_5,WH-1011,Small,Suburban,Retail,Tier 2,True
+RTL-02358,Sheetz,Convenience,Southeast,DC,City_4,WH-1016,Large,Urban,Retail,Tier 2,True
+RTL-02359,Food Lion,Grocery,Southeast,DC,City_5,WH-1009,Small,Suburban,Retail,Tier 2,True
+RTL-02360,Smith's,Grocery,Southeast,DC,City_2,WH-1013,Medium,Urban,Retail,Tier 2,True
+RTL-02361,ABC Fine Wine,Liquor,Southeast,DC,City_4,WH-1009,Large,Suburban,Retail,Tier 1,True
+RTL-02362,Publix,Grocery,Southeast,DC,City_1,WH-1010,Large,Suburban,Retail,Tier 3,True
+RTL-02363,Speedway,Convenience,Southeast,DC,City_4,WH-1014,Medium,Suburban,Retail,Tier 3,True
+RTL-02364,Royal Farms,Convenience,Southeast,DC,City_4,WH-1014,Medium,Suburban,Retail,Tier 3,False
+RTL-02365,Wawa,Convenience,Southeast,VA,Richmond,WH-1015,Medium,Urban,Retail,Tier 3,False
+RTL-02366,BJ's Wholesale,Big Box,Southeast,VA,Virginia Beach,WH-1014,Small,Urban,Retail,Tier 3,True
+RTL-02367,Walmart,Big Box,Southeast,VA,Virginia Beach,WH-1016,Medium,Urban,Retail,Tier 1,True
+RTL-02368,Kroger,Grocery,Southeast,VA,Virginia Beach,WH-1020,Medium,Rural,Retail,Tier 2,True
+RTL-02369,King Soopers,Grocery,Southeast,VA,Virginia Beach,WH-1017,Medium,Suburban,Retail,Tier 3,True
+RTL-02370,Publix,Grocery,Southeast,VA,Richmond,WH-1012,Small,Suburban,Retail,Tier 3,True
+RTL-02371,Smith's,Grocery,Southeast,VA,Virginia Beach,WH-1016,Small,Urban,Retail,Tier 3,True
+RTL-02372,Wegmans,Grocery,Southeast,VA,Virginia Beach,WH-1009,Small,Urban,Retail,Tier 1,True
+RTL-02373,Harris Teeter,Grocery,Southeast,VA,Virginia Beach,WH-1016,Small,Suburban,Retail,Tier 2,True
+RTL-02374,Publix,Grocery,Southeast,VA,Virginia Beach,WH-1015,Medium,Urban,Retail,Tier 1,True
+RTL-02375,Wawa,Convenience,Southeast,VA,Virginia Beach,WH-1009,Medium,Suburban,Retail,Tier 3,True
+RTL-02376,Spec's,Liquor,Southeast,VA,Virginia Beach,WH-1020,Medium,Urban,Retail,Tier 2,True
+RTL-02377,Royal Farms,Convenience,Southeast,VA,Virginia Beach,WH-1016,Large,Urban,Retail,Tier 1,False
+RTL-02378,RaceTrac,Convenience,Southeast,VA,Virginia Beach,WH-1012,Medium,Urban,Retail,Tier 2,True
+RTL-02379,Sam's Club,Big Box,Southeast,VA,Richmond,WH-1013,Small,Suburban,Retail,Tier 3,True
+RTL-02380,Total Wine,Liquor,Southeast,VA,Richmond,WH-1018,Medium,Suburban,Retail,Tier 3,True
+RTL-02381,BJ's Wholesale,Big Box,Southeast,VA,Virginia Beach,WH-1018,Medium,Suburban,Retail,Tier 1,True
+RTL-02382,Safeway,Grocery,Southeast,VA,Virginia Beach,WH-1014,Small,Urban,Retail,Tier 3,True
+RTL-02383,Giant Eagle,Grocery,Southeast,VA,Virginia Beach,WH-1013,Large,Urban,Retail,Tier 2,True
+RTL-02384,Speedway,Convenience,Southeast,VA,Richmond,WH-1009,Medium,Suburban,Retail,Tier 3,True
+RTL-02385,BJ's Wholesale,Big Box,Southeast,VA,Virginia Beach,WH-1018,Large,Suburban,Retail,Tier 3,True
+RTL-02386,Harris Teeter,Grocery,Southeast,VA,Virginia Beach,WH-1016,Medium,Suburban,Retail,Tier 2,True
+RTL-02387,Circle K,Convenience,Southeast,WV,City_4,WH-1011,Small,Suburban,Retail,Tier 2,False
+RTL-02388,Party City Liquor,Liquor,Southeast,WV,City_4,WH-1020,Large,Suburban,Retail,Tier 3,True
+RTL-02389,Fine Wine & Good Spirits,Liquor,Southeast,WV,City_1,WH-1015,Medium,Suburban,Retail,Tier 2,True
+RTL-02390,Walmart,Big Box,Southeast,WV,City_4,WH-1020,Medium,Urban,Retail,Tier 3,True
+RTL-02391,Wegmans,Grocery,Southeast,WV,City_4,WH-1013,Large,Urban,Retail,Tier 2,True
+RTL-02392,QFC,Grocery,Southeast,WV,City_2,WH-1020,Medium,Urban,Retail,Tier 3,True
+RTL-02393,Costco,Big Box,Southeast,WV,City_3,WH-1009,Small,Suburban,Retail,Tier 2,True
+RTL-02394,Sheetz,Convenience,Southeast,WV,City_4,WH-1014,Medium,Suburban,Retail,Tier 2,True
+RTL-02395,Wegmans,Grocery,Southeast,WV,City_3,WH-1011,Superstore,Urban,Retail,Tier 2,True
+RTL-02396,Giant Eagle,Grocery,Southeast,KY,Louisville,WH-1019,Medium,Urban,Retail,Tier 1,True
+RTL-02397,Ralphs,Grocery,Southeast,KY,Louisville,WH-1013,Small,Rural,Retail,Tier 3,True
+RTL-02398,King Soopers,Grocery,Southeast,KY,Louisville,WH-1020,Medium,Rural,Retail,Tier 3,True
+RTL-02399,Cumberland Farms,Convenience,Southeast,KY,Louisville,WH-1009,Small,Suburban,Retail,Tier 2,True
+RTL-02400,Kroger,Grocery,Southeast,KY,Louisville,WH-1014,Medium,Urban,Retail,Tier 2,True
+RTL-02401,Circle K,Convenience,Southeast,KY,Louisville,WH-1014,Small,Suburban,Retail,Tier 2,False
+RTL-02402,Target,Big Box,Southeast,KY,Louisville,WH-1011,Small,Suburban,Retail,Tier 2,True
+RTL-02403,Casey's,Convenience,Southeast,KY,Louisville,WH-1020,Large,Suburban,Retail,Tier 3,True
+RTL-02404,Fry's,Grocery,Southeast,KY,Louisville,WH-1016,Superstore,Urban,Retail,Tier 3,True
+RTL-02405,Binny's,Liquor,Southeast,KY,Louisville,WH-1011,Large,Suburban,Retail,Tier 3,True
+RTL-02406,Giant Eagle,Grocery,Southeast,KY,Louisville,WH-1017,Large,Suburban,Retail,Tier 3,True
+RTL-02407,Speedway,Convenience,Southeast,KY,Louisville,WH-1020,Large,Suburban,Retail,Tier 3,True
+RTL-02408,Mobil,Gas Station,Southeast,KY,Louisville,WH-1010,Large,Suburban,Retail,Tier 2,True
+RTL-02409,Spec's,Liquor,Southeast,KY,Louisville,WH-1014,Large,Urban,Retail,Tier 1,True
+RTL-02410,Binny's,Liquor,Southeast,KY,Louisville,WH-1017,Large,Rural,Retail,Tier 3,True
+RTL-02411,Publix,Grocery,Southeast,TN,Memphis,WH-1020,Medium,Rural,Retail,Tier 2,True
+RTL-02412,Royal Farms,Convenience,Southeast,TN,Memphis,WH-1014,Medium,Suburban,Retail,Tier 3,False
+RTL-02413,Costco,Big Box,Southeast,TN,Nashville,WH-1017,Medium,Suburban,Retail,Tier 3,False
+RTL-02414,ABC Fine Wine,Liquor,Southeast,TN,Memphis,WH-1020,Large,Suburban,Retail,Tier 3,True
+RTL-02415,Wawa,Convenience,Southeast,TN,Memphis,WH-1017,Small,Urban,Retail,Tier 2,False
+RTL-02416,7-Eleven,Convenience,Southeast,TN,Memphis,WH-1016,Small,Rural,Retail,Tier 2,True
+RTL-02417,BJ's Wholesale,Big Box,Southeast,TN,Nashville,WH-1015,Small,Suburban,Retail,Tier 2,True
+RTL-02418,Wawa,Convenience,Southeast,TN,Memphis,WH-1018,Small,Urban,Retail,Tier 2,False
+RTL-02419,Target,Big Box,Southeast,TN,Nashville,WH-1016,Large,Suburban,Retail,Tier 3,True
+RTL-02420,ABC Fine Wine,Liquor,Southeast,TN,Nashville,WH-1010,Medium,Suburban,Retail,Tier 3,True
+RTL-02421,Stop & Shop,Grocery,Southeast,TN,Nashville,WH-1009,Medium,Suburban,Retail,Tier 3,True
+RTL-02422,QFC,Grocery,Southeast,TN,Memphis,WH-1016,Large,Suburban,Retail,Tier 2,True
+RTL-02423,Binny's,Liquor,Southeast,TN,Nashville,WH-1010,Small,Urban,Retail,Tier 3,True
+RTL-02424,Sheetz,Convenience,Southeast,TN,Memphis,WH-1014,Medium,Suburban,Retail,Tier 3,True
+RTL-02425,Circle K,Convenience,Southeast,TN,Nashville,WH-1011,Medium,Urban,Retail,Tier 1,False
+RTL-02426,Stop & Shop,Grocery,Southeast,TN,Memphis,WH-1018,Small,Suburban,Retail,Tier 2,True
+RTL-02427,King Soopers,Grocery,Southeast,TN,Nashville,WH-1016,Small,Urban,Retail,Tier 3,True
+RTL-02428,Food Lion,Grocery,Southeast,TN,Nashville,WH-1016,Medium,Rural,Retail,Tier 3,True
+RTL-02429,Wegmans,Grocery,Southeast,TN,Nashville,WH-1009,Medium,Urban,Retail,Tier 1,True
+RTL-02430,Publix,Grocery,Southeast,TN,Nashville,WH-1011,Medium,Urban,Retail,Tier 2,True
+RTL-02431,Fine Wine & Good Spirits,Liquor,Southeast,TN,Memphis,WH-1018,Medium,Suburban,Retail,Tier 1,True
+RTL-02432,Safeway,Grocery,Southeast,TN,Memphis,WH-1010,Large,Suburban,Retail,Tier 1,True
+RTL-02433,Party City Liquor,Liquor,Southeast,TN,Memphis,WH-1012,Small,Suburban,Retail,Tier 3,True
+RTL-02434,Stop & Shop,Grocery,Southeast,TN,Nashville,WH-1010,Small,Suburban,Retail,Tier 3,True
+RTL-02435,Fred Meyer,Grocery,Southeast,TN,Nashville,WH-1017,Small,Suburban,Retail,Tier 3,True
+RTL-02436,Giant Eagle,Grocery,Southeast,TN,Memphis,WH-1009,Small,Suburban,Retail,Tier 2,True
+RTL-02437,Wegmans,Grocery,Southeast,TN,Memphis,WH-1017,Small,Rural,Retail,Tier 1,True
+RTL-02438,ABC Fine Wine,Liquor,Southeast,TN,Nashville,WH-1017,Large,Urban,Retail,Tier 2,True
+RTL-02439,Fine Wine & Good Spirits,Liquor,Southeast,TN,Nashville,WH-1011,Large,Urban,Retail,Tier 1,True
+RTL-02440,Mobil,Gas Station,Southeast,NC,Charlotte,WH-1018,Small,Suburban,Retail,Tier 1,True
+RTL-02441,Marathon,Gas Station,Southeast,NC,Cary,WH-1018,Small,Urban,Retail,Tier 2,True
+RTL-02442,Spec's,Liquor,Southeast,NC,Charlotte,WH-1016,Large,Rural,Retail,Tier 2,True
+RTL-02443,Cumberland Farms,Convenience,Southeast,NC,Winston-Salem,WH-1012,Large,Suburban,Retail,Tier 2,True
+RTL-02444,Wegmans,Grocery,Southeast,NC,Fayetteville,WH-1015,Medium,Suburban,Retail,Tier 3,True
+RTL-02445,Target,Big Box,Southeast,NC,Fayetteville,WH-1011,Medium,Urban,Retail,Tier 1,True
+RTL-02446,BevMo!,Liquor,Southeast,NC,Winston-Salem,WH-1012,Large,Urban,Retail,Tier 1,True
+RTL-02447,QuikTrip,Convenience,Southeast,NC,Fayetteville,WH-1009,Large,Suburban,Retail,Tier 3,True
+RTL-02448,Harris Teeter,Grocery,Southeast,NC,Cary,WH-1012,Large,Urban,Retail,Tier 1,True
+RTL-02449,Casey's,Convenience,Southeast,NC,Durham,WH-1016,Medium,Suburban,Retail,Tier 3,True
+RTL-02450,Ralphs,Grocery,Southeast,NC,Greensboro,WH-1017,Large,Suburban,Retail,Tier 1,True
+RTL-02451,Casey's,Convenience,Southeast,NC,Raleigh,WH-1013,Large,Suburban,Retail,Tier 2,False
+RTL-02452,Royal Farms,Convenience,Southeast,NC,Greensboro,WH-1017,Large,Urban,Retail,Tier 1,True
+RTL-02453,Chevron,Gas Station,Southeast,NC,Winston-Salem,WH-1019,Large,Urban,Retail,Tier 1,True
+RTL-02454,Walmart,Big Box,Southeast,NC,Durham,WH-1015,Large,Suburban,Retail,Tier 3,True
+RTL-02455,Royal Farms,Convenience,Southeast,NC,Durham,WH-1019,Medium,Urban,Retail,Tier 3,True
+RTL-02456,Walmart,Big Box,Southeast,NC,Raleigh,WH-1013,Small,Urban,Retail,Tier 1,True
+RTL-02457,Kroger,Grocery,Southeast,NC,Cary,WH-1018,Small,Suburban,Retail,Tier 2,True
+RTL-02458,Casey's,Convenience,Southeast,NC,Durham,WH-1015,Large,Suburban,Retail,Tier 3,True
+RTL-02459,Speedway,Convenience,Southeast,NC,Charlotte,WH-1015,Large,Suburban,Retail,Tier 2,True
+RTL-02460,Sam's Club,Big Box,Southeast,NC,Greensboro,WH-1017,Large,Suburban,Retail,Tier 3,True
+RTL-02461,Sam's Club,Big Box,Southeast,NC,Cary,WH-1020,Small,Rural,Retail,Tier 2,True
+RTL-02462,Mobil,Gas Station,Southeast,NC,Durham,WH-1010,Medium,Suburban,Retail,Tier 3,False
+RTL-02463,Total Wine,Liquor,Southeast,NC,Greensboro,WH-1018,Small,Urban,Retail,Tier 2,True
+RTL-02464,Royal Farms,Convenience,Southeast,NC,Greensboro,WH-1011,Small,Suburban,Retail,Tier 2,True
+RTL-02465,7-Eleven,Convenience,Southeast,NC,Charlotte,WH-1012,Medium,Suburban,Retail,Tier 3,True
+RTL-02466,Cumberland Farms,Convenience,Southeast,NC,Fayetteville,WH-1010,Medium,Rural,Retail,Tier 3,True
+RTL-02467,Walmart,Big Box,Southeast,NC,Greensboro,WH-1016,Small,Rural,Retail,Tier 3,False
+RTL-02468,Royal Farms,Convenience,Southeast,NC,Winston-Salem,WH-1013,Medium,Rural,Retail,Tier 3,True
+RTL-02469,Party City Liquor,Liquor,Southeast,NC,Raleigh,WH-1011,Small,Suburban,Retail,Tier 3,True
+RTL-02470,Ralphs,Grocery,Southeast,NC,Durham,WH-1009,Small,Rural,Retail,Tier 2,True
+RTL-02471,QuikTrip,Convenience,Southeast,NC,Charlotte,WH-1012,Superstore,Rural,Retail,Tier 3,True
+RTL-02472,Royal Farms,Convenience,Southeast,NC,Fayetteville,WH-1017,Small,Suburban,Retail,Tier 2,True
+RTL-02473,Phillips 66,Gas Station,Southeast,NC,Cary,WH-1014,Medium,Rural,Retail,Tier 3,True
+RTL-02474,Publix,Grocery,Southeast,NC,Winston-Salem,WH-1019,Medium,Suburban,Retail,Tier 3,True
+RTL-02475,Target,Big Box,Southeast,NC,Raleigh,WH-1015,Medium,Rural,Retail,Tier 2,False
+RTL-02476,Binny's,Liquor,Southeast,NC,Cary,WH-1009,Medium,Suburban,Retail,Tier 2,True
+RTL-02477,BP,Gas Station,Southeast,NC,Fayetteville,WH-1014,Medium,Suburban,Retail,Tier 1,True
+RTL-02478,Binny's,Liquor,Southeast,NC,Durham,WH-1018,Large,Urban,Retail,Tier 1,False
+RTL-02479,State Liquor Store,Liquor,Southeast,NC,Raleigh,WH-1015,Large,Urban,Retail,Tier 3,True
+RTL-02480,Walmart,Big Box,Southeast,NC,Winston-Salem,WH-1011,Large,Urban,Retail,Tier 1,True
+RTL-02481,Sunoco,Gas Station,Southeast,NC,Cary,WH-1019,Superstore,Suburban,Retail,Tier 2,True
+RTL-02482,RaceTrac,Convenience,Southeast,NC,Charlotte,WH-1011,Medium,Suburban,Retail,Tier 3,False
+RTL-02483,Shell,Gas Station,Southeast,NC,Cary,WH-1019,Small,Suburban,Retail,Tier 3,True
+RTL-02484,Chevron,Gas Station,Southeast,NC,Winston-Salem,WH-1019,Medium,Suburban,Retail,Tier 3,True
+RTL-02485,Citgo,Gas Station,Southeast,SC,Charleston,WH-1012,Small,Suburban,Retail,Tier 3,False
+RTL-02486,Harris Teeter,Grocery,Southeast,SC,Charleston,WH-1013,Small,Urban,Retail,Tier 2,True
+RTL-02487,Spec's,Liquor,Southeast,SC,Charleston,WH-1017,Superstore,Suburban,Retail,Tier 3,True
+RTL-02488,Costco,Big Box,Southeast,SC,Charleston,WH-1013,Medium,Suburban,Retail,Tier 3,True
+RTL-02489,Fred Meyer,Grocery,Southeast,SC,Charleston,WH-1015,Large,Rural,Retail,Tier 3,True
+RTL-02490,Spec's,Liquor,Southeast,SC,Charleston,WH-1012,Large,Rural,Retail,Tier 1,True
+RTL-02491,Speedway,Convenience,Southeast,SC,Charleston,WH-1017,Small,Suburban,Retail,Tier 1,True
+RTL-02492,Smith's,Grocery,Southeast,SC,Charleston,WH-1017,Medium,Urban,Retail,Tier 2,True
+RTL-02493,Total Wine,Liquor,Southeast,SC,Charleston,WH-1011,Small,Suburban,Retail,Tier 3,True
+RTL-02494,H-E-B,Grocery,Southeast,SC,Charleston,WH-1010,Large,Urban,Retail,Tier 3,True
+RTL-02495,BevMo!,Liquor,Southeast,SC,Charleston,WH-1017,Medium,Urban,Retail,Tier 3,True
+RTL-02496,QFC,Grocery,Southeast,SC,Charleston,WH-1013,Medium,Suburban,Retail,Tier 3,True
+RTL-02497,Cumberland Farms,Convenience,Southeast,SC,Charleston,WH-1020,Medium,Urban,Retail,Tier 2,False
+RTL-02498,Phillips 66,Gas Station,Southeast,SC,Charleston,WH-1015,Medium,Urban,Retail,Tier 3,True
+RTL-02499,Publix,Grocery,Southeast,SC,Charleston,WH-1014,Large,Rural,Retail,Tier 3,True
+RTL-02500,Fry's,Grocery,Southeast,GA,Savannah,WH-1017,Large,Suburban,Retail,Tier 2,True
+RTL-02501,Smith's,Grocery,Southeast,GA,Athens,WH-1017,Small,Urban,Retail,Tier 2,True
+RTL-02502,Ralphs,Grocery,Southeast,GA,Sandy Springs,WH-1012,Superstore,Suburban,Retail,Tier 3,True
+RTL-02503,BJ's Wholesale,Big Box,Southeast,GA,Atlanta,WH-1019,Medium,Suburban,Retail,Tier 2,True
+RTL-02504,Safeway,Grocery,Southeast,GA,Sandy Springs,WH-1017,Small,Suburban,Retail,Tier 3,True
+RTL-02505,Walmart,Big Box,Southeast,GA,Savannah,WH-1012,Medium,Urban,Retail,Tier 1,True
+RTL-02506,7-Eleven,Convenience,Southeast,GA,Atlanta,WH-1017,Small,Rural,Retail,Tier 3,True
+RTL-02507,Target,Big Box,Southeast,GA,Augusta,WH-1014,Large,Suburban,Retail,Tier 3,True
+RTL-02508,Cumberland Farms,Convenience,Southeast,GA,Atlanta,WH-1010,Large,Urban,Retail,Tier 2,False
+RTL-02509,Giant Eagle,Grocery,Southeast,GA,Savannah,WH-1012,Small,Urban,Retail,Tier 2,True
+RTL-02510,State Liquor Store,Liquor,Southeast,GA,Athens,WH-1015,Medium,Urban,Retail,Tier 3,True
+RTL-02511,Sam's Club,Big Box,Southeast,GA,Savannah,WH-1010,Small,Suburban,Retail,Tier 3,True
+RTL-02512,Smith's,Grocery,Southeast,GA,Columbus,WH-1009,Superstore,Suburban,Retail,Tier 2,True
+RTL-02513,Ralphs,Grocery,Southeast,GA,Athens,WH-1011,Large,Suburban,Retail,Tier 3,True
+RTL-02514,Casey's,Convenience,Southeast,GA,Atlanta,WH-1013,Large,Rural,Retail,Tier 2,True
+RTL-02515,Smith's,Grocery,Southeast,GA,Augusta,WH-1011,Medium,Urban,Retail,Tier 1,True
+RTL-02516,Binny's,Liquor,Southeast,GA,Savannah,WH-1020,Small,Rural,Retail,Tier 2,True
+RTL-02517,Casey's,Convenience,Southeast,GA,Sandy Springs,WH-1016,Large,Rural,Retail,Tier 3,True
+RTL-02518,Exxon,Gas Station,Southeast,GA,Columbus,WH-1012,Medium,Urban,Retail,Tier 2,True
+RTL-02519,Casey's,Convenience,Southeast,GA,Augusta,WH-1013,Medium,Suburban,Retail,Tier 3,True
+RTL-02520,Harris Teeter,Grocery,Southeast,GA,Savannah,WH-1013,Small,Suburban,Retail,Tier 2,True
+RTL-02521,Harris Teeter,Grocery,Southeast,GA,Augusta,WH-1014,Medium,Urban,Retail,Tier 1,True
+RTL-02522,Sam's Club,Big Box,Southeast,GA,Atlanta,WH-1012,Medium,Suburban,Retail,Tier 3,True
+RTL-02523,Publix,Grocery,Southeast,GA,Sandy Springs,WH-1016,Superstore,Urban,Retail,Tier 2,True
+RTL-02524,Marathon,Gas Station,Southeast,GA,Atlanta,WH-1016,Small,Suburban,Retail,Tier 3,False
+RTL-02525,Giant Eagle,Grocery,Southeast,GA,Columbus,WH-1013,Superstore,Suburban,Retail,Tier 2,True
+RTL-02526,H-E-B,Grocery,Southeast,GA,Atlanta,WH-1009,Medium,Urban,Retail,Tier 1,True
+RTL-02527,King Soopers,Grocery,Southeast,GA,Columbus,WH-1017,Large,Suburban,Retail,Tier 3,True
+RTL-02528,QuikTrip,Convenience,Southeast,GA,Sandy Springs,WH-1018,Medium,Urban,Retail,Tier 2,True
+RTL-02529,Giant Eagle,Grocery,Southeast,GA,Savannah,WH-1019,Medium,Suburban,Retail,Tier 2,True
+RTL-02530,Costco,Big Box,Southeast,GA,Columbus,WH-1013,Small,Rural,Retail,Tier 2,True
+RTL-02531,King Soopers,Grocery,Southeast,GA,Atlanta,WH-1009,Medium,Suburban,Retail,Tier 3,True
+RTL-02532,Circle K,Convenience,Southeast,GA,Athens,WH-1012,Large,Urban,Retail,Tier 2,True
+RTL-02533,Fry's,Grocery,Southeast,GA,Augusta,WH-1014,Large,Urban,Retail,Tier 2,True
+RTL-02534,Binny's,Liquor,Southeast,GA,Columbus,WH-1017,Small,Suburban,Retail,Tier 2,True
+RTL-02535,Walmart,Big Box,Southeast,GA,Atlanta,WH-1012,Large,Urban,Retail,Tier 2,True
+RTL-02536,Royal Farms,Convenience,Southeast,GA,Sandy Springs,WH-1014,Small,Urban,Retail,Tier 3,True
+RTL-02537,Costco,Big Box,Southeast,GA,Savannah,WH-1019,Small,Suburban,Retail,Tier 2,True
+RTL-02538,Binny's,Liquor,Southeast,GA,Athens,WH-1019,Large,Urban,Retail,Tier 2,True
+RTL-02539,7-Eleven,Convenience,Southeast,GA,Augusta,WH-1017,Medium,Suburban,Retail,Tier 3,False
+RTL-02540,Stop & Shop,Grocery,Southeast,GA,Atlanta,WH-1013,Large,Suburban,Retail,Tier 2,True
+RTL-02541,Fry's,Grocery,Southeast,GA,Atlanta,WH-1017,Small,Urban,Retail,Tier 2,True
+RTL-02542,BP,Gas Station,Southeast,GA,Augusta,WH-1018,Medium,Suburban,Retail,Tier 3,False
+RTL-02543,Target,Big Box,Southeast,GA,Columbus,WH-1014,Medium,Suburban,Retail,Tier 2,True
+RTL-02544,Food Lion,Grocery,Southeast,GA,Sandy Springs,WH-1011,Medium,Suburban,Retail,Tier 2,True
+RTL-02545,Speedway,Convenience,Southeast,GA,Augusta,WH-1018,Medium,Urban,Retail,Tier 2,False
+RTL-02546,Fine Wine & Good Spirits,Liquor,Southeast,FL,Miami,WH-1020,Medium,Rural,Retail,Tier 3,True
+RTL-02547,Speedway,Convenience,Southeast,FL,Tallahassee,WH-1010,Medium,Urban,Retail,Tier 2,False
+RTL-02548,Royal Farms,Convenience,Southeast,FL,Pensacola,WH-1012,Medium,Urban,Retail,Tier 2,True
+RTL-02549,BevMo!,Liquor,Southeast,FL,Jacksonville,WH-1014,Large,Suburban,Retail,Tier 1,True
+RTL-02550,Giant Eagle,Grocery,Southeast,FL,Fort Lauderdale,WH-1019,Medium,Rural,Retail,Tier 3,True
+RTL-02551,Stop & Shop,Grocery,Southeast,FL,Tampa,WH-1014,Medium,Urban,Retail,Tier 3,True
+RTL-02552,QFC,Grocery,Southeast,FL,Tallahassee,WH-1009,Small,Suburban,Retail,Tier 3,True
+RTL-02553,Spec's,Liquor,Southeast,FL,Orlando,WH-1011,Small,Urban,Retail,Tier 2,True
+RTL-02554,Fred Meyer,Grocery,Southeast,FL,Pensacola,WH-1018,Medium,Urban,Retail,Tier 2,True
+RTL-02555,Sam's Club,Big Box,Southeast,FL,Pensacola,WH-1017,Large,Urban,Retail,Tier 3,False
+RTL-02556,Spec's,Liquor,Southeast,FL,Orlando,WH-1018,Medium,Urban,Retail,Tier 3,True
+RTL-02557,Kroger,Grocery,Southeast,FL,Tallahassee,WH-1017,Small,Suburban,Retail,Tier 2,False
+RTL-02558,Harris Teeter,Grocery,Southeast,FL,Gainesville,WH-1013,Medium,Suburban,Retail,Tier 2,True
+RTL-02559,ABC Fine Wine,Liquor,Southeast,FL,Sarasota,WH-1014,Small,Suburban,Retail,Tier 2,True
+RTL-02560,Sam's Club,Big Box,Southeast,FL,Fort Lauderdale,WH-1009,Large,Rural,Retail,Tier 2,True
+RTL-02561,Circle K,Convenience,Southeast,FL,Gainesville,WH-1014,Small,Urban,Retail,Tier 1,False
+RTL-02562,King Soopers,Grocery,Southeast,FL,Tampa,WH-1018,Medium,Urban,Retail,Tier 3,True
+RTL-02563,Harris Teeter,Grocery,Southeast,FL,Fort Lauderdale,WH-1015,Small,Urban,Retail,Tier 1,True
+RTL-02564,Smith's,Grocery,Southeast,FL,Pensacola,WH-1016,Superstore,Suburban,Retail,Tier 3,True
+RTL-02565,Total Wine,Liquor,Southeast,FL,Tampa,WH-1011,Medium,Suburban,Retail,Tier 3,False
+RTL-02566,Safeway,Grocery,Southeast,FL,Jacksonville,WH-1011,Medium,Suburban,Retail,Tier 2,True
+RTL-02567,Fry's,Grocery,Southeast,FL,Miami,WH-1013,Small,Urban,Retail,Tier 3,True
+RTL-02568,King Soopers,Grocery,Southeast,FL,Miami,WH-1015,Small,Suburban,Retail,Tier 3,False
+RTL-02569,Royal Farms,Convenience,Southeast,FL,Miami,WH-1015,Medium,Urban,Retail,Tier 2,False
+RTL-02570,Total Wine,Liquor,Southeast,FL,Tampa,WH-1013,Small,Suburban,Retail,Tier 2,True
+RTL-02571,Party City Liquor,Liquor,Southeast,FL,Sarasota,WH-1016,Large,Suburban,Retail,Tier 2,True
+RTL-02572,Total Wine,Liquor,Southeast,FL,Tampa,WH-1020,Medium,Suburban,Retail,Tier 3,True
+RTL-02573,Costco,Big Box,Southeast,FL,Tampa,WH-1010,Medium,Suburban,Retail,Tier 2,False
+RTL-02574,Smith's,Grocery,Southeast,FL,Sarasota,WH-1016,Small,Urban,Retail,Tier 2,True
+RTL-02575,Food Lion,Grocery,Southeast,FL,Gainesville,WH-1014,Medium,Suburban,Retail,Tier 3,True
+RTL-02576,Chevron,Gas Station,Southeast,FL,Sarasota,WH-1009,Small,Urban,Retail,Tier 1,True
+RTL-02577,Fine Wine & Good Spirits,Liquor,Southeast,FL,Orlando,WH-1019,Small,Suburban,Retail,Tier 3,True
+RTL-02578,Smith's,Grocery,Southeast,FL,Pensacola,WH-1019,Large,Urban,Retail,Tier 1,True
+RTL-02579,Costco,Big Box,Southeast,FL,Jacksonville,WH-1009,Medium,Suburban,Retail,Tier 3,False
+RTL-02580,Food Lion,Grocery,Southeast,FL,Sarasota,WH-1012,Large,Suburban,Retail,Tier 2,False
+RTL-02581,Spec's,Liquor,Southeast,FL,Fort Lauderdale,WH-1018,Large,Urban,Retail,Tier 2,True
+RTL-02582,Fred Meyer,Grocery,Southeast,FL,Fort Lauderdale,WH-1020,Small,Rural,Retail,Tier 2,True
+RTL-02583,7-Eleven,Convenience,Southeast,FL,Fort Lauderdale,WH-1011,Medium,Suburban,Retail,Tier 3,True
+RTL-02584,Spec's,Liquor,Southeast,FL,Gainesville,WH-1018,Medium,Suburban,Retail,Tier 3,True
+RTL-02585,Speedway,Convenience,Southeast,FL,Pensacola,WH-1019,Small,Suburban,Retail,Tier 2,True
+RTL-02586,Party City Liquor,Liquor,Southeast,FL,Miami,WH-1018,Medium,Urban,Retail,Tier 2,True
+RTL-02587,BevMo!,Liquor,Southeast,FL,Miami,WH-1014,Medium,Suburban,Retail,Tier 2,True
+RTL-02588,7-Eleven,Convenience,Southeast,FL,Tallahassee,WH-1018,Small,Suburban,Retail,Tier 3,True
+RTL-02589,BevMo!,Liquor,Southeast,FL,Fort Lauderdale,WH-1013,Large,Suburban,Retail,Tier 3,True
+RTL-02590,Party City Liquor,Liquor,Southeast,FL,Pensacola,WH-1012,Large,Suburban,Retail,Tier 2,True
+RTL-02591,Food Lion,Grocery,Southeast,FL,Miami,WH-1013,Small,Urban,Retail,Tier 1,True
+RTL-02592,ABC Fine Wine,Liquor,Southeast,FL,Tallahassee,WH-1020,Small,Suburban,Retail,Tier 1,True
+RTL-02593,Food Lion,Grocery,Southeast,FL,Pensacola,WH-1016,Large,Suburban,Retail,Tier 3,True
+RTL-02594,Circle K,Convenience,Southeast,FL,Jacksonville,WH-1016,Small,Suburban,Retail,Tier 2,True
+RTL-02595,Ralphs,Grocery,Southeast,FL,Orlando,WH-1020,Medium,Suburban,Retail,Tier 2,True
+RTL-02596,BevMo!,Liquor,Southeast,FL,Tampa,WH-1019,Small,Urban,Retail,Tier 1,True
+RTL-02597,Walmart,Big Box,Southeast,FL,Tampa,WH-1012,Large,Suburban,Retail,Tier 2,False
+RTL-02598,Sam's Club,Big Box,Southeast,FL,Tallahassee,WH-1011,Small,Urban,Retail,Tier 3,True
+RTL-02599,Shell,Gas Station,Southeast,FL,Orlando,WH-1015,Large,Suburban,Retail,Tier 2,True
+RTL-02600,Casey's,Convenience,Southeast,FL,Tallahassee,WH-1018,Medium,Urban,Retail,Tier 2,True
+RTL-02601,Wawa,Convenience,Southeast,FL,Jacksonville,WH-1018,Small,Suburban,Retail,Tier 3,False
+RTL-02602,RaceTrac,Convenience,Southeast,FL,Pensacola,WH-1019,Large,Urban,Retail,Tier 2,True
+RTL-02603,Casey's,Convenience,Southeast,FL,Tampa,WH-1013,Superstore,Suburban,Retail,Tier 2,False
+RTL-02604,Binny's,Liquor,Southeast,FL,Gainesville,WH-1017,Medium,Rural,Retail,Tier 3,True
+RTL-02605,ABC Fine Wine,Liquor,Southeast,FL,Fort Lauderdale,WH-1014,Medium,Rural,Retail,Tier 3,True
+RTL-02606,Wegmans,Grocery,Southeast,FL,Fort Lauderdale,WH-1017,Medium,Rural,Retail,Tier 1,True
+RTL-02607,Giant Eagle,Grocery,Southeast,FL,Tampa,WH-1009,Medium,Suburban,Retail,Tier 2,True
+RTL-02608,Fred Meyer,Grocery,Southeast,FL,Gainesville,WH-1014,Medium,Suburban,Retail,Tier 2,True
+RTL-02609,BP,Gas Station,Southeast,FL,Orlando,WH-1010,Large,Suburban,Retail,Tier 2,True
+RTL-02610,Speedway,Convenience,Southeast,AL,Birmingham,WH-1014,Medium,Rural,Retail,Tier 2,True
+RTL-02611,Royal Farms,Convenience,Southeast,AL,Birmingham,WH-1010,Medium,Urban,Retail,Tier 2,True
+RTL-02612,Citgo,Gas Station,Southeast,AL,Birmingham,WH-1019,Medium,Urban,Retail,Tier 1,False
+RTL-02613,Food Lion,Grocery,Southeast,AL,Birmingham,WH-1016,Small,Rural,Retail,Tier 3,True
+RTL-02614,RaceTrac,Convenience,Southeast,AL,Birmingham,WH-1019,Small,Rural,Retail,Tier 3,True
+RTL-02615,State Liquor Store,Liquor,Southeast,AL,Birmingham,WH-1019,Large,Urban,Retail,Tier 2,False
+RTL-02616,ABC Fine Wine,Liquor,Southeast,AL,Birmingham,WH-1011,Small,Rural,Retail,Tier 3,True
+RTL-02617,RaceTrac,Convenience,Southeast,AL,Birmingham,WH-1017,Medium,Suburban,Retail,Tier 2,True
+RTL-02618,H-E-B,Grocery,Southeast,AL,Birmingham,WH-1020,Small,Rural,Retail,Tier 3,True
+RTL-02619,State Liquor Store,Liquor,Southeast,AL,Birmingham,WH-1018,Large,Urban,Retail,Tier 2,True
+RTL-02620,Target,Big Box,Southeast,AL,Birmingham,WH-1015,Small,Urban,Retail,Tier 2,True
+RTL-02621,Target,Big Box,Southeast,AL,Birmingham,WH-1012,Medium,Suburban,Retail,Tier 3,False
+RTL-02622,Marathon,Gas Station,Southeast,AL,Birmingham,WH-1016,Small,Urban,Retail,Tier 1,True
+RTL-02623,Ralphs,Grocery,Southeast,AL,Birmingham,WH-1016,Small,Urban,Retail,Tier 1,True
+RTL-02624,Binny's,Liquor,Southeast,AL,Birmingham,WH-1009,Medium,Urban,Retail,Tier 2,True
+RTL-02625,Citgo,Gas Station,Southeast,AL,Birmingham,WH-1014,Large,Suburban,Retail,Tier 2,False
+RTL-02626,Food Lion,Grocery,Southeast,MS,City_2,WH-1015,Large,Suburban,Retail,Tier 3,True
+RTL-02627,Giant Eagle,Grocery,Southeast,MS,City_2,WH-1016,Medium,Urban,Retail,Tier 3,True
+RTL-02628,Fred Meyer,Grocery,Southeast,MS,City_1,WH-1009,Medium,Urban,Retail,Tier 2,True
+RTL-02629,BevMo!,Liquor,Southeast,MS,City_5,WH-1016,Medium,Urban,Retail,Tier 2,True
+RTL-02630,Safeway,Grocery,Southeast,MS,City_3,WH-1020,Large,Rural,Retail,Tier 2,True
+RTL-02631,Fry's,Grocery,Southeast,MS,City_5,WH-1009,Large,Rural,Retail,Tier 2,True
+RTL-02632,Wegmans,Grocery,Southeast,MS,City_2,WH-1017,Medium,Suburban,Retail,Tier 3,True
+RTL-02633,Fine Wine & Good Spirits,Liquor,Southeast,MS,City_1,WH-1011,Large,Urban,Retail,Tier 2,True
+RTL-02634,Cumberland Farms,Convenience,Southeast,MS,City_5,WH-1009,Large,Suburban,Retail,Tier 2,True
+RTL-02635,Royal Farms,Convenience,Southeast,MS,City_4,WH-1020,Medium,Urban,Retail,Tier 1,True
+RTL-02636,QuikTrip,Convenience,Southeast,MS,City_4,WH-1013,Small,Urban,Retail,Tier 2,False
+RTL-02637,Safeway,Grocery,Southeast,MS,City_5,WH-1014,Superstore,Suburban,Retail,Tier 2,True
+RTL-02638,Smith's,Grocery,Southeast,MS,City_3,WH-1018,Medium,Urban,Retail,Tier 3,True
+RTL-02639,Casey's,Convenience,Southeast,MS,City_4,WH-1017,Small,Urban,Retail,Tier 1,True
+RTL-02640,Sheetz,Convenience,Southeast,MS,City_4,WH-1018,Large,Suburban,Retail,Tier 3,True
+RTL-02641,Party City Liquor,Liquor,Southeast,MS,City_4,WH-1009,Medium,Urban,Retail,Tier 2,True
+RTL-02642,Food Lion,Grocery,Southeast,MS,City_2,WH-1019,Small,Urban,Retail,Tier 2,True
+RTL-02643,King Soopers,Grocery,Southeast,MS,City_3,WH-1015,Small,Suburban,Retail,Tier 2,True
+RTL-02644,RaceTrac,Convenience,Southeast,MS,City_2,WH-1014,Medium,Suburban,Retail,Tier 3,False
+RTL-02645,BP,Gas Station,Southeast,MS,City_5,WH-1010,Small,Urban,Retail,Tier 2,True
+RTL-02646,Stop & Shop,Grocery,Southeast,MS,City_1,WH-1016,Small,Suburban,Retail,Tier 3,True
+RTL-02647,Sam's Club,Big Box,Southeast,MS,City_5,WH-1015,Medium,Urban,Retail,Tier 2,True
+RTL-02648,Total Wine,Liquor,Southeast,AR,City_1,WH-1020,Small,Suburban,Retail,Tier 2,True
+RTL-02649,Fry's,Grocery,Southeast,AR,City_4,WH-1009,Large,Rural,Retail,Tier 3,True
+RTL-02650,Ralphs,Grocery,Southeast,AR,City_4,WH-1009,Medium,Urban,Retail,Tier 1,True
+RTL-02651,Stop & Shop,Grocery,Southeast,AR,City_3,WH-1009,Small,Suburban,Retail,Tier 2,True
+RTL-02652,State Liquor Store,Liquor,Southeast,AR,City_2,WH-1014,Small,Suburban,Retail,Tier 3,True
+RTL-02653,Cumberland Farms,Convenience,Southeast,AR,City_1,WH-1011,Medium,Urban,Retail,Tier 1,True
+RTL-02654,Safeway,Grocery,Southeast,AR,City_3,WH-1015,Small,Suburban,Retail,Tier 2,True
+RTL-02655,QuikTrip,Convenience,Southeast,AR,City_4,WH-1010,Medium,Suburban,Retail,Tier 2,False
+RTL-02656,QuikTrip,Convenience,Southeast,AR,City_2,WH-1009,Small,Rural,Retail,Tier 3,False
+RTL-02657,Kroger,Grocery,Southeast,AR,City_1,WH-1012,Medium,Rural,Retail,Tier 2,True
+RTL-02658,Publix,Grocery,Southeast,AR,City_3,WH-1020,Small,Urban,Retail,Tier 2,True
+RTL-02659,Fine Wine & Good Spirits,Liquor,Southeast,AR,City_4,WH-1016,Large,Suburban,Retail,Tier 1,True
+RTL-02660,Ralphs,Grocery,Southeast,AR,City_1,WH-1016,Medium,Urban,Retail,Tier 1,True
+RTL-02661,Marathon,Gas Station,Southeast,AR,City_2,WH-1011,Small,Suburban,Retail,Tier 3,False
+RTL-02662,Royal Farms,Convenience,Southeast,AR,City_4,WH-1016,Medium,Rural,Retail,Tier 2,True
+RTL-02663,BevMo!,Liquor,Southeast,AR,City_3,WH-1009,Small,Urban,Retail,Tier 3,True
+RTL-02664,Royal Farms,Convenience,Southeast,AR,City_2,WH-1015,Large,Rural,Retail,Tier 1,True
+RTL-02665,Phillips 66,Gas Station,Southeast,AR,City_1,WH-1014,Small,Urban,Retail,Tier 2,True
+RTL-02666,Harris Teeter,Grocery,Southeast,AR,City_4,WH-1009,Large,Urban,Retail,Tier 1,True
+RTL-02667,Sam's Club,Big Box,Southeast,LA,New Orleans,WH-1014,Medium,Rural,Retail,Tier 2,False
+RTL-02668,Fry's,Grocery,Southeast,LA,New Orleans,WH-1017,Small,Urban,Retail,Tier 3,True
+RTL-02669,7-Eleven,Convenience,Southeast,LA,New Orleans,WH-1019,Medium,Suburban,Retail,Tier 3,True
+RTL-02670,Circle K,Convenience,Southeast,LA,New Orleans,WH-1013,Large,Suburban,Retail,Tier 1,True
+RTL-02671,Wawa,Convenience,Southeast,LA,New Orleans,WH-1016,Medium,Urban,Retail,Tier 2,False
+RTL-02672,Stop & Shop,Grocery,Southeast,LA,New Orleans,WH-1019,Large,Urban,Retail,Tier 2,True
+RTL-02673,RaceTrac,Convenience,Southeast,LA,New Orleans,WH-1013,Small,Rural,Retail,Tier 2,True
+RTL-02674,Harris Teeter,Grocery,Southeast,LA,New Orleans,WH-1019,Medium,Suburban,Retail,Tier 2,True
+RTL-02675,Smith's,Grocery,Southeast,LA,New Orleans,WH-1019,Medium,Urban,Retail,Tier 3,True
+RTL-02676,Ralphs,Grocery,Southeast,LA,New Orleans,WH-1016,Small,Rural,Retail,Tier 3,True
+RTL-02677,BevMo!,Liquor,Southeast,LA,New Orleans,WH-1017,Small,Suburban,Retail,Tier 3,True
+RTL-02678,Safeway,Grocery,Southeast,LA,New Orleans,WH-1015,Small,Urban,Retail,Tier 2,True
+RTL-02679,QuikTrip,Convenience,Southeast,LA,New Orleans,WH-1016,Superstore,Suburban,Retail,Tier 3,True
+RTL-02680,King Soopers,Grocery,Midwest,OH,Dayton,WH-1030,Large,Suburban,Retail,Tier 2,True
+RTL-02681,BJ's Wholesale,Big Box,Midwest,OH,Canton,WH-1028,Small,Urban,Retail,Tier 1,False
+RTL-02682,7-Eleven,Convenience,Midwest,OH,Dayton,WH-1021,Medium,Rural,Retail,Tier 1,True
+RTL-02683,Speedway,Convenience,Midwest,OH,Akron,WH-1026,Large,Suburban,Retail,Tier 3,True
+RTL-02684,Food Lion,Grocery,Midwest,OH,Cincinnati,WH-1026,Medium,Urban,Retail,Tier 2,True
+RTL-02685,Target,Big Box,Midwest,OH,Cleveland,WH-1025,Medium,Urban,Retail,Tier 3,False
+RTL-02686,Circle K,Convenience,Midwest,OH,Cleveland,WH-1024,Medium,Suburban,Retail,Tier 3,True
+RTL-02687,Fred Meyer,Grocery,Midwest,OH,Youngstown,WH-1023,Large,Urban,Retail,Tier 3,True
+RTL-02688,Wawa,Convenience,Midwest,OH,Cincinnati,WH-1024,Medium,Suburban,Retail,Tier 3,True
+RTL-02689,State Liquor Store,Liquor,Midwest,OH,Canton,WH-1021,Large,Rural,Retail,Tier 2,True
+RTL-02690,Sam's Club,Big Box,Midwest,OH,Akron,WH-1026,Medium,Suburban,Retail,Tier 3,True
+RTL-02691,Fry's,Grocery,Midwest,OH,Dayton,WH-1024,Medium,Urban,Retail,Tier 2,True
+RTL-02692,Chevron,Gas Station,Midwest,OH,Akron,WH-1030,Small,Rural,Retail,Tier 2,True
+RTL-02693,QuikTrip,Convenience,Midwest,OH,Canton,WH-1028,Superstore,Urban,Retail,Tier 3,True
+RTL-02694,Safeway,Grocery,Midwest,OH,Canton,WH-1027,Large,Rural,Retail,Tier 3,True
+RTL-02695,Cumberland Farms,Convenience,Midwest,OH,Canton,WH-1023,Small,Urban,Retail,Tier 1,True
+RTL-02696,Wegmans,Grocery,Midwest,OH,Akron,WH-1027,Large,Suburban,Retail,Tier 1,True
+RTL-02697,Wegmans,Grocery,Midwest,OH,Dayton,WH-1026,Large,Urban,Retail,Tier 2,True
+RTL-02698,QFC,Grocery,Midwest,OH,Youngstown,WH-1026,Small,Suburban,Retail,Tier 3,True
+RTL-02699,Walmart,Big Box,Midwest,OH,Akron,WH-1030,Medium,Urban,Retail,Tier 3,True
+RTL-02700,Publix,Grocery,Midwest,OH,Cleveland,WH-1021,Medium,Urban,Retail,Tier 1,True
+RTL-02701,Publix,Grocery,Midwest,OH,Akron,WH-1026,Large,Suburban,Retail,Tier 1,True
+RTL-02702,Giant Eagle,Grocery,Midwest,OH,Canton,WH-1027,Small,Rural,Retail,Tier 2,True
+RTL-02703,Fred Meyer,Grocery,Midwest,OH,Toledo,WH-1027,Medium,Suburban,Retail,Tier 1,True
+RTL-02704,Harris Teeter,Grocery,Midwest,OH,Youngstown,WH-1030,Medium,Urban,Retail,Tier 1,True
+RTL-02705,Stop & Shop,Grocery,Midwest,OH,Dayton,WH-1029,Small,Urban,Retail,Tier 3,True
+RTL-02706,Walmart,Big Box,Midwest,OH,Cleveland,WH-1030,Small,Urban,Retail,Tier 2,False
+RTL-02707,Harris Teeter,Grocery,Midwest,OH,Columbus,WH-1023,Medium,Urban,Retail,Tier 2,True
+RTL-02708,Ralphs,Grocery,Midwest,OH,Akron,WH-1025,Large,Urban,Retail,Tier 1,True
+RTL-02709,Smith's,Grocery,Midwest,OH,Canton,WH-1022,Large,Suburban,Retail,Tier 2,True
+RTL-02710,Ralphs,Grocery,Midwest,OH,Canton,WH-1021,Small,Rural,Retail,Tier 3,True
+RTL-02711,QuikTrip,Convenience,Midwest,OH,Columbus,WH-1030,Medium,Urban,Retail,Tier 2,True
+RTL-02712,BP,Gas Station,Midwest,OH,Cleveland,WH-1028,Large,Urban,Retail,Tier 2,True
+RTL-02713,Speedway,Convenience,Midwest,OH,Toledo,WH-1021,Small,Urban,Retail,Tier 2,False
+RTL-02714,Food Lion,Grocery,Midwest,OH,Akron,WH-1030,Small,Suburban,Retail,Tier 2,True
+RTL-02715,Fred Meyer,Grocery,Midwest,OH,Akron,WH-1027,Small,Suburban,Retail,Tier 2,False
+RTL-02716,Fred Meyer,Grocery,Midwest,OH,Akron,WH-1025,Large,Suburban,Retail,Tier 2,True
+RTL-02717,Sheetz,Convenience,Midwest,OH,Cincinnati,WH-1030,Small,Urban,Retail,Tier 3,True
+RTL-02718,Chevron,Gas Station,Midwest,OH,Columbus,WH-1026,Medium,Suburban,Retail,Tier 2,True
+RTL-02719,Safeway,Grocery,Midwest,OH,Akron,WH-1026,Small,Urban,Retail,Tier 2,True
+RTL-02720,QuikTrip,Convenience,Midwest,OH,Akron,WH-1024,Large,Rural,Retail,Tier 2,False
+RTL-02721,Stop & Shop,Grocery,Midwest,OH,Cincinnati,WH-1023,Medium,Rural,Retail,Tier 3,True
+RTL-02722,Binny's,Liquor,Midwest,OH,Columbus,WH-1024,Small,Urban,Retail,Tier 3,True
+RTL-02723,Casey's,Convenience,Midwest,OH,Dayton,WH-1030,Small,Rural,Retail,Tier 3,False
+RTL-02724,Harris Teeter,Grocery,Midwest,OH,Cleveland,WH-1027,Small,Urban,Retail,Tier 2,True
+RTL-02725,Costco,Big Box,Midwest,OH,Columbus,WH-1025,Large,Urban,Retail,Tier 3,True
+RTL-02726,Target,Big Box,Midwest,OH,Cincinnati,WH-1024,Medium,Suburban,Retail,Tier 3,True
+RTL-02727,RaceTrac,Convenience,Midwest,OH,Akron,WH-1028,Large,Suburban,Retail,Tier 2,True
+RTL-02728,BevMo!,Liquor,Midwest,OH,Youngstown,WH-1022,Small,Suburban,Retail,Tier 2,True
+RTL-02729,Walmart,Big Box,Midwest,OH,Youngstown,WH-1025,Large,Urban,Retail,Tier 2,True
+RTL-02730,Binny's,Liquor,Midwest,OH,Cincinnati,WH-1030,Small,Urban,Retail,Tier 2,True
+RTL-02731,Exxon,Gas Station,Midwest,OH,Toledo,WH-1023,Medium,Suburban,Retail,Tier 2,False
+RTL-02732,Circle K,Convenience,Midwest,OH,Toledo,WH-1026,Medium,Urban,Retail,Tier 2,True
+RTL-02733,Spec's,Liquor,Midwest,OH,Cleveland,WH-1030,Small,Suburban,Retail,Tier 3,False
+RTL-02734,Royal Farms,Convenience,Midwest,OH,Youngstown,WH-1025,Medium,Urban,Retail,Tier 1,True
+RTL-02735,Safeway,Grocery,Midwest,OH,Cincinnati,WH-1029,Superstore,Urban,Retail,Tier 2,True
+RTL-02736,Speedway,Convenience,Midwest,OH,Columbus,WH-1030,Small,Urban,Retail,Tier 1,True
+RTL-02737,H-E-B,Grocery,Midwest,OH,Youngstown,WH-1022,Medium,Suburban,Retail,Tier 3,True
+RTL-02738,Ralphs,Grocery,Midwest,OH,Cleveland,WH-1029,Superstore,Urban,Retail,Tier 1,True
+RTL-02739,Binny's,Liquor,Midwest,OH,Toledo,WH-1027,Medium,Urban,Retail,Tier 2,True
+RTL-02740,Safeway,Grocery,Midwest,OH,Canton,WH-1022,Large,Suburban,Retail,Tier 1,True
+RTL-02741,H-E-B,Grocery,Midwest,OH,Akron,WH-1024,Large,Suburban,Retail,Tier 3,True
+RTL-02742,Valero,Gas Station,Midwest,OH,Columbus,WH-1021,Large,Suburban,Retail,Tier 3,True
+RTL-02743,RaceTrac,Convenience,Midwest,MI,Sterling Heights,WH-1025,Medium,Suburban,Retail,Tier 2,True
+RTL-02744,QuikTrip,Convenience,Midwest,MI,Warren,WH-1021,Medium,Suburban,Retail,Tier 3,True
+RTL-02745,Fry's,Grocery,Midwest,MI,Warren,WH-1021,Large,Rural,Retail,Tier 2,True
+RTL-02746,Sheetz,Convenience,Midwest,MI,Ann Arbor,WH-1028,Small,Urban,Retail,Tier 2,False
+RTL-02747,Spec's,Liquor,Midwest,MI,Ann Arbor,WH-1023,Medium,Urban,Retail,Tier 3,True
+RTL-02748,Stop & Shop,Grocery,Midwest,MI,Sterling Heights,WH-1024,Medium,Suburban,Retail,Tier 2,False
+RTL-02749,Harris Teeter,Grocery,Midwest,MI,Ann Arbor,WH-1026,Medium,Rural,Retail,Tier 3,True
+RTL-02750,Food Lion,Grocery,Midwest,MI,Ann Arbor,WH-1021,Medium,Urban,Retail,Tier 1,True
+RTL-02751,Fry's,Grocery,Midwest,MI,Lansing,WH-1028,Medium,Urban,Retail,Tier 1,True
+RTL-02752,H-E-B,Grocery,Midwest,MI,Lansing,WH-1023,Large,Urban,Retail,Tier 2,True
+RTL-02753,Kroger,Grocery,Midwest,MI,Grand Rapids,WH-1024,Medium,Urban,Retail,Tier 2,True
+RTL-02754,Publix,Grocery,Midwest,MI,Warren,WH-1023,Medium,Urban,Retail,Tier 2,True
+RTL-02755,Sheetz,Convenience,Midwest,MI,Detroit,WH-1027,Large,Suburban,Retail,Tier 3,False
+RTL-02756,Cumberland Farms,Convenience,Midwest,MI,Lansing,WH-1024,Medium,Suburban,Retail,Tier 2,False
+RTL-02757,Food Lion,Grocery,Midwest,MI,Warren,WH-1028,Superstore,Urban,Retail,Tier 1,True
+RTL-02758,Costco,Big Box,Midwest,MI,Sterling Heights,WH-1029,Small,Urban,Retail,Tier 2,False
+RTL-02759,Fred Meyer,Grocery,Midwest,MI,Ann Arbor,WH-1027,Small,Suburban,Retail,Tier 3,True
+RTL-02760,Party City Liquor,Liquor,Midwest,MI,Grand Rapids,WH-1023,Medium,Urban,Retail,Tier 1,True
+RTL-02761,King Soopers,Grocery,Midwest,MI,Warren,WH-1021,Superstore,Suburban,Retail,Tier 3,True
+RTL-02762,Fry's,Grocery,Midwest,MI,Ann Arbor,WH-1027,Medium,Urban,Retail,Tier 2,True
+RTL-02763,Wawa,Convenience,Midwest,MI,Sterling Heights,WH-1025,Small,Urban,Retail,Tier 2,True
+RTL-02764,Harris Teeter,Grocery,Midwest,MI,Sterling Heights,WH-1026,Medium,Rural,Retail,Tier 3,True
+RTL-02765,7-Eleven,Convenience,Midwest,MI,Ann Arbor,WH-1030,Medium,Rural,Retail,Tier 3,True
+RTL-02766,Stop & Shop,Grocery,Midwest,MI,Grand Rapids,WH-1029,Medium,Urban,Retail,Tier 2,True
+RTL-02767,H-E-B,Grocery,Midwest,MI,Lansing,WH-1023,Medium,Rural,Retail,Tier 2,True
+RTL-02768,Sam's Club,Big Box,Midwest,MI,Sterling Heights,WH-1028,Superstore,Urban,Retail,Tier 3,True
+RTL-02769,Casey's,Convenience,Midwest,MI,Lansing,WH-1024,Medium,Suburban,Retail,Tier 3,True
+RTL-02770,Walmart,Big Box,Midwest,MI,Grand Rapids,WH-1021,Small,Suburban,Retail,Tier 1,True
+RTL-02771,Circle K,Convenience,Midwest,MI,Lansing,WH-1024,Small,Urban,Retail,Tier 2,True
+RTL-02772,Sheetz,Convenience,Midwest,MI,Detroit,WH-1024,Small,Urban,Retail,Tier 3,True
+RTL-02773,Circle K,Convenience,Midwest,MI,Detroit,WH-1023,Small,Urban,Retail,Tier 3,False
+RTL-02774,H-E-B,Grocery,Midwest,MI,Grand Rapids,WH-1029,Medium,Urban,Retail,Tier 1,True
+RTL-02775,Fry's,Grocery,Midwest,MI,Grand Rapids,WH-1024,Medium,Suburban,Retail,Tier 3,True
+RTL-02776,Stop & Shop,Grocery,Midwest,MI,Detroit,WH-1024,Small,Urban,Retail,Tier 3,True
+RTL-02777,Binny's,Liquor,Midwest,MI,Lansing,WH-1024,Large,Urban,Retail,Tier 1,True
+RTL-02778,Shell,Gas Station,Midwest,MI,Ann Arbor,WH-1030,Superstore,Urban,Retail,Tier 2,True
+RTL-02779,Sam's Club,Big Box,Midwest,MI,Lansing,WH-1023,Medium,Suburban,Retail,Tier 3,True
+RTL-02780,Marathon,Gas Station,Midwest,MI,Grand Rapids,WH-1021,Small,Suburban,Retail,Tier 2,True
+RTL-02781,RaceTrac,Convenience,Midwest,MI,Detroit,WH-1026,Small,Suburban,Retail,Tier 2,False
+RTL-02782,Smith's,Grocery,Midwest,MI,Sterling Heights,WH-1022,Medium,Urban,Retail,Tier 2,True
+RTL-02783,Publix,Grocery,Midwest,MI,Ann Arbor,WH-1022,Medium,Urban,Retail,Tier 3,True
+RTL-02784,Costco,Big Box,Midwest,MI,Ann Arbor,WH-1030,Medium,Urban,Retail,Tier 2,True
+RTL-02785,Safeway,Grocery,Midwest,MI,Sterling Heights,WH-1028,Medium,Suburban,Retail,Tier 3,True
+RTL-02786,Cumberland Farms,Convenience,Midwest,MI,Ann Arbor,WH-1029,Small,Urban,Retail,Tier 2,True
+RTL-02787,Fine Wine & Good Spirits,Liquor,Midwest,MI,Warren,WH-1023,Medium,Suburban,Retail,Tier 2,True
+RTL-02788,Wegmans,Grocery,Midwest,MI,Ann Arbor,WH-1025,Large,Suburban,Retail,Tier 3,True
+RTL-02789,Stop & Shop,Grocery,Midwest,MI,Grand Rapids,WH-1027,Medium,Urban,Retail,Tier 2,True
+RTL-02790,Fred Meyer,Grocery,Midwest,MI,Sterling Heights,WH-1023,Small,Urban,Retail,Tier 3,True
+RTL-02791,Wawa,Convenience,Midwest,MI,Grand Rapids,WH-1028,Small,Urban,Retail,Tier 1,False
+RTL-02792,Costco,Big Box,Midwest,MI,Sterling Heights,WH-1023,Small,Suburban,Retail,Tier 2,False
+RTL-02793,Cumberland Farms,Convenience,Midwest,MI,Warren,WH-1025,Small,Urban,Retail,Tier 2,True
+RTL-02794,Harris Teeter,Grocery,Midwest,MI,Lansing,WH-1028,Medium,Suburban,Retail,Tier 3,False
+RTL-02795,Smith's,Grocery,Midwest,MI,Detroit,WH-1029,Large,Rural,Retail,Tier 2,True
+RTL-02796,Party City Liquor,Liquor,Midwest,MI,Lansing,WH-1029,Small,Urban,Retail,Tier 1,True
+RTL-02797,Casey's,Convenience,Midwest,MI,Grand Rapids,WH-1029,Small,Urban,Retail,Tier 1,True
+RTL-02798,Circle K,Convenience,Midwest,MI,Grand Rapids,WH-1029,Small,Urban,Retail,Tier 3,True
+RTL-02799,Total Wine,Liquor,Midwest,MI,Warren,WH-1021,Small,Rural,Retail,Tier 2,True
+RTL-02800,King Soopers,Grocery,Midwest,MI,Lansing,WH-1028,Medium,Urban,Retail,Tier 1,False
+RTL-02801,Harris Teeter,Grocery,Midwest,MI,Warren,WH-1026,Medium,Urban,Retail,Tier 1,True
+RTL-02802,Circle K,Convenience,Midwest,MI,Ann Arbor,WH-1022,Medium,Suburban,Retail,Tier 3,True
+RTL-02803,Fine Wine & Good Spirits,Liquor,Midwest,MI,Sterling Heights,WH-1030,Large,Suburban,Retail,Tier 1,True
+RTL-02804,Harris Teeter,Grocery,Midwest,MI,Detroit,WH-1023,Large,Suburban,Retail,Tier 2,True
+RTL-02805,Publix,Grocery,Midwest,IN,Indianapolis,WH-1022,Large,Urban,Retail,Tier 1,True
+RTL-02806,7-Eleven,Convenience,Midwest,IN,Indianapolis,WH-1023,Medium,Urban,Retail,Tier 2,True
+RTL-02807,Wegmans,Grocery,Midwest,IN,Indianapolis,WH-1030,Large,Suburban,Retail,Tier 3,True
+RTL-02808,BJ's Wholesale,Big Box,Midwest,IN,Indianapolis,WH-1027,Medium,Urban,Retail,Tier 2,True
+RTL-02809,Wawa,Convenience,Midwest,IN,Indianapolis,WH-1028,Small,Rural,Retail,Tier 3,True
+RTL-02810,State Liquor Store,Liquor,Midwest,IN,Indianapolis,WH-1025,Superstore,Urban,Retail,Tier 3,True
+RTL-02811,Costco,Big Box,Midwest,IN,Indianapolis,WH-1027,Medium,Rural,Retail,Tier 2,False
+RTL-02812,Fry's,Grocery,Midwest,IN,Indianapolis,WH-1021,Medium,Urban,Retail,Tier 2,True
+RTL-02813,Fred Meyer,Grocery,Midwest,IN,Indianapolis,WH-1022,Small,Suburban,Retail,Tier 3,True
+RTL-02814,Stop & Shop,Grocery,Midwest,IN,Indianapolis,WH-1022,Small,Suburban,Retail,Tier 3,True
+RTL-02815,Wegmans,Grocery,Midwest,IN,Indianapolis,WH-1029,Large,Suburban,Retail,Tier 2,True
+RTL-02816,7-Eleven,Convenience,Midwest,IN,Indianapolis,WH-1027,Medium,Rural,Retail,Tier 3,False
+RTL-02817,Fred Meyer,Grocery,Midwest,IN,Indianapolis,WH-1029,Small,Urban,Retail,Tier 2,True
+RTL-02818,Costco,Big Box,Midwest,IN,Indianapolis,WH-1029,Small,Urban,Retail,Tier 3,True
+RTL-02819,Safeway,Grocery,Midwest,IN,Indianapolis,WH-1028,Small,Suburban,Retail,Tier 2,True
+RTL-02820,Publix,Grocery,Midwest,IN,Indianapolis,WH-1022,Large,Urban,Retail,Tier 1,False
+RTL-02821,Publix,Grocery,Midwest,IN,Indianapolis,WH-1021,Small,Urban,Retail,Tier 2,True
+RTL-02822,ABC Fine Wine,Liquor,Midwest,IN,Indianapolis,WH-1022,Large,Suburban,Retail,Tier 2,True
+RTL-02823,ABC Fine Wine,Liquor,Midwest,IN,Indianapolis,WH-1029,Large,Rural,Retail,Tier 3,True
+RTL-02824,Wawa,Convenience,Midwest,IN,Indianapolis,WH-1021,Small,Urban,Retail,Tier 1,True
+RTL-02825,Safeway,Grocery,Midwest,IN,Indianapolis,WH-1029,Medium,Suburban,Retail,Tier 2,True
+RTL-02826,Walmart,Big Box,Midwest,IN,Indianapolis,WH-1027,Large,Suburban,Retail,Tier 3,True
+RTL-02827,Circle K,Convenience,Midwest,IN,Indianapolis,WH-1028,Medium,Suburban,Retail,Tier 2,True
+RTL-02828,Fry's,Grocery,Midwest,IN,Indianapolis,WH-1028,Medium,Suburban,Retail,Tier 3,True
+RTL-02829,Exxon,Gas Station,Midwest,IN,Indianapolis,WH-1029,Large,Suburban,Retail,Tier 2,True
+RTL-02830,Circle K,Convenience,Midwest,IN,Indianapolis,WH-1022,Large,Urban,Retail,Tier 1,True
+RTL-02831,Cumberland Farms,Convenience,Midwest,WI,Madison,WH-1023,Small,Urban,Retail,Tier 3,True
+RTL-02832,Spec's,Liquor,Midwest,WI,Milwaukee,WH-1023,Large,Urban,Retail,Tier 2,True
+RTL-02833,QFC,Grocery,Midwest,WI,Madison,WH-1025,Small,Suburban,Retail,Tier 2,True
+RTL-02834,BevMo!,Liquor,Midwest,WI,Madison,WH-1028,Large,Suburban,Retail,Tier 3,True
+RTL-02835,Spec's,Liquor,Midwest,WI,Milwaukee,WH-1030,Large,Suburban,Retail,Tier 3,True
+RTL-02836,Circle K,Convenience,Midwest,WI,Madison,WH-1027,Small,Suburban,Retail,Tier 3,True
+RTL-02837,RaceTrac,Convenience,Midwest,WI,Madison,WH-1030,Large,Urban,Retail,Tier 2,True
+RTL-02838,Ralphs,Grocery,Midwest,WI,Madison,WH-1024,Large,Urban,Retail,Tier 1,True
+RTL-02839,Costco,Big Box,Midwest,WI,Madison,WH-1028,Large,Suburban,Retail,Tier 3,True
+RTL-02840,Publix,Grocery,Midwest,WI,Milwaukee,WH-1021,Medium,Suburban,Retail,Tier 3,True
+RTL-02841,Kroger,Grocery,Midwest,WI,Milwaukee,WH-1026,Small,Urban,Retail,Tier 1,True
+RTL-02842,H-E-B,Grocery,Midwest,WI,Milwaukee,WH-1030,Medium,Rural,Retail,Tier 3,True
+RTL-02843,BevMo!,Liquor,Midwest,WI,Madison,WH-1024,Small,Suburban,Retail,Tier 1,True
+RTL-02844,Marathon,Gas Station,Midwest,WI,Milwaukee,WH-1021,Medium,Urban,Retail,Tier 2,True
+RTL-02845,Smith's,Grocery,Midwest,WI,Madison,WH-1023,Small,Urban,Retail,Tier 2,True
+RTL-02846,BJ's Wholesale,Big Box,Midwest,WI,Madison,WH-1028,Small,Rural,Retail,Tier 3,True
+RTL-02847,State Liquor Store,Liquor,Midwest,WI,Madison,WH-1026,Large,Urban,Retail,Tier 2,True
+RTL-02848,Speedway,Convenience,Midwest,WI,Madison,WH-1026,Small,Rural,Retail,Tier 3,False
+RTL-02849,Food Lion,Grocery,Midwest,WI,Milwaukee,WH-1021,Medium,Suburban,Retail,Tier 3,True
+RTL-02850,Walmart,Big Box,Midwest,WI,Milwaukee,WH-1030,Medium,Urban,Retail,Tier 2,False
+RTL-02851,Cumberland Farms,Convenience,Midwest,WI,Milwaukee,WH-1021,Medium,Suburban,Retail,Tier 3,True
+RTL-02852,Binny's,Liquor,Midwest,WI,Milwaukee,WH-1023,Large,Suburban,Retail,Tier 3,True
+RTL-02853,7-Eleven,Convenience,Midwest,WI,Madison,WH-1028,Small,Suburban,Retail,Tier 3,True
+RTL-02854,Safeway,Grocery,Midwest,WI,Milwaukee,WH-1026,Medium,Rural,Retail,Tier 1,True
+RTL-02855,Fry's,Grocery,Midwest,WI,Milwaukee,WH-1029,Small,Rural,Retail,Tier 2,True
+RTL-02856,Sheetz,Convenience,Midwest,WI,Milwaukee,WH-1021,Small,Urban,Retail,Tier 1,True
+RTL-02857,Circle K,Convenience,Midwest,WI,Madison,WH-1026,Medium,Urban,Retail,Tier 1,False
+RTL-02858,Harris Teeter,Grocery,Midwest,WI,Madison,WH-1028,Medium,Suburban,Retail,Tier 3,True
+RTL-02859,Walmart,Big Box,Midwest,IL,Waukegan,WH-1024,Medium,Suburban,Retail,Tier 1,True
+RTL-02860,Safeway,Grocery,Midwest,IL,Rockford,WH-1021,Small,Urban,Retail,Tier 2,True
+RTL-02861,H-E-B,Grocery,Midwest,IL,Elgin,WH-1027,Medium,Suburban,Retail,Tier 3,True
+RTL-02862,Mobil,Gas Station,Midwest,IL,Elgin,WH-1024,Small,Urban,Retail,Tier 2,True
+RTL-02863,Cumberland Farms,Convenience,Midwest,IL,Elgin,WH-1030,Small,Urban,Retail,Tier 2,True
+RTL-02864,Sunoco,Gas Station,Midwest,IL,Waukegan,WH-1022,Small,Urban,Retail,Tier 2,True
+RTL-02865,Safeway,Grocery,Midwest,IL,Chicago,WH-1021,Large,Urban,Retail,Tier 1,True
+RTL-02866,Ralphs,Grocery,Midwest,IL,Peoria,WH-1021,Large,Urban,Retail,Tier 2,True
+RTL-02867,Giant Eagle,Grocery,Midwest,IL,Waukegan,WH-1022,Small,Urban,Retail,Tier 2,True
+RTL-02868,QFC,Grocery,Midwest,IL,Rockford,WH-1026,Medium,Suburban,Retail,Tier 3,True
+RTL-02869,Royal Farms,Convenience,Midwest,IL,Chicago,WH-1022,Large,Urban,Retail,Tier 2,False
+RTL-02870,BevMo!,Liquor,Midwest,IL,Springfield,WH-1023,Large,Urban,Retail,Tier 3,True
+RTL-02871,QuikTrip,Convenience,Midwest,IL,Waukegan,WH-1030,Medium,Rural,Retail,Tier 2,True
+RTL-02872,ABC Fine Wine,Liquor,Midwest,IL,Elgin,WH-1025,Medium,Rural,Retail,Tier 2,True
+RTL-02873,King Soopers,Grocery,Midwest,IL,Peoria,WH-1028,Large,Urban,Retail,Tier 1,True
+RTL-02874,Party City Liquor,Liquor,Midwest,IL,Chicago,WH-1026,Small,Urban,Retail,Tier 2,True
+RTL-02875,Publix,Grocery,Midwest,IL,Waukegan,WH-1029,Small,Suburban,Retail,Tier 3,True
+RTL-02876,Costco,Big Box,Midwest,IL,Springfield,WH-1023,Medium,Urban,Retail,Tier 1,True
+RTL-02877,BP,Gas Station,Midwest,IL,Rockford,WH-1021,Medium,Suburban,Retail,Tier 2,True
+RTL-02878,State Liquor Store,Liquor,Midwest,IL,Waukegan,WH-1023,Medium,Urban,Retail,Tier 2,True
+RTL-02879,Publix,Grocery,Midwest,IL,Rockford,WH-1021,Large,Suburban,Retail,Tier 2,True
+RTL-02880,Publix,Grocery,Midwest,IL,Chicago,WH-1025,Large,Urban,Retail,Tier 1,True
+RTL-02881,State Liquor Store,Liquor,Midwest,IL,Rockford,WH-1021,Large,Suburban,Retail,Tier 3,True
+RTL-02882,Ralphs,Grocery,Midwest,IL,Springfield,WH-1025,Small,Urban,Retail,Tier 1,True
+RTL-02883,Sam's Club,Big Box,Midwest,IL,Waukegan,WH-1027,Medium,Suburban,Retail,Tier 3,False
+RTL-02884,Kroger,Grocery,Midwest,IL,Elgin,WH-1026,Medium,Suburban,Retail,Tier 2,True
+RTL-02885,Casey's,Convenience,Midwest,IL,Rockford,WH-1026,Large,Urban,Retail,Tier 2,False
+RTL-02886,Stop & Shop,Grocery,Midwest,IL,Rockford,WH-1027,Small,Rural,Retail,Tier 2,True
+RTL-02887,Sheetz,Convenience,Midwest,IL,Elgin,WH-1027,Medium,Rural,Retail,Tier 3,True
+RTL-02888,Stop & Shop,Grocery,Midwest,IL,Rockford,WH-1021,Medium,Suburban,Retail,Tier 2,True
+RTL-02889,BJ's Wholesale,Big Box,Midwest,IL,Rockford,WH-1023,Medium,Urban,Retail,Tier 2,False
+RTL-02890,Harris Teeter,Grocery,Midwest,IL,Chicago,WH-1027,Large,Suburban,Retail,Tier 3,True
+RTL-02891,RaceTrac,Convenience,Midwest,IL,Chicago,WH-1021,Medium,Suburban,Retail,Tier 2,False
+RTL-02892,Citgo,Gas Station,Midwest,IL,Rockford,WH-1022,Medium,Suburban,Retail,Tier 2,True
+RTL-02893,Kroger,Grocery,Midwest,IL,Rockford,WH-1023,Small,Urban,Retail,Tier 2,True
+RTL-02894,Speedway,Convenience,Midwest,IL,Chicago,WH-1021,Small,Suburban,Retail,Tier 3,True
+RTL-02895,Sam's Club,Big Box,Midwest,IL,Rockford,WH-1027,Medium,Urban,Retail,Tier 1,False
+RTL-02896,Target,Big Box,Midwest,IL,Chicago,WH-1030,Large,Urban,Retail,Tier 1,True
+RTL-02897,Harris Teeter,Grocery,Midwest,IL,Elgin,WH-1028,Small,Urban,Retail,Tier 3,True
+RTL-02898,Wegmans,Grocery,Midwest,IL,Chicago,WH-1022,Medium,Urban,Retail,Tier 1,True
+RTL-02899,Binny's,Liquor,Midwest,IL,Chicago,WH-1021,Small,Rural,Retail,Tier 3,True
+RTL-02900,Ralphs,Grocery,Midwest,IL,Elgin,WH-1025,Medium,Urban,Retail,Tier 2,True
+RTL-02901,Kroger,Grocery,Midwest,IL,Rockford,WH-1030,Small,Rural,Retail,Tier 3,True
+RTL-02902,Harris Teeter,Grocery,Midwest,IL,Waukegan,WH-1021,Small,Urban,Retail,Tier 1,True
+RTL-02903,Speedway,Convenience,Midwest,MN,Minneapolis,WH-1028,Medium,Urban,Retail,Tier 1,False
+RTL-02904,Ralphs,Grocery,Midwest,MN,Minneapolis,WH-1025,Large,Urban,Retail,Tier 2,True
+RTL-02905,Target,Big Box,Midwest,MN,Minneapolis,WH-1030,Small,Suburban,Retail,Tier 3,False
+RTL-02906,ABC Fine Wine,Liquor,Midwest,MN,Minneapolis,WH-1022,Large,Suburban,Retail,Tier 3,True
+RTL-02907,Fred Meyer,Grocery,Midwest,MN,Minneapolis,WH-1021,Medium,Suburban,Retail,Tier 2,True
+RTL-02908,BevMo!,Liquor,Midwest,MN,Minneapolis,WH-1023,Superstore,Suburban,Retail,Tier 2,True
+RTL-02909,Sheetz,Convenience,Midwest,MN,Minneapolis,WH-1028,Large,Urban,Retail,Tier 1,True
+RTL-02910,King Soopers,Grocery,Midwest,MN,Minneapolis,WH-1026,Medium,Suburban,Retail,Tier 3,True
+RTL-02911,QuikTrip,Convenience,Midwest,MN,Minneapolis,WH-1024,Small,Suburban,Retail,Tier 2,True
+RTL-02912,Royal Farms,Convenience,Midwest,MN,Minneapolis,WH-1027,Medium,Urban,Retail,Tier 1,False
+RTL-02913,Costco,Big Box,Midwest,MN,Minneapolis,WH-1024,Medium,Urban,Retail,Tier 1,True
+RTL-02914,7-Eleven,Convenience,Midwest,MN,Minneapolis,WH-1030,Medium,Suburban,Retail,Tier 2,True
+RTL-02915,Safeway,Grocery,Midwest,MN,Minneapolis,WH-1030,Medium,Suburban,Retail,Tier 3,True
+RTL-02916,King Soopers,Grocery,Midwest,IA,Des Moines,WH-1029,Medium,Urban,Retail,Tier 2,True
+RTL-02917,Sam's Club,Big Box,Midwest,IA,Des Moines,WH-1022,Small,Suburban,Retail,Tier 2,True
+RTL-02918,Speedway,Convenience,Midwest,IA,Des Moines,WH-1022,Large,Suburban,Retail,Tier 2,False
+RTL-02919,Fred Meyer,Grocery,Midwest,IA,Des Moines,WH-1026,Medium,Urban,Retail,Tier 2,False
+RTL-02920,H-E-B,Grocery,Midwest,IA,Des Moines,WH-1026,Medium,Urban,Retail,Tier 1,True
+RTL-02921,Costco,Big Box,Midwest,IA,Des Moines,WH-1026,Small,Rural,Retail,Tier 2,True
+RTL-02922,Stop & Shop,Grocery,Midwest,IA,Des Moines,WH-1025,Small,Suburban,Retail,Tier 3,True
+RTL-02923,Stop & Shop,Grocery,Midwest,IA,Des Moines,WH-1025,Medium,Suburban,Retail,Tier 2,True
+RTL-02924,Kroger,Grocery,Midwest,IA,Des Moines,WH-1030,Small,Urban,Retail,Tier 1,True
+RTL-02925,Speedway,Convenience,Midwest,IA,Des Moines,WH-1030,Medium,Suburban,Retail,Tier 2,False
+RTL-02926,Citgo,Gas Station,Midwest,IA,Des Moines,WH-1026,Medium,Urban,Retail,Tier 2,False
+RTL-02927,King Soopers,Grocery,Midwest,IA,Des Moines,WH-1021,Small,Urban,Retail,Tier 2,True
+RTL-02928,RaceTrac,Convenience,Midwest,IA,Des Moines,WH-1024,Small,Suburban,Retail,Tier 3,False
+RTL-02929,Cumberland Farms,Convenience,Midwest,IA,Des Moines,WH-1024,Medium,Urban,Retail,Tier 2,False
+RTL-02930,King Soopers,Grocery,Midwest,IA,Des Moines,WH-1022,Small,Urban,Retail,Tier 2,True
+RTL-02931,Walmart,Big Box,Midwest,IA,Des Moines,WH-1029,Medium,Urban,Retail,Tier 1,True
+RTL-02932,H-E-B,Grocery,Midwest,IA,Des Moines,WH-1030,Large,Urban,Retail,Tier 3,True
+RTL-02933,BevMo!,Liquor,Midwest,IA,Des Moines,WH-1026,Large,Suburban,Retail,Tier 2,True
+RTL-02934,Smith's,Grocery,Midwest,IA,Des Moines,WH-1027,Large,Urban,Retail,Tier 2,True
+RTL-02935,King Soopers,Grocery,Midwest,IA,Des Moines,WH-1026,Large,Rural,Retail,Tier 3,True
+RTL-02936,King Soopers,Grocery,Midwest,IA,Des Moines,WH-1027,Small,Urban,Retail,Tier 2,True
+RTL-02937,QuikTrip,Convenience,Midwest,IA,Des Moines,WH-1028,Medium,Suburban,Retail,Tier 3,False
+RTL-02938,Giant Eagle,Grocery,Midwest,IA,Des Moines,WH-1025,Small,Suburban,Retail,Tier 2,True
+RTL-02939,Target,Big Box,Midwest,IA,Des Moines,WH-1028,Large,Suburban,Retail,Tier 3,True
+RTL-02940,BevMo!,Liquor,Midwest,IA,Des Moines,WH-1030,Medium,Suburban,Retail,Tier 3,True
+RTL-02941,King Soopers,Grocery,Midwest,MO,Kansas City,WH-1027,Small,Urban,Retail,Tier 3,False
+RTL-02942,Spec's,Liquor,Midwest,MO,Kansas City,WH-1027,Medium,Suburban,Retail,Tier 3,True
+RTL-02943,Kroger,Grocery,Midwest,MO,Kansas City,WH-1022,Medium,Rural,Retail,Tier 3,True
+RTL-02944,Safeway,Grocery,Midwest,MO,St. Louis,WH-1028,Medium,Rural,Retail,Tier 3,True
+RTL-02945,Stop & Shop,Grocery,Midwest,MO,St. Louis,WH-1021,Superstore,Rural,Retail,Tier 2,True
+RTL-02946,Fine Wine & Good Spirits,Liquor,Midwest,MO,Kansas City,WH-1028,Medium,Suburban,Retail,Tier 2,True
+RTL-02947,Wawa,Convenience,Midwest,MO,St. Louis,WH-1027,Small,Urban,Retail,Tier 2,False
+RTL-02948,Safeway,Grocery,Midwest,MO,Kansas City,WH-1029,Medium,Rural,Retail,Tier 3,True
+RTL-02949,QuikTrip,Convenience,Midwest,MO,Kansas City,WH-1023,Medium,Rural,Retail,Tier 3,True
+RTL-02950,Royal Farms,Convenience,Midwest,MO,Kansas City,WH-1022,Small,Rural,Retail,Tier 3,True
+RTL-02951,Sam's Club,Big Box,Midwest,MO,St. Louis,WH-1025,Medium,Rural,Retail,Tier 3,False
+RTL-02952,Stop & Shop,Grocery,Midwest,MO,St. Louis,WH-1029,Medium,Rural,Retail,Tier 2,True
+RTL-02953,Royal Farms,Convenience,Midwest,MO,St. Louis,WH-1029,Small,Urban,Retail,Tier 1,True
+RTL-02954,Fry's,Grocery,Midwest,MO,Kansas City,WH-1028,Medium,Urban,Retail,Tier 2,True
+RTL-02955,Sheetz,Convenience,Midwest,MO,Kansas City,WH-1026,Medium,Urban,Retail,Tier 1,True
+RTL-02956,Casey's,Convenience,Midwest,MO,Kansas City,WH-1025,Medium,Urban,Retail,Tier 2,True
+RTL-02957,Valero,Gas Station,Midwest,MO,Kansas City,WH-1027,Superstore,Urban,Retail,Tier 3,True
+RTL-02958,Valero,Gas Station,Midwest,MO,St. Louis,WH-1025,Medium,Urban,Retail,Tier 2,True
+RTL-02959,Walmart,Big Box,Midwest,MO,St. Louis,WH-1029,Medium,Rural,Retail,Tier 2,True
+RTL-02960,Costco,Big Box,Midwest,MO,Kansas City,WH-1022,Large,Suburban,Retail,Tier 1,True
+RTL-02961,Citgo,Gas Station,Midwest,MO,St. Louis,WH-1030,Medium,Suburban,Retail,Tier 2,True
+RTL-02962,Harris Teeter,Grocery,Midwest,MO,St. Louis,WH-1025,Large,Urban,Retail,Tier 2,True
+RTL-02963,Party City Liquor,Liquor,Midwest,MO,Kansas City,WH-1025,Medium,Urban,Retail,Tier 2,True
+RTL-02964,Giant Eagle,Grocery,Midwest,MO,St. Louis,WH-1022,Small,Urban,Retail,Tier 1,True
+RTL-02965,Target,Big Box,Midwest,MO,St. Louis,WH-1025,Medium,Rural,Retail,Tier 2,True
+RTL-02966,Publix,Grocery,Midwest,MO,St. Louis,WH-1029,Medium,Suburban,Retail,Tier 2,True
+RTL-02967,Walmart,Big Box,Midwest,MO,Kansas City,WH-1022,Large,Urban,Retail,Tier 3,True
+RTL-02968,Wegmans,Grocery,Midwest,ND,City_2,WH-1030,Medium,Suburban,Retail,Tier 2,True
+RTL-02969,Ralphs,Grocery,Midwest,ND,City_3,WH-1028,Medium,Rural,Retail,Tier 1,True
+RTL-02970,Kroger,Grocery,Midwest,ND,City_4,WH-1021,Small,Suburban,Retail,Tier 1,True
+RTL-02971,Kroger,Grocery,Midwest,ND,City_3,WH-1022,Large,Suburban,Retail,Tier 2,True
+RTL-02972,Walmart,Big Box,Midwest,ND,City_5,WH-1024,Large,Urban,Retail,Tier 2,False
+RTL-02973,Costco,Big Box,Midwest,ND,City_1,WH-1026,Large,Rural,Retail,Tier 3,True
+RTL-02974,Sam's Club,Big Box,Midwest,ND,City_5,WH-1028,Large,Rural,Retail,Tier 2,False
+RTL-02975,Giant Eagle,Grocery,Midwest,ND,City_5,WH-1024,Small,Rural,Retail,Tier 3,True
+RTL-02976,7-Eleven,Convenience,Midwest,ND,City_2,WH-1025,Large,Urban,Retail,Tier 2,True
+RTL-02977,Smith's,Grocery,Midwest,ND,City_4,WH-1024,Large,Rural,Retail,Tier 3,True
+RTL-02978,Harris Teeter,Grocery,Midwest,ND,City_4,WH-1025,Medium,Rural,Retail,Tier 1,True
+RTL-02979,King Soopers,Grocery,Midwest,ND,City_2,WH-1029,Small,Rural,Retail,Tier 2,True
+RTL-02980,Costco,Big Box,Midwest,ND,City_4,WH-1023,Medium,Urban,Retail,Tier 2,True
+RTL-02981,Mobil,Gas Station,Midwest,SD,City_5,WH-1021,Small,Suburban,Retail,Tier 3,True
+RTL-02982,Fry's,Grocery,Midwest,SD,City_4,WH-1028,Medium,Urban,Retail,Tier 2,True
+RTL-02983,Total Wine,Liquor,Midwest,SD,City_5,WH-1028,Large,Suburban,Retail,Tier 2,True
+RTL-02984,Royal Farms,Convenience,Midwest,SD,City_4,WH-1030,Medium,Rural,Retail,Tier 2,True
+RTL-02985,ABC Fine Wine,Liquor,Midwest,SD,City_5,WH-1028,Large,Urban,Retail,Tier 3,True
+RTL-02986,Cumberland Farms,Convenience,Midwest,SD,City_4,WH-1025,Small,Suburban,Retail,Tier 2,True
+RTL-02987,QFC,Grocery,Midwest,SD,City_3,WH-1021,Superstore,Urban,Retail,Tier 1,True
+RTL-02988,Cumberland Farms,Convenience,Midwest,SD,City_3,WH-1029,Medium,Suburban,Retail,Tier 2,True
+RTL-02989,H-E-B,Grocery,Midwest,SD,City_4,WH-1022,Medium,Rural,Retail,Tier 2,True
+RTL-02990,Exxon,Gas Station,Midwest,SD,City_5,WH-1021,Large,Urban,Retail,Tier 1,True
+RTL-02991,ABC Fine Wine,Liquor,Midwest,SD,City_2,WH-1030,Large,Suburban,Retail,Tier 2,True
+RTL-02992,Safeway,Grocery,Midwest,SD,City_4,WH-1023,Large,Rural,Retail,Tier 2,True
+RTL-02993,Ralphs,Grocery,Midwest,SD,City_1,WH-1027,Medium,Urban,Retail,Tier 3,True
+RTL-02994,Mobil,Gas Station,Midwest,SD,City_4,WH-1024,Medium,Urban,Retail,Tier 1,True
+RTL-02995,Casey's,Convenience,Midwest,SD,City_2,WH-1030,Superstore,Suburban,Retail,Tier 2,False
+RTL-02996,Costco,Big Box,Midwest,SD,City_3,WH-1027,Medium,Urban,Retail,Tier 2,False
+RTL-02997,Sam's Club,Big Box,Midwest,SD,City_4,WH-1023,Medium,Urban,Retail,Tier 2,False
+RTL-02998,Total Wine,Liquor,Midwest,SD,City_5,WH-1021,Large,Urban,Retail,Tier 2,True
+RTL-02999,Smith's,Grocery,Midwest,SD,City_4,WH-1026,Medium,Rural,Retail,Tier 3,True
+RTL-03000,Circle K,Convenience,Midwest,SD,City_3,WH-1027,Large,Urban,Retail,Tier 1,True
+RTL-03001,Target,Big Box,Midwest,SD,City_4,WH-1022,Small,Urban,Retail,Tier 3,True
+RTL-03002,Cumberland Farms,Convenience,Midwest,SD,City_3,WH-1023,Medium,Suburban,Retail,Tier 2,True
+RTL-03003,RaceTrac,Convenience,Midwest,NE,Omaha,WH-1024,Medium,Rural,Retail,Tier 2,True
+RTL-03004,Smith's,Grocery,Midwest,NE,Omaha,WH-1026,Small,Urban,Retail,Tier 3,True
+RTL-03005,Stop & Shop,Grocery,Midwest,NE,Omaha,WH-1024,Large,Urban,Retail,Tier 2,True
+RTL-03006,Royal Farms,Convenience,Midwest,NE,Omaha,WH-1025,Large,Urban,Retail,Tier 1,False
+RTL-03007,Fine Wine & Good Spirits,Liquor,Midwest,NE,Omaha,WH-1022,Large,Suburban,Retail,Tier 1,True
+RTL-03008,7-Eleven,Convenience,Midwest,NE,Omaha,WH-1024,Medium,Urban,Retail,Tier 1,True
+RTL-03009,ABC Fine Wine,Liquor,Midwest,NE,Omaha,WH-1027,Medium,Urban,Retail,Tier 2,True
+RTL-03010,BJ's Wholesale,Big Box,Midwest,NE,Omaha,WH-1030,Small,Urban,Retail,Tier 1,True
+RTL-03011,QuikTrip,Convenience,Midwest,NE,Omaha,WH-1022,Medium,Urban,Retail,Tier 1,True
+RTL-03012,Sunoco,Gas Station,Midwest,NE,Omaha,WH-1030,Small,Urban,Retail,Tier 1,False
+RTL-03013,Walmart,Big Box,Midwest,NE,Omaha,WH-1027,Small,Rural,Retail,Tier 3,True
+RTL-03014,Food Lion,Grocery,Midwest,NE,Omaha,WH-1021,Small,Suburban,Retail,Tier 3,True
+RTL-03015,Cumberland Farms,Convenience,Midwest,NE,Omaha,WH-1023,Small,Rural,Retail,Tier 3,True
+RTL-03016,ABC Fine Wine,Liquor,Midwest,NE,Omaha,WH-1023,Medium,Urban,Retail,Tier 1,True
+RTL-03017,Wawa,Convenience,Midwest,NE,Omaha,WH-1028,Medium,Suburban,Retail,Tier 3,True
+RTL-03018,Party City Liquor,Liquor,Midwest,NE,Omaha,WH-1026,Medium,Urban,Retail,Tier 2,True
+RTL-03019,Harris Teeter,Grocery,Midwest,NE,Omaha,WH-1022,Small,Suburban,Retail,Tier 3,True
+RTL-03020,Ralphs,Grocery,Midwest,NE,Omaha,WH-1030,Medium,Urban,Retail,Tier 2,True
+RTL-03021,Binny's,Liquor,Midwest,NE,Omaha,WH-1030,Superstore,Rural,Retail,Tier 2,True
+RTL-03022,Spec's,Liquor,Midwest,NE,Omaha,WH-1029,Small,Suburban,Retail,Tier 3,True
+RTL-03023,Royal Farms,Convenience,Midwest,KS,Wichita,WH-1021,Medium,Suburban,Retail,Tier 1,False
+RTL-03024,Wawa,Convenience,Midwest,KS,Wichita,WH-1023,Small,Suburban,Retail,Tier 3,True
+RTL-03025,Casey's,Convenience,Midwest,KS,Wichita,WH-1028,Medium,Suburban,Retail,Tier 3,False
+RTL-03026,Costco,Big Box,Midwest,KS,Wichita,WH-1027,Small,Rural,Retail,Tier 3,True
+RTL-03027,H-E-B,Grocery,Midwest,KS,Wichita,WH-1029,Small,Suburban,Retail,Tier 3,True
+RTL-03028,RaceTrac,Convenience,Midwest,KS,Wichita,WH-1021,Medium,Urban,Retail,Tier 2,True
+RTL-03029,Smith's,Grocery,Midwest,KS,Wichita,WH-1026,Medium,Rural,Retail,Tier 2,True
+RTL-03030,7-Eleven,Convenience,Midwest,KS,Wichita,WH-1028,Medium,Suburban,Retail,Tier 1,True
+RTL-03031,BJ's Wholesale,Big Box,Midwest,KS,Wichita,WH-1027,Large,Urban,Retail,Tier 2,True
+RTL-03032,ABC Fine Wine,Liquor,Midwest,KS,Wichita,WH-1030,Small,Suburban,Retail,Tier 3,True
+RTL-03033,Phillips 66,Gas Station,Midwest,KS,Wichita,WH-1021,Small,Suburban,Retail,Tier 2,False
+RTL-03034,Target,Big Box,Midwest,KS,Wichita,WH-1029,Small,Rural,Retail,Tier 2,True
+RTL-03035,BJ's Wholesale,Big Box,Midwest,KS,Wichita,WH-1024,Medium,Urban,Retail,Tier 2,True
+RTL-03036,Ralphs,Grocery,Midwest,KS,Wichita,WH-1030,Small,Urban,Retail,Tier 2,True
+RTL-03037,Giant Eagle,Grocery,Midwest,KS,Wichita,WH-1025,Large,Suburban,Retail,Tier 3,True
+RTL-03038,BevMo!,Liquor,Midwest,KS,Wichita,WH-1023,Large,Urban,Retail,Tier 2,True
+RTL-03039,Wawa,Convenience,West,MT,City_4,WH-1033,Large,Suburban,Retail,Tier 3,False
+RTL-03040,QuikTrip,Convenience,West,MT,City_2,WH-1041,Large,Suburban,Retail,Tier 3,True
+RTL-03041,BP,Gas Station,West,MT,City_3,WH-1034,Large,Suburban,Retail,Tier 3,True
+RTL-03042,Wawa,Convenience,West,MT,City_3,WH-1042,Superstore,Rural,Retail,Tier 3,False
+RTL-03043,Costco,Big Box,West,MT,City_3,WH-1032,Large,Suburban,Retail,Tier 3,True
+RTL-03044,BJ's Wholesale,Big Box,West,MT,City_1,WH-1032,Medium,Suburban,Retail,Tier 3,False
+RTL-03045,BP,Gas Station,West,MT,City_4,WH-1034,Medium,Urban,Retail,Tier 3,True
+RTL-03046,Shell,Gas Station,West,MT,City_3,WH-1040,Medium,Suburban,Retail,Tier 2,True
+RTL-03047,Royal Farms,Convenience,West,MT,City_4,WH-1040,Medium,Urban,Retail,Tier 1,True
+RTL-03048,7-Eleven,Convenience,West,MT,City_5,WH-1033,Large,Rural,Retail,Tier 2,True
+RTL-03049,Costco,Big Box,West,MT,City_5,WH-1032,Medium,Suburban,Retail,Tier 1,False
+RTL-03050,Ralphs,Grocery,West,MT,City_1,WH-1041,Medium,Suburban,Retail,Tier 2,True
+RTL-03051,QuikTrip,Convenience,West,MT,City_5,WH-1038,Large,Suburban,Retail,Tier 2,False
+RTL-03052,Binny's,Liquor,West,MT,City_2,WH-1032,Medium,Suburban,Retail,Tier 2,True
+RTL-03053,King Soopers,Grocery,West,MT,City_2,WH-1036,Small,Urban,Retail,Tier 2,True
+RTL-03054,Giant Eagle,Grocery,West,MT,City_1,WH-1038,Small,Suburban,Retail,Tier 3,True
+RTL-03055,Fry's,Grocery,West,MT,City_5,WH-1031,Medium,Urban,Retail,Tier 1,True
+RTL-03056,Citgo,Gas Station,West,MT,City_5,WH-1033,Small,Suburban,Retail,Tier 3,True
+RTL-03057,Casey's,Convenience,West,MT,City_2,WH-1037,Medium,Urban,Retail,Tier 2,False
+RTL-03058,Circle K,Convenience,West,MT,City_1,WH-1039,Large,Rural,Retail,Tier 3,True
+RTL-03059,Sheetz,Convenience,West,MT,City_1,WH-1036,Medium,Suburban,Retail,Tier 3,True
+RTL-03060,Wegmans,Grocery,West,MT,City_2,WH-1040,Large,Suburban,Retail,Tier 2,True
+RTL-03061,Wegmans,Grocery,West,MT,City_4,WH-1037,Superstore,Urban,Retail,Tier 1,True
+RTL-03062,Ralphs,Grocery,West,MT,City_1,WH-1035,Small,Suburban,Retail,Tier 2,True
+RTL-03063,Smith's,Grocery,West,MT,City_3,WH-1038,Small,Suburban,Retail,Tier 2,True
+RTL-03064,Shell,Gas Station,West,WY,City_2,WH-1033,Superstore,Urban,Retail,Tier 2,True
+RTL-03065,Ralphs,Grocery,West,WY,City_1,WH-1033,Small,Urban,Retail,Tier 2,True
+RTL-03066,7-Eleven,Convenience,West,WY,City_2,WH-1033,Large,Rural,Retail,Tier 2,True
+RTL-03067,Ralphs,Grocery,West,WY,City_2,WH-1032,Small,Urban,Retail,Tier 1,True
+RTL-03068,RaceTrac,Convenience,West,WY,City_3,WH-1042,Small,Rural,Retail,Tier 2,True
+RTL-03069,Fry's,Grocery,West,WY,City_2,WH-1039,Medium,Urban,Retail,Tier 2,True
+RTL-03070,Casey's,Convenience,West,WY,City_4,WH-1042,Medium,Suburban,Retail,Tier 3,False
+RTL-03071,Smith's,Grocery,West,WY,City_4,WH-1039,Medium,Suburban,Retail,Tier 2,True
+RTL-03072,Casey's,Convenience,West,WY,City_3,WH-1036,Medium,Suburban,Retail,Tier 2,True
+RTL-03073,Binny's,Liquor,West,WY,City_4,WH-1034,Large,Suburban,Retail,Tier 1,True
+RTL-03074,Walmart,Big Box,West,WY,City_2,WH-1036,Small,Urban,Retail,Tier 1,True
+RTL-03075,Fry's,Grocery,West,WY,City_5,WH-1036,Small,Suburban,Retail,Tier 3,True
+RTL-03076,Wawa,Convenience,West,WY,City_1,WH-1031,Small,Suburban,Retail,Tier 1,True
+RTL-03077,7-Eleven,Convenience,West,WY,City_3,WH-1040,Medium,Urban,Retail,Tier 2,True
+RTL-03078,ABC Fine Wine,Liquor,West,WY,City_1,WH-1033,Large,Suburban,Retail,Tier 3,True
+RTL-03079,BJ's Wholesale,Big Box,West,CO,Denver,WH-1037,Small,Urban,Retail,Tier 1,True
+RTL-03080,Royal Farms,Convenience,West,CO,Denver,WH-1040,Medium,Rural,Retail,Tier 2,False
+RTL-03081,Citgo,Gas Station,West,CO,Denver,WH-1039,Medium,Suburban,Retail,Tier 3,True
+RTL-03082,Party City Liquor,Liquor,West,CO,Denver,WH-1039,Small,Urban,Retail,Tier 3,True
+RTL-03083,Giant Eagle,Grocery,West,CO,Denver,WH-1038,Large,Suburban,Retail,Tier 2,True
+RTL-03084,Safeway,Grocery,West,CO,Denver,WH-1039,Small,Rural,Retail,Tier 3,True
+RTL-03085,Exxon,Gas Station,West,CO,Denver,WH-1033,Large,Urban,Retail,Tier 3,False
+RTL-03086,King Soopers,Grocery,West,CO,Denver,WH-1032,Large,Urban,Retail,Tier 2,True
+RTL-03087,Harris Teeter,Grocery,West,CO,Denver,WH-1036,Small,Suburban,Retail,Tier 3,True
+RTL-03088,Sheetz,Convenience,West,CO,Denver,WH-1035,Small,Suburban,Retail,Tier 2,True
+RTL-03089,Casey's,Convenience,West,CO,Denver,WH-1039,Small,Suburban,Retail,Tier 3,True
+RTL-03090,Circle K,Convenience,West,CO,Denver,WH-1042,Large,Urban,Retail,Tier 3,False
+RTL-03091,Harris Teeter,Grocery,West,CO,Denver,WH-1040,Medium,Suburban,Retail,Tier 3,False
+RTL-03092,Wawa,Convenience,West,CO,Denver,WH-1037,Superstore,Suburban,Retail,Tier 2,True
+RTL-03093,QFC,Grocery,West,CO,Denver,WH-1036,Small,Urban,Retail,Tier 1,True
+RTL-03094,Circle K,Convenience,West,CO,Denver,WH-1032,Medium,Suburban,Retail,Tier 3,True
+RTL-03095,King Soopers,Grocery,West,CO,Denver,WH-1038,Small,Urban,Retail,Tier 2,True
+RTL-03096,RaceTrac,Convenience,West,CO,Denver,WH-1036,Medium,Urban,Retail,Tier 2,True
+RTL-03097,Harris Teeter,Grocery,West,NM,Albuquerque,WH-1038,Medium,Suburban,Retail,Tier 3,True
+RTL-03098,Royal Farms,Convenience,West,NM,Albuquerque,WH-1042,Medium,Suburban,Retail,Tier 3,True
+RTL-03099,Royal Farms,Convenience,West,NM,Albuquerque,WH-1032,Small,Urban,Retail,Tier 2,True
+RTL-03100,Giant Eagle,Grocery,West,NM,Albuquerque,WH-1035,Small,Urban,Retail,Tier 1,True
+RTL-03101,Speedway,Convenience,West,NM,Albuquerque,WH-1032,Small,Rural,Retail,Tier 2,True
+RTL-03102,Total Wine,Liquor,West,NM,Albuquerque,WH-1033,Medium,Suburban,Retail,Tier 3,True
+RTL-03103,Stop & Shop,Grocery,West,NM,Albuquerque,WH-1041,Small,Suburban,Retail,Tier 3,True
+RTL-03104,Target,Big Box,West,NM,Albuquerque,WH-1040,Large,Suburban,Retail,Tier 3,False
+RTL-03105,Wegmans,Grocery,West,NM,Albuquerque,WH-1033,Small,Rural,Retail,Tier 2,True
+RTL-03106,Sam's Club,Big Box,West,ID,Boise,WH-1038,Small,Suburban,Retail,Tier 2,True
+RTL-03107,BevMo!,Liquor,West,ID,Boise,WH-1035,Small,Rural,Retail,Tier 2,True
+RTL-03108,RaceTrac,Convenience,West,ID,Boise,WH-1031,Medium,Urban,Retail,Tier 2,True
+RTL-03109,RaceTrac,Convenience,West,ID,Boise,WH-1031,Medium,Suburban,Retail,Tier 2,True
+RTL-03110,7-Eleven,Convenience,West,ID,Boise,WH-1036,Large,Suburban,Retail,Tier 2,False
+RTL-03111,Cumberland Farms,Convenience,West,ID,Boise,WH-1038,Medium,Urban,Retail,Tier 2,False
+RTL-03112,King Soopers,Grocery,West,ID,Boise,WH-1036,Large,Suburban,Retail,Tier 3,True
+RTL-03113,Sam's Club,Big Box,West,ID,Boise,WH-1033,Medium,Rural,Retail,Tier 1,False
+RTL-03114,Target,Big Box,West,ID,Boise,WH-1039,Medium,Suburban,Retail,Tier 3,False
+RTL-03115,ABC Fine Wine,Liquor,West,ID,Boise,WH-1039,Small,Suburban,Retail,Tier 3,True
+RTL-03116,Exxon,Gas Station,West,ID,Boise,WH-1040,Medium,Suburban,Retail,Tier 3,True
+RTL-03117,Food Lion,Grocery,West,ID,Boise,WH-1041,Medium,Urban,Retail,Tier 2,True
+RTL-03118,Wawa,Convenience,West,ID,Boise,WH-1032,Superstore,Urban,Retail,Tier 1,True
+RTL-03119,Cumberland Farms,Convenience,West,ID,Boise,WH-1034,Large,Suburban,Retail,Tier 2,True
+RTL-03120,Circle K,Convenience,West,ID,Boise,WH-1042,Small,Urban,Retail,Tier 3,True
+RTL-03121,Food Lion,Grocery,West,UT,Salt Lake City,WH-1033,Medium,Rural,Retail,Tier 3,True
+RTL-03122,Spec's,Liquor,West,UT,Salt Lake City,WH-1033,Medium,Urban,Retail,Tier 3,True
+RTL-03123,Harris Teeter,Grocery,West,UT,Salt Lake City,WH-1041,Medium,Urban,Retail,Tier 2,True
+RTL-03124,Wawa,Convenience,West,UT,Salt Lake City,WH-1032,Small,Rural,Retail,Tier 2,True
+RTL-03125,State Liquor Store,Liquor,West,UT,Salt Lake City,WH-1040,Superstore,Suburban,Retail,Tier 1,True
+RTL-03126,7-Eleven,Convenience,West,UT,Salt Lake City,WH-1035,Medium,Urban,Retail,Tier 2,False
+RTL-03127,BJ's Wholesale,Big Box,West,UT,Salt Lake City,WH-1039,Small,Suburban,Retail,Tier 2,True
+RTL-03128,Stop & Shop,Grocery,West,UT,Salt Lake City,WH-1042,Medium,Rural,Retail,Tier 2,True
+RTL-03129,Valero,Gas Station,West,UT,Salt Lake City,WH-1040,Large,Suburban,Retail,Tier 3,False
+RTL-03130,State Liquor Store,Liquor,West,NV,Las Vegas,WH-1036,Superstore,Urban,Retail,Tier 2,True
+RTL-03131,Mobil,Gas Station,West,NV,Las Vegas,WH-1033,Medium,Urban,Retail,Tier 2,True
+RTL-03132,Phillips 66,Gas Station,West,NV,Las Vegas,WH-1035,Superstore,Suburban,Retail,Tier 3,False
+RTL-03133,Cumberland Farms,Convenience,West,NV,Las Vegas,WH-1032,Large,Urban,Retail,Tier 3,True
+RTL-03134,Wegmans,Grocery,West,NV,Las Vegas,WH-1035,Medium,Rural,Retail,Tier 2,True
+RTL-03135,Chevron,Gas Station,West,NV,Las Vegas,WH-1036,Medium,Urban,Retail,Tier 3,False
+RTL-03136,BevMo!,Liquor,West,NV,Las Vegas,WH-1036,Medium,Suburban,Retail,Tier 3,True
+RTL-03137,Casey's,Convenience,West,NV,Las Vegas,WH-1033,Medium,Urban,Retail,Tier 2,True
+RTL-03138,Mobil,Gas Station,West,NV,Las Vegas,WH-1032,Medium,Urban,Retail,Tier 1,True
+RTL-03139,ABC Fine Wine,Liquor,West,NV,Las Vegas,WH-1042,Superstore,Suburban,Retail,Tier 1,True
+RTL-03140,Walmart,Big Box,West,NV,Las Vegas,WH-1038,Medium,Suburban,Retail,Tier 3,False
+RTL-03141,Binny's,Liquor,West,NV,Las Vegas,WH-1042,Small,Urban,Retail,Tier 2,True
+RTL-03142,Valero,Gas Station,West,NV,Las Vegas,WH-1042,Small,Suburban,Retail,Tier 3,False
+RTL-03143,QFC,Grocery,West,NV,Las Vegas,WH-1042,Medium,Suburban,Retail,Tier 3,True
+RTL-03144,Fry's,Grocery,West,NV,Las Vegas,WH-1035,Small,Suburban,Retail,Tier 3,True
+RTL-03145,Total Wine,Liquor,West,NV,Las Vegas,WH-1032,Large,Suburban,Retail,Tier 3,True
+RTL-03146,Publix,Grocery,West,NV,Las Vegas,WH-1040,Large,Suburban,Retail,Tier 3,True
+RTL-03147,Kroger,Grocery,West,NV,Las Vegas,WH-1031,Large,Rural,Retail,Tier 2,True
+RTL-03148,7-Eleven,Convenience,West,AZ,Tucson,WH-1034,Medium,Suburban,Retail,Tier 2,True
+RTL-03149,Safeway,Grocery,West,AZ,Phoenix,WH-1031,Large,Suburban,Retail,Tier 3,True
+RTL-03150,QFC,Grocery,West,AZ,Tucson,WH-1031,Large,Rural,Retail,Tier 2,True
+RTL-03151,Circle K,Convenience,West,AZ,Tucson,WH-1039,Small,Urban,Retail,Tier 2,True
+RTL-03152,Citgo,Gas Station,West,AZ,Phoenix,WH-1031,Small,Urban,Retail,Tier 2,True
+RTL-03153,Speedway,Convenience,West,AZ,Tucson,WH-1042,Small,Suburban,Retail,Tier 3,False
+RTL-03154,Kroger,Grocery,West,AZ,Tucson,WH-1039,Medium,Urban,Retail,Tier 2,True
+RTL-03155,Cumberland Farms,Convenience,West,AZ,Tucson,WH-1035,Small,Suburban,Retail,Tier 3,True
+RTL-03156,Total Wine,Liquor,West,AZ,Phoenix,WH-1031,Large,Rural,Retail,Tier 2,True
+RTL-03157,Royal Farms,Convenience,West,AZ,Phoenix,WH-1040,Large,Urban,Retail,Tier 2,True
+RTL-03158,Speedway,Convenience,West,AZ,Phoenix,WH-1040,Small,Suburban,Retail,Tier 1,True
+RTL-03159,King Soopers,Grocery,West,AZ,Tucson,WH-1038,Large,Rural,Retail,Tier 3,True
+RTL-03160,Sam's Club,Big Box,West,AZ,Tucson,WH-1032,Large,Suburban,Retail,Tier 1,True
+RTL-03161,Sam's Club,Big Box,West,AZ,Tucson,WH-1040,Medium,Urban,Retail,Tier 2,False
+RTL-03162,Ralphs,Grocery,West,AZ,Phoenix,WH-1041,Large,Suburban,Retail,Tier 1,True
+RTL-03163,RaceTrac,Convenience,West,AZ,Phoenix,WH-1042,Medium,Suburban,Retail,Tier 2,True
+RTL-03164,QFC,Grocery,West,AZ,Tucson,WH-1041,Small,Urban,Retail,Tier 2,True
+RTL-03165,H-E-B,Grocery,West,AZ,Tucson,WH-1032,Small,Suburban,Retail,Tier 2,True
+RTL-03166,Speedway,Convenience,West,AZ,Tucson,WH-1041,Large,Urban,Retail,Tier 1,True
+RTL-03167,Party City Liquor,Liquor,West,AZ,Tucson,WH-1036,Medium,Rural,Retail,Tier 2,True
+RTL-03168,Fred Meyer,Grocery,West,AZ,Tucson,WH-1033,Small,Urban,Retail,Tier 2,True
+RTL-03169,Stop & Shop,Grocery,West,AZ,Phoenix,WH-1035,Large,Rural,Retail,Tier 3,True
+RTL-03170,Casey's,Convenience,West,AZ,Tucson,WH-1034,Medium,Urban,Retail,Tier 1,False
+RTL-03171,Sam's Club,Big Box,West,AZ,Tucson,WH-1038,Medium,Rural,Retail,Tier 3,True
+RTL-03172,King Soopers,Grocery,West,AZ,Tucson,WH-1031,Medium,Urban,Retail,Tier 1,False
+RTL-03173,Target,Big Box,West,AZ,Tucson,WH-1036,Small,Rural,Retail,Tier 3,True
+RTL-03174,Circle K,Convenience,West,AZ,Tucson,WH-1037,Medium,Suburban,Retail,Tier 2,False
+RTL-03175,Smith's,Grocery,West,AZ,Tucson,WH-1031,Small,Urban,Retail,Tier 2,True
+RTL-03176,Ralphs,Grocery,West,AZ,Tucson,WH-1038,Medium,Suburban,Retail,Tier 2,True
+RTL-03177,Fine Wine & Good Spirits,Liquor,West,AZ,Phoenix,WH-1041,Medium,Urban,Retail,Tier 3,True
+RTL-03178,Marathon,Gas Station,West,AZ,Phoenix,WH-1042,Medium,Urban,Retail,Tier 2,True
+RTL-03179,ABC Fine Wine,Liquor,West,AZ,Tucson,WH-1040,Small,Rural,Retail,Tier 2,True
+RTL-03180,Safeway,Grocery,West,WA,Spokane,WH-1032,Large,Suburban,Retail,Tier 2,True
+RTL-03181,Spec's,Liquor,West,WA,Spokane,WH-1034,Medium,Suburban,Retail,Tier 3,False
+RTL-03182,Party City Liquor,Liquor,West,WA,Spokane,WH-1037,Medium,Urban,Retail,Tier 2,True
+RTL-03183,Fine Wine & Good Spirits,Liquor,West,WA,Seattle,WH-1038,Small,Urban,Retail,Tier 2,True
+RTL-03184,Smith's,Grocery,West,WA,Seattle,WH-1032,Superstore,Urban,Retail,Tier 3,True
+RTL-03185,Walmart,Big Box,West,WA,Seattle,WH-1036,Large,Suburban,Retail,Tier 3,False
+RTL-03186,King Soopers,Grocery,West,WA,Spokane,WH-1034,Small,Urban,Retail,Tier 2,True
+RTL-03187,BJ's Wholesale,Big Box,West,WA,Seattle,WH-1032,Medium,Suburban,Retail,Tier 2,True
+RTL-03188,BevMo!,Liquor,West,WA,Seattle,WH-1040,Small,Urban,Retail,Tier 3,True
+RTL-03189,RaceTrac,Convenience,West,WA,Seattle,WH-1041,Small,Suburban,Retail,Tier 2,False
+RTL-03190,Casey's,Convenience,West,WA,Seattle,WH-1031,Large,Suburban,Retail,Tier 3,True
+RTL-03191,Casey's,Convenience,West,WA,Seattle,WH-1032,Large,Suburban,Retail,Tier 3,True
+RTL-03192,Valero,Gas Station,West,WA,Spokane,WH-1041,Medium,Rural,Retail,Tier 3,True
+RTL-03193,Kroger,Grocery,West,WA,Spokane,WH-1032,Superstore,Suburban,Retail,Tier 3,True
+RTL-03194,7-Eleven,Convenience,West,WA,Seattle,WH-1036,Small,Suburban,Retail,Tier 3,True
+RTL-03195,7-Eleven,Convenience,West,WA,Seattle,WH-1034,Small,Suburban,Retail,Tier 3,False
+RTL-03196,Party City Liquor,Liquor,West,WA,Spokane,WH-1039,Small,Urban,Retail,Tier 1,True
+RTL-03197,Circle K,Convenience,West,WA,Seattle,WH-1035,Superstore,Suburban,Retail,Tier 2,True
+RTL-03198,Smith's,Grocery,West,WA,Seattle,WH-1038,Medium,Urban,Retail,Tier 2,True
+RTL-03199,RaceTrac,Convenience,West,WA,Seattle,WH-1033,Large,Urban,Retail,Tier 3,True
+RTL-03200,Costco,Big Box,West,WA,Spokane,WH-1038,Medium,Suburban,Retail,Tier 1,True
+RTL-03201,Total Wine,Liquor,West,WA,Seattle,WH-1034,Large,Urban,Retail,Tier 1,True
+RTL-03202,Kroger,Grocery,West,WA,Seattle,WH-1035,Medium,Urban,Retail,Tier 1,True
+RTL-03203,Wawa,Convenience,West,WA,Seattle,WH-1031,Small,Suburban,Retail,Tier 1,True
+RTL-03204,Walmart,Big Box,West,WA,Seattle,WH-1039,Medium,Suburban,Retail,Tier 3,True
+RTL-03205,Kroger,Grocery,West,WA,Seattle,WH-1041,Medium,Urban,Retail,Tier 2,True
+RTL-03206,Walmart,Big Box,West,WA,Spokane,WH-1036,Medium,Urban,Retail,Tier 2,False
+RTL-03207,QFC,Grocery,West,WA,Spokane,WH-1036,Large,Suburban,Retail,Tier 3,True
+RTL-03208,Giant Eagle,Grocery,West,OR,Portland,WH-1041,Medium,Urban,Retail,Tier 2,True
+RTL-03209,Phillips 66,Gas Station,West,OR,Portland,WH-1042,Small,Urban,Retail,Tier 1,True
+RTL-03210,Party City Liquor,Liquor,West,OR,Portland,WH-1040,Medium,Suburban,Retail,Tier 2,True
+RTL-03211,Phillips 66,Gas Station,West,OR,Portland,WH-1037,Small,Suburban,Retail,Tier 2,True
+RTL-03212,QFC,Grocery,West,OR,Portland,WH-1032,Medium,Urban,Retail,Tier 1,True
+RTL-03213,Fry's,Grocery,West,OR,Portland,WH-1031,Large,Suburban,Retail,Tier 2,True
+RTL-03214,Food Lion,Grocery,West,OR,Portland,WH-1041,Medium,Suburban,Retail,Tier 2,True
+RTL-03215,Casey's,Convenience,West,OR,Portland,WH-1040,Large,Suburban,Retail,Tier 1,True
+RTL-03216,Cumberland Farms,Convenience,West,OR,Portland,WH-1033,Small,Suburban,Retail,Tier 2,True
+RTL-03217,Wawa,Convenience,West,OR,Portland,WH-1037,Small,Suburban,Retail,Tier 3,True
+RTL-03218,Kroger,Grocery,West,CA,Sacramento,WH-1041,Medium,Urban,Retail,Tier 1,True
+RTL-03219,Costco,Big Box,West,CA,Bakersfield,WH-1038,Medium,Rural,Retail,Tier 3,True
+RTL-03220,Circle K,Convenience,West,CA,Sacramento,WH-1031,Medium,Suburban,Retail,Tier 1,True
+RTL-03221,Giant Eagle,Grocery,West,CA,Fresno,WH-1039,Large,Urban,Retail,Tier 2,False
+RTL-03222,Stop & Shop,Grocery,West,CA,Los Angeles,WH-1039,Medium,Rural,Retail,Tier 3,True
+RTL-03223,Fine Wine & Good Spirits,Liquor,West,CA,San Francisco,WH-1036,Superstore,Suburban,Retail,Tier 3,False
+RTL-03224,Giant Eagle,Grocery,West,CA,Bakersfield,WH-1036,Small,Suburban,Retail,Tier 3,True
+RTL-03225,Walmart,Big Box,West,CA,Bakersfield,WH-1040,Small,Suburban,Retail,Tier 2,False
+RTL-03226,Harris Teeter,Grocery,West,CA,Sacramento,WH-1035,Large,Suburban,Retail,Tier 2,True
+RTL-03227,Cumberland Farms,Convenience,West,CA,San Francisco,WH-1041,Large,Suburban,Retail,Tier 2,True
+RTL-03228,Speedway,Convenience,West,CA,San Diego,WH-1034,Small,Suburban,Retail,Tier 2,False
+RTL-03229,QuikTrip,Convenience,West,CA,Bakersfield,WH-1031,Small,Suburban,Retail,Tier 1,True
+RTL-03230,Fine Wine & Good Spirits,Liquor,West,CA,San Francisco,WH-1031,Small,Suburban,Retail,Tier 3,True
+RTL-03231,QuikTrip,Convenience,West,CA,Los Angeles,WH-1033,Small,Suburban,Retail,Tier 3,True
+RTL-03232,Shell,Gas Station,West,CA,San Diego,WH-1040,Medium,Suburban,Retail,Tier 3,False
+RTL-03233,ABC Fine Wine,Liquor,West,CA,San Diego,WH-1041,Large,Suburban,Retail,Tier 3,True
+RTL-03234,Ralphs,Grocery,West,CA,Long Beach,WH-1036,Superstore,Suburban,Retail,Tier 3,True
+RTL-03235,Mobil,Gas Station,West,CA,Los Angeles,WH-1038,Medium,Suburban,Retail,Tier 3,True
+RTL-03236,Wawa,Convenience,West,CA,San Francisco,WH-1035,Medium,Urban,Retail,Tier 2,True
+RTL-03237,Food Lion,Grocery,West,CA,Bakersfield,WH-1032,Medium,Suburban,Retail,Tier 2,True
+RTL-03238,Kroger,Grocery,West,CA,Sacramento,WH-1040,Large,Urban,Retail,Tier 2,True
+RTL-03239,BJ's Wholesale,Big Box,West,CA,Fresno,WH-1034,Medium,Urban,Retail,Tier 3,True
+RTL-03240,Kroger,Grocery,West,CA,Fresno,WH-1037,Small,Suburban,Retail,Tier 3,True
+RTL-03241,Fred Meyer,Grocery,West,CA,San Diego,WH-1034,Large,Rural,Retail,Tier 3,True
+RTL-03242,BevMo!,Liquor,West,CA,Fresno,WH-1037,Small,Rural,Retail,Tier 2,True
+RTL-03243,Ralphs,Grocery,West,CA,Oakland,WH-1032,Small,Suburban,Retail,Tier 3,True
+RTL-03244,Sheetz,Convenience,West,CA,San Diego,WH-1032,Superstore,Suburban,Retail,Tier 1,True
+RTL-03245,Mobil,Gas Station,West,CA,Sacramento,WH-1042,Large,Urban,Retail,Tier 1,True
+RTL-03246,BevMo!,Liquor,West,CA,Los Angeles,WH-1041,Large,Urban,Retail,Tier 2,True
+RTL-03247,Stop & Shop,Grocery,West,CA,San Diego,WH-1036,Medium,Urban,Retail,Tier 2,True
+RTL-03248,Sheetz,Convenience,West,CA,San Francisco,WH-1036,Large,Rural,Retail,Tier 2,False
+RTL-03249,Stop & Shop,Grocery,West,CA,Los Angeles,WH-1039,Medium,Suburban,Retail,Tier 2,False
+RTL-03250,King Soopers,Grocery,West,CA,Sacramento,WH-1041,Medium,Suburban,Retail,Tier 2,True
+RTL-03251,Sheetz,Convenience,West,CA,San Diego,WH-1032,Small,Urban,Retail,Tier 2,False
+RTL-03252,Sheetz,Convenience,West,CA,Fresno,WH-1040,Small,Urban,Retail,Tier 2,False
+RTL-03253,Stop & Shop,Grocery,West,CA,Long Beach,WH-1035,Small,Suburban,Retail,Tier 3,True
+RTL-03254,Giant Eagle,Grocery,West,CA,Fresno,WH-1037,Medium,Suburban,Retail,Tier 2,True
+RTL-03255,Smith's,Grocery,West,CA,Bakersfield,WH-1034,Medium,Rural,Retail,Tier 2,True
+RTL-03256,State Liquor Store,Liquor,West,CA,Sacramento,WH-1042,Large,Suburban,Retail,Tier 3,True
+RTL-03257,Circle K,Convenience,West,CA,Oakland,WH-1036,Small,Suburban,Retail,Tier 3,True
+RTL-03258,Costco,Big Box,West,CA,Fresno,WH-1031,Small,Urban,Retail,Tier 2,True
+RTL-03259,Costco,Big Box,West,CA,Oakland,WH-1033,Large,Suburban,Retail,Tier 3,True
+RTL-03260,Smith's,Grocery,West,CA,Sacramento,WH-1042,Large,Rural,Retail,Tier 3,True
+RTL-03261,BJ's Wholesale,Big Box,West,CA,Los Angeles,WH-1037,Medium,Suburban,Retail,Tier 1,False
+RTL-03262,Royal Farms,Convenience,West,CA,San Francisco,WH-1041,Large,Rural,Retail,Tier 2,False
+RTL-03263,Fine Wine & Good Spirits,Liquor,West,CA,Oakland,WH-1041,Large,Urban,Retail,Tier 2,True
+RTL-03264,Giant Eagle,Grocery,West,CA,San Francisco,WH-1036,Medium,Suburban,Retail,Tier 3,True
+RTL-03265,Costco,Big Box,West,CA,Bakersfield,WH-1036,Medium,Suburban,Retail,Tier 2,True
+RTL-03266,Sheetz,Convenience,West,CA,San Francisco,WH-1042,Small,Urban,Retail,Tier 1,True
+RTL-03267,RaceTrac,Convenience,West,CA,San Diego,WH-1034,Small,Suburban,Retail,Tier 2,True
+RTL-03268,Royal Farms,Convenience,West,CA,Bakersfield,WH-1038,Medium,Suburban,Retail,Tier 3,True
+RTL-03269,King Soopers,Grocery,West,CA,Sacramento,WH-1032,Large,Suburban,Retail,Tier 3,True
+RTL-03270,Costco,Big Box,West,CA,Bakersfield,WH-1041,Medium,Rural,Retail,Tier 3,True
+RTL-03271,Fine Wine & Good Spirits,Liquor,West,AK,Anchorage,WH-1039,Large,Urban,Retail,Tier 3,True
+RTL-03272,Binny's,Liquor,West,AK,Anchorage,WH-1039,Small,Urban,Retail,Tier 1,True
+RTL-03273,Target,Big Box,West,AK,Anchorage,WH-1037,Medium,Urban,Retail,Tier 3,False
+RTL-03274,Safeway,Grocery,West,AK,Anchorage,WH-1038,Medium,Urban,Retail,Tier 2,True
+RTL-03275,RaceTrac,Convenience,West,AK,Anchorage,WH-1035,Large,Urban,Retail,Tier 2,True
+RTL-03276,Circle K,Convenience,West,AK,Anchorage,WH-1031,Small,Urban,Retail,Tier 3,True
+RTL-03277,Spec's,Liquor,West,AK,Anchorage,WH-1041,Small,Urban,Retail,Tier 3,True
+RTL-03278,State Liquor Store,Liquor,West,AK,Anchorage,WH-1038,Large,Urban,Retail,Tier 3,True
+RTL-03279,Kroger,Grocery,West,AK,Anchorage,WH-1031,Large,Urban,Retail,Tier 1,True
+RTL-03280,7-Eleven,Convenience,West,AK,Anchorage,WH-1040,Medium,Urban,Retail,Tier 3,True
+RTL-03281,Wawa,Convenience,West,AK,Anchorage,WH-1034,Large,Suburban,Retail,Tier 3,False
+RTL-03282,Target,Big Box,West,AK,Anchorage,WH-1040,Large,Suburban,Retail,Tier 2,True
+RTL-03283,Target,Big Box,West,AK,Anchorage,WH-1040,Small,Suburban,Retail,Tier 1,False
+RTL-03284,Sheetz,Convenience,West,AK,Anchorage,WH-1041,Medium,Suburban,Retail,Tier 2,False
+RTL-03285,Total Wine,Liquor,West,AK,Anchorage,WH-1034,Medium,Suburban,Retail,Tier 3,True
+RTL-03286,Chevron,Gas Station,West,AK,Anchorage,WH-1039,Small,Suburban,Retail,Tier 3,False
+RTL-03287,ABC Fine Wine,Liquor,West,AK,Anchorage,WH-1037,Medium,Urban,Retail,Tier 2,True
+RTL-03288,BJ's Wholesale,Big Box,West,AK,Anchorage,WH-1031,Large,Rural,Retail,Tier 2,True
+RTL-03289,7-Eleven,Convenience,West,HI,Honolulu,WH-1040,Large,Urban,Retail,Tier 1,True
+RTL-03290,Circle K,Convenience,West,HI,Honolulu,WH-1034,Small,Urban,Retail,Tier 2,False
+RTL-03291,Sam's Club,Big Box,West,HI,Honolulu,WH-1035,Medium,Rural,Retail,Tier 2,True
+RTL-03292,Ralphs,Grocery,West,HI,Honolulu,WH-1038,Large,Urban,Retail,Tier 3,True
+RTL-03293,Fred Meyer,Grocery,West,HI,Honolulu,WH-1033,Large,Suburban,Retail,Tier 3,True
+RTL-03294,Mobil,Gas Station,West,HI,Honolulu,WH-1039,Small,Rural,Retail,Tier 3,False
+RTL-03295,Walmart,Big Box,West,HI,Honolulu,WH-1040,Medium,Urban,Retail,Tier 1,True
+RTL-03296,Stop & Shop,Grocery,West,HI,Honolulu,WH-1042,Medium,Suburban,Retail,Tier 1,True
+RTL-03297,Cumberland Farms,Convenience,West,HI,Honolulu,WH-1042,Small,Suburban,Retail,Tier 2,True
+RTL-03298,Casey's,Convenience,West,HI,Honolulu,WH-1032,Large,Rural,Retail,Tier 2,True
+RTL-03299,Chevron,Gas Station,West,HI,Honolulu,WH-1035,Large,Urban,Retail,Tier 1,False
+RTL-03300,Fred Meyer,Grocery,West,HI,Honolulu,WH-1034,Medium,Urban,Retail,Tier 3,True
+RTL-03301,Target,Big Box,West,HI,Honolulu,WH-1035,Medium,Rural,Retail,Tier 2,True
+RTL-03302,Safeway,Grocery,West,HI,Honolulu,WH-1031,Medium,Suburban,Retail,Tier 2,True
+RTL-03303,QFC,Grocery,Southwest,TX,Austin,WH-1044,Large,Rural,Retail,Tier 2,True
+RTL-03304,Total Wine,Liquor,Southwest,TX,Dallas,WH-1047,Medium,Urban,Retail,Tier 1,True
+RTL-03305,Wegmans,Grocery,Southwest,TX,College Station,WH-1043,Small,Rural,Retail,Tier 3,True
+RTL-03306,Kroger,Grocery,Southwest,TX,Houston,WH-1044,Small,Urban,Retail,Tier 1,True
+RTL-03307,Publix,Grocery,Southwest,TX,Beaumont,WH-1045,Large,Suburban,Retail,Tier 2,True
+RTL-03308,Valero,Gas Station,Southwest,TX,Fort Worth,WH-1047,Medium,Suburban,Retail,Tier 3,False
+RTL-03309,Kroger,Grocery,Southwest,TX,Arlington,WH-1046,Large,Suburban,Retail,Tier 2,True
+RTL-03310,H-E-B,Grocery,Southwest,TX,El Paso,WH-1044,Large,Suburban,Retail,Tier 2,True
+RTL-03311,Target,Big Box,Southwest,TX,Dallas,WH-1045,Large,Suburban,Retail,Tier 2,False
+RTL-03312,Smith's,Grocery,Southwest,TX,Dallas,WH-1044,Small,Rural,Retail,Tier 2,True
+RTL-03313,Safeway,Grocery,Southwest,TX,Beaumont,WH-1047,Medium,Rural,Retail,Tier 2,True
+RTL-03314,Costco,Big Box,Southwest,TX,College Station,WH-1048,Medium,Urban,Retail,Tier 1,True
+RTL-03315,Mobil,Gas Station,Southwest,TX,Dallas,WH-1043,Large,Suburban,Retail,Tier 3,False
+RTL-03316,Wawa,Convenience,Southwest,TX,College Station,WH-1044,Medium,Suburban,Retail,Tier 2,True
+RTL-03317,Sam's Club,Big Box,Southwest,TX,Garland,WH-1043,Medium,Suburban,Retail,Tier 3,True
+RTL-03318,QFC,Grocery,Southwest,TX,Arlington,WH-1048,Superstore,Suburban,Retail,Tier 3,True
+RTL-03319,Walmart,Big Box,Southwest,TX,San Antonio,WH-1044,Small,Urban,Retail,Tier 2,True
+RTL-03320,Cumberland Farms,Convenience,Southwest,TX,Dallas,WH-1044,Medium,Rural,Retail,Tier 2,True
+RTL-03321,Casey's,Convenience,Southwest,TX,El Paso,WH-1044,Large,Suburban,Retail,Tier 2,False
+RTL-03322,Giant Eagle,Grocery,Southwest,TX,Plano,WH-1044,Small,Suburban,Retail,Tier 3,True
+RTL-03323,Stop & Shop,Grocery,Southwest,TX,Austin,WH-1045,Large,Urban,Retail,Tier 2,True
+RTL-03324,Shell,Gas Station,Southwest,TX,San Antonio,WH-1044,Medium,Suburban,Retail,Tier 3,False
+RTL-03325,Sam's Club,Big Box,Southwest,TX,College Station,WH-1048,Medium,Rural,Retail,Tier 1,True
+RTL-03326,BevMo!,Liquor,Southwest,TX,Garland,WH-1044,Medium,Urban,Retail,Tier 3,True
+RTL-03327,Fred Meyer,Grocery,Southwest,TX,Plano,WH-1045,Small,Urban,Retail,Tier 1,True
+RTL-03328,Kroger,Grocery,Southwest,TX,Brownsville,WH-1045,Medium,Rural,Retail,Tier 2,True
+RTL-03329,Ralphs,Grocery,Southwest,TX,Austin,WH-1045,Medium,Urban,Retail,Tier 2,True
+RTL-03330,Binny's,Liquor,Southwest,TX,Arlington,WH-1046,Medium,Suburban,Retail,Tier 1,False
+RTL-03331,Mobil,Gas Station,Southwest,TX,Austin,WH-1046,Large,Suburban,Retail,Tier 2,True
+RTL-03332,Sheetz,Convenience,Southwest,TX,Amarillo,WH-1043,Medium,Suburban,Retail,Tier 3,True
+RTL-03333,QFC,Grocery,Southwest,TX,Corpus Christi,WH-1046,Small,Urban,Retail,Tier 3,True
+RTL-03334,BJ's Wholesale,Big Box,Southwest,TX,Garland,WH-1046,Large,Suburban,Retail,Tier 3,True
+RTL-03335,King Soopers,Grocery,Southwest,TX,Lubbock,WH-1043,Medium,Urban,Retail,Tier 2,True
+RTL-03336,Kroger,Grocery,Southwest,TX,Houston,WH-1048,Small,Suburban,Retail,Tier 3,True
+RTL-03337,BP,Gas Station,Southwest,TX,Houston,WH-1045,Medium,Urban,Retail,Tier 1,True
+RTL-03338,State Liquor Store,Liquor,Southwest,TX,Brownsville,WH-1045,Medium,Suburban,Retail,Tier 2,True
+RTL-03339,Exxon,Gas Station,Southwest,TX,El Paso,WH-1043,Superstore,Rural,Retail,Tier 2,False
+RTL-03340,Binny's,Liquor,Southwest,TX,Brownsville,WH-1048,Large,Rural,Retail,Tier 2,True
+RTL-03341,Sam's Club,Big Box,Southwest,TX,Garland,WH-1048,Medium,Suburban,Retail,Tier 2,True
+RTL-03342,Binny's,Liquor,Southwest,TX,Arlington,WH-1047,Large,Suburban,Retail,Tier 2,True
+RTL-03343,Total Wine,Liquor,Southwest,TX,San Antonio,WH-1044,Medium,Suburban,Retail,Tier 3,True
+RTL-03344,Walmart,Big Box,Southwest,TX,Dallas,WH-1043,Medium,Suburban,Retail,Tier 3,True
+RTL-03345,BJ's Wholesale,Big Box,Southwest,TX,Austin,WH-1047,Small,Urban,Retail,Tier 2,True
+RTL-03346,Smith's,Grocery,Southwest,TX,Austin,WH-1044,Medium,Suburban,Retail,Tier 3,True
+RTL-03347,RaceTrac,Convenience,Southwest,TX,College Station,WH-1043,Small,Urban,Retail,Tier 2,False
+RTL-03348,Fine Wine & Good Spirits,Liquor,Southwest,TX,San Antonio,WH-1043,Medium,Urban,Retail,Tier 2,True
+RTL-03349,Fine Wine & Good Spirits,Liquor,Southwest,TX,Amarillo,WH-1048,Small,Urban,Retail,Tier 2,True
+RTL-03350,Fine Wine & Good Spirits,Liquor,Southwest,TX,Garland,WH-1044,Large,Urban,Retail,Tier 1,True
+RTL-03351,QFC,Grocery,Southwest,TX,Amarillo,WH-1045,Medium,Suburban,Retail,Tier 3,True
+RTL-03352,7-Eleven,Convenience,Southwest,TX,Dallas,WH-1045,Large,Suburban,Retail,Tier 3,True
+RTL-03353,Costco,Big Box,Southwest,TX,Amarillo,WH-1048,Medium,Urban,Retail,Tier 3,False
+RTL-03354,Harris Teeter,Grocery,Southwest,TX,Garland,WH-1046,Medium,Suburban,Retail,Tier 3,True
+RTL-03355,Sam's Club,Big Box,Southwest,TX,Brownsville,WH-1044,Superstore,Urban,Retail,Tier 3,True
+RTL-03356,Total Wine,Liquor,Southwest,TX,Amarillo,WH-1047,Medium,Suburban,Retail,Tier 3,True
+RTL-03357,Smith's,Grocery,Southwest,TX,College Station,WH-1043,Medium,Suburban,Retail,Tier 2,True
+RTL-03358,Total Wine,Liquor,Southwest,TX,Lubbock,WH-1045,Large,Suburban,Retail,Tier 2,True
+RTL-03359,Phillips 66,Gas Station,Southwest,TX,Lubbock,WH-1048,Medium,Rural,Retail,Tier 2,False
+RTL-03360,Walmart,Big Box,Southwest,TX,Garland,WH-1044,Medium,Urban,Retail,Tier 2,False
+RTL-03361,Smith's,Grocery,Southwest,TX,Beaumont,WH-1045,Medium,Urban,Retail,Tier 1,True
+RTL-03362,Phillips 66,Gas Station,Southwest,TX,Houston,WH-1046,Small,Rural,Retail,Tier 3,True
+RTL-03363,QFC,Grocery,Southwest,TX,Houston,WH-1046,Medium,Suburban,Retail,Tier 3,True
+RTL-03364,7-Eleven,Convenience,Southwest,TX,Corpus Christi,WH-1046,Medium,Suburban,Retail,Tier 3,True
+RTL-03365,Speedway,Convenience,Southwest,TX,Beaumont,WH-1045,Medium,Urban,Retail,Tier 3,True
+RTL-03366,Fred Meyer,Grocery,Southwest,TX,Lubbock,WH-1046,Large,Suburban,Retail,Tier 3,True
+RTL-03367,King Soopers,Grocery,Southwest,TX,College Station,WH-1047,Large,Urban,Retail,Tier 3,True
+RTL-03368,Kroger,Grocery,Southwest,TX,El Paso,WH-1046,Small,Rural,Retail,Tier 3,True
+RTL-03369,Sheetz,Convenience,Southwest,TX,College Station,WH-1044,Medium,Suburban,Retail,Tier 3,False
+RTL-03370,Mobil,Gas Station,Southwest,TX,Corpus Christi,WH-1045,Medium,Urban,Retail,Tier 2,True
+RTL-03371,Speedway,Convenience,Southwest,TX,Amarillo,WH-1046,Medium,Urban,Retail,Tier 2,True
+RTL-03372,RaceTrac,Convenience,Southwest,TX,College Station,WH-1047,Small,Suburban,Retail,Tier 2,False
+RTL-03373,BevMo!,Liquor,Southwest,TX,Garland,WH-1048,Large,Urban,Retail,Tier 2,True
+RTL-03374,Target,Big Box,Southwest,OK,Oklahoma City,WH-1044,Small,Suburban,Retail,Tier 3,True
+RTL-03375,RaceTrac,Convenience,Southwest,OK,Oklahoma City,WH-1048,Large,Rural,Retail,Tier 2,True
+RTL-03376,RaceTrac,Convenience,Southwest,OK,Oklahoma City,WH-1047,Large,Suburban,Retail,Tier 2,True
+RTL-03377,Sam's Club,Big Box,Southwest,OK,Tulsa,WH-1043,Large,Suburban,Retail,Tier 3,True
+RTL-03378,QFC,Grocery,Southwest,OK,Oklahoma City,WH-1043,Medium,Suburban,Retail,Tier 3,True
+RTL-03379,Wegmans,Grocery,Southwest,OK,Tulsa,WH-1044,Small,Suburban,Retail,Tier 2,True
+RTL-03380,QuikTrip,Convenience,Southwest,OK,Tulsa,WH-1043,Medium,Suburban,Retail,Tier 3,True
+RTL-03381,Sam's Club,Big Box,Southwest,OK,Oklahoma City,WH-1045,Large,Urban,Retail,Tier 2,True
+RTL-03382,Party City Liquor,Liquor,Southwest,OK,Tulsa,WH-1046,Small,Rural,Retail,Tier 3,True
+RTL-03383,ABC Fine Wine,Liquor,Southwest,OK,Oklahoma City,WH-1047,Large,Urban,Retail,Tier 2,False
+RTL-03384,Sam's Club,Big Box,Southwest,OK,Tulsa,WH-1044,Small,Suburban,Retail,Tier 2,False
+RTL-03385,Fred Meyer,Grocery,Southwest,OK,Oklahoma City,WH-1047,Medium,Suburban,Retail,Tier 2,True
+RTL-03386,Costco,Big Box,Southwest,OK,Oklahoma City,WH-1044,Medium,Suburban,Retail,Tier 2,True
+RTL-03387,Wawa,Convenience,Southwest,OK,Oklahoma City,WH-1043,Large,Suburban,Retail,Tier 3,True
+RTL-03388,ABC Fine Wine,Liquor,Southwest,OK,Oklahoma City,WH-1046,Small,Suburban,Retail,Tier 2,True
+RTL-03389,BP,Gas Station,Southwest,OK,Oklahoma City,WH-1044,Large,Urban,Retail,Tier 3,True
+RTL-03390,Exxon,Gas Station,Southwest,OK,Tulsa,WH-1047,Small,Suburban,Retail,Tier 2,True
+RTL-03391,Target,Big Box,Southwest,OK,Oklahoma City,WH-1044,Small,Urban,Retail,Tier 3,True
+RTL-03392,QuikTrip,Convenience,Southwest,OK,Oklahoma City,WH-1046,Small,Urban,Retail,Tier 1,True
+RTL-03393,Stop & Shop,Grocery,Southwest,OK,Oklahoma City,WH-1043,Superstore,Suburban,Retail,Tier 3,True

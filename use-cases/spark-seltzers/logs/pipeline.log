@@ -1,0 +1,21 @@
+2026-01-08 08:40:02,289 - pipeline - INFO - __init__:54 - 🚀 Master Pipeline Initialized - Run ID: 110eb294
+2026-01-08 08:40:02,289 - pipeline - INFO - main:708 - 🎯 Running single stage: data_generation
+2026-01-08 08:40:09,902 - pipeline - INFO - __init__:54 - 🚀 Master Pipeline Initialized - Run ID: 6aa3f452
+2026-01-08 08:40:09,902 - pipeline - INFO - run_pipeline:568 - 🚀 Starting Master Pipeline - Run ID: 6aa3f452
+2026-01-08 08:40:11,683 - pipeline - INFO - create_spark_session:77 - ✅ Spark session created successfully
+2026-01-08 08:40:11,683 - pipeline - INFO - run_pipeline:600 - 🎯 Executing stage: data_generation
+2026-01-08 08:40:11,683 - pipeline - INFO - start_stage:104 - 🚀 Starting stage: data_generation
+2026-01-08 08:40:11,684 - pipeline - INFO - stage_data_generation:108 - 📊 Synthetic data already exists, skipping generation...
+2026-01-08 08:40:11,684 - pipeline - INFO - end_stage:118 - ✅ Completed stage: data_generation (Duration: 0.00s)
+2026-01-08 08:40:11,684 - pipeline - INFO - run_pipeline:606 - ✅ Stage data_generation completed successfully
+2026-01-08 08:40:11,684 - pipeline - INFO - run_pipeline:600 - 🎯 Executing stage: data_ingestion
+2026-01-08 08:40:11,684 - pipeline - INFO - start_stage:104 - 🚀 Starting stage: data_ingestion
+2026-01-08 08:40:11,684 - pipeline - INFO - end_stage:118 - ❌ Failed stage: data_ingestion (Duration: 0.00s)
+2026-01-08 08:40:11,684 - pipeline - CRITICAL - handle_error:277 - Error in data_ingestion: No module named 'spark_data_ingestion'
+2026-01-08 08:40:11,684 - pipeline - CRITICAL - handle_error:278 - Traceback (most recent call last):
+  File "/Users/jefferson/000_coderepo/gurila.tools/use-cases/spark-seltzers/src/pipelines/master_pipeline.py", line 163, in stage_data_ingestion
+    from spark_data_ingestion import DataIngestionPipeline
+ModuleNotFoundError: No module named 'spark_data_ingestion'
+
+2026-01-08 08:40:11,684 - pipeline - ERROR - run_pipeline:608 - ❌ Stage data_ingestion failed
+2026-01-08 08:40:12,074 - pipeline - INFO - run_pipeline:650 - 🛑 Spark session stopped

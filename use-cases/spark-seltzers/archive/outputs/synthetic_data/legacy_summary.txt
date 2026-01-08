@@ -1,0 +1,21 @@
+=== SYNTHETIC POS DATA GENERATION SUMMARY ===
+Generation Date: 2026-01-08 07:30:11
+Analysis Period: 2023-01-01 to 2023-12-31
+
+PRODUCTS Dataset:
+  - Records: 120
+  - Columns: ['SKU', 'Brand', 'Product_Name', 'Category', 'ABV', 'Package_Size', 'Pack_Size', 'Price_Per_Unit', 'Launch_Date']
+
+LOCATIONS Dataset:
+  - Records: 1,441
+  - Columns: ['Retailer_ID', 'Chain_Name', 'Store_Type', 'Region', 'State', 'City', 'Warehouse_ID', 'Store_Size', 'Urban_Rural', 'Location_Type', 'Market_Tier', 'Alcohol_License']
+
+TDP_DISTRIBUTION Dataset:
+  - Records: 489
+  - Columns: ['Date', 'Year_Month', 'SKU', 'Product_Name', 'Brand', 'Category', 'Months_From_Start', 'Months_Since_Launch', 'Lifecycle_Stage', 'Stores_Carrying', 'Total_Eligible_Stores', 'TDP_Percentage', 'Weighted_TDP', 'Weighted_TDP_Percentage', 'Northeast_TDP', 'Southeast_TDP', 'Midwest_TDP', 'West_TDP', 'Southwest_TDP', 'Grocery_TDP', 'Convenience_TDP', 'BigBox_TDP', 'Liquor_TDP', 'GasStation_TDP', 'Distribution_Velocity', 'Market_Penetration_Rate']
+
+SALES Dataset:
+  - Records: 887,849
+  - Columns: ['Transaction_ID', 'Date', 'Retailer_ID', 'SKU', 'Product_Name', 'Brand', 'Category', 'Units_Sold', 'Unit_Price', 'Total_Revenue', 'Is_Promotion', 'Store_Type', 'Region', 'State', 'Market_Tier', 'Months_From_Start', 'Beer_Trend_Strength', 'Seltzer_Trend_Strength', 'Market_Phase', 'Seasonality_Factor', 'Consumer_Seltzer_Awareness', 'Revenue_Per_Unit', 'Year_Month', 'Quarter_Year', 'TDP', 'Sales_Velocity']
+  - Total Revenue: $11,655,293.34
+  - Total Units: 11,014,768

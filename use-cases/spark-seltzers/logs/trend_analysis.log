@@ -1,0 +1,148 @@
+2026-01-08 08:48:12,025 - INFO - Creating SparkSession for trend analysis...
+26/01/08 08:48:12 WARN Utils: Your hostname, Jeffersons-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.92 instead (on interface en1)
+26/01/08 08:48:12 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/01/08 08:48:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-08 08:48:13,399 - INFO - ✅ SparkSession created successfully
+2026-01-08 08:48:13,399 - INFO - Loading cleaned data for trend analysis...
+2026-01-08 08:48:13,400 - INFO - Defining explicit schemas for CSV files...
+2026-01-08 08:48:13,400 - INFO - ✅ Schemas defined for all datasets:
+2026-01-08 08:48:13,400 - INFO -    products: 9 fields
+2026-01-08 08:48:13,400 - INFO -    locations: 12 fields
+2026-01-08 08:48:13,400 - INFO -    sales_transactions: 26 fields
+2026-01-08 08:48:13,400 - INFO - Reading products.csv with schema validation...
+2026-01-08 08:48:14,929 - INFO - ✅ Successfully read products.csv: 120 rows
+2026-01-08 08:48:14,929 - INFO - Reading locations.csv with schema validation...
+2026-01-08 08:48:15,013 - INFO - ✅ Successfully read locations.csv: 1441 rows
+2026-01-08 08:48:15,013 - INFO - Reading sales_transactions.csv with schema validation...
+2026-01-08 08:48:15,857 - INFO - ✅ Successfully read sales_transactions.csv: 887849 rows
+2026-01-08 08:48:16,054 - INFO - Loaded raw data: 120 products, 1441 locations, 887849 sales
+26/01/08 08:48:16 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 21:>                                                       (0 + 10) / 10][Stage 21:=====>                                                   (1 + 9) / 10][Stage 21:=================>                                       (3 + 7) / 10]                                                                                2026-01-08 08:48:18,694 - INFO - ✅ Fact table created with 887,849 records
+2026-01-08 08:48:18,694 - INFO - Calculating growth rates for Beer vs Hard Seltzer...
+2026-01-08 08:48:18,879 - INFO - ✅ Growth rate calculations completed
+2026-01-08 08:48:18,879 - INFO - Identifying pivot point where Seltzer overtakes Beer...
+26/01/08 08:48:19 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:19 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:19 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2026-01-08 08:48:19,180 - INFO - ✅ Pivot point analysis completed
+2026-01-08 08:48:19,180 - INFO - Analyzing regional and brand trends...
+2026-01-08 08:48:19,253 - INFO - ✅ Regional trend analysis completed
+2026-01-08 08:48:19,253 - INFO - Analyzing brand-level impact of seltzer growth...
+2026-01-08 08:48:19,342 - INFO - ✅ Brand impact analysis completed
+2026-01-08 08:48:19,342 - INFO - Tracking market share evolution and competitive dynamics...
+2026-01-08 08:48:19,542 - INFO - ✅ Market share evolution tracking completed
+2026-01-08 08:48:19,542 - INFO - Generating visualization-ready datasets...
+2026-01-08 08:48:19,603 - INFO - ✅ Visualization data generation completed
+2026-01-08 08:48:19,603 - INFO - Generating executive summary...
+26/01/08 08:48:20 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:20 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2026-01-08 08:48:21,514 - WARNING - Error generating summary component: [NOT_COLUMN_OR_STR] Argument `col` should be a Column or str, got float.
+2026-01-08 08:48:21,514 - INFO - ✅ Executive summary generated
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:21 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2026-01-08 08:48:23,656 - INFO - Saving analysis results to analysis_results/...
+26/01/08 08:48:24 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:24 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:24 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:24 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:24 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+26/01/08 08:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2026-01-08 08:48:26,351 - INFO - ✅ Results saved to CSV files
+🚀 Starting Complete Beer vs Seltzer Trend Analysis
+================================================================================
+
+================================================================================
+🍺➡️🥤 BEER TO SELTZER MARKET SHIFT ANALYSIS
+================================================================================
+
+🎯 PIVOT POINT IDENTIFIED:
+   1. 2023-05: Seltzer growth exceeded Beer by 32.2%
+      Seltzer Market Share: 1.27%
+      Market Phase: Beer_Dominance
+   2. 2023-06: Seltzer growth exceeded Beer by 22.9%
+      Seltzer Market Share: 1.48%
+      Market Phase: Beer_Dominance
+   3. 2023-07: Seltzer growth exceeded Beer by 23.6%
+      Seltzer Market Share: 1.81%
+      Market Phase: Beer_Dominance
+
+📈 GROWTH RATE SUMMARY:
+   BEER: 5.3% MoM (Decelerating)
+   HARD SELTZER: 30.1% MoM (Decelerating)
+
+🌎 REGIONAL SELTZER ADOPTION LEADERS:
+   WEST: 10.5% peak share, 26.7% avg growth
+   NORTHEAST: 7.0% peak share, 26.2% avg growth
+   SOUTHEAST: 4.5% peak share, 23.7% avg growth
+
+⚠️  MOST VULNERABLE BEER BRANDS:
+   MICHELOB ULTRA: 7.3% avg growth (Growing decline)
+   ANCHOR: 6.4% avg growth (Growing decline)
+   PABST: 6.9% avg growth (Growing decline)
+   STONE: 7.0% avg growth (Growing decline)
+   DESCHUTES: 5.6% avg growth (Growing decline)
+
+📊 CURRENT MARKET DYNAMICS:
+   Beer Market Share: 94.6%
+   Seltzer Market Share: 5.4%
+   Market Leadership: Beer_Leads
+   Competitive Intensity: 1.9
+
+🎉 Analysis completed successfully!
+
+💡 Next Steps:
+   1. Review CSV files in analysis_results/ directory
+   2. Use visualization data for charts and dashboards
+   3. Present executive summary to stakeholders
+   4. Implement strategic recommendations
+
+✅ Beer vs Seltzer trend analysis completed successfully!
+📊 All insights and data ready for business decision making
+2026-01-08 08:48:26,888 - INFO - Closing down clientserver connection

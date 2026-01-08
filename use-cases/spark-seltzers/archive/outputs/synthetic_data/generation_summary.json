@@ -1,0 +1,23 @@
+{
+  "generation_date": "2026-01-08T07:30:11.098157",
+  "analysis_period": {
+    "start": "2023-01-01T00:00:00",
+    "end": "2023-12-31T00:00:00"
+  },
+  "datasets": {
+    "products": 120,
+    "locations": 1441,
+    "sales_transactions": 887849,
+    "tdp_records": 489
+  },
+  "business_metrics": {
+    "total_revenue": 11655293.339999998,
+    "total_units": 11014768,
+    "unique_products": 120,
+    "geographic_coverage": {
+      "regions": 5,
+      "states": 51,
+      "cities": 121
+    }
+  }
+}
