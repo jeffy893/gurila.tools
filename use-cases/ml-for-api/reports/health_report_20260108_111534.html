@@ -1,0 +1,483 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>API Health Report - 2026-01-08 11:15</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+                .metric { display: inline-block; margin: 10px; padding: 15px; background-color: #e8f4f8; border-radius: 5px; }
+                .health-score { font-size: 24px; font-weight: bold; color: red; }
+                .anomaly-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+                .anomaly-table th, .anomaly-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                .anomaly-table th { background-color: #f2f2f2; }
+                .severity-high { background-color: #ffebee; }
+                .severity-medium { background-color: #fff3e0; }
+                .severity-low { background-color: #f3e5f5; }
+                img { max-width: 100%; height: auto; margin: 20px 0; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>API System Health Report</h1>
+                <p>Generated: 2026-01-08 11:15:34</p>
+                <p>Analysis Period: 2026-01-08 06:26:56.821918 to 2026-01-08 11:14:56.571918</p>
+            </div>
+            
+            <h2>Executive Summary</h2>
+            <div class="health-score">Overall Health Score: 43.5/100</div>
+            
+            <div class="metric">
+                <strong>Total Requests:</strong> 69,120
+            </div>
+            <div class="metric">
+                <strong>Anomalies Detected:</strong> 9998
+            </div>
+            <div class="metric">
+                <strong>Anomaly Rate:</strong> 14.46%
+            </div>
+            <div class="metric">
+                <strong>Pod Restarts:</strong> 1070
+            </div>
+            <div class="metric">
+                <strong>Avg CPU Usage:</strong> 53.9%
+            </div>
+            <div class="metric">
+                <strong>Avg Memory Usage:</strong> 1323.9 MB
+            </div>
+            <div class="metric">
+                <strong>Avg Response Time:</strong> 80.2 ms
+            </div>
+            
+            <h2>System Performance Over Time</h2>
+            <img src="images/time_series_plot.png" alt="Time Series Plot">
+            
+            <h2>Anomaly Analysis</h2>
+            <img src="images/anomaly_analysis.png" alt="Anomaly Analysis">
+            
+            <h2>Root Cause Analysis</h2>
+        
+            <table class="anomaly-table">
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Severity</th>
+                    <th>Anomaly Count</th>
+                    <th>Root Causes</th>
+                </tr>
+            
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:25</td>
+                    <td>Medium</td>
+                    <td>102</td>
+                    <td>Traffic from 48 unapproved source(s) (48 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:30</td>
+                    <td>Medium</td>
+                    <td>154</td>
+                    <td>Traffic from 75 unapproved source(s) (75 unique IPs); Pod restart(s) detected (7 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:35</td>
+                    <td>Medium</td>
+                    <td>170</td>
+                    <td>Traffic from 81 unapproved source(s) (81 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:40</td>
+                    <td>Medium</td>
+                    <td>153</td>
+                    <td>Traffic from 74 unapproved source(s) (74 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:45</td>
+                    <td>Medium</td>
+                    <td>153</td>
+                    <td>Traffic from 75 unapproved source(s) (75 unique IPs); Pod restart(s) detected (20 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:50</td>
+                    <td>Medium</td>
+                    <td>180</td>
+                    <td>Traffic from 91 unapproved source(s) (91 unique IPs); Pod restart(s) detected (14 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 06:55</td>
+                    <td>Medium</td>
+                    <td>226</td>
+                    <td>Traffic from 106 unapproved source(s) (106 unique IPs); Pod restart(s) detected (6 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:00</td>
+                    <td>Medium</td>
+                    <td>188</td>
+                    <td>Traffic from 90 unapproved source(s) (90 unique IPs); Pod restart(s) detected (18 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:05</td>
+                    <td>Medium</td>
+                    <td>184</td>
+                    <td>Traffic from 89 unapproved source(s) (89 unique IPs); Pod restart(s) detected (11 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:10</td>
+                    <td>Medium</td>
+                    <td>135</td>
+                    <td>Traffic from 69 unapproved source(s) (69 unique IPs); Pod restart(s) detected (12 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:15</td>
+                    <td>Medium</td>
+                    <td>143</td>
+                    <td>Traffic from 80 unapproved source(s) (80 unique IPs); Pod restart(s) detected (15 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:20</td>
+                    <td>Medium</td>
+                    <td>160</td>
+                    <td>Traffic from 82 unapproved source(s) (82 unique IPs); Pod restart(s) detected (18 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:25</td>
+                    <td>Medium</td>
+                    <td>153</td>
+                    <td>Traffic from 79 unapproved source(s) (79 unique IPs); Pod restart(s) detected (6 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:30</td>
+                    <td>Medium</td>
+                    <td>153</td>
+                    <td>Traffic from 70 unapproved source(s) (70 unique IPs); Pod restart(s) detected (16 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:35</td>
+                    <td>Medium</td>
+                    <td>146</td>
+                    <td>Traffic from 75 unapproved source(s) (75 unique IPs); Pod restart(s) detected (14 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:40</td>
+                    <td>Medium</td>
+                    <td>172</td>
+                    <td>Traffic from 87 unapproved source(s) (87 unique IPs); Pod restart(s) detected (9 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:45</td>
+                    <td>Medium</td>
+                    <td>172</td>
+                    <td>Traffic from 97 unapproved source(s) (97 unique IPs); Pod restart(s) detected (11 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:50</td>
+                    <td>Medium</td>
+                    <td>235</td>
+                    <td>Traffic from 111 unapproved source(s) (111 unique IPs); Pod restart(s) detected (18 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 07:55</td>
+                    <td>Medium</td>
+                    <td>246</td>
+                    <td>Traffic from 125 unapproved source(s) (125 unique IPs); Pod restart(s) detected (15 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:00</td>
+                    <td>Medium</td>
+                    <td>207</td>
+                    <td>Traffic from 96 unapproved source(s) (96 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:05</td>
+                    <td>Medium</td>
+                    <td>188</td>
+                    <td>Traffic from 87 unapproved source(s) (87 unique IPs); Pod restart(s) detected (14 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:10</td>
+                    <td>Medium</td>
+                    <td>156</td>
+                    <td>Traffic from 87 unapproved source(s) (87 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:15</td>
+                    <td>Medium</td>
+                    <td>130</td>
+                    <td>Traffic from 60 unapproved source(s) (60 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:20</td>
+                    <td>Medium</td>
+                    <td>132</td>
+                    <td>Traffic from 62 unapproved source(s) (62 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:25</td>
+                    <td>Medium</td>
+                    <td>146</td>
+                    <td>Traffic from 78 unapproved source(s) (78 unique IPs); Pod restart(s) detected (9 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:30</td>
+                    <td>Medium</td>
+                    <td>147</td>
+                    <td>Traffic from 74 unapproved source(s) (74 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:35</td>
+                    <td>Medium</td>
+                    <td>155</td>
+                    <td>Traffic from 85 unapproved source(s) (85 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:40</td>
+                    <td>Medium</td>
+                    <td>150</td>
+                    <td>Traffic from 67 unapproved source(s) (67 unique IPs); Pod restart(s) detected (12 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:45</td>
+                    <td>Medium</td>
+                    <td>158</td>
+                    <td>Traffic from 86 unapproved source(s) (86 unique IPs); Pod restart(s) detected (11 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:50</td>
+                    <td>Medium</td>
+                    <td>205</td>
+                    <td>Traffic from 100 unapproved source(s) (100 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 08:55</td>
+                    <td>Medium</td>
+                    <td>269</td>
+                    <td>Traffic from 151 unapproved source(s) (151 unique IPs); Pod restart(s) detected (15 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:00</td>
+                    <td>Medium</td>
+                    <td>190</td>
+                    <td>Traffic from 105 unapproved source(s) (105 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:05</td>
+                    <td>Medium</td>
+                    <td>208</td>
+                    <td>Traffic from 107 unapproved source(s) (107 unique IPs); Pod restart(s) detected (19 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:10</td>
+                    <td>Medium</td>
+                    <td>160</td>
+                    <td>Traffic from 96 unapproved source(s) (96 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:15</td>
+                    <td>Medium</td>
+                    <td>177</td>
+                    <td>Traffic from 107 unapproved source(s) (107 unique IPs); Pod restart(s) detected (5 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:20</td>
+                    <td>Medium</td>
+                    <td>150</td>
+                    <td>Traffic from 75 unapproved source(s) (75 unique IPs); Pod restart(s) detected (4 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:25</td>
+                    <td>Medium</td>
+                    <td>156</td>
+                    <td>Traffic from 84 unapproved source(s) (84 unique IPs); Pod restart(s) detected (6 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:30</td>
+                    <td>Medium</td>
+                    <td>147</td>
+                    <td>Traffic from 66 unapproved source(s) (66 unique IPs); Pod restart(s) detected (6 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:35</td>
+                    <td>Medium</td>
+                    <td>150</td>
+                    <td>Traffic from 80 unapproved source(s) (80 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:40</td>
+                    <td>Medium</td>
+                    <td>170</td>
+                    <td>Traffic from 95 unapproved source(s) (95 unique IPs); Pod restart(s) detected (10 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:45</td>
+                    <td>Medium</td>
+                    <td>190</td>
+                    <td>Traffic from 99 unapproved source(s) (99 unique IPs); Pod restart(s) detected (15 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:50</td>
+                    <td>Medium</td>
+                    <td>212</td>
+                    <td>Traffic from 112 unapproved source(s) (112 unique IPs); Pod restart(s) detected (5 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 09:55</td>
+                    <td>Medium</td>
+                    <td>236</td>
+                    <td>Traffic from 126 unapproved source(s) (126 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:00</td>
+                    <td>Medium</td>
+                    <td>197</td>
+                    <td>Traffic from 89 unapproved source(s) (89 unique IPs); Pod restart(s) detected (14 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:05</td>
+                    <td>Medium</td>
+                    <td>195</td>
+                    <td>Traffic from 104 unapproved source(s) (104 unique IPs); Pod restart(s) detected (14 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:10</td>
+                    <td>Medium</td>
+                    <td>164</td>
+                    <td>Traffic from 86 unapproved source(s) (86 unique IPs); Pod restart(s) detected (9 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:15</td>
+                    <td>Medium</td>
+                    <td>123</td>
+                    <td>Traffic from 61 unapproved source(s) (61 unique IPs); Pod restart(s) detected (13 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:20</td>
+                    <td>Medium</td>
+                    <td>150</td>
+                    <td>Traffic from 83 unapproved source(s) (83 unique IPs); Pod restart(s) detected (11 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:25</td>
+                    <td>Medium</td>
+                    <td>147</td>
+                    <td>Traffic from 75 unapproved source(s) (75 unique IPs); Pod restart(s) detected (7 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:30</td>
+                    <td>Medium</td>
+                    <td>130</td>
+                    <td>Traffic from 60 unapproved source(s) (60 unique IPs); Pod restart(s) detected (4 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:35</td>
+                    <td>Medium</td>
+                    <td>152</td>
+                    <td>Traffic from 76 unapproved source(s) (76 unique IPs); Pod restart(s) detected (18 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:40</td>
+                    <td>Medium</td>
+                    <td>171</td>
+                    <td>Traffic from 89 unapproved source(s) (89 unique IPs); Pod restart(s) detected (9 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:45</td>
+                    <td>Medium</td>
+                    <td>180</td>
+                    <td>Traffic from 99 unapproved source(s) (99 unique IPs); Pod restart(s) detected (15 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:50</td>
+                    <td>Medium</td>
+                    <td>207</td>
+                    <td>Traffic from 113 unapproved source(s) (113 unique IPs); Pod restart(s) detected (23 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 10:55</td>
+                    <td>Medium</td>
+                    <td>233</td>
+                    <td>Traffic from 106 unapproved source(s) (106 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 11:00</td>
+                    <td>Medium</td>
+                    <td>190</td>
+                    <td>Traffic from 95 unapproved source(s) (95 unique IPs); Pod restart(s) detected (18 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 11:05</td>
+                    <td>Medium</td>
+                    <td>203</td>
+                    <td>Traffic from 106 unapproved source(s) (106 unique IPs); Pod restart(s) detected (28 total)</td>
+                </tr>
+                
+                <tr class="severity-medium">
+                    <td>2026-01-08 11:10</td>
+                    <td>Medium</td>
+                    <td>142</td>
+                    <td>Traffic from 85 unapproved source(s) (85 unique IPs); Pod restart(s) detected (8 total)</td>
+                </tr>
+                </table>
+            <h2>Recommendations</h2>
+            <ul>
+        <li>High anomaly rate detected. Consider investigating system performance and security.</li><li>Memory usage is elevated. Monitor for potential memory leaks.</li><li>Traffic from unapproved sources detected. Review security policies and access controls.</li><li>Pod restarts detected. Investigate application stability and resource limits.</li>
+            </ul>
+            
+            <hr>
+            <p><em>This report was generated automatically by the ML-powered API monitoring system.</em></p>
+        </body>
+        </html>
+        

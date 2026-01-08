@@ -1,0 +1,40 @@
+Task_ID,Task_Name,Prompt_ID,Prompt_Text,Expected_Output,AI_Model
+2,Design AR Architecture for Proactive Daydreaming,P2-1,"Design AR system architecture for proactive daydreaming that helps users rehearse future scenarios and reclaim agency from ambient technology","AR system architecture with component diagrams",Claude-3.5
+2,Design AR Architecture for Proactive Daydreaming,P2-2,"Create user experience flow for AR-based scenario rehearsal including conversation practice and milestone preparation","UX wireframes and user journey maps",GPT-4
+2,Design AR Architecture for Proactive Daydreaming,P2-3,"Design hardware requirements and compatibility matrix for AR glasses and immersive interfaces","Hardware specification document",Claude-3.5
+3,Implement Markov Chain Behavior Engine,P3-1,"Create Markov chain implementation for modeling behavioral state transitions in ambient technology influence","Python Markov chain behavior model",GPT-4
+3,Implement Markov Chain Behavior Engine,P3-2,"Design transition probability matrices for common behavioral patterns like consumer states and social interactions","Probability matrices with behavioral states",Claude-3.5
+3,Implement Markov Chain Behavior Engine,P3-3,"Implement recurrent behavioral chain detection for identifying vices like greed, lust, and jealousy","Behavioral pattern detection algorithms",GPT-4
+4,Build Stochastic Process Simulator,P4-1,"Create stochastic process simulator for modeling randomness in decision-making and life events","Stochastic simulation engine in Python",Claude-3.5
+4,Build Stochastic Process Simulator,P4-2,"Implement Monte Carlo methods for simulating future life scenarios with uncertainty","Monte Carlo scenario simulation system",GPT-4
+4,Build Stochastic Process Simulator,P4-3,"Design probability distribution models for life events like career changes, relationships, and major decisions","Life event probability models",Claude-3.5
+5,Create Agency Detection System,P5-1,"Build system to detect when users are operating within pre-defined behavioral patterns vs making conscious choices","Agency detection algorithm with metrics",GPT-4
+5,Create Agency Detection System,P5-2,"Implement real-time analysis of user decision patterns to identify loss of personal agency","Real-time agency monitoring system",Claude-3.5
+7,Implement Conversation Rehearsal System,P7-1,"Create AI-powered conversation simulator for practicing difficult discussions like end-of-life care with parents","Conversation simulation with AI personas",Claude-3.5
+7,Implement Conversation Rehearsal System,P7-2,"Design natural language processing for realistic dialogue generation in rehearsal scenarios","NLP dialogue generation system",GPT-4
+7,Implement Conversation Rehearsal System,P7-3,"Implement emotional intelligence modeling for realistic conversation partner responses","Emotional AI conversation partners",Claude-3.5
+8,Build Professional Scenario Generator,P8-1,"Create professional scenario generator for practicing sales pitches, presentations, and workplace interactions","Professional scenario simulation engine",GPT-4
+8,Build Professional Scenario Generator,P8-2,"Design industry-specific scenario templates for different professional contexts and roles","Professional scenario template library",Claude-3.5
+8,Build Professional Scenario Generator,P8-3,"Implement performance feedback system for professional scenario practice sessions","Performance analysis and feedback system",GPT-4
+9,Create Personal Milestone Simulator,P9-1,"Build simulator for rehearsing personal milestones like marriage proposals, graduations, and family events","Personal milestone rehearsal system",Claude-3.5
+9,Create Personal Milestone Simulator,P9-2,"Design emotional preparation framework for significant life events and transitions","Emotional preparation and coaching system",GPT-4
+10,Implement Performance Practice Mode,P10-1,"Create performance practice environment for comedy sets, music performances, and public speaking","Performance practice with virtual audiences",Claude-3.5
+10,Implement Performance Practice Mode,P10-2,"Design audience simulation with realistic reactions and feedback for performance improvement","Virtual audience with realistic responses",GPT-4
+12,Design Immersive AR Interface,P12-1,"Create AR interface design for seamless interaction with scenario simulation and future planning tools","AR interface mockups and interaction design",Claude-3.5
+12,Design Immersive AR Interface,P12-2,"Design spatial computing interface for 3D scenario visualization and manipulation","3D spatial interface for AR scenarios",GPT-4
+13,Implement Gesture Recognition System,P13-1,"Build gesture recognition system for natural AR interaction without traditional input devices","Gesture recognition with computer vision",Claude-3.5
+13,Implement Gesture Recognition System,P13-2,"Create hand tracking and gesture vocabulary for AR scenario control and navigation","Hand tracking system with gesture library",GPT-4
+14,Build Future Timeline Visualization,P14-1,"Design timeline visualization showing potential future paths and decision consequences","Interactive future timeline visualization",Claude-3.5
+14,Build Future Timeline Visualization,P14-2,"Implement branching scenario visualization for exploring different life path outcomes","Branching scenario tree visualization",GPT-4
+16,Integrate LLM for Dynamic Scenarios,P16-1,"Integrate large language model for generating dynamic, personalized scenarios based on user context","LLM integration for scenario generation",GPT-4
+16,Integrate LLM for Dynamic Scenarios,P16-2,"Create prompt engineering system for generating realistic and relevant practice scenarios","Prompt engineering for scenario creation",Claude-3.5
+17,Implement Personalization Engine,P17-1,"Build personalization engine that adapts scenarios based on user goals, fears, and preparation needs","Personalization algorithm with user modeling",Claude-3.5
+17,Implement Personalization Engine,P17-2,"Design user profiling system for understanding individual preparation and rehearsal preferences","User profiling and preference system",GPT-4
+18,Build Adaptive Learning System,P18-1,"Create adaptive learning system that improves scenario realism based on user feedback and outcomes","Adaptive learning with feedback loops",GPT-4
+18,Build Adaptive Learning System,P18-2,"Implement machine learning for scenario optimization based on user success and confidence metrics","ML-based scenario optimization system",Claude-3.5
+20,AR Hardware Testing,P20-1,"Create comprehensive testing suite for AR hardware compatibility and performance optimization","AR hardware testing framework",Claude-3.5
+20,AR Hardware Testing,P20-2,"Design stress testing protocols for AR applications under various lighting and environmental conditions","AR stress testing protocols",GPT-4
+21,User Experience Testing,P21-1,"Create user experience testing framework for AR scenario rehearsal effectiveness and usability","UX testing framework for AR scenarios",GPT-4
+21,User Experience Testing,P21-2,"Design A/B testing system for comparing different rehearsal approaches and interface designs","A/B testing system for AR interfaces",Claude-3.5
+22,Production Deployment,P22-1,"Create deployment pipeline for AR application distribution across multiple AR platforms and devices","AR app deployment pipeline",Claude-3.5
+22,Production Deployment,P22-2,"Design monitoring and analytics system for tracking AR application usage and scenario effectiveness","AR app monitoring and analytics system",GPT-4

@@ -1,0 +1,24 @@
+Task Name,Duration,Start Date,Finish Date,Predecessors,Resource Names,Work,Cost,Priority
+Ambient-Gantt AR Platform,80 days,2025-01-13,2025-05-16,,AR Development Team,640 hours,$64000,1000
+  Phase 1: AR Framework & Core Engine,25 days,2025-01-13,2025-02-14,,Core AR Team,200 hours,$20000,1000
+    Design AR Architecture for Proactive Daydreaming,5 days,2025-01-13,2025-01-17,,AR Architect,40 hours,$4000,1000
+    Implement Markov Chain Behavior Engine,8 days,2025-01-20,2025-01-31,2,Algorithm Developer,64 hours,$6400,1000
+    Build Stochastic Process Simulator,7 days,2025-02-03,2025-02-11,3,Simulation Engineer,56 hours,$5600,1000
+    Create Agency Detection System,5 days,2025-02-12,2025-02-18,4,Behavioral Analyst,40 hours,$4000,1000
+  Phase 2: Scenario Simulation Engine,20 days,2025-02-17,2025-03-14,5,Simulation Team,160 hours,$16000,950
+    Implement Conversation Rehearsal System,7 days,2025-02-17,2025-02-27,,NLP Engineer,56 hours,$5600,900
+    Build Professional Scenario Generator,6 days,2025-03-03,2025-03-10,7,Scenario Designer,48 hours,$4800,900
+    Create Personal Milestone Simulator,4 days,2025-03-11,2025-03-14,8,Life Coach AI,32 hours,$3200,900
+    Implement Performance Practice Mode,3 days,2025-03-17,2025-03-19,9,Performance Engineer,24 hours,$2400,900
+  Phase 3: AR Interface & Visualization,15 days,2025-03-17,2025-04-04,10,UI/AR Team,120 hours,$12000,850
+    Design Immersive AR Interface,5 days,2025-03-17,2025-03-21,,AR UI Designer,40 hours,$4000,800
+    Implement Gesture Recognition System,5 days,2025-03-24,2025-03-28,12,Gesture Engineer,40 hours,$4000,800
+    Build Future Timeline Visualization,5 days,2025-03-31,2025-04-04,13,Visualization Engineer,40 hours,$4000,800
+  Phase 4: AI Integration & Personalization,12 days,2025-04-07,2025-04-22,14,AI Team,96 hours,$9600,800
+    Integrate LLM for Dynamic Scenarios,5 days,2025-04-07,2025-04-11,,AI Engineer,40 hours,$4000,750
+    Implement Personalization Engine,4 days,2025-04-14,2025-04-17,16,ML Engineer,32 hours,$3200,750
+    Build Adaptive Learning System,3 days,2025-04-21,2025-04-23,17,Learning Engineer,24 hours,$2400,750
+  Phase 5: Testing & Deployment,8 days,2025-04-28,2025-05-07,18,QA Team,64 hours,$6400,700
+    AR Hardware Testing,3 days,2025-04-28,2025-04-30,,AR QA Engineer,24 hours,$2400,650
+    User Experience Testing,3 days,2025-05-05,2025-05-07,20,UX Tester,24 hours,$2400,650
+    Production Deployment,2 days,2025-05-12,2025-05-13,21,DevOps Engineer,16 hours,$1600,650

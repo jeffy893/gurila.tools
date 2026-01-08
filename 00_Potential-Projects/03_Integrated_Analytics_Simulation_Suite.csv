@@ -1,0 +1,24 @@
+Task Name,Duration,Start Date,Finish Date,Predecessors,Resource Names,Work,Cost,Priority
+Integrated Analytics & Simulation Suite,75 days,2025-01-27,2025-05-16,,Analytics Team,600 hours,$60000,900
+  Phase 1: Data Visualization Platform,20 days,2025-01-27,2025-02-21,,Visualization Team,160 hours,$16000,1000
+    Modernize Tableau Integration Framework,5 days,2025-01-27,2025-01-31,,BI Architect,40 hours,$4000,1000
+    Build Automated Dashboard Generator,7 days,2025-02-03,2025-02-13,2,Dashboard Developer,56 hours,$5600,1000
+    Implement Multi-Domain Data Connectors,5 days,2025-02-14,2025-02-20,3,Data Engineer,40 hours,$4000,1000
+    Create Interactive Chart Library,3 days,2025-02-21,2025-02-25,4,Chart Developer,24 hours,$2400,1000
+  Phase 2: Conflict Simulation Engine,18 days,2025-02-24,2025-03-19,5,Simulation Team,144 hours,$14400,950
+    Implement Lanchester Law Algorithms,6 days,2025-02-24,2025-03-03,,Mathematical Engineer,48 hours,$4800,900
+    Build Morale Model Integration,5 days,2025-03-04,2025-03-10,7,Behavioral Modeler,40 hours,$4000,900
+    Create Resource Allocation Simulator,4 days,2025-03-11,2025-03-14,8,Resource Engineer,32 hours,$3200,900
+    Implement Markov Chain Dynamics,3 days,2025-03-17,2025-03-19,9,Stochastic Modeler,24 hours,$2400,900
+  Phase 3: MANGO Diplomacy Framework,15 days,2025-03-24,2025-04-11,10,Negotiation Team,120 hours,$12000,850
+    Design PACBULOC Analysis Engine,5 days,2025-03-24,2025-03-28,,Negotiation Analyst,40 hours,$4000,800
+    Implement Diplomatic Scenario Generator,5 days,2025-03-31,2025-04-04,12,Scenario Engineer,40 hours,$4000,800
+    Build Agreement Tracking System,5 days,2025-04-07,2025-04-11,13,Contract Engineer,40 hours,$4000,800
+  Phase 4: Anomaly Detection & Risk Assessment,12 days,2025-04-14,2025-04-29,14,Risk Team,96 hours,$9600,800
+    Implement Pattern Deviation Detection,5 days,2025-04-14,2025-04-18,,ML Engineer,40 hours,$4000,750
+    Build Stakeholder Impact Analysis,4 days,2025-04-21,2025-04-24,16,Impact Analyst,32 hours,$3200,750
+    Create Workflow Replication System,3 days,2025-04-28,2025-04-30,17,Process Engineer,24 hours,$2400,750
+  Phase 5: Mobile Posterity App Enhancement,10 days,2025-05-05,2025-05-16,18,Mobile Team,80 hours,$8000,700
+    Upgrade Android Simulation Engine,4 days,2025-05-05,2025-05-08,,Android Developer,32 hours,$3200,650
+    Implement Cross-Platform Framework,4 days,2025-05-12,2025-05-15,20,Cross-Platform Developer,32 hours,$3200,650
+    Create Social Dynamics Visualization,2 days,2025-05-16,2025-05-19,21,Mobile UI Designer,16 hours,$1600,650

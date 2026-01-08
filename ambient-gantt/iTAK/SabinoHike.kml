@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Sabino Canyon Hike Plan</name>
+    <description>Simulated hiking route and points of interest for October 7th, 2025.</description>
+    
+    <Placemark>
+      <name>Meeting Point (Trailhead)</name>
+      <description>
+        Rendezvous here at 08:00 AM MST.
+        Check gear and water supplies before starting.
+      </description>
+      <Point>
+        <coordinates>-110.8283,32.3168,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Observation Point</name>
+      <description>
+        Good spot for a water break.
+        Provides a clear view of the canyon and Thimble Peak.
+      </description>
+      <Point>
+        <coordinates>-110.8315,32.3295,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Destination (Sabino Dam)</name>
+      <description>
+        End of the planned hike.
+        Estimated arrival: 10:30 AM MST.
+        This is a great spot for lunch.
+      </description>
+      <Point>
+        <coordinates>-110.8351,32.3472,0</coordinates>
+      </Point>
+    </Placemark>
+    
+  </Document>
+</kml>

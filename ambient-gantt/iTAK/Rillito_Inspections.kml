@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Rillito River Utility Inspection</name>
+    <description>Live inspection of water pipeline markers. Started: Oct 7, 2025, 12:05 PM MST.</description>
+    
+    <Style id="inspectionPoint">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+        </Icon>
+        <scale>1.2</scale>
+      </IconStyle>
+    </Style>
+    
+    <Placemark>
+      <name>Staging Area (La Encantada Lot)</name>
+      <description>
+        12:05 PM MST: Team vehicle is parked at the southeast corner of the lower lot. 
+        Ready to begin inspection on foot heading east along the river path.
+      </description>
+      <styleUrl>#inspectionPoint</styleUrl>
+      <Point>
+        <coordinates>-110.9255,32.2989,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Inspection Point 1 (IP-01)</name>
+      <description>
+        12:15 PM (Est): Check pipeline marker post located just off the paved path. 
+        Vegetation overgrowth is visible from aerial view; needs to be cleared.
+      </description>
+      <styleUrl>#inspectionPoint</styleUrl>
+      <Point>
+        <coordinates>-110.9211,32.2985,0</coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <name>Inspection Point 2 (IP-02)</name>
+      <description>
+        12:25 PM (Est): Manhole cover west of the Hacienda Del Sol bridge. 
+        No visible issues from this NAIP image, but requires physical check of the seal.
+      </description>
+      <styleUrl>#inspectionPoint</styleUrl>
+      <Point>
+        <coordinates>-110.9142,32.2980,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Area of Concern - Bank Erosion</name>
+      <description>
+        This section of the riverbank appears undercut in the imagery. 
+        The ground team needs to measure the distance from the bank edge to the nearest pipeline marker.
+      </description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -110.9190,32.2981,0
+              -110.9188,32.2978,0
+              -110.9182,32.2979,0
+              -110.9184,32.2982,0
+              -110.9190,32.2981,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    
+  </Document>
+</kml>
