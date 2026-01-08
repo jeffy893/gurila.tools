@@ -1,0 +1,5 @@
+# Hide folders containing HTML files from GitHub language statistics
+tools/** linguist-vendored
+projects/** linguist-vendored
+use-cases/spark-seltzers/archive/** linguist-vendored
+use-cases/spark-seltzers/charts/** linguist-vendored
