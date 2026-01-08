@@ -1,0 +1,149 @@
+# ML for API Service Configuration
+
+# Data Generation Settings
+data_generation:
+  duration_hours: 24
+  requests_per_second: 4
+  output_file: "data/synthetic_api_logs.csv"
+  
+  # Anomaly injection rates
+  anomaly_rates:
+    security_events: 0.005  # 0.5% chance
+    resource_leaks: 0.02    # 2% chance during leak periods
+    db_bottlenecks: 0.01    # 1% chance, higher during peak hours
+
+# Model Training Settings
+model_training:
+  algorithm: "randomcutforest"
+  train_test_split: 0.8
+  
+  # RCF Hyperparameters
+  hyperparameters:
+    num_trees: 100
+    num_samples_per_tree: 256
+    eval_metrics: "accuracy,precision_recall_fscore"
+  
+  # Feature engineering
+  features:
+    numerical:
+      - cpu_usage_percent
+      - memory_usage_mb
+      - pod_restart_count
+      - sql_execution_time_ms
+      - stack_trace_depth
+      - db_connection_pool_active
+      - response_time_ms
+    
+    temporal:
+      - hour
+      - day_of_week
+      - minute
+    
+    categorical:
+      - http_method
+      - endpoint_category
+      - is_approved_source
+
+# SageMaker Settings
+sagemaker:
+  region: "us-east-1"
+  instance_type:
+    training: "ml.m5.xlarge"
+    inference: "ml.t2.medium"
+  
+  # Model deployment
+  endpoint:
+    name: "api-anomaly-detector"
+    auto_scaling:
+      min_capacity: 1
+      max_capacity: 5
+      target_invocations_per_instance: 70
+
+# Reporting Settings
+reporting:
+  output_formats:
+    - html
+    - pdf
+  
+  # Health score calculation
+  health_scoring:
+    base_score: 100
+    penalties:
+      anomaly_rate_multiplier: 1000  # Max 50 points for anomalies
+      cpu_threshold: 70              # Penalty if CPU > 70%
+      memory_threshold: 1000         # Penalty if memory > 1GB
+      response_time_threshold: 200   # Penalty if > 200ms
+  
+  # Visualization settings
+  plots:
+    time_series:
+      figsize: [15, 12]
+      dpi: 300
+    
+    anomaly_analysis:
+      figsize: [15, 10]
+      dpi: 300
+  
+  # Root cause analysis
+  root_cause:
+    time_window_minutes: 5
+    thresholds:
+      high_sql_time: 1000      # ms
+      high_cpu: 80             # %
+      high_memory: 1500        # MB
+      slow_response: 500       # ms
+      high_db_connections: 20
+
+# AWS Configuration
+aws:
+  # S3 Buckets
+  s3:
+    raw_data_bucket: "api-monitoring-raw-data"
+    processed_data_bucket: "api-monitoring-processed"
+    reports_bucket: "api-monitoring-reports"
+  
+  # Kinesis
+  kinesis:
+    stream_name: "api-monitoring-stream"
+    shard_count: 2
+    retention_hours: 24
+  
+  # Lambda
+  lambda:
+    stream_processor:
+      name: "api-log-processor"
+      memory: 512
+      timeout: 300
+    
+    report_generator:
+      name: "health-report-generator"
+      memory: 1024
+      timeout: 900
+  
+  # SNS/SES
+  notifications:
+    sns_topic: "api-health-alerts"
+    email_sender: "alerts@company.com"
+    
+# Monitoring and Alerting
+monitoring:
+  # CloudWatch metrics
+  metrics:
+    - anomaly_rate
+    - health_score
+    - processing_latency
+    - endpoint_invocations
+  
+  # Alert thresholds
+  alerts:
+    critical_health_score: 60
+    high_anomaly_rate: 0.05
+    endpoint_error_rate: 0.01
+    processing_delay_minutes: 5
+
+# Development Settings
+development:
+  local_mode: true
+  sample_data_size: 1000
+  debug_logging: true
+  skip_sagemaker_deployment: true
