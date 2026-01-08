@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "XpathAttr",
+  "description": "This extension adds the xpath attribute ot every element",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "logo_turq.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "file:///*",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

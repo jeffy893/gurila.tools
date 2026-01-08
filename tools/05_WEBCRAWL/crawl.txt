@@ -1,0 +1,170 @@
+mathematics
+mathematical statement
+argument
+theorems
+axioms
+inference
+deductive reasoning
+inductive reasoning
+empirical
+conjecture
+logic
+natural language
+informal logic
+formal proofs
+proof theory
+formal and informal proofs
+mathematical practice
+quasi empiricism in mathematics
+folk mathematics
+philosophy of mathematics
+mathematics as a language
+History of logic
+geometry
+ancient Greek mathematics
+Thales
+Hippocrates of Chios
+Eudoxus
+Theaetetus
+Aristotle
+Euclid
+axiomatic method
+undefined terms
+deductive logic
+Elements
+Pythagorean theorem
+medieval Islamic mathematics
+arithmetic
+algebra
+Iraqi
+Al Hashimi
+irrational numbers
+inductive proof
+arithmetic sequences
+Al Karaji
+binomial theorem
+Pascals triangle
+proof by contradiction
+Euclidean
+parallel postulate
+data structures
+Axiomatic set theory
+Non Euclidean geometry
+formal proof
+formal language
+undecidable statements
+analytic
+synthetic
+Kant
+analytic synthetic distinction
+mathematical beauty
+Paul Erdos
+Proofs from THE BOOK
+Direct proof
+even
+integers
+closure
+distributivity
+Mathematical induction
+deduction
+implies
+infinitely
+proof by infinite descent
+irrationality of the square root of two
+Contraposition
+Proof by contraposition
+infers
+contrapositive
+Proof by contradiction
+reductio ad absurdum
+irrational number
+no common factor
+Proof by construction
+Joseph Liouville
+transcendental numbers
+explicit example
+counterexample
+Proof by exhaustion
+four color theorem
+Probabilistic method
+probability theory
+existence theorems
+Collatz conjecture
+probabilistic algorithm
+Combinatorial proof
+bijection
+double counting argument
+Nonconstructive proof
+mathematical object
+rational number
+Statistical proof
+pure mathematics
+cryptography
+chaotic series
+number theory
+mathematical statistics
+Statistical proof using data
+Computer assisted proof
+Euclidean geometry
+Zermelo Fraenkel set theory
+list of statements undecidable in ZFC
+Godels (first) incompleteness theorem
+Experimental mathematics
+Eudoxus of Cnidus
+foundational mathematics
+mathematical objects
+experimental mathematics
+fractal geometry
+proof without words
+Zhoubi Suanjing
+missing square puzzle
+Elementary proof
+complex analysis
+prime number theorem
+data
+statistics
+data analysis
+Bayesian analysis
+probability
+physics
+mathematical methods of physics
+particle physics
+experiment
+observational study
+physical cosmology
+scatter plots
+Inductive logic
+inductive logic
+certainty
+mathematical induction
+Bayes theorem
+assessment of likelihoods
+evidence
+information
+Psychologism
+Language of thought
+philosophers
+Leibniz
+Frege
+Carnap
+language of thought
+empirical science
+citation needed
+Spinoza
+Descartes
+cogito
+QED
+Latin
+tombstone
+eponym
+Paul Halmos
+Logic portal
+Mathematics portal
+Automated theorem proving
+Invalid proof
+List of incomplete proofs
+List of long proofs
+List of mathematical proofs
+Proof by intimidation
+Termination analysis
+What the Tortoise Said to Achilles
