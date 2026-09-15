@@ -4,3 +4,6 @@
 # Python
 __pycache__/
 *.pyc
+
+# Large local data (exceeds GitHub file-size limits)
+data-visualization/000_new/too-big/
