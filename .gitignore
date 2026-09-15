@@ -1,1 +1,6 @@
-**/too-big/*
+**/too-big/*# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
