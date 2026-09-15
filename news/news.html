@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface-hover: #242424;
+      --border: #2a2a2a;
+      --text: #e8e8e8;
+      --text-muted: #888;
+      --text-dim: #555;
+      --accent: #ff6600;
+      --accent-soft: #ff660022;
+      --link: #4fc3f7;
+      --link-hover: #81d4fa;
+      --gradient-start: #ff6600;
+      --gradient-end: #ff9100;
+      --success: #66bb6a;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 15, 15, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .feed-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--success);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .refresh-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .refresh-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+    }
+
+    .refresh-btn.loading svg {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Source Tabs */
+    .source-tabs {
+      position: sticky;
+      top: 65px;
+      z-index: 99;
+      background: rgba(15, 15, 15, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      max-width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .source-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .source-tab:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+      border-color: var(--text-dim);
+    }
+
+    .source-tab.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .source-tab-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.7rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Loading state */
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 50vh;
+      gap: 1.5rem;
+    }
+
+    .loading-spinner {
+      width: 48px;
+      height: 48px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    .loading-text {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Error state */
+    .error-container {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid #ff444444;
+    }
+
+    .error-container h2 {
+      color: #ff6b6b;
+      margin-bottom: 0.5rem;
+    }
+
+    .error-container p {
+      color: var(--text-muted);
+    }
+
+    /* Feed grid */
+    .feed-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    /* Article Card */
+    .article {
+      background: var(--surface);
+      padding: 1.25rem 1.5rem;
+      display: grid;
+      grid-template-columns: 3.5rem 1fr auto;
+      gap: 1rem;
+      align-items: start;
+      transition: background 0.15s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article:hover {
+      background: var(--surface-hover);
+    }
+
+    .article-index {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 500;
+      padding-top: 0.2rem;
+      text-align: center;
+    }
+
+    .article-content {
+      min-width: 0;
+    }
+
+    .article-title {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+      transition: color 0.15s;
+    }
+
+    .article:hover .article-title {
+      color: var(--link);
+    }
+
+    .article-domain {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 0.4rem;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+    }
+
+    .article-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .article-meta-item svg {
+      width: 14px;
+      height: 14px;
+      opacity: 0.6;
+    }
+
+    .article-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+      padding-top: 0.2rem;
+    }
+
+    .article-time {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .thread-link {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .thread-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* Description preview */
+    .article-description {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Tags */
+    .article-tags {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .article-tag {
+      font-size: 0.7rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      background: #4fc3f711;
+      color: var(--link);
+      border: 1px solid #4fc3f722;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .source-tabs {
+        padding: 0.75rem 1rem;
+        gap: 0.4rem;
+      }
+
+      .source-tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+      }
+
+      .header {
+        padding: 0.75rem 1rem;
+      }
+
+      .article {
+        grid-template-columns: 2.5rem 1fr;
+        padding: 1rem;
+      }
+
+      .article-actions {
+        display: none;
+      }
+
+      .stats-bar {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .header-meta {
+        gap: 0.5rem;
+      }
+
+      .feed-status {
+        display: none;
+      }
+    }
+
+    /* Fade in animation */
+    .article {
+      animation: fadeIn 0.3s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon" id="logoIcon">Y</div>
+        <div class="logo-text" id="logoText">HN <span>Newest</span></div>
+      </div>
+      <div class="header-meta">
+        <div class="feed-status">
+          <div class="status-dot"></div>
+          <span id="lastUpdated">Loading...</span>
+        </div>
+        <button class="refresh-btn" onclick="fetchFeed()" id="refreshBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="source-tabs" id="sourceTabs">
+    <button class="source-tab active" data-source="hackernews">
+      <span class="source-tab-icon" style="background: #ff6600;">Y</span>
+      Hacker News
+    </button>
+
+    <button class="source-tab" data-source="techmeme">
+      <span class="source-tab-icon" style="background: #2d8c3c;">T</span>
+      Techmeme
+    </button>
+    <button class="source-tab" data-source="antiwar">
+      <span class="source-tab-icon" style="background: #1a1a1a; border: 1px solid #666;">A</span>
+      Antiwar
+    </button>
+    <button class="source-tab" data-source="zerohedge">
+      <span class="source-tab-icon" style="background: #b8860b;">Z</span>
+      ZeroHedge
+    </button>
+    <button class="source-tab" data-source="reason">
+      <span class="source-tab-icon" style="background: #d42a2a;">R</span>
+      Reason
+    </button>
+
+    <button class="source-tab" data-source="intercept">
+      <span class="source-tab-icon" style="background: #00b84d;">I</span>
+      The Intercept
+    </button>
+    <button class="source-tab" data-source="grayzone">
+      <span class="source-tab-icon" style="background: #4a4a4a;">G</span>
+      The Grayzone
+    </button>
+  </nav>
+
+  <main class="container">
+    <div class="stats-bar" id="statsBar">
+      <div class="stat">
+        <div class="stat-value" id="storyCount">—</div>
+        <div class="stat-label">Stories loaded</div>
+      </div>
+    </div>
+
+    <div id="feed">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Fetching latest stories...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p id="footerText">
+      Powered by <a href="https://hnrss.org/" target="_blank" rel="noopener">hnrss.org</a> &middot;
+      Data from <a href="https://news.ycombinator.com/newest" target="_blank" rel="noopener">Hacker News</a>
+    </p>
+  </footer>
+
+  <script>
+    // Feed sources configuration
+    const SOURCES = {
+      hackernews: {
+        name: 'Hacker News',
+        shortName: 'HN',
+        rssUrl: 'https://hnrss.org/newest',
+        siteUrl: 'https://news.ycombinator.com/newest',
+        icon: 'Y',
+        color: '#ff6600',
+        description: 'hnrss.org'
+      },
+
+      techmeme: {
+        name: 'Techmeme',
+        shortName: 'Techmeme',
+        rssUrl: 'https://www.techmeme.com/feed.xml',
+        siteUrl: 'https://www.techmeme.com',
+        icon: 'T',
+        color: '#2d8c3c',
+        description: 'techmeme.com'
+      },
+      antiwar: {
+        name: 'Antiwar.com',
+        shortName: 'Antiwar',
+        rssUrl: 'https://news.antiwar.com/feed',
+        siteUrl: 'https://www.antiwar.com',
+        icon: 'A',
+        color: '#333333',
+        description: 'antiwar.com'
+      },
+      zerohedge: {
+        name: 'ZeroHedge',
+        shortName: 'ZH',
+        rssUrl: 'https://feeds.feedburner.com/zerohedge/feed',
+        siteUrl: 'https://www.zerohedge.com',
+        icon: 'Z',
+        color: '#b8860b',
+        description: 'zerohedge.com'
+      },
+      reason: {
+        name: 'Reason',
+        shortName: 'Reason',
+        rssUrl: 'https://reason.com/feed/',
+        siteUrl: 'https://reason.com',
+        icon: 'R',
+        color: '#d42a2a',
+        description: 'reason.com'
+      },
+
+      intercept: {
+        name: 'The Intercept',
+        shortName: 'Intercept',
+        rssUrl: 'https://theintercept.com/feed/?rss',
+        siteUrl: 'https://theintercept.com',
+        icon: 'I',
+        color: '#00b84d',
+        description: 'theintercept.com'
+      },
+      grayzone: {
+        name: 'The Grayzone',
+        shortName: 'Grayzone',
+        rssUrl: 'https://thegrayzone.com/feed/',
+        siteUrl: 'https://thegrayzone.com',
+        icon: 'G',
+        color: '#4a4a4a',
+        description: 'thegrayzone.com'
+      }
+    };
+
+    let activeSource = 'hackernews';
+
+    // Tab switching
+    document.getElementById('sourceTabs').addEventListener('click', (e) => {
+      const tab = e.target.closest('.source-tab');
+      if (!tab) return;
+      const source = tab.dataset.source;
+      if (source === activeSource) return;
+
+      document.querySelectorAll('.source-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      activeSource = source;
+      updateBranding();
+      fetchFeed();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function updateBranding() {
+      const src = SOURCES[activeSource];
+      document.getElementById('logoIcon').textContent = src.icon;
+      document.getElementById('logoIcon').style.background = `linear-gradient(135deg, ${src.color}, ${src.color}dd)`;
+      document.getElementById('logoText').innerHTML = `${escapeHtml(src.shortName)} <span>Feed</span>`;
+      document.getElementById('footerText').innerHTML = `
+        Powered by <a href="${src.siteUrl}" target="_blank" rel="noopener">${escapeHtml(src.description)}</a> &middot;
+        Data from <a href="${src.siteUrl}" target="_blank" rel="noopener">${escapeHtml(src.name)}</a>
+      `;
+    }
+
+    function timeAgo(dateStr) {
+      const date = new Date(dateStr);
+      const now = new Date();
+      const seconds = Math.floor((now - date) / 1000);
+      if (isNaN(seconds) || seconds < 0) return 'just now';
+      if (seconds < 60) return `${seconds}s ago`;
+      const minutes = Math.floor(seconds / 60);
+      if (minutes < 60) return `${minutes}m ago`;
+      const hours = Math.floor(minutes / 60);
+      if (hours < 24) return `${hours}h ago`;
+      const days = Math.floor(hours / 24);
+      return `${days}d ago`;
+    }
+
+    function extractDomain(url) {
+      try {
+        return new URL(url).hostname.replace('www.', '');
+      } catch {
+        return null;
+      }
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text || '';
+      return div.innerHTML;
+    }
+
+    function stripHtml(html) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+    function parseHNDescription(html) {
+      const points = html.match(/Points:\s*(\d+)/i) || html.match(/(\d+)\s*point/i);
+      const comments = html.match(/Comments:\s*(\d+)/i) || html.match(/(\d+)\s*comment/i);
+      const hnLink = html.match(/href="(https:\/\/news\.ycombinator\.com\/item\?id=\d+)"/);
+      return {
+        points: points ? parseInt(points[1]) : 0,
+        commentCount: comments ? parseInt(comments[1]) : 0,
+        threadLink: hnLink ? hnLink[1] : null
+      };
+    }
+
+    function parseLobstersItem(item) {
+      const commentsUrl = item.guid || '';
+      const desc = item.description || item.content || '';
+      const commentsMatch = desc.match(/(\d+)\s*comment/i);
+      return {
+        points: 0,
+        commentCount: commentsMatch ? parseInt(commentsMatch[1]) : 0,
+        threadLink: commentsUrl,
+        tags: item.categories || []
+      };
+    }
+
+    function parseTechmemeItem(item) {
+      // Techmeme descriptions often have a brief summary
+      const raw = item.description || item.content || '';
+      const clean = stripHtml(raw).trim();
+      return {
+        points: 0,
+        commentCount: 0,
+        threadLink: null,
+        description: clean.length > 10 ? clean.substring(0, 200) : ''
+      };
+    }
+
+    function processItems(items, source) {
+      const stories = [];
+      let totalPoints = 0;
+      const domains = new Set();
+
+      items.forEach((item, index) => {
+        const title = item.title || 'Untitled';
+        let link = item.link || '#';
+        const pubDate = item.pubDate || '';
+        const author = item.author || '';
+        let points = 0;
+        let commentCount = 0;
+        let threadLink = null;
+        let description = '';
+        let tags = [];
+
+        switch (source) {
+          case 'hackernews': {
+            const parsed = parseHNDescription(item.description || '');
+            points = parsed.points;
+            commentCount = parsed.commentCount;
+            threadLink = parsed.threadLink;
+            break;
+          }
+          case 'techmeme': {
+            const parsed = parseTechmemeItem(item);
+            description = parsed.description;
+            break;
+          }
+          case 'antiwar': {
+            const raw = item.description || item.content || '';
+            description = stripHtml(raw).trim();
+            if (description.length > 200) description = description.substring(0, 200) + '...';
+            break;
+          }
+          case 'zerohedge':
+          case 'reason':
+          case 'intercept':
+          case 'grayzone': {
+            const raw = item.description || item.content || '';
+            description = stripHtml(raw).trim();
+            if (description.length > 200) description = description.substring(0, 200) + '...';
+            tags = item.categories || [];
+            break;
+          }
+        }
+
+        totalPoints += points;
+        const domain = extractDomain(link);
+        if (domain && domain !== 'news.ycombinator.com' && domain !== 'lobste.rs') {
+          domains.add(domain);
+        }
+
+        stories.push({
+          title,
+          link,
+          pubDate,
+          author,
+          points,
+          commentCount,
+          threadLink,
+          description,
+          tags,
+          domain,
+          index: index + 1
+        });
+      });
+
+      return { stories, totalPoints, domainCount: domains.size };
+    }
+
+    function renderStories(stories, source) {
+      let html = '<div class="feed-grid">';
+      const src = SOURCES[source];
+
+      stories.forEach((story, i) => {
+        const delay = i * 30;
+        const threadLabel = source === 'hackernews' ? 'HN thread' :
+                            source === 'antiwar' ? 'read more' :
+                            source === 'zerohedge' ? 'read more' :
+                            source === 'reason' ? 'read more' :
+                            source === 'intercept' ? 'read more' :
+                            source === 'grayzone' ? 'read more' : 'discuss';
+
+        html += `
+          <a class="article" href="${escapeHtml(story.link)}" target="_blank" rel="noopener" style="animation-delay: ${delay}ms">
+            <div class="article-index">${story.index}</div>
+            <div class="article-content">
+              <div class="article-title">${escapeHtml(story.title)}</div>
+              ${story.domain ? `<span class="article-domain">${escapeHtml(story.domain)}</span>` : ''}
+              ${story.description ? `<div class="article-description">${escapeHtml(story.description)}</div>` : ''}
+              ${story.tags && story.tags.length ? `
+                <div class="article-tags">
+                  ${story.tags.map(t => `<span class="article-tag">${escapeHtml(t)}</span>`).join('')}
+                </div>
+              ` : ''}
+              <div class="article-meta">
+                ${story.points > 0 ? `
+                  <span class="article-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    ${story.points} pts
+                  </span>
+                ` : ''}
+                ${story.author ? `
+                  <span class="article-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    ${escapeHtml(story.author)}
+                  </span>
+                ` : ''}
+                ${story.commentCount > 0 ? `
+                  <span class="article-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    ${story.commentCount}
+                  </span>
+                ` : ''}
+              </div>
+            </div>
+            <div class="article-actions">
+              <span class="article-time">${timeAgo(story.pubDate)}</span>
+              ${story.threadLink ? `<a class="thread-link" href="${escapeHtml(story.threadLink)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${threadLabel}</a>` : ''}
+            </div>
+          </a>
+        `;
+      });
+
+      html += '</div>';
+      return html;
+    }
+
+    async function fetchFeed() {
+      const feedEl = document.getElementById('feed');
+      const refreshBtn = document.getElementById('refreshBtn');
+      const src = SOURCES[activeSource];
+      refreshBtn.classList.add('loading');
+
+      feedEl.innerHTML = `
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">Fetching latest from ${escapeHtml(src.name)}...</div>
+        </div>
+      `;
+
+      try {
+        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(src.rssUrl)}`;
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        if (data.status !== 'ok') throw new Error(data.message || 'RSS feed error');
+        if (!data.items || !data.items.length) throw new Error('No stories found');
+
+        const { stories, totalPoints, domainCount } = processItems(data.items, activeSource);
+
+        // Update stats
+        document.getElementById('storyCount').textContent = stories.length;
+
+        // Render
+        feedEl.innerHTML = renderStories(stories, activeSource);
+
+        // Update last updated time
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString();
+
+      } catch (err) {
+        console.error('Feed fetch error:', err);
+        feedEl.innerHTML = `
+          <div class="error-container">
+            <h2>Failed to load feed</h2>
+            <p>${escapeHtml(err.message)}</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">Try refreshing or check your connection.</p>
+          </div>
+        `;
+      } finally {
+        refreshBtn.classList.remove('loading');
+      }
+    }
+
+    // Load on page open
+    updateBranding();
+    fetchFeed();
+  </script>
+</body>
+</html>
